@@ -129,6 +129,9 @@ a {
     display: inline-block;
     text-decoration: none;
 }
+a:hover {
+    color: var(--sub-color);
+}
 a::after {
     background-color: var(--base-color);
     content: "";
@@ -142,7 +145,6 @@ a::after {
     transition: transform 0.3s ease;
 }
 a:hover::after {
-    color: var(--sub-color);
     transform-origin: left top;
     transform: scale(1, 1);
 }
