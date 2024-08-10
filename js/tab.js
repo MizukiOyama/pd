@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
             this.currentId = null;
             this.currentTab = null;
             this.tabContainerHeight = 70;
-            this.offsetAdjust = 20; // 調整用のオフセット変数
+            this.offsetAdjust = 0; // 調整用のオフセット変数
             this.init();
         }
 
@@ -43,7 +43,7 @@ jQuery(document).ready(function ($) {
         }
 
         checkTabContainerPosition() {
-            let offset = $('.tabs').offset().top + $('.tabs').height() - this.tabContainerHeight;
+            let offset = $('.tabs').offset().top + $('.tabs').height() - this.tabContainerHeight + this.offsetAdjust;
             if ($(window).scrollTop() > offset) {
                 $('.tabs-container').addClass('tabs-container--top');
             } else {
