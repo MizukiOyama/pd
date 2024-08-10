@@ -1,4 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
     var svgElement = document.getElementById('svgElement');
-    svgElement.classList.add('active');
+    if (svgElement) {
+        svgElement.classList.add('active');
+    } else {
+        console.error('SVG element not found');
+    }
 });
