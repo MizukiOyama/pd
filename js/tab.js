@@ -4,7 +4,7 @@ jQuery(document).ready(function ($) {
             this.currentId = null;
             this.currentTab = null;
             this.tabContainerHeight = 70;
-            this.offsetAdjust = 10; // 調整用のオフセット変数
+            this.offsetAdjust = 20; // 調整用のオフセット変数
             this.init();
         }
 
