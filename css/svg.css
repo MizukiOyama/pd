@@ -1,8 +1,14 @@
+#svg-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
 svg .svg-elem-1,
 svg .svg-elem-2,
 svg .svg-elem-3,
 svg .svg-elem-4 {
-  stroke: black;
+  stroke: rgb(46, 46, 46);
   stroke-width: 2;
   fill: transparent;
 }
