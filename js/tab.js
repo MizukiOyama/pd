@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
         constructor() {
             this.currentId = null;
             this.currentTab = null;
-            this.tabContainerHeight = 70;
+            this.tabContainerHeight = 0;
             this.init();
         }
 
@@ -26,7 +26,7 @@ jQuery(document).ready(function ($) {
             let target = $(element.attr('href'));
             if (target.length) {
                 let scrollTop = target.offset().top - this.tabContainerHeight + 1;
-                $('html, body').animate({ scrollTop: scrollTop }, 300);
+                $('html, body').animate({ scrollTop: scrollTop }, 600);
             }
         }
 
