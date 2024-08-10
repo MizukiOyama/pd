@@ -26,7 +26,7 @@ jQuery(document).ready(function ($) {
             let target = $(element.attr('href'));
             if (target.length) {
                 let scrollTop = target.offset().top - this.tabContainerHeight + 1;
-                $('html, body').animate({ scrollTop: scrollTop }, 600);
+                $('html, body').animate({ scrollTop: scrollTop }, 300);
             }
         }
 
