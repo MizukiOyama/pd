@@ -61,9 +61,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // メニューの初期化
-    initializeMenu();
-
     // 画像の遅延読み込み
     var lazyImages = document.querySelectorAll('img[data-src]');
     lazyImages.forEach(function(img) {
@@ -80,6 +77,14 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("header-container").innerHTML = headerData;
             // メニューの初期化を再度呼び出し
             initializeMenu();
+
+            // SVGの初期化
+            var svgElement = document.getElementById('svgElement');
+            if (svgElement) {
+                svgElement.classList.add('active');
+            } else {
+                console.error('SVG element not found');
+            }
         });
 
     fetch("footer.html")

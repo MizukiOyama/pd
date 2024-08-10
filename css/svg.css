@@ -1,4 +1,19 @@
- svg .svg-elem-1 {
+.cls-1, .cls-2 {
+    fill: #2e2e2e;
+    stroke: #2e2e2e;
+    fill-rule: evenodd;
+  }
+
+  .cls-1 {
+    stroke-width: 2px;
+  }
+
+  .cls-2 {
+    fill-opacity: 0;
+    stroke-width: 1px;
+  }
+
+svg .svg-elem-1 {
     stroke-dashoffset: 428.46124267578125px;
     stroke-dasharray: 428.46124267578125px;
     fill: transparent;
