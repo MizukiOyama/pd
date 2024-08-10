@@ -77,7 +77,7 @@ jQuery(document).ready(function ($) {
 
         updateTabSliderOnOffset() {
             let targetOffset = this.offsetAdjust;
-            if (Math.abs($(window).scrollTop() - targetOffset) < 10) { // 10pxの誤差を許容
+            if (Math.abs($(window).scrollTop() - targetOffset) < -10) { // 10pxの誤差を許容
                 this.setSliderCss();
             }
         }
