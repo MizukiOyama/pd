@@ -43,7 +43,6 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
     top: 0;
     left: 1.5%;
     z-index: 1;
-    mix-blend-mode: color-dodge;
 
     a {
         padding: 0.25em 0.5em;

@@ -27,15 +27,14 @@ jQuery(document).ready(function ($) {
             let target = $(element.attr('href'));
             if (target.length) {
                 let scrollTop = target.offset().top - this.tabContainerHeight + 1 + this.offsetAdjust;
-                $('html, body').animate({ scrollTop: scrollTop }, 600, () => {
-                    this.onScroll(); // アニメーション完了後にスクロールイベントを手動でトリガー
-                });
+                $('html, body').animate({ scrollTop: scrollTop }, 600);
             }
         }
 
         onScroll() {
             this.checkTabContainerPosition();
             this.findCurrentTabSelector();
+            this.updateTabSliderOnOffset();
         }
 
         onResize() {
@@ -72,6 +71,13 @@ jQuery(document).ready(function ($) {
             if (this.currentId !== newCurrentId || this.currentId === null) {
                 this.currentId = newCurrentId;
                 this.currentTab = newCurrentTab;
+                this.setSliderCss();
+            }
+        }
+
+        updateTabSliderOnOffset() {
+            let targetOffset = this.offsetAdjust;
+            if (Math.abs($(window).scrollTop() - targetOffset) < 10) { // 10pxの誤差を許容
                 this.setSliderCss();
             }
         }
