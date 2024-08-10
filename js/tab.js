@@ -28,7 +28,7 @@ jQuery(document).ready(function ($) {
             if (target.length) {
                 let scrollTop = target.offset().top - this.tabContainerHeight + 1 + this.offsetAdjust;
                 $('html, body').animate({ scrollTop: scrollTop }, 600, () => {
-                    // アニメーション完了後に強制的にスクロール位置を再設定
+                    // アニメーション完了後に強制的にスクロールイベントをトリガー
                     this.updateTabPosition();
                 });
             }
@@ -89,11 +89,8 @@ jQuery(document).ready(function ($) {
         }
 
         updateTabPosition() {
-            // 強制的にスクロール位置を再設定
-            let scrollTop = $(window).scrollTop();
-            $(window).scrollTop(scrollTop + 0);
-            $(window).scrollTop(scrollTop);
-            this.onScroll(); // onScrollを呼び出しバーの位置を更新
+            // 強制的にスクロールイベントをトリガーしてバーの位置を更新
+            $(window).scroll();
         }
     }
 
