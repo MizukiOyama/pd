@@ -61,6 +61,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
+    // メニューの初期化
+    initializeMenu();
+
     // 画像の遅延読み込み
     var lazyImages = document.querySelectorAll('img[data-src]');
     lazyImages.forEach(function(img) {
@@ -92,4 +95,26 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(footerData => {
             document.getElementById("footer-container").innerHTML = footerData;
         });
+
+    // SVGコンテンツの挿入とアニメーションの適用
+    var svgContainer = document.getElementById('svg-container');
+    if (svgContainer) {
+        svgContainer.innerHTML = `
+            <svg id="svgElement" viewBox="0 0 100 100">
+                <!-- SVG内容をここに追加 -->
+                <path class="svg-elem-1" d="..."/>
+                <path class="svg-elem-2" d="..."/>
+                <path class="svg-elem-3" d="..."/>
+                <path class="svg-elem-4" d="..."/>
+            </svg>
+        `;
+        var svgElement = document.getElementById('svgElement');
+        if (svgElement) {
+            svgElement.classList.add('active');
+        } else {
+            console.error('SVG element not found');
+        }
+    } else {
+        console.error('SVG container not found');
+    }
 });
