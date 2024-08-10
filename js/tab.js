@@ -28,7 +28,9 @@ jQuery(document).ready(function ($) {
             if (target.length) {
                 let scrollTop = target.offset().top - this.tabContainerHeight + 1 + this.offsetAdjust;
                 $('html, body').animate({ scrollTop: scrollTop }, 600, () => {
-                    this.onScroll(); // アニメーション完了後にonScrollを呼び出し
+                    // アニメーション完了後に強制的にスクロール位置を再設定
+                    $(window).scrollTop(scrollTop);
+                    this.onScroll(); // onScrollを呼び出しバーの位置を更新
                 });
             }
         }
