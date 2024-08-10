@@ -3,7 +3,8 @@ jQuery(document).ready(function ($) {
         constructor() {
             this.currentId = null;
             this.currentTab = null;
-            this.tabContainerHeight = 0;
+            this.tabContainerHeight = 70;
+            this.offsetAdjust = 0; // 調整用のオフセット変数
             this.init();
         }
 
@@ -25,7 +26,7 @@ jQuery(document).ready(function ($) {
             event.preventDefault();
             let target = $(element.attr('href'));
             if (target.length) {
-                let scrollTop = target.offset().top - this.tabContainerHeight + 1;
+                let scrollTop = target.offset().top - this.tabContainerHeight + 1 + this.offsetAdjust;
                 $('html, body').animate({ scrollTop: scrollTop }, 600);
             }
         }
@@ -58,8 +59,8 @@ jQuery(document).ready(function ($) {
                 let id = $(this).attr('href');
                 let target = $(id);
                 if (target.length) {
-                    let offsetTop = target.offset().top - self.tabContainerHeight;
-                    let offsetBottom = target.offset().top + target.height() - self.tabContainerHeight;
+                    let offsetTop = target.offset().top - self.tabContainerHeight + self.offsetAdjust;
+                    let offsetBottom = target.offset().top + target.height() - self.tabContainerHeight + self.offsetAdjust;
                     if ($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
                         newCurrentId = id;
                         newCurrentTab = $(this);
