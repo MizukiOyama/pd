@@ -66,10 +66,12 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
+    background: url('https://mizukioyama.github.io/pd/hp-img/body.png') no-repeat center center;
+    background-attachment: fixed;
 }
 
 h1 {
-    font-size: clamp(8rem, calc(8rem + 0.5vw), 10rem);
+    font-size: clamp(10rem, calc(10rem + 0.1vw), 12rem);
     font-family: liana, script;
     font-weight: 400;
     color: var(--base-color);
@@ -162,50 +164,12 @@ section {
     background: url('https://mizukioyama.github.io/pd/hp-img/original-bg.png') no-repeat center center;
 }
 
-.background {
-    width: 100%;
-    background: url('https://mizukioyama.github.io/pd/hp-img/wave01.png') no-repeat center center;
-    background-size: cover;
-}
-
-/*.background::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.5) 100%);
-    z-index: 1;
-}*/
-
-.section3 .background::after,
-.section4 .background::after {
-    content: '';
-    position: absolute;
-    top: 80%;
-    left: 80%;
-    width: 100%;
-    height: 100%;
-    /*background: linear-gradient(135deg, rgba(255, 0, 0, 0.5) 0%, rgba(0, 0, 255, 0.5) 100%), url('https://mizukioyama.github.io/pd/hp-img/wave02.png') no-repeat center center;
-    background-size: cover;*/
-    background-image:  linear-gradient(#444cf7 2.4000000000000004px, transparent 2.4000000000000004px), linear-gradient(90deg, #444cf7 2.4000000000000004px, transparent 2.4000000000000004px), linear-gradient(#444cf7 1.2000000000000002px, transparent 1.2000000000000002px), linear-gradient(90deg, #444cf7 1.2000000000000002px, #e5e5f7 1.2000000000000002px);
-    background-size: 60px 60px, 60px 60px, 12px 12px, 12px 12px;
-    background-position: -2.4000000000000004px -2.4000000000000004px, -2.4000000000000004px -2.4000000000000004px, -1.2000000000000002px -1.2000000000000002px, -1.2000000000000002px -1.2000000000000002px;
-    opacity: 0.1;
-    position: absolute;
-    transform: rotate(-45deg); /* 斜めに配置 */
-}
-
-.section4 .background::after {
-    top: -80%;
-}
 
 /*===================== h1 top =====================*/
 section .top-h1 {
     font-weight: 600;
     position: absolute;
-    top: 55%;
+    top: 40%;
     left: 4%;
     color: var(--base-color);
 }
@@ -259,19 +223,17 @@ section .top-s p {
 #tab-3,
 #tab-4,
 #tab-5 {
-    width: 1200px;
     margin: 1% auto;
 }
 
 section .box {
     position: relative;
-    width: 1200px;
     height: 100vh;
     display: flex;
     align-items: center;
 }
 
-#tab-1 .top-s,
+/*#tab-1 .top-s,
 #tab-3 .top-s,
 #tab-5 .top-s {
     transform: translate(40%, 25%);
@@ -279,7 +241,7 @@ section .box {
 
 #tab-2 .top-s {
     transform: translate(-40%, 25%);
-}
+}*/
 
 /*.section2 p {
     margin: 0 auto;
