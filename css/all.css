@@ -155,7 +155,7 @@ a:hover::after {
 section {
     width: 100%;
     background: linear-gradient(rgba(225, 232, 226, 0.55), rgba(225, 232, 226, 0.55)), 
-    url('https://mizukioyama.github.io/pd/hp-img/section01-modan.png') no-repeat center center;
+    url('https://mizukioyama.github.io/pd/hp-img/original-bg.png') no-repeat center center;
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
