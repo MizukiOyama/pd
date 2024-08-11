@@ -152,11 +152,12 @@ a:hover::after {
 /*===================== Section =====================*/
 section {
     width: 100%;
-    background: linear-gradient(rgba(225, 232, 226, 0.55), rgba(225, 232, 226, 0.55)), 
+    background: linear-gradient(rgba(46, 46, 46, 0.005), rgba(46, 46, 46, 0.005)), 
     url('https://mizukioyama.github.io/pd/hp-img/section01-modan.png') no-repeat center center;
     background-size: cover;
+    object-fit: cover;
     align-items: center;
-    border-bottom: 15px solid var(--white-color);
+    margin: 5% auto;
 }
 
 #tab-1 {
