@@ -69,6 +69,11 @@ body {
     background: url('https://mizukioyama.github.io/pd/hp-img/body.png') no-repeat center center;
     background-attachment: fixed;
 }
+body::after {
+    content: "";
+    border: 30px double var(--base-color);
+    z-index: 0;
+}
 
 h1 {
     font-size: clamp(10rem, calc(10rem + 0.1vw), 12rem);
@@ -336,49 +341,45 @@ section img {
     bottom: 3%;
 }
 
+.section1 .img,
+.section2 .img,
+.section3 .img,
+.section4 .img {
+    width: clamp(450px, 100%, 300px);
+    height: 300px;
+    border: 3px solid var(--base-color);
+    position: absolute;
+    z-index: 1;
+    background-size: cover;
+    mix-blend-mode: color-burn;
+    opacity: 0.7;
+}
 
 .section1 .img,
 .section3 .img {
     content: "";
-    width: clamp(700px, 100%, 400px);
-    height: 500px;
-    border: 3px solid var(--base-color);
-    position: absolute;
-    top: 15%;
-    left: -10%;
-    z-index: 1;
+    top: 5%;
+    left: 5%;
     background: url('https://mizukioyama.github.io/pd/hp-img/tower.png') no-repeat center center;
-    background-size: cover;
-    /*box-shadow: inset 0 0 10px 0 var(--base-color);*/
-    mix-blend-mode: color-burn;
-    border-radius: 30px;
 }
 
 .section3 .img {
-    width: clamp(700px, 100%, 600px);
-    height: 500px;
     background: url('https://mizukioyama.github.io/pd/hp-img/skill01.png') no-repeat center center;
 }
 
 .section2 .img,
 .section4 .img {
     content: "";
-    width: clamp(650px, 100%, 500px);
-    height: 450px;
-    border: 3px solid var(--base-color);
-    position: absolute;
-    right: 0%;
-    top: 20%;
-    z-index: 1;
+/*    width: clamp(650px, 100%, 500px);
+    height: 450px;*/
+    right: 5%;
+    top: 5%;
     background: url('https://mizukioyama.github.io/pd/hp-img/overall.png') no-repeat center center;
-    border-radius: 30px;
-    background-size: cover;
-    mix-blend-mode: color-burn;
 }
 
 .section4 .img {
-    width: clamp(600px, 100%, 400px);
-    height: 450px;
+/*    width: clamp(600px, 100%, 400px);
+    height: 450px;*/
     background: url('https://mizukioyama.github.io/pd/hp-img/ai-service01.png') no-repeat center center;
 }
 
