@@ -66,8 +66,6 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/original-bg.png') no-repeat center center;;
-    background-attachment: fixed;
 }
 
 h1 {
@@ -157,19 +155,18 @@ section {
     background: linear-gradient(rgba(225, 232, 226, 0.55), rgba(225, 232, 226, 0.55)), 
     url('https://mizukioyama.github.io/pd/hp-img/section01-modan.png') no-repeat center center;
     background-size: cover;
-    background-repeat: no-repeat;
     align-items: center;
     border-bottom: 15px solid var(--white-color);
 }
 
-section #tab-1 {
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/section02.png');
+#tab-1 {
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/original-bg.png') no-repeat center center;
 }
 
 .background {
     width: 100%;
-    /*background: url('https://mizukioyama.github.io/pd/hp-img/wave01.png') no-repeat center center;
-    background-size: cover;*/
+    background: url('https://mizukioyama.github.io/pd/hp-img/wave01.png') no-repeat center center;
+    background-size: cover;
 }
 
 /*.background::before {
@@ -380,10 +377,8 @@ section img {
     top: 15%;
     left: -10%;
     z-index: 1;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/tower.png');
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/tower.png') no-repeat center center;
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
     /*box-shadow: inset 0 0 10px 0 var(--base-color);*/
     mix-blend-mode: color-burn;
     border-radius: 30px;
@@ -392,7 +387,7 @@ section img {
 .section3 .img {
     width: clamp(700px, 100%, 600px);
     height: 500px;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/skill01.png');
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/skill01.png') no-repeat center center;
 }
 
 .section2 .img,
@@ -405,10 +400,9 @@ section img {
     right: -8%;
     top: 20%;
     z-index: 1;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/overall.png');
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/overall.png') no-repeat center center;
     border-radius: 30px;
     background-size: cover;
-    background-repeat: no-repeat;
     mix-blend-mode: color-burn;
 }
 
@@ -427,7 +421,7 @@ section img {
 /*===================== About =====================*/
 .about #top-img {
     width: 75%;
-    top: -5%;
+    top: 10%;
     right: -5%;
 }
 
