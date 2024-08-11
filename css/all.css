@@ -160,7 +160,7 @@ section {
 }
 
 #tab-1 {
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/original-bg.png') no-repeat center center;
+    background: url('https://mizukioyama.github.io/pd/hp-img/original-bg.png') no-repeat center center;
 }
 
 .background {
@@ -377,7 +377,7 @@ section img {
     top: 15%;
     left: -10%;
     z-index: 1;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/tower.png') no-repeat center center;
+    background: url('https://mizukioyama.github.io/pd/hp-img/tower.png') no-repeat center center;
     background-size: cover;
     /*box-shadow: inset 0 0 10px 0 var(--base-color);*/
     mix-blend-mode: color-burn;
@@ -387,7 +387,7 @@ section img {
 .section3 .img {
     width: clamp(700px, 100%, 600px);
     height: 500px;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/skill01.png') no-repeat center center;
+    background: url('https://mizukioyama.github.io/pd/hp-img/skill01.png') no-repeat center center;
 }
 
 .section2 .img,
@@ -400,7 +400,7 @@ section img {
     right: -8%;
     top: 20%;
     z-index: 1;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/overall.png') no-repeat center center;
+    background: url('https://mizukioyama.github.io/pd/hp-img/overall.png') no-repeat center center;
     border-radius: 30px;
     background-size: cover;
     mix-blend-mode: color-burn;
@@ -409,7 +409,7 @@ section img {
 .section4 .img {
     width: clamp(600px, 100%, 400px);
     height: 450px;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/ai-service01.png');
+    background: url('https://mizukioyama.github.io/pd/hp-img/ai-service01.png') no-repeat center center;
 }
 
 /*===================== Top =====================*/
