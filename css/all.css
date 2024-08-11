@@ -41,7 +41,7 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
 .head {
     position: absolute;
     top: 0;
-    left: 1.5%;
+    left: 3%;
     z-index: 1;
 
     a {
@@ -99,7 +99,6 @@ h4 {
 p {
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
     width: fit-content;
-    margin: 0 auto;
 }
 
 ol,
@@ -194,7 +193,7 @@ section .top-s .text {
 }
 
 section .top-s {
-    max-width: 100%;
+    max-width: 80%;
     height: 450px;
     padding: 1em 5.5em;
     z-index: 1;
@@ -221,6 +220,11 @@ section .top-s p {
 #tab-4,
 #tab-5 {
     margin: 1% auto;
+}
+
+#tab-4 {
+    margin: 0 auto;
+    align-items: center;
 }
 
 section .box {
