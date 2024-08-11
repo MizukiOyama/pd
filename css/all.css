@@ -66,7 +66,7 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/original-bg.png');
+    background-image: url('https://mizukioyama.github.io/pd/hp-img/original-bg.png') no-repeat center center;;
     background-attachment: fixed;
 }
 
@@ -158,8 +158,6 @@ section {
     url('https://mizukioyama.github.io/pd/hp-img/section01-modan.png') no-repeat center center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color:rgba(245, 252, 246,0.5);
-    background-blend-mode:lighten;
     align-items: center;
     border-bottom: 15px solid var(--white-color);
 }
