@@ -5,11 +5,7 @@
     justify-content: center;
     height: 100vh;
     position: relative;
-    /*border 二重線*/
-    border: 3px solid #2e2e2e4a;
-    outline: 5px solid #2e2e2e4a;
-    outline-offset: 5px;
-    margin: 10px;
+    border: 30px double #2e2e2e4a;
 }
 /*
 .tabs h1,
