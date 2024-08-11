@@ -153,7 +153,8 @@ a:hover::after {
 
 /*===================== Section =====================*/
 section {
-    width: 100%;
+    width: 98%;
+    margin: 0 auto;
     background: linear-gradient(rgba(246, 246, 246, 0.45), rgba(246, 246, 246, 0.45)), url(https://mizukioyama.github.io/pd/hp-img/section01-modan.png) no-repeat center center;
     background-size: cover;
     object-fit: cover;
@@ -366,7 +367,7 @@ section img {
     height: 450px;
     border: 3px solid var(--base-color);
     position: absolute;
-    right: -8%;
+    right: 0%;
     top: 20%;
     z-index: 1;
     background: url('https://mizukioyama.github.io/pd/hp-img/overall.png') no-repeat center center;
