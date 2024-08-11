@@ -154,15 +154,15 @@ a:hover::after {
 /*===================== Section =====================*/
 section {
     width: 100%;
-    background: linear-gradient(rgba(246, 246, 246, 0.25), rgba(246, 246, 246, 0.25)), url(https://mizukioyama.github.io/pd/hp-img/section01-modan.png) no-repeat center center;
+    background: linear-gradient(rgba(246, 246, 246, 0.45), rgba(246, 246, 246, 0.45)), url(https://mizukioyama.github.io/pd/hp-img/section01-modan.png) no-repeat center center;
     background-size: cover;
     object-fit: cover;
     align-items: center;
 }
-
+/*
 #tab-1 {
     background: url('https://mizukioyama.github.io/pd/hp-img/original-bg.png') no-repeat center center;
-}
+}*/
 
 
 /*===================== h1 top =====================*/
@@ -195,12 +195,10 @@ section .top-s .text {
 
 section .top-s {
     max-width: 100%;
-    width: clamp(750px, 100%, 550px);
     height: 450px;
     margin: 0 auto;
-    padding: 1em 3.5em;
+    padding: 1em 5.5em;
     z-index: 1;
-    background: rgba(245, 252, 246, 0.7);
     position: relative;
     display: flex;
     flex-direction: column;
@@ -256,6 +254,7 @@ section .box {
     height: 600px;
     padding: 2em 4.5em;
     align-items: center;
+    background: rgba(245, 252, 246, 0.7);
 }
 
 .section4 .top-s::before {
