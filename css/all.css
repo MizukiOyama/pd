@@ -71,6 +71,11 @@ body {
 }
 body::after {
     content: "";
+    position: fixed;
+    width: 97.5%;
+    height: 100vh;
+    top: 0;
+    left: 0;
     border: 30px double var(--base-color);
     z-index: 0;
 }
