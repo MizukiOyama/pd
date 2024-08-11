@@ -228,6 +228,8 @@ section .top-s p {
 #tab-4 {
     margin: 0 auto;
     align-items: center;
+}
+#tab-4 .box {
     justify-content: center;
 }
 
