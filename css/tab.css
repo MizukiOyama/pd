@@ -5,6 +5,8 @@
     justify-content: center;
     height: 100vh;
     position: relative;
+    border: 30px double var(--base-color);
+    mix-blend-mode: overlay;
 }
 /*
 .tabs h1,

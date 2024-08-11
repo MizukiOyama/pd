@@ -69,16 +69,6 @@ body {
     background: url('https://mizukioyama.github.io/pd/hp-img/body.png') no-repeat center center;
     background-attachment: fixed;
 }
-body::after {
-    content: "";
-    position: fixed;
-    width: 97.5%;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    border: 30px double var(--base-color);
-    z-index: 0;
-}
 
 h1 {
     font-size: clamp(10rem, calc(10rem + 0.1vw), 12rem);
