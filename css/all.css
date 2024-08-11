@@ -156,7 +156,6 @@ section {
     margin: 0 auto;
     background: linear-gradient(rgba(246, 246, 246, 0.45), rgba(246, 246, 246, 0.45)), url(https://mizukioyama.github.io/pd/hp-img/section01-modan.png) no-repeat center center;
     background-size: cover;
-    align-items: center;
 }
 /*
 #tab-1 {
@@ -196,6 +195,7 @@ section .top-s {
     max-width: 80%;
     height: 450px;
     padding: 1em 5.5em;
+    margin-top: 10%;
     z-index: 1;
     position: relative;
     display: flex;

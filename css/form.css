@@ -112,8 +112,8 @@ input:-webkit-autofill:focus {
     text-align: center;
 }
 
-.note {
-    margin-left: -25%;
+.note p {
+    margin: 0 auto;
 }
 
 
