@@ -5,7 +5,7 @@
     justify-content: center;
     height: 100vh;
     position: relative;
-    border: 30px double #2e2e2e4a;
+    border: 5px double var(--base-color);
 }
 /*
 .tabs h1,

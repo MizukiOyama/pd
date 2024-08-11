@@ -157,7 +157,6 @@ section {
     margin: 0 auto;
     background: linear-gradient(rgba(246, 246, 246, 0.45), rgba(246, 246, 246, 0.45)), url(https://mizukioyama.github.io/pd/hp-img/section01-modan.png) no-repeat center center;
     background-size: cover;
-    object-fit: cover;
     align-items: center;
 }
 /*
@@ -197,7 +196,6 @@ section .top-s .text {
 section .top-s {
     max-width: 100%;
     height: 450px;
-    margin: 0 auto;
     padding: 1em 5.5em;
     z-index: 1;
     position: relative;
@@ -376,11 +374,6 @@ section img {
 /*    width: clamp(600px, 100%, 400px);
     height: 450px;*/
     background: url('https://mizukioyama.github.io/pd/hp-img/ai-service01.png') no-repeat center center;
-}
-
-/*===================== Top =====================*/
-.top #tab-1 .top-s {
-    transform: translate(0%, 0%);
 }
 
 
