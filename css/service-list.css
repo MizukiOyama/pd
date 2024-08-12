@@ -10,9 +10,8 @@ Version: 2023
 #wrap {
     width: 100%;
     height: fit-content;
-    margin: -0.7vmin auto 0;
+    margin: 0 auto;
     padding: 4em 3em;
-    background-color: var(--white-color);
 }
 
 #wrap .top-p {
@@ -28,9 +27,8 @@ Version: 2023
 
 .list-tab {
     width: calc(25vw - 100px);
-    height: 12vmin;
-    margin: 0 0.5%;
-    border-radius: 10px;
+    height: 10vmin;
+    margin: 0;
     font-size: clamp(1.2em, calc(1.2em + 0.5vw), 1.6em);
     background: #003A42;
     cursor: pointer;
@@ -56,10 +54,10 @@ Version: 2023
 }
 
 .selected {
-    color: var(--white-color);
+    color: var(--base-color);
     background-color: var(--white-color);
-    box-shadow: 0px 2px 3px rgba(20, 20, 20, 0.5);
-    transform: scale(1.02);
+    transform: scale(1.2);
+    margin-right: 2%;
 }
 
 #tab3 span .selected {
@@ -88,14 +86,13 @@ Version: 2023
     font-size: 1rem;
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 450px;
     min-height: 350px;
-    margin: 2% auto;
     overflow-x: hidden;
     overflow-y: scroll;
     display: flex;
     justify-content: center;
-    background: #fff;
+    background: var(--white-color);
 }
 
 .box {
