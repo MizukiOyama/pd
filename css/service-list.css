@@ -23,7 +23,7 @@ Version: 2023
       margin: 2% auto 0;
       text-align: left;
    }
-   .tab {
+   .list-tab {
       width: calc(25vw - 100px);
       height: 12vmin;
       margin: 0 0.5%;
