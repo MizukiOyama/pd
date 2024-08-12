@@ -27,7 +27,7 @@ Version: 2023
 
 .list-tab {
     font-family: roca, sans-serif;
-    width: calc(35vw - 10px);
+    width: calc(24vw - 10px);
     height: 10vmin;
     font-size: clamp(1.4em, calc(1.4em + 0.1vw), 1.6em);
     background: #003A42;
@@ -46,7 +46,7 @@ border-bottom: 1px solid;
 }
 
 .selected {
-    width: calc(26vw - 100px);
+    width: calc(35vw - 10px);
     height: 12vmin;
     font-size: clamp(1.8em, calc(1.8em + 0.1vw), 2em);
     margin-bottom: -1%;
