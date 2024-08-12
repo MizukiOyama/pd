@@ -28,8 +28,6 @@ Version: 2023
 .list-tab {
     width: calc(24vw - 100px);
     height: 10vmin;
-    margin-left: -2%;
-    margin-right: 2%;
     font-size: clamp(1.4em, calc(1.4em + 0.1vw), 1.6em);
     background: #003A42;
     cursor: pointer;
@@ -43,9 +41,8 @@ Version: 2023
 .selected {
     width: calc(26vw - 100px);
     height: 12vmin;
-    font-size: clamp(1.4em, calc(1.4em + 0.1vw), 1.8em);
+    font-size: clamp(1.8em, calc(1.8em + 0.1vw), 2em);
     margin-bottom: -1%;
-    margin-right: 2%;
     color: var(--base-color);
     background-color: var(--white-color);
 }
