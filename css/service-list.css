@@ -26,7 +26,7 @@ Version: 2023
 }
 
 .list-tab {
-    width: calc(24vw - 100px);
+    width: calc(24vw - 10px);
     height: 10vmin;
     font-size: clamp(1.4em, calc(1.4em + 0.1vw), 1.6em);
     background: #003A42;
