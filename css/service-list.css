@@ -38,15 +38,15 @@ Version: 2023
     flex-direction: column;
     transition: all 0.5s ease;
 }
-.list-tab h3::before {
+.list-tab::before {
     border-left: 1px solid;
 }
-.list-tab h3::after {
+.list-tab::after {
 border-bottom: 1px solid;
 }
 
 .selected {
-    width: calc(35vw - 10px);
+    width: calc(29vw - 10px);
     height: 12vmin;
     font-size: clamp(1.8em, calc(1.8em + 0.1vw), 2em);
     margin-bottom: -1%;
