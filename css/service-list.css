@@ -26,7 +26,8 @@ Version: 2023
 }
 
 .list-tab {
-    width: calc(24vw - 10px);
+    font-family: roca, sans-serif;
+    width: calc(35vw - 10px);
     height: 10vmin;
     font-size: clamp(1.4em, calc(1.4em + 0.1vw), 1.6em);
     background: #003A42;
@@ -36,6 +37,12 @@ Version: 2023
     align-items: center;
     flex-direction: column;
     transition: all 0.5s ease;
+}
+.list-tab h3::before {
+    border-left: 1px solid;
+}
+.list-tab h3::after {
+border-bottom: 1px solid;
 }
 
 .selected {
