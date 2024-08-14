@@ -9,9 +9,15 @@ ol {
     position: relative;
     margin-top: 2%;
     padding-left: 0.5rem;
+    border-left: 1px solid;
+    border-bottom: 1px solid;
 }
 
 .line::before {
-    content: '-';
-    border-left: 1px solid;
+    content: "";
+    margin-right: 0.5rem;
+}
+
+.line span {
+    font-size: clamp(0.9rem, calc(0.9rem + 0.1vw), 1rem);
 }
