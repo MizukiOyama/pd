@@ -1,14 +1,19 @@
+ol {
+    display: flex;
+}
+
 .line {
-    position: absolute;
+    width: fit-content;
+    position: relative;
     border-bottom: 1px solid;
 }
 
 .line::before {
-    content: "";
+    content: '-';
     border-left: 1px solid;
 }
 
 .line::after {
-    content: "";
+    content: '';
     border: 1px solid;
 }
