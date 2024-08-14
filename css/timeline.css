@@ -6,13 +6,13 @@ ol {
 .line {
     font-size: clamp(1rem, calc(1rem + 0.1vw), 1.2rem);
     width: 50%;
-    height: 45px;
+    height: 40px;
     position: relative;
     margin-top: 2%;
-    padding-left: 0.5rem;
+    padding: 0.25rem 0 0.5rem 0.5rem;
     border-left: 1px solid;
     border-bottom: 1px solid;
-    display: flex;
+    display: grid;
     align-items: center;
 }
 
