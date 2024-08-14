@@ -1,19 +1,17 @@
 ol {
     display: flex;
+    width: 100%;
 }
 
 .line {
-    width: fit-content;
+    font-size: clamp(1rem, calc(1rem + 0.1vw), 1.2rem);
+    width: 50%;
     position: relative;
-    border-bottom: 1px solid;
+    margin-top: 2%;
+    padding-left: 0.5rem;
 }
 
 .line::before {
     content: '-';
     border-left: 1px solid;
-}
-
-.line::after {
-    content: '';
-    border: 1px solid;
 }
