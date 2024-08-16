@@ -188,12 +188,6 @@ section .top-h1 .caption {
 /*===================== h1 top =====================*/
 
 /*===================== section p =====================*/
-section .top-s .text {
-    font-weight: 600;
-    margin: 0 0 5% 0;
-    text-align: left;
-}
-
 section .top-s {
     max-width: 80%;
     height: 450px;
@@ -206,6 +200,18 @@ section .top-s {
     /* 縦に並べる */
     justify-content: center;
     /* 縦方向の中央寄せ */
+}
+section .top-s .text {
+    font-weight: 600;
+    margin: 0 0 5% 0;
+    text-align: left;
+}
+
+
+.top .section1 .top-s,
+.top .section2 .top-s,
+.top .section3 .top-s {
+    flex-direction: row-reverse;
 }
 
 section .top-s h2 {
