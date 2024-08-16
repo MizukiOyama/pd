@@ -475,11 +475,7 @@ section img {
 }
 
 /*===================== Service =====================*/
-.service .section1 .top-s
-.service .section2 .top-s,
-.service .section3 .top-s,
-.service .section4 .top-s,
-.service .section5 .top-s, {
+.service section .top-s {
     width: clamp(800px, 100%, 650px);
     height: 600px;
     padding: 2em 4.5em;
