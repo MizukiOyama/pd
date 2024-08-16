@@ -72,7 +72,7 @@ border-bottom: 1px solid;
 
 .container {
     display: none;
-    /*animation: fadeIn 0.5s ease-in-out forwards;*/
+    animation: fadeIn 0.5s ease-in-out forwards;
 }
 
 #container .container p {
@@ -85,6 +85,16 @@ border-bottom: 1px solid;
     display: block;
     width: 100%;
     padding: 1em 2em 2em;
+}
+@keyframes fadeIn {
+    from {
+        filter: blur(3px);
+        opacity: 0;
+    }
+    to {
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
 
 #container {
