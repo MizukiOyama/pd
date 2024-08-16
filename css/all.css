@@ -194,7 +194,6 @@ section .top-h1 .caption {
 
 /*===================== section p =====================*/
 section .top-s {
-    max-width: 80%;
     height: 450px;
     padding: 1em 5.5em;
     margin-top: 10%;
@@ -474,3 +473,13 @@ section img {
     right: 0;
     bottom: 3%;
 }
+
+/*===================== Service =====================*/
+.service .section4 .option,
+.service .section5 .option {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+}
+
+/*===================== Service =====================*/
