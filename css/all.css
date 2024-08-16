@@ -491,10 +491,7 @@ section .top-s {
 }
 
 .flow {
-    margin-top: 3%;
-}
-.flow span {
-    margin: 0 5%;
+    margin-bottom: 3%;
 }
 
 .service .section4 .option,
