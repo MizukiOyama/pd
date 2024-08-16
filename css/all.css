@@ -99,8 +99,9 @@ h4 {
 p {
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
     width: fit-content;
-    -ms-writing-mode: tb-rl;
-	writing-mode: vertical-rl;
+}
+.tate {
+    writing-mode: vertical-rl;
 }
 
 ol,
