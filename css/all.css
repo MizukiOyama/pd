@@ -380,14 +380,18 @@ section .top-s {
     margin: 0 auto;
 }
 
-/*===================== Top / Contact*/
-.top .section4 .top-s {
+/*===================== Top / About*/
+.top .section4 .top-s,
+.about .section4 .top-s {
     width: clamp(800px, 100%, 650px);
     height: 600px;
     padding: 2em 4.5em;
     align-items: center;
     background: rgba(245, 252, 246, 0.7);
 }
+
+
+/*===================== Top / Contact*/
 
 .top .section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
