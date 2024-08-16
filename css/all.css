@@ -99,6 +99,8 @@ h4 {
 p {
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
     width: fit-content;
+    -ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
 }
 
 ol,
@@ -154,7 +156,7 @@ a:hover::after {
 section {
     width: 95%;
     margin: 0 auto;
-    background: linear-gradient(rgba(246, 246, 246, 0.45), rgba(246, 246, 246, 0.45)), url(https://mizukioyama.github.io/pd/hp-img/section01-modan.png) no-repeat center center;
+    background: linear-gradient(rgba(246, 246, 246, 0.35), rgba(246, 246, 246, 0.35)), url(https://mizukioyama.github.io/pd/hp-img/section01-modan.png) no-repeat center center;
     background-size: cover;
 }
 /*
