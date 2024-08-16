@@ -120,6 +120,7 @@ section #container .se-box {
 
 .container h3 {
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
+    color: #003A42;
     margin-top: 5%;
     border-left: 1px solid;
     border-bottom: 1px solid;
