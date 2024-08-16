@@ -489,7 +489,7 @@ section img {
 
 .service .section4 .option,
 .service .section5 .option {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
