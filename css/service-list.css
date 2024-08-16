@@ -41,9 +41,9 @@ border-bottom: 1px solid;
 }
 
 .selected {
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     width: calc(25vw - 10px);
     height: 12vmin;
-    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     color: var(--base-color);
     background-color: rgba(245, 252, 246, 0.7);
 }
@@ -119,7 +119,7 @@ section #container .se-box {
 }
 
 .container h3 {
-    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     margin-top: 5%;
     border-left: 1px solid;
     border-bottom: 1px solid;
