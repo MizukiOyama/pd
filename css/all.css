@@ -212,7 +212,11 @@ section .top-s .text {
     text-align: left;
 }
 
-
+.top .section1 .top-s h2,
+.top .section2 .top-s h2,
+.top .section3 .top-s h2 {
+    position: absolute;
+}
 .top .section1 .top-s,
 .top .section2 .top-s,
 .top .section3 .top-s {
@@ -220,7 +224,6 @@ section .top-s .text {
 }
 
 section .top-s h2 {
-    position: absolute;
     top: 0;
     margin-top: -5%;
 }
