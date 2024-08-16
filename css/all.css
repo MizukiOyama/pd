@@ -285,20 +285,6 @@ section .box {
     background: rgba(245, 252, 246, 0.7);
 }
 
-.section4 .top-s::before {
-    content: "";
-    width: 30%;
-    height: 0;
-    border-style: solid;
-    border-width: 160px 200px 0 200px;
-    border-color: var(--main-color) transparent transparent transparent;
-    position: absolute;
-    top: -5%;
-    z-index: -1;
-    opacity: 0.4;
-    /*background: repeating-linear-gradient(-215deg, rgba(0, 58, 66, 0.8), rgba(0, 58, 66, 0.55) 70px, rgba(0, 58, 66, 0.8) 0, rgba(0, 58, 66, 0.55) 70px);*/
-}
-
 .section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-weight: 400;
@@ -408,6 +394,21 @@ section img {
     margin: 0 auto;
 }
 
+/*===================== Top / Contact*/
+.top .section4 .top-s::before,
+.contact .section4 .top-s::before {
+    content: "";
+    width: 30%;
+    height: 0;
+    border-style: solid;
+    border-width: 160px 200px 0 200px;
+    border-color: var(--main-color) transparent transparent transparent;
+    position: absolute;
+    top: -5%;
+    z-index: -1;
+    opacity: 0.4;
+    /*background: repeating-linear-gradient(-215deg, rgba(0, 58, 66, 0.8), rgba(0, 58, 66, 0.55) 70px, rgba(0, 58, 66, 0.8) 0, rgba(0, 58, 66, 0.55) 70px);*/
+}
 /*===================== Top =====================*/
 
 /*===================== About =====================*/
@@ -425,14 +426,6 @@ section img {
     transform: translate(0%, 0%);
 }
 
-.section4 .top-s::before {
-    border-style: none;
-    border-width: 0;
-    top: 0;
-    z-index: -1;
-    opacity: 1;
-}
-
 .about #tab-1 .top-s p,
 .about #tab-2 .top-s p,
 .about #tab-3 .top-s p,
@@ -447,12 +440,12 @@ section img {
     line-height: 4.5rem;
 }
 
-#tab-4 .top-s .text {
+.about #tab-4 .top-s .text {
     text-align: center;
     margin: 3% auto 0;
 }
 
-/*===================== About img =====================*/
+/*===================== About img */
 .about .section1 img,
 .about .section2 img,
 .about .section3 img,
@@ -478,6 +471,7 @@ section img {
     right: 0;
     bottom: 3%;
 }
+/*===================== About =====================*/
 
 /*===================== Service =====================*/
 .service section .top-s {
