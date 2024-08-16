@@ -130,6 +130,7 @@ a {
     font-style: italic;
     color: var(--accent-color);
     width: fit-content;
+    height: fit-content;
     padding: 0.25em 0.5em;
     left: 0;
     bottom: 0;
