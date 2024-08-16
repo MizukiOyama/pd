@@ -109,11 +109,11 @@ border-bottom: 1px solid;
     background: var(--white-color);
 }
 
-.box {
-    display: inline-block;
-    white-space: nowrap;
-    position: absolute;
-    width: 100%;
+section #container .se-box {
+    margin-top: 5%;
+    position: relative;
+    display: flex;
+    align-items: normal;
     cursor: pointer;
 }
 
