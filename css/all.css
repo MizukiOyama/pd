@@ -115,6 +115,7 @@ ul {
 }
 
 li {
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
     font-weight: 500;
     list-style: none;
 }
