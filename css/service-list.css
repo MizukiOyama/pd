@@ -12,13 +12,6 @@ Version: 2023
 }
 #wrap {
     height: fit-content;
-    margin: 0 auto;
-    padding: 4em 3em;
-}
-
-#wrap .top-p {
-    text-align: center;
-    letter-spacing: 0.1em;
 }
 
 #wrap p {
@@ -50,8 +43,7 @@ border-bottom: 1px solid;
 .selected {
     width: calc(25vw - 10px);
     height: 12vmin;
-    font-size: clamp(1.8em, calc(1.8em + 0.1vw), 2em);
-    margin-bottom: -2%;
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     color: var(--base-color);
     background-color: rgba(245, 252, 246, 0.7);
 }

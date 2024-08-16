@@ -273,19 +273,6 @@ section .box {
     justify-content: center;
 }*/
 
-.section4 .top-s {
-    width: clamp(800px, 100%, 650px);
-    height: 600px;
-    padding: 2em 4.5em;
-    align-items: center;
-    background: rgba(245, 252, 246, 0.7);
-}
-
-.section4 h3 {
-    font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
-    font-weight: 400;
-    line-height: 4.5rem;
-}
 
 
 /*===================== Section =====================*/
@@ -394,6 +381,20 @@ section .top-s {
 }
 
 /*===================== Top / Contact*/
+.top .section4 .top-s {
+    width: clamp(800px, 100%, 650px);
+    height: 600px;
+    padding: 2em 4.5em;
+    align-items: center;
+    background: rgba(245, 252, 246, 0.7);
+}
+
+.top .section4 h3 {
+    font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
+    font-weight: 400;
+    line-height: 4.5rem;
+}
+
 .top .section4 .top-s::before,
 .contact .section4 .top-s::before {
     content: "";
@@ -422,6 +423,7 @@ section .top-s {
 .about #tab-3 .top-s,
 .about #tab-4 .top-s,
 .about #tab-5 .top-s {
+    margin: 0 auto;
     transform: translate(0%, 0%);
 }
 
@@ -476,9 +478,12 @@ section .top-s {
 .service section .top-s {
     height: 600px;
     margin: 0;
-    padding: 2em 4.5em;
+    padding: 2em 0;
     align-items: center;
     background: rgba(245, 252, 246, 0.7);
+}
+.service .section2 .top-s {
+    padding: 5em 0;
 }
 
 .service .section4 .option,
