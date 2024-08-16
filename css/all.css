@@ -475,12 +475,24 @@ section img {
 }
 
 /*===================== Service =====================*/
+.service .section1 .top-s
+.service .section2 .top-s,
+.service .section3 .top-s,
+.service .section4 .top-s,
+.service .section5 .top-s, {
+    width: clamp(800px, 100%, 650px);
+    height: 600px;
+    padding: 2em 4.5em;
+    align-items: center;
+    background: rgba(245, 252, 246, 0.7);
+}
+
 .service .section4 .option,
 .service .section5 .option {
     width: 50%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 /*===================== Service =====================*/
