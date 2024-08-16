@@ -4,15 +4,14 @@
 
         $(".list-tab").click(function () {
             console.log("Tab clicked");
-            var tabId = $(this).attr('id');
+            var tabId = $(this).attr('id').replace('tab', '');
             console.log("Tab ID: " + tabId);
 
-            $(".list-tab").removeClass('selected unselected');
+            $(".list-tab").removeClass('selected');
             $(this).addClass('selected');
-            $(this).siblings().addClass('unselected');
 
             $(".container").removeClass('show');
-            $("#content" + tabId.replace('list-tab', '')).addClass('show');
+            $("#content" + tabId).addClass('show');
         });
 
         // 初期状態でタブ1を選択
