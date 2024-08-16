@@ -110,10 +110,12 @@ p {
 ol,
 ul {
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
+    font-weight: 600;
     color: var(--base-color);
 }
 
 li {
+    font-weight: 500;
     list-style: none;
 }
 /*===================== body text =====================*/
