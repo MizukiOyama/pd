@@ -244,10 +244,6 @@ section .top-s p {
     margin-top: 0;
 }
 
-#tab-4 {
-    margin: 0 auto;
-    align-items: center;
-}
 #tab-4 .box {
     justify-content: center;
 }
@@ -389,6 +385,9 @@ section img {
 
 
 /*===================== Top =====================*/
+section .top-s {
+    margin-top: 0;
+}
 .top #tab-4 .top-s .text {
     text-align: center;
     margin: 0 auto;
