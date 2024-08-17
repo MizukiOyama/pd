@@ -149,6 +149,7 @@ a {
     width: fit-content;
     height: fit-content;
     padding: 0.25em 0;
+    letter-spacing: 0.75rem;
     left: 0;
     bottom: 0;
     position: relative;
@@ -216,6 +217,7 @@ section .top-s {
     padding: 1em 5.5em;
     margin-top: 10%;
     z-index: 1;
+    text-align: justify;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -317,7 +319,7 @@ section img {
 }
 
 .section1 img {
-    width: 55%;
+    width: 45%;
     bottom: -5%;
     left: 0;
     /*transform:rotate(-10deg);*/
