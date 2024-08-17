@@ -336,6 +336,13 @@ section img {
     left: 0;
     bottom: 3%;
 }
+
+.section4 img {
+    width: 45%;
+    bottom: -5%;
+    right: 0;
+    transform:rotate(180deg);
+}
 /*===================== .img*/
 .section1 .img,
 .section2 .img,
@@ -354,7 +361,7 @@ section img {
 .section3 .img {
     content: "";
     top: 5%;
-    left: 5%;
+    left: 0%;
     background: url('https://mizukioyama.github.io/pd/hp-img/tower.png') no-repeat center center;
 }
 
@@ -380,7 +387,8 @@ section img {
 
 
 /*===================== Top =====================*/
-.top .section1 .box {
+.top .section1 .box,
+.top .section3 .box {
     justify-content: end;
 }
 
