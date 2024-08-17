@@ -1,13 +1,15 @@
 :root {
-    /*=メインカラー rgba(214,228,218)*/
+    /*=メインカラー rgba(214, 228, 218)*/
     --main-color: #D6E4DA;
-    /*=サブカラー rgba(0,58,66)*/
+    /*=サブカラー rgba(45, 141, 134)*/
     --sub-color: #2d8d86;
-    /*=ベースカラー rgba(46,46,46)*/
+    /*=リンク rgba(0, 58, 66)*/
+    --link-color: #003A42;
+    /*=ベースカラー rgba(46, 46, 46)*/
     --base-color: #2E2E2E;
-    /*=アクセントカラー rgba(90,202,152)*/
+    /*=アクセントカラー rgba(90, 202, 152)*/
     --accent-color: #5ACA98;
-    /*=ホワイトカラー rgba(245,252,246)*/
+    /*=ホワイトカラー rgba(245, 252, 246)*/
     --white-color: #F5FCF6;
 }
 
@@ -143,7 +145,7 @@ a {
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
     font-weight: 400;
     font-style: italic;
-    color: var(--accent-color);
+    color: var(--link-color);
     width: fit-content;
     height: fit-content;
     padding: 0.25em 0.5em;
