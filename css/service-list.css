@@ -132,6 +132,7 @@ section #container .se-box {
 #wrap .container p {
     margin-top: 1%;
     padding-left: 0.5rem;
+    letter-spacing: 0.005rem;
     word-break: break-word;
 }
 
