@@ -378,6 +378,10 @@ section img {
 
 
 /*===================== Top =====================*/
+.top .section1 .box {
+    justify-content: end;
+}
+
 .top .section1 .top-s h2,
 .top .section2 .top-s h2,
 .top .section3 .top-s h2 {
