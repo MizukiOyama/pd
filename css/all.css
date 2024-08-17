@@ -40,8 +40,8 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
 /*===================== head =====================*/
 .head {
     position: absolute;
-    top: 0;
-    left: 3%;
+    top: 0.3%;
+    left: 4%;
     z-index: 1;
 
     a {
