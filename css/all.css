@@ -487,9 +487,6 @@ section .top-s {
     align-items: center;
     background: rgba(245, 252, 246, 0.7);
 }
-.service .section2 .top-s {
-    padding: 5em 0;
-}
 
 .flow {
     margin-bottom: 3%;

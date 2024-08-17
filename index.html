@@ -59,6 +59,7 @@
 </head>
 
 <!--作品保護-->
+
 <body oncontextmenu="return false;" class="top">
   <div id="header-container"></div>
 
@@ -87,9 +88,9 @@
   <main class="main">
 
     <section class="slide section1" id="tab-1">
-        <div class="top-s">
-          <h2>Desire</h2>
-          <div class="tate">
+      <div class="top-s">
+        <h2>Desire</h2>
+        <div class="tate">
           <p class="text">想い</p>
           <p>
             あなたの想いが未来の形を作る。
@@ -98,7 +99,7 @@
             具現化したい思いでPrecisionDesignとして活動をしています。
           </p>
         </div>
-        </div>
+      </div>
       <img src="https://mizukioyama.github.io/pd/hp-img/wave01-suisai-left.png" alt="" class="glitch">
     </section>
 
@@ -152,8 +153,10 @@
           <div class="content-wrapper">
             <div class="get-in-touch">
               <!--<h3 class="c-h3">Contact Us</h3>-->
-              
-              <form id="contactForm" class="contact-form" action="https://script.google.com/macros/s/AKfycbx0x7x1McI0UX_Jx2JvuDCbiYwDiOpKs-1zXrnegeNXvp6HXF5Yv6XpR11tV3fkWXfJag/exec" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+
+              <form id="contactForm" class="contact-form"
+                action="https://script.google.com/macros/s/AKfycbx0x7x1McI0UX_Jx2JvuDCbiYwDiOpKs-1zXrnegeNXvp6HXF5Yv6XpR11tV3fkWXfJag/exec"
+                method="POST" target="hidden_iframe" onsubmit="submitted=true;">
 
                 <div class="form-field col x-50">
                   <input type="text" id="name" name="name" class="input-text" required>
@@ -180,13 +183,12 @@
 
         </div>
       </div>
-
     </section>
-
   </main>
 
   <div id="footer-container"></div>
-  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) { alert('Successfully submitted'); submitted=false; }"></iframe>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+    onload="if(submitted) { alert('Successfully submitted'); submitted=false; }"></iframe>
 
   <!-- モーダルウィンドウ -->
   <div id="thanksModal" class="modal">
@@ -200,7 +202,7 @@
     </div>
   </div>
 
-<script>
+  <script>
     document.addEventListener('DOMContentLoaded', function () {
       var modal = document.getElementById('thanksModal');
       var span = document.getElementsByClassName('close')[0];
@@ -227,17 +229,17 @@
         });
       });
 
-      span.onclick = function() {
+      span.onclick = function () {
         modal.style.display = "none";
       }
 
-      window.onclick = function(event) {
+      window.onclick = function (event) {
         if (event.target == modal) {
           modal.style.display = "none";
         }
       }
     });
-</script>
+  </script>
 
 </body>
 </html>
