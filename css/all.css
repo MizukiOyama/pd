@@ -210,7 +210,7 @@ section .top-h1 .caption {
 
 /*===================== section p =====================*/
 section .top-s {
-    height: 450px;
+    height: 400px;
     padding: 1em 5.5em;
     margin-top: 10%;
     z-index: 1;
@@ -226,19 +226,6 @@ section .top-s .text {
     text-align: left;
 }
 
-.top .section1 .top-s h2,
-.top .section2 .top-s h2,
-.top .section3 .top-s h2 {
-    position: absolute;
-}
-.top .section1 .top-s,
-.top .section2 .top-s,
-.top .section3 .top-s {
-    flex-direction: row-reverse;
-}
-.top .section2 .top-s {
-    margin-left: 10%;
-}
 
 section .top-s h2 {
     top: 0;
@@ -352,7 +339,7 @@ section img {
 .section4 .img {
     width: clamp(450px, 100%, 300px);
     height: 300px;
-    border: 3px solid var(--base-color);
+    /*border: 3px solid var(--base-color);*/
     position: absolute;
     z-index: 1;
     background-size: cover;
@@ -377,7 +364,7 @@ section img {
     width: 65%;
     height: 500px;
     right: 0%;
-    top: 0%;
+    top: 10%;
     background: url('https://mizukioyama.github.io/pd/hp-img/overall.png') no-repeat center center;
 }
 
@@ -389,9 +376,24 @@ section img {
 
 
 /*===================== Top =====================*/
-section .top-s {
-    margin-top: 0;
+.top .section1 .top-s h2,
+.top .section2 .top-s h2,
+.top .section3 .top-s h2 {
+    position: absolute;
 }
+.top .section1 .top-s,
+.top .section2 .top-s,
+.top .section3 .top-s {
+    margin-top: 10%;
+    flex-direction: row-reverse;
+}
+.top .section1 .top-s {
+    margin-right: 10%;
+}
+.top .section2 .top-s {
+    margin-left: 10%;
+}
+
 .top #tab-4 .top-s .text {
     text-align: center;
     margin: 0 auto;
