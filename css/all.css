@@ -28,12 +28,14 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
 
 ::-webkit-scrollbar-track {
     box-shadow: 0 0 0px rgba(255, 255, 255, 0) inset;
-    background: var(--white-color);
+    background: rgba(245, 252, 246, 0.35);
+    mix-blend-mode: color-burn;
 }
 
 ::-webkit-scrollbar-thumb {
     box-shadow: 0 0 2px 1px rgba(31, 30, 30, 0.76) inset;
-    background: rgba(20, 20, 20);
+    background: rgba(20, 20, 20, 0.3);
+    mix-blend-mode: color-burn;
 }
 /*===================== Scrollbar =====================*/
 
@@ -191,7 +193,7 @@ section .top-h1 {
     font-weight: 600;
     position: absolute;
     top: 40%;
-    left: 4%;
+    left: 3%;
     color: var(--base-color);
 }
 
@@ -202,7 +204,6 @@ section .top-h1 .h1 {
 
 section .top-h1 .caption {
     font-size: clamp(1.4rem, calc(1.4rem + 0.1vw), 1.8rem);
-    font-weight: 600;
     margin: 0;
 }
 /*===================== h1 top =====================*/
@@ -236,6 +237,9 @@ section .top-s .text {
 .top .section3 .top-s {
     flex-direction: row-reverse;
 }
+.top .section2 .top-s {
+    margin-left: 10%;
+}
 
 section .top-s h2 {
     top: 0;
@@ -252,7 +256,7 @@ section .top-s p {
 #tab-3,
 #tab-4,
 #tab-5 {
-    margin: 1% auto;
+    margin-bottom: 2%;
 }
 #tab-4 .top-s {
     margin-top: 0;
@@ -312,6 +316,7 @@ section #top-img {
     right: 0;
 }
 
+/*===================== img*/
 section img {
     position: absolute;
 }
@@ -341,7 +346,7 @@ section img {
     left: 0;
     bottom: 3%;
 }
-
+/*===================== .img*/
 .section1 .img,
 .section2 .img,
 .section3 .img,
@@ -353,7 +358,6 @@ section img {
     z-index: 1;
     background-size: cover;
     mix-blend-mode: color-burn;
-    opacity: 0.7;
 }
 
 .section1 .img,
@@ -371,10 +375,10 @@ section img {
 .section2 .img,
 .section4 .img {
     content: "";
-/*    width: clamp(650px, 100%, 500px);
-    height: 450px;*/
-    right: 5%;
-    top: 5%;
+    width: 65%;
+    height: 500px;
+    right: 0%;
+    top: 0%;
     background: url('https://mizukioyama.github.io/pd/hp-img/overall.png') no-repeat center center;
 }
 
