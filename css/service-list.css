@@ -11,6 +11,7 @@ Version: 2023
     margin-bottom: 5px;
 }
 #wrap {
+    width: calc(1000px - 10px);
     height: fit-content;
 }
 
@@ -21,7 +22,7 @@ Version: 2023
 
 .list-tab {
     font-family: roca, sans-serif;
-    width: calc(22vw - 10px);
+    width: calc(35% - 50px);
     height: 9vmin;
     font-size: clamp(1.4em, calc(1.4em + 0.1vw), 1.6em);
     background: #003A42;
@@ -41,7 +42,7 @@ border-bottom: 1px solid;
 
 .selected {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
-    width: calc(25vw - 10px);
+    width: calc(40% - 10px);
     height: 12vmin;
     color: var(--base-color);
     background-color: rgba(245, 252, 246, 0.7);
@@ -120,6 +121,7 @@ section #container .se-box {
 
 #wrap .container h3 {
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
+    font-weight: 600;
     color: #003A42;
     margin-top: 6%;
     padding-left: 0.5rem;
