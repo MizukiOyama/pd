@@ -218,8 +218,7 @@ section .top-s {
     display: flex;
     flex-direction: column;
     /* 縦に並べる */
-    justify-content: center;
-    /* 縦方向の中央寄せ */
+    /* justify-content: center;縦方向の中央寄せ */
 }
 section .top-s .text {
     font-weight: 600;
