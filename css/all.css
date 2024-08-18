@@ -182,7 +182,7 @@ a:hover::after {
 section {
     width: 95%;
     margin: 0 auto;
-    background: linear-gradient(rgba(246, 246, 246, 0.35), rgba(246, 246, 246, 0.35)), url(https://mizukioyama.github.io/pd/hp-img/section01-modan.png) no-repeat center center;
+    background: linear-gradient(rgba(246, 246, 246, 0.455), rgba(246, 246, 246, 0.455)), url(https://mizukioyama.github.io/pd/hp-img/section01-modan.png) no-repeat center center;
     background-size: cover;
 }
 /*
@@ -226,6 +226,7 @@ section .top-s {
     /*縦方向の中央寄せ */
 }
 section .top-s .text {
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
     font-weight: 600;
     margin: 0 0 5% 0;
     text-align: left;
