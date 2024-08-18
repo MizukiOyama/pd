@@ -16,26 +16,26 @@
 #cursor {
     width: 15px;
     height: 15px;
-    background-color: rgb(12, 68, 85);
+    background-color: rgb(129, 26, 26);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* 光沢のある効果 */
 }
 
 #stalker {
     width: 25px;
     height: 25px;
-    border: 2px solid rgb(12, 68, 85);
+    border: 2px solid rgb(129, 26, 26);
     transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* 光沢のある効果 */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* ホバー時のスタイル */
 .cursor--hover {
     width: 50px !important;
     height: 50px !important;
-    box-shadow: 0 0 20px rgba(200, 200, 200, 0.75); /* ホバー時の光沢のある効果 */
+    box-shadow: 0 0 20px rgba(200, 200, 200, 0.6);
 }
 .stalker--hover {
     width: 60px !important;
     height: 60px !important;
-    box-shadow: 0 0 20px rgba(200, 200, 200, 0.75); /* ホバー時の光沢のある効果 */
+    box-shadow: 0 0 20px rgba(200, 200, 200, 0.6);
 }
