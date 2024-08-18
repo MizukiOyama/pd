@@ -142,8 +142,7 @@ li {
 main a {
     letter-spacing: 0.75rem;
 }
-a,
-main .note a {
+a {
     font-family: futura-pt, sans-serif;
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
     font-weight: 400;

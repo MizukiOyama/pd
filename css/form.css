@@ -113,6 +113,10 @@ input:-webkit-autofill:focus {
     text-align: center;
 }
 
+.note a {
+    letter-spacing: 0.065rem;
+}
+
 .note p {
     margin: 0 auto;
 }
