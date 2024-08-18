@@ -43,7 +43,7 @@ main p {
     line-height: 2.2rem;
 }
 p,
-main p .section4 {
+main .section4 .note p {
     font-size: clamp(0.9rem, calc(0.9rem + 0.5vw), 1rem);
     letter-spacing: 0.05rem;
     line-height: 1.2rem;
