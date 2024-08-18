@@ -1,5 +1,10 @@
 .se-slider-container {
+    width: 55%;
+    position: absolute;
+    top: 45%;
+    left: 3%;
     overflow: hidden;
+    z-index: 1;
   }
   
   .se-slider {
@@ -20,6 +25,7 @@
   }
   
   .se-slide {
+    color: var(--base-color);
     flex-basis: 50%;
     display: flex;
     align-items: center;
