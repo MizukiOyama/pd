@@ -334,7 +334,7 @@ section img {
 /*===================== Top / About*/
 .top .section4 .top-s,
 .about .section4 .top-s {
-    width: clamp(800px, 100%, 650px);
+    width: 80%;
     height: 600px;
     padding: 0em 2.5em;
     align-items: center;
