@@ -121,7 +121,13 @@
         backdrop-filter: blur(5px);
         background: rgba(46, 46, 46, 0.2);
     }
-        
+    
+    .tabs-container--top {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    
     .tab {
         font-size: clamp(1rem, calc(1rem + 0.1vw), 1.4rem);
         height: 35px;
