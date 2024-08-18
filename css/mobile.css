@@ -1,51 +1,10 @@
-:root {
-    /*=メインカラー rgba(214, 228, 218)*/
-    --main-color: #D6E4DA;
-    /*=サブカラー rgba(45, 141, 134)*/
-    --sub-color: #2d8d86;
-    /*=リンク rgba(0, 58, 66)*/
-    --link-color: #003A42;
-    /*=ベースカラー rgba(46, 46, 46)*/
-    --base-color: #2E2E2E;
-    /*=アクセントカラー rgba(90, 202, 152)*/
-    --accent-color: #5ACA98;
-    /*=ホワイトカラー rgba(245, 252, 246)*/
-    --white-color: #F5FCF6;
-}
-
-::selection {
-    background-color: rgba(90,202,152, 0.5);
-}
-
-body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
-    margin: 0;
-    padding: 0;
-}
-
-/*===================== Scrollbar =====================*/
-::-webkit-scrollbar {
-    width: 0.2rem;
-    background: rgba(40, 0, 0, 0.4);
-}
-
-::-webkit-scrollbar-track {
-    box-shadow: 0 0 0px rgba(255, 255, 255, 0) inset;
-    background: rgba(245, 252, 246, 0);
-    mix-blend-mode: color-burn;
-}
-
-::-webkit-scrollbar-thumb {
-    box-shadow: 0 0 2px 1px rgba(31, 30, 30, 0.76) inset;
-    background: rgba(20, 20, 20, 0.3);
-    mix-blend-mode: color-burn;
-}
-/*===================== Scrollbar =====================*/
+@media screen and (max-width: 599px) {
 
 /*===================== head =====================*/
 .head {
     position: absolute;
     top: 0.3%;
-    left: 4%;
+    left: 2%;
     z-index: 1;
 
     a {
@@ -60,49 +19,22 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
 /*===================== head =====================*/
 
 /*===================== body text =====================*/
-body {
-    font-family: zen-maru-gothic, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    color: var(--main-color);
-    background-color: var(--base-color);
-    position: relative;
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
-    background: url('https://mizukioyama.github.io/pd/hp-img/body-modan.png') no-repeat center center;
-    background-attachment: fixed;
-}
 
 h1 {
-    font-size: clamp(10rem, calc(10rem + 0.1vw), 12rem);
-    font-family: liana, script;
-    font-weight: 400;
-    color: var(--base-color);
-    width: fit-content;
+    font-size: clamp(3rem, calc(3rem + 0.1vw), 4rem);
     line-height: 1em;
 }
 
 h2 {
-    font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
-    width: fit-content;
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.8rem);
 }
 
 h3 {
-    font-size: clamp(3rem, calc(3rem + 0.5vw), 4rem);
-}
-
-h2,
-h3,
-h4 {
-    font-family: roca, sans-serif;
-    font-weight: 300;
-    color: var(--sub-color);
+    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
 }
 
 p {
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
-    width: fit-content;
+    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
     letter-spacing: 0.05rem;
     text-shadow: 1px 1px 4px rgba(86, 86, 86, 0.65);
     animation: fade 1s ease-in-out forwards;
@@ -125,55 +57,34 @@ p {
 
 ol,
 ul {
-    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
-    font-weight: 600;
-    color: var(--base-color);
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
 }
 
 li {
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
-    font-weight: 500;
-    list-style: none;
+    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
 }
 
 /*===================== body text =====================*/
 
 /*===================== リンク =====================*/
 main a {
-    letter-spacing: 0.75rem;
+    letter-spacing: 0.35rem;
 }
 a,
 .note a {
-    font-family: futura-pt, sans-serif;
-    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
-    font-weight: 400;
-    font-style: italic;
-    color: var(--link-color);
-    width: fit-content;
-    height: fit-content;
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
     padding: 0.25em 0;
-    left: 0;
-    bottom: 0;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
 }
-a:hover {
+a:active {
     color: var(--sub-color);
 }
 a::after {
     background-color: var(--base-color);
     content: "";
-    width: 100%;
-    height: 1px;
     bottom: 5px;
-    left: 0;
-    position: absolute;
-    transform: scale(0, 1);
-    transform-origin: right top;
     transition: transform 0.3s ease;
 }
-a:hover::after {
+a:active::after {
     transform-origin: left top;
     transform: scale(1, 1);
 }
@@ -375,10 +286,10 @@ section img {
 .section2 .img,
 .section4 .img {
     content: "";
-    width: 50%;
-    height: 500px;
+    width: 80%;
+    height: 230px;
     right: 0%;
-    top: 10%;
+    top: 0%;
     background: url('https://mizukioyama.github.io/pd/hp-img/overall.png') no-repeat center center;
 }
 
@@ -404,15 +315,15 @@ section img {
 .top .section1 .top-s,
 .top .section2 .top-s,
 .top .section3 .top-s {
-    margin-top: 10%;
+    margin: 30% auto 0;
     /*flex-direction: row-reverse;*/
 }
 .top .section1 .top-s,
 .top .section3 .top-s {
-    margin-right: 20%;
+    
 }
 .top .section2 .top-s {
-    margin-left: 20%;
+    
 }
 
 .top #tab-4 .top-s .text {
@@ -425,7 +336,7 @@ section img {
 .about .section4 .top-s {
     width: clamp(800px, 100%, 650px);
     height: 600px;
-    padding: 2em 4.5em;
+    padding: 0em 2.5em;
     align-items: center;
     background: rgba(245, 252, 246, 0.7);
 }
@@ -442,13 +353,13 @@ section img {
 .top .section4 .top-s::before,
 .contact .section4 .top-s::before {
     content: "";
-    width: 30%;
+    width: 35%;
     height: 0;
     border-style: solid;
-    border-width: 160px 200px 0 200px;
+    border-width: 95px 170px 0 170px;
     border-color: var(--main-color) transparent transparent transparent;
     position: absolute;
-    top: -5%;
+    top: -3%;
     z-index: -1;
     opacity: 0.4;
     /*background: repeating-linear-gradient(-215deg, rgba(0, 58, 66, 0.8), rgba(0, 58, 66, 0.55) 70px, rgba(0, 58, 66, 0.8) 0, rgba(0, 58, 66, 0.55) 70px);*/
@@ -540,3 +451,6 @@ section img {
 }
 
 /*===================== Service =====================*/
+}
+
+@media screen and (min-width: 600px) and (max-width: 1299px) {}
