@@ -1,5 +1,5 @@
 .se-slider-container {
-    width: 65vmin;
+    width: clamp(30%, 65%, 40%);
     position: absolute;
     top: 45%;
     left: 3%;
