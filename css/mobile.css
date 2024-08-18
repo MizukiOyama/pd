@@ -1,4 +1,10 @@
 @media screen and (max-width: 599px) {
+    .pc {
+        display: none;
+    }
+    .mobaile {
+        display: block;
+    }
 
 /*===================== head =====================*/
 .head {
@@ -11,7 +17,7 @@
         padding: 0.25em 0.5em;
 
         img {
-            width: 35vmin;
+            width: 60vmin;
         }
     }
 
@@ -108,8 +114,8 @@ section {
 section .top-h1 {
     font-weight: 600;
     position: absolute;
-    top: 40%;
-    left: 3%;
+    top: 45%;
+    left: 5%;
     color: var(--base-color);
 }
 
@@ -215,7 +221,7 @@ img {
 }
 
 section #top-img {
-    width: 75%;
+    width: 100%;
     top: -10%;
     right: 0;
 }
@@ -334,9 +340,9 @@ section img {
 /*===================== Top / About*/
 .top .section4 .top-s,
 .about .section4 .top-s {
-    width: 80%;
+    width: 90%;
     height: 600px;
-    padding: 0em 2.5em;
+    padding: 0em 0.5em;
     align-items: center;
     background: rgba(245, 252, 246, 0.7);
 }

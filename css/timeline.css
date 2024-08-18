@@ -9,7 +9,7 @@ ol {
     height: 40px;
     position: relative;
     margin-top: 2%;
-    padding: 0.25rem 0 0.5rem 0.5rem;
+    padding: 0.25rem 0 1.5rem 0.5rem;
     border-left: 1px solid;
     border-bottom: 1px solid;
     display: grid;
@@ -18,4 +18,20 @@ ol {
 
 .line span {
     font-size: clamp(0.8rem, calc(0.8rem + 0.1vw), 0.9rem);
+}
+
+@media screen and (max-width: 599px) {
+    .line {
+        font-size: clamp(0.9rem, calc(0.9rem + 0.1vw), 1rem);
+        width: 50%;
+        height: 40px;
+        margin-top: 2%;
+        padding: 0.25rem 0.2em 1.25rem 0.25rem;
+        display: flow;
+    }
+    .line span {
+        font-size: clamp(0.75rem, calc(0.75rem + 0.1vw), 0.8rem);
+        line-height: 1em;
+    }
+    
 }

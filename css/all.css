@@ -60,6 +60,14 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
 /*===================== head =====================*/
 
 /*===================== body text =====================*/
+.pc {
+    display: block;
+}
+.mobaile {
+    display: none;
+}
+
+
 body {
     font-family: zen-maru-gothic, sans-serif;
     font-weight: 500;
