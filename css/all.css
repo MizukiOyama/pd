@@ -70,7 +70,7 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    background: url('https://mizukioyama.github.io/pd/hp-img/body.png') no-repeat center center;
+    background: url('https://mizukioyama.github.io/pd/hp-img/body-modan.png') no-repeat center center;
     background-attachment: fixed;
 }
 
@@ -139,7 +139,9 @@ li {
 /*===================== body text =====================*/
 
 /*===================== リンク =====================*/
-
+main a {
+    letter-spacing: 0.75rem;
+}
 a {
     font-family: futura-pt, sans-serif;
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
@@ -149,7 +151,6 @@ a {
     width: fit-content;
     height: fit-content;
     padding: 0.25em 0;
-    letter-spacing: 0.75rem;
     left: 0;
     bottom: 0;
     position: relative;
@@ -182,7 +183,7 @@ a:hover::after {
 section {
     width: 95%;
     margin: 0 auto;
-    background: linear-gradient(rgba(246, 246, 246, 0.455), rgba(246, 246, 246, 0.455)), url(https://mizukioyama.github.io/pd/hp-img/section01-modan.png) no-repeat center center;
+    background: linear-gradient(rgba(246, 246, 246, 0.455), rgba(246, 246, 246, 0.455)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;
     background-size: cover;
 }
 /*
