@@ -29,14 +29,17 @@
     flex-basis: 50%;
     display: flex;
     align-items: center;
+    justify-content: space-around;
   }
   .se-slide i {
     display: block;
     flex-basis: var(--logo-width, 20%);
-    font-size: clamp(60px, 6.8vw, 120px);
+    font-size: clamp(8rem, 1vw, 80rem);
     padding: clamp(30px, 4vw, 60px) 0;
     transition: transform .3s;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
   }
   .se-slide i:hover {
     transform: scale(1.14);
