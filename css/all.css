@@ -230,7 +230,7 @@ section .top-s {
 section .top-s .text {
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
     font-weight: 600;
-    margin: 0 0 5% 0;
+    margin: 0 0 3% 0;
     text-align: left;
 }
 
