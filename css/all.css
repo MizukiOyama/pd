@@ -398,19 +398,21 @@ section img {
 .top .section2 .top-s h2,
 .top .section3 .top-s h2 {
     position: absolute;
+    right: 0;
 }
 .top .section1 .top-s,
 .top .section2 .top-s,
 .top .section3 .top-s {
     margin-top: 10%;
+    background: rgba(245, 252, 246, 0.7);
     /*flex-direction: row-reverse;*/
 }
 .top .section1 .top-s,
 .top .section3 .top-s {
-    margin-right: 10%;
+    margin-right: 15%;
 }
 .top .section2 .top-s {
-    margin-left: 10%;
+    margin-left: 15%;
 }
 
 .top #tab-4 .top-s .text {
