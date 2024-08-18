@@ -289,6 +289,10 @@ input:-webkit-autofill:focus {
     text-align: center;
 }
 
+.note {
+    z-index: -1;
+}
+
 .note a {
     letter-spacing: 0.065rem;
 }

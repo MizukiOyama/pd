@@ -39,12 +39,18 @@ h3 {
     font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 2.8rem);
 }
 
-p {
-    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
+main p {
+    line-height: 2.2rem;
+}
+p,
+main p .section4 {
+    font-size: clamp(0.9rem, calc(0.9rem + 0.5vw), 1rem);
     letter-spacing: 0.05rem;
+    line-height: 1.2rem;
     text-shadow: 1px 1px 4px rgba(86, 86, 86, 0.65);
     animation: fade 1s ease-in-out forwards;
 }
+
 
 @keyframes fade {
     from {
@@ -178,7 +184,7 @@ section .top-s p {
 
 section .box {
     position: relative;
-    height: 100vh;
+    height: 75vh;
     display: flex;
     align-items: center;
 }
@@ -268,7 +274,7 @@ section img {
 .section2 .img,
 .section3 .img,
 .section4 .img {
-    width: clamp(450px, 100%, 300px);
+    width: clamp(300px, 100%, 250px);
     height: 300px;
     /*border: 3px solid var(--base-color);*/
     position: absolute;
@@ -359,10 +365,10 @@ section img {
 .top .section4 .top-s::before,
 .contact .section4 .top-s::before {
     content: "";
-    width: 35%;
+    width: 50%;
     height: 0;
     border-style: solid;
-    border-width: 95px 170px 0 170px;
+    border-width: 55px 75px 0 75px;
     border-color: var(--main-color) transparent transparent transparent;
     position: absolute;
     top: -3%;
