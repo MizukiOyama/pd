@@ -232,7 +232,7 @@ input:-webkit-autofill:focus {
     display: block;
     width: 100%;
     height: 50px;
-    padding-left: 1.5rem;
+    padding-left: 2rem;
     border-width: 0 0 2px 0;
     background-color: rgba(0, 0, 0, 0);
 }
@@ -247,9 +247,8 @@ input:-webkit-autofill:focus {
 }
 
 .contact-form .label {
-    font-size: clamp(1.4rem, calc(1.4rem + 0.1vw), 1.8rem);
-    font-weight: 400;
-    color: rgba(0, 58, 66, 0.5);
+    font-size: clamp(1rem, calc(1rem + 0.1vw), 1.2rem);
+    color: rgba(0, 58, 66, 0.35);
     position: absolute;
     left: 20%;
     bottom: 10%;
@@ -290,6 +289,7 @@ input:-webkit-autofill:focus {
 }
 
 .note {
+    position: static;
     z-index: -1;
 }
 

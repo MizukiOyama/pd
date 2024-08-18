@@ -65,10 +65,10 @@
 
   @media screen and (max-width: 599px) {
     .se-slider-container {
-      width: 70%;
+      width: 80%;
       position: absolute;
       top: 80%;
-      left: 15%;
+      left: 10%;
       overflow: hidden;
       z-index: 1;
     }
