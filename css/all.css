@@ -142,7 +142,8 @@ li {
 main a {
     letter-spacing: 0.75rem;
 }
-a {
+a,
+.note a {
     font-family: futura-pt, sans-serif;
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
     font-weight: 400;
@@ -374,7 +375,7 @@ section img {
 .section2 .img,
 .section4 .img {
     content: "";
-    width: 65%;
+    width: 50%;
     height: 500px;
     right: 0%;
     top: 10%;
