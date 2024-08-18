@@ -175,7 +175,7 @@ input:-webkit-autofill:focus {
 
 @media screen and (max-width: 599px) {
 .col {
-    padding: 0 2.5rem;
+    padding: 0 14.5vmin 0 9.5vmin;
     float: left;
     box-sizing: border-box;
 }
@@ -250,14 +250,14 @@ input:-webkit-autofill:focus {
     font-size: clamp(1rem, calc(1rem + 0.1vw), 1.2rem);
     color: rgba(0, 58, 66, 0.35);
     position: absolute;
-    left: 20%;
+    left: 25%;
     bottom: 10%;
     line-height: 1.5rem;
     transition: transform 0.3s ease-in-out;
 }
 
 .contact-form .label-test {
-    left: 10%;
+    left: 13%;
 }
 
 .contact-form .submit-btn {
@@ -299,7 +299,7 @@ input:-webkit-autofill:focus {
 
 .note p {
     width: 80%;
-    
+
 }
 
 

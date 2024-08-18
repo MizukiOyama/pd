@@ -80,7 +80,7 @@ li {
 
 /*===================== リンク =====================*/
 main a {
-    letter-spacing: 0.35rem;
+    letter-spacing: 0.15rem;
 }
 a,
 .note a {
@@ -182,12 +182,6 @@ section .top-s p {
     justify-content: center;
 }
 
-section .box {
-    position: relative;
-    height: 75vh;
-    display: flex;
-    align-items: center;
-}
 
 /*#tab-1 .top-s,
 #tab-3 .top-s,
