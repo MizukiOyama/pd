@@ -67,6 +67,9 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
     display: none;
 }
 
+html {
+    font-size: 62.5%;
+}
 
 body {
     font-family: zen-maru-gothic, sans-serif;
@@ -430,6 +433,7 @@ section img {
 /*===================== Top / About*/
 .top .section4 .top-s,
 .about .section4 .top-s {
+    width: clamp(650px, 100%, 600px);
     width: clamp(800px, 100%, 650px);
     height: 600px;
     padding: 2em 4.5em;
@@ -486,6 +490,10 @@ section img {
     width: 83%;
 }
 
+.about .section4 .top-s {
+    width: clamp(800px, 100%, 650px);
+}
+
 .about .section4 h3 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     font-weight: 400;
@@ -531,7 +539,7 @@ section img {
     margin: 0;
     padding: 2em 0;
     align-items: center;
-    background: rgba(245, 252, 246, 0.7);
+    /*background: rgba(245, 252, 246, 0.7);*/
 }
 
 .flow {
