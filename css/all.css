@@ -236,8 +236,7 @@ section .top-s {
     display: flex;
     flex-direction: column;
     /* 縦に並べる */
-    justify-content: center;
-    /*縦方向の中央寄せ */
+    /*縦方向の中央寄せ justify-content: center;*/
 }
 section .top-s .text {
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2.4rem);
@@ -407,10 +406,6 @@ section img {
     justify-content: end;
 }
 
-.top section .top-s .text {
-    margin-left: 5%;
-}
-
 .top .section1 .top-s h2,
 .top .section2 .top-s h2,
 .top .section3 .top-s h2 {
@@ -421,7 +416,7 @@ section img {
 .top .section1 .top-s,
 .top .section2 .top-s,
 .top .section3 .top-s {
-    width: 50%;
+    width: 40%;
     margin-top: 10%;
     /*flex-direction: row-reverse;*/
 }
@@ -449,6 +444,8 @@ section img {
     padding: 2em 4.5em;
     align-items: center;
     background: rgba(245, 252, 246, 0.7);
+    /*縦方向の中央寄せ */
+    justify-content: center;
 }
 
 
