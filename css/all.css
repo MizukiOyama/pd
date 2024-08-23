@@ -261,7 +261,7 @@ section .top-s p {
 #tab-3,
 #tab-4,
 #tab-5 {
-    margin-bottom: 2%;
+    margin-bottom: 0;
 }
 #tab-4 .top-s {
     margin-top: 0;
