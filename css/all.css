@@ -584,5 +584,10 @@ section img {
 .option {
     font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3rem);
 }
-
+.option ol {
+    width: 230px;
+    height: 150px;
+    background: var(--white-color);
+    padding: 1rem 2.5rem;
+}
 /*===================== Service =====================*/

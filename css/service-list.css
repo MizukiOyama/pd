@@ -24,7 +24,7 @@ Version: 2023
     font-family: roca, sans-serif;
     width: calc(35% - 50px);
     height: 9vmin;
-    font-size: clamp(1.4em, calc(1.4em + 0.1vw), 1.6em);
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     background: var(--link-color);
     cursor: pointer;
     display: inline-flex;
@@ -120,7 +120,7 @@ section #container .se-box {
 }
 
 #wrap .container h3 {
-    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
+    font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 2.8rem);
     font-weight: 600;
     color: var(--link-color);
     margin-top: 6%;
@@ -131,7 +131,7 @@ section #container .se-box {
 
 #wrap .container p {
     margin-top: 1%;
-    padding-left: 0.5rem;
+    padding: 0 1rem 0 1rem;
     letter-spacing: 0.005rem;
     word-break: break-word;
 }
