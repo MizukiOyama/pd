@@ -418,16 +418,16 @@ section img {
 .top .section1 .top-s,
 .top .section2 .top-s,
 .top .section3 .top-s {
-    width: 40%;
+    width: clamp(550px, 100%, 450px);
     margin-top: 10%;
     /*flex-direction: row-reverse;*/
 }
 .top .section1 .top-s,
 .top .section3 .top-s {
-    right: 5%;
+    right: 10%;
 }
 .top .section2 .top-s {
-    left: 5%;
+    left: 10%;
 }
 .top .section3 .top-s{
     margin-top: -10%;
