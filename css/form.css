@@ -57,7 +57,7 @@ input:-webkit-autofill:focus {
 
 .contact-form .input-text:focus+.label,
 .contact-form .input-text.not-empty+.label {
-    transform: translateY(-4.5rem);
+    transform: translateY(-5rem);
 }
 
 .contact-form .label {
