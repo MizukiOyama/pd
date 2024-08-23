@@ -362,8 +362,8 @@ section img {
 .section2 .img,
 .section3 .img,
 .section4 .img {
-    width: clamp(450px, 100%, 300px);
-    height: 300px;
+    width: clamp(750px, 100%, 500px);
+    height: 70%;
     /*border: 3px solid var(--base-color);*/
     position: absolute;
     z-index: 1;
@@ -376,7 +376,7 @@ section img {
     content: "";
     top: 5%;
     left: 0%;
-    background: url('https://mizukioyama.github.io/pd/hp-img/tower.png') no-repeat center center;
+    background: linear-gradient(rgba(246, 246, 246, 0.455), rgba(246, 246, 246, 0.455)), url('https://mizukioyama.github.io/pd/hp-img/tower.png') no-repeat center center;
 }
 
 .section3 .img {
