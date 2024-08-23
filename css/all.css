@@ -407,6 +407,10 @@ section img {
     justify-content: end;
 }
 
+.top section .top-s .text {
+    margin-left: 5%;
+}
+
 .top .section1 .top-s h2,
 .top .section2 .top-s h2,
 .top .section3 .top-s h2 {
