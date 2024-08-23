@@ -1,4 +1,5 @@
 :root {
+    font-size: 62.5%;
     --root-font-size: 16;
     /*=メインカラー rgba(214, 228, 218)*/
     --main-color: #D6E4DA;
@@ -68,10 +69,6 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
     display: none;
 }
 
-html {
-    /*font-size: 62.5%;*/
-}
-
 body {
     font-family: zen-maru-gothic, sans-serif;
     font-weight: 500;
@@ -87,6 +84,7 @@ body {
 }
 
 h1 {
+    /*font-size: 62.5%;=16px 12rem=120px*/
     font-size: clamp(10rem, calc(10rem + 0.1vw), 12rem);
     font-family: liana, script;
     font-weight: 400;
@@ -96,11 +94,13 @@ h1 {
 }
 
 h2 {
+    /*font-size: 62.5%;=16px 6rem=62px*/
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     width: fit-content;
 }
 
 h3 {
+    /*font-size: 62.5%;=16px 4rem=42px*/
     font-size: clamp(3rem, calc(3rem + 0.5vw), 4rem);
 }
 
@@ -113,6 +113,7 @@ h4 {
 }
 
 p {
+    /*font-size: 62.5%;=16px 1.2rem=12px*/
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
     font-size: calc( 13 / var(--root-font-size) * 1rem );
     width: fit-content;
