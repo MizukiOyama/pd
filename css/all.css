@@ -336,6 +336,7 @@ section img {
     width: 45%;
     bottom: -5%;
     left: 0;
+    clip-path: circle(40% at left);
     /*transform:rotate(-10deg);*/
 }
 
@@ -355,6 +356,7 @@ section img {
     width: 45%;
     bottom: -5%;
     right: 0;
+    clip-path: circle(40% at right);
     transform:rotate(180deg);
 }
 /*===================== .img*/
@@ -401,9 +403,6 @@ section img {
 
 
 /*===================== Top =====================*/
-.top .img {
-    clip-path: circle(40% at bottom);
-}
 
 .top .section1 .box,
 .top .section3 .box {
