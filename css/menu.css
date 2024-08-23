@@ -31,7 +31,7 @@ nav {
 #navArea .inner li a {
     display: block;
     position: relative;
-    font-size: clamp(1.8rem, calc( 1.8rem + 0.5vw), 2rem);
+    font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
     color: var(--base-color);
     height: 100%;
     margin-top: 1.5rem;
@@ -183,6 +183,7 @@ nav {
     margin: calc(35% - 5vw) 0 0;
 }
 .open #mask ul p {
+    font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
     color: var(--white-color);
     margin: 0;
 }

@@ -157,7 +157,7 @@ main a {
 }
 a {
     font-family: futura-pt, sans-serif;
-    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2.4rem);
     font-weight: 400;
     font-style: italic;
     color: var(--link-color);
@@ -242,7 +242,7 @@ section .top-s {
 section .top-s .text {
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2.4rem);
     font-weight: 600;
-    margin-left: 5%;
+    margin-bottom: 2%;
     text-align: left;
 }
 
@@ -414,8 +414,7 @@ section img {
     right: 0;
 }
 .top .section1 .top-s,
-.top .section2 .top-s,
-.top .section3 .top-s {
+.top .section2 .top-s {
     margin-top: 10%;
     /*flex-direction: row-reverse;*/
 }
@@ -426,7 +425,9 @@ section img {
 .top .section2 .top-s {
     margin-left: 22%;
 }
-
+.top .section3 .top-s{
+    margin-top: -10%;
+}
 .top #tab-4 .top-s .text {
     text-align: center;
     margin: 0 auto;
