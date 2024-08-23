@@ -401,6 +401,10 @@ section img {
 
 
 /*===================== Top =====================*/
+.top .img {
+    clip-path: circle(40% at bottom);
+}
+
 .top .section1 .box,
 .top .section3 .box {
     justify-content: end;
