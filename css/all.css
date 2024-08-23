@@ -138,13 +138,13 @@ p {
 
 ol,
 ul {
-    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
+    font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 2.8rem);
     font-weight: 600;
     color: var(--base-color);
 }
 
 li {
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     font-weight: 500;
     list-style: none;
 }
@@ -561,6 +561,10 @@ section img {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+.option {
+    font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3rem);
 }
 
 /*===================== Service =====================*/
