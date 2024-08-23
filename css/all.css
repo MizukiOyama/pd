@@ -241,7 +241,7 @@ section .top-s {
 section .top-s .text {
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2.4rem);
     font-weight: 600;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     text-align: left;
 }
 
@@ -410,7 +410,7 @@ section img {
 .top .section2 .top-s h2,
 .top .section3 .top-s h2 {
     position: absolute;
-    top: 20%;
+    top: -5%;
     left: 0;
 }
 .top .section1 .top-s,
