@@ -85,7 +85,7 @@ body {
 
 h1 {
     /*font-size: 62.5%;=16px 12rem=120px*/
-    font-size: clamp(10rem, calc(10rem + 0.1vw), 12rem);
+    font-size: clamp(12rem, calc(12rem + 0.1vw), 14rem);
     font-family: liana, script;
     font-weight: 400;
     color: var(--base-color);
@@ -114,8 +114,7 @@ h4 {
 
 p {
     /*font-size: 62.5%;=16px 1.2rem=12px*/
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
-    font-size: calc( 13 / var(--root-font-size) * 1rem );
+    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 2rem);
     width: fit-content;
     letter-spacing: 0.05rem;
     text-shadow: 1px 1px 4px rgba(86, 86, 86, 0.65);
@@ -216,12 +215,12 @@ section .top-h1 {
 }
 
 section .top-h1 .h1 {
-    font-size: clamp(6rem, calc(6rem + 0.1vw), 8rem);
+    font-size: clamp(8rem, calc(8rem + 0.1vw), 10rem);
     margin-left: 70%;
 }
 
 section .top-h1 .caption {
-    font-size: clamp(1.4rem, calc(1.4rem + 0.1vw), 1.8rem);
+    font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
     margin: 0;
 }
 /*===================== h1 top =====================*/
@@ -241,9 +240,9 @@ section .top-s {
     /*縦方向の中央寄せ */
 }
 section .top-s .text {
-    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2.4rem);
     font-weight: 600;
-    margin: 0 0 3% 0;
+    margin-left: 5%;
     text-align: left;
 }
 

@@ -45,7 +45,7 @@
 }
 
 .tab {
-    font-size: clamp(1.6rem, calc(1.6rem + 0.1vw), 2rem);
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.8rem);
     text-shadow: 0px 1px 3px var(--base-color);
     height: 50px;
     color: var(--base-color);
