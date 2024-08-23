@@ -356,7 +356,6 @@ section img {
     width: 45%;
     bottom: -5%;
     right: 0;
-    clip-path: circle(40% at right);
     transform:rotate(180deg);
 }
 /*===================== .img*/
@@ -376,7 +375,7 @@ section img {
 .section1 .img,
 .section3 .img {
     content: "";
-    top: 5%;
+    top: 0;
     left: 0%;
     background: linear-gradient(rgba(246, 246, 246, 0.455), rgba(246, 246, 246, 0.455)), url('https://mizukioyama.github.io/pd/hp-img/tower.png') no-repeat center center;
 }
