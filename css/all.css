@@ -131,10 +131,10 @@ p {
         opacity: 1;
     }
 }
-.tate {
+/*.tate {
     writing-mode: vertical-rl;
     line-height: 2.5rem;
-}
+}*/
 
 ol,
 ul {
@@ -415,19 +415,22 @@ section img {
 .top .section2 .top-s h2,
 .top .section3 .top-s h2 {
     position: absolute;
-    right: 0;
+    top: 20%;
+    left: 0;
 }
 .top .section1 .top-s,
-.top .section2 .top-s {
+.top .section2 .top-s,
+.top .section3 .top-s {
+    width: 50%;
     margin-top: 10%;
     /*flex-direction: row-reverse;*/
 }
 .top .section1 .top-s,
 .top .section3 .top-s {
-    margin-right: 25%;
+    right: 5%;
 }
 .top .section2 .top-s {
-    margin-left: 22%;
+    left: 5%;
 }
 .top .section3 .top-s{
     margin-top: -10%;
