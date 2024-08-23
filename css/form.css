@@ -65,14 +65,14 @@ input:-webkit-autofill:focus {
     font-weight: 400;
     color: rgba(0, 58, 66, 0.5);
     position: absolute;
-    left: 10%;
+    left: 7%;
     bottom: 20%;
     line-height: 1.5rem;
     transition: transform 0.3s ease-in-out;
 }
 
 .contact-form .label-test {
-    left: 5%;
+    left: 3.5%;
 }
 
 .contact-form .submit-btn {
