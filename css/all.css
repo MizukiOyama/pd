@@ -275,6 +275,7 @@ section .box {
     height: 100vh;
     display: flex;
     align-items: center;
+    filter: grayscale(0.65);
 }
 
 /*#tab-1 .top-s,

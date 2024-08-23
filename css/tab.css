@@ -6,7 +6,6 @@
     height: 100vh;
     position: relative;
     border: 10px double var(--base-color);
-    filter: grayscale(0.15);
 }
 /*
 .tabs h1,
