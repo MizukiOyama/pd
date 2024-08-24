@@ -25,6 +25,7 @@ Version: 2023
     width: calc(35% - 50px);
     height: 9vmin;
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
+    color: var(--white-color);
     background: var(--link-color);
     cursor: pointer;
     display: inline-flex;
@@ -44,7 +45,7 @@ border-bottom: 1px solid;
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     width: calc(40% - 10px);
     height: 12vmin;
-    color: var(--white-color);
+    color: var(--base-color);
     background-color: rgba(245, 252, 246, 0.7);
 }
 
