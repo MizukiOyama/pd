@@ -48,8 +48,10 @@ document.addEventListener('DOMContentLoaded', function () {
             var elementTop = rect.top;
             var windowHeight = window.innerHeight;
 
-            // 要素が画面に表示された場合にクラスを追加
-            if (elementTop < windowHeight - 100) { // 少し早めに発火するように調整
+            // 要素が画面の指定位置に到達したらクラスを追加
+            var triggerPosition = windowHeight * 0.5; // 画面の50%位置に到達時に発火
+            
+            if (elementTop < triggerPosition) {
                 element.classList.add('visible');
             }
         });
