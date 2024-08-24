@@ -428,7 +428,7 @@ section img {
 .top .tabs .img {
     width: 100%;
     height: 100vh;
-    opacity: 0.3;
+    opacity: 0.5;
     background: url('https://raw.githubusercontent.com/mizukioyama/portfolio.github.io/main/img/230053-2.jpg') no-repeat center center;
     background-size: cover;
 }
@@ -455,7 +455,7 @@ section img {
     left: 15%;
 }
 .top .section2 .top-s {
-    right: 15%;
+    right: -45%;
 }
 .top .section3 .top-s{
     margin-top: -10%;
