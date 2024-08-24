@@ -88,7 +88,7 @@ h1 {
     font-size: clamp(12rem, calc(12rem + 0.1vw), 14rem);
     font-family: liana, script;
     font-weight: 400;
-    color: var(--base-color);
+    color: var(--white-color);
     width: fit-content;
     line-height: 1em;
 }
@@ -196,7 +196,7 @@ a:hover::after {
 section {
     /*width: 98%;*/
     margin: 0 auto;
-    background: linear-gradient(rgba(246, 246, 246, 0.255), rgba(246, 246, 246, 0.255)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;
+    /*background: linear-gradient(rgba(246, 246, 246, 0.255), rgba(246, 246, 246, 0.255)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;*/
     background-size: cover;
 }
 /*
@@ -211,7 +211,7 @@ section .top-h1 {
     position: absolute;
     top: 40%;
     left: 3%;
-    color: var(--base-color);
+    color: var(--white-color);
 }
 
 section .top-h1 .h1 {
