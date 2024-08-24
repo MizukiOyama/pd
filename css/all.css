@@ -399,7 +399,7 @@ section img {
 .section3 .img {
     content: "";
     top: 0;
-    left: 0%;
+    right: 0%;
     background: linear-gradient(rgba(246, 246, 246, 0.455), rgba(246, 246, 246, 0.455)), url('https://mizukioyama.github.io/pd/hp-img/tower.png') no-repeat center center;
 }
 
@@ -412,7 +412,7 @@ section img {
     content: "";
     width: 50%;
     height: 500px;
-    right: 0%;
+    left: 0%;
     top: 0%;
     background: url('https://mizukioyama.github.io/pd/hp-img/overall.png') no-repeat center center;
 }
@@ -434,7 +434,7 @@ section img {
 }
 .top .section1 .box,
 .top .section3 .box {
-    justify-content: end;
+    justify-content: flex-start;
 }
 
 .top .section1 .top-s h2,
@@ -448,6 +448,7 @@ section img {
 .top .section2 .top-s,
 .top .section3 .top-s {
     width: clamp(550px, 100%, 450px);
+    left: 15%;
     /*flex-direction: row-reverse;*/
 }
 .top .section1 .top-s,
