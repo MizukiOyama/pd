@@ -44,7 +44,7 @@ border-bottom: 1px solid;
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     width: calc(40% - 10px);
     height: 12vmin;
-    color: var(--base-color);
+    color: var(--white-color);
     background-color: rgba(245, 252, 246, 0.7);
 }
 
