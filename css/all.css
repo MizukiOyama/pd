@@ -223,6 +223,7 @@ section .top-h1 .caption {
     font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
     margin: 0;
 }
+
 /*===================== h1 top =====================*/
 
 /*===================== section p =====================*/
@@ -421,7 +422,7 @@ section img {
 
 
 /*===================== Top =====================*/
-.top .tabs {
+.top .tabs .img {
     background: url('https://raw.githubusercontent.com/mizukioyama/portfolio.github.io/main/img/230053-2.jpg') no-repeat center center;
     background-color: var(--base-color);
     background-size: cover;
