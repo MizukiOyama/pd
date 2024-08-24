@@ -423,6 +423,9 @@ section img {
 
 /*===================== Top =====================*/
 .top .tabs .img {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
     background: url('https://raw.githubusercontent.com/mizukioyama/portfolio.github.io/main/img/230053-2.jpg') no-repeat center center;
     background-color: var(--base-color);
     background-size: cover;
