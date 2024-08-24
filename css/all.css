@@ -448,15 +448,14 @@ section img {
 .top .section2 .top-s,
 .top .section3 .top-s {
     width: clamp(550px, 100%, 450px);
-    left: 15%;
     /*flex-direction: row-reverse;*/
 }
 .top .section1 .top-s,
 .top .section3 .top-s {
-    right: 10%;
+    left: 15%;
 }
 .top .section2 .top-s {
-    left: 10%;
+    right: 15%;
 }
 .top .section3 .top-s{
     margin-top: -10%;
