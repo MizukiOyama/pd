@@ -74,12 +74,12 @@ body {
     font-weight: 500;
     font-style: normal;
     color: var(--main-color);
-    background-color: var(--base-color);
+    background-color: #dae2dc;
     position: relative;
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    background: url('https://mizukioyama.github.io/pd/hp-img/body-modan.png') no-repeat center center;
+/*    background: url('https://mizukioyama.github.io/pd/hp-img/body-modan.png') no-repeat center center;*/
     background-attachment: fixed;
 }
 
@@ -194,7 +194,7 @@ a:hover::after {
 
 /*===================== Section =====================*/
 section {
-    width: 95%;
+    /*width: 98%;*/
     margin: 0 auto;
     background: linear-gradient(rgba(246, 246, 246, 0.255), rgba(246, 246, 246, 0.255)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;
     background-size: cover;
@@ -255,6 +255,7 @@ section .top-s p {
 }
 
 /*===================== section in-box =====================*/
+/*
 #tab-1,
 #tab-2,
 #tab-3,
@@ -276,7 +277,7 @@ section .top-s p {
 #tab-5 {
     background: linear-gradient(rgba(246, 246, 246, 0.255), rgba(246, 246, 246, 0.255)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;
 }
-
+*/
 
 
 #tab-4 .top-s {
@@ -422,6 +423,8 @@ section img {
 /*===================== Top =====================*/
 .top .tabs {
     background: url('https://raw.githubusercontent.com/mizukioyama/portfolio.github.io/main/img/230053-2.jpg') no-repeat center center;
+    background-color: var(--base-color);
+    background-size: cover;
 }
 .top .section1 .box,
 .top .section3 .box {
