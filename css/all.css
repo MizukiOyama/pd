@@ -124,26 +124,14 @@ p {
     opacity: 0;
     transition: opacity 1.2s ease, transform 1.2s ease, filter 1.2s ease;
     filter: blur(4px);
-    transform: translateY(18px);
+    transform: translateY(15px);
 }
-.fade_bottom.visible {
+.fade_bottom .visible {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0);
 }
 
-@keyframes fadeIn_left {
-0% {
-    opacity: 0;
-    transform: translateX(-200px);
-    filter: blur(4px);
-}
-100% {
-    opacity: 1;
-    transform: translateX(0);
-    filter: blur(0px);
-}
-}
   /*.tate {
     writing-mode: vertical-rl;
     line-height: 2.5rem;
@@ -458,7 +446,6 @@ section img {
 .top .section2 .top-s,
 .top .section3 .top-s {
     width: clamp(550px, 100%, 450px);
-    margin-top: 10%;
     /*flex-direction: row-reverse;*/
 }
 .top .section1 .top-s,
