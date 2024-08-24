@@ -126,11 +126,13 @@ p {
     filter: blur(4px);
     transform: translateY(15px);
 }
-.fade_bottom .visible {
+
+.fade_bottom.visible {
     opacity: 1;
     filter: blur(0);
     transform: translateY(0);
 }
+
 
   /*.tate {
     writing-mode: vertical-rl;

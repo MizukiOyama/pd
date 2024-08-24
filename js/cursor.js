@@ -47,13 +47,15 @@ document.addEventListener('DOMContentLoaded', function () {
             var rect = element.getBoundingClientRect();
             var elementTop = rect.top;
             var windowHeight = window.innerHeight;
-            
-            if (elementTop < windowHeight) {
+
+            // 要素が画面に表示された場合にクラスを追加
+            if (elementTop < windowHeight - 100) { // 少し早めに発火するように調整
                 element.classList.add('visible');
             }
         });
     }
     
+    // スクロール時とページロード時にフェードインを実行
     window.addEventListener('scroll', fadeInOnScroll);
-    fadeInOnScroll();  // ページが読み込まれたときに一度実行して、最初から画面に入っている要素もフェードインさせる
+    fadeInOnScroll();  // ページ読み込み時に一度実行
 });
