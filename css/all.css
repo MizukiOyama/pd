@@ -420,7 +420,9 @@ section img {
 
 
 /*===================== Top =====================*/
-
+.top .tabs {
+    background: url('https://raw.githubusercontent.com/mizukioyama/portfolio.github.io/main/img/230053-2.jpg') no-repeat center center;
+}
 .top .section1 .box,
 .top .section3 .box {
     justify-content: end;
