@@ -73,7 +73,6 @@ body {
     font-family: zen-maru-gothic, sans-serif;
     font-weight: 500;
     font-style: normal;
-    color: var(--main-color);
     background-color: #dae2dc;
     position: relative;
     width: 100%;
@@ -88,7 +87,8 @@ h1 {
     font-size: clamp(12rem, calc(12rem + 0.1vw), 14rem);
     font-family: liana, script;
     font-weight: 400;
-    color: var(--white-color);
+    color: var(--base-color);
+    text-shadow: 3px 2px 4px  var(--base-color);
     width: fit-content;
     line-height: 1em;
 }
@@ -119,19 +119,16 @@ p {
     letter-spacing: 0.05rem;
     text-shadow: 1px 1px 4px rgba(86, 86, 86, 0.65);
     animation: fade 1s ease-in-out forwards;
+    animation: blur ease forwards;
+    animation-timeline: view();
+    animation-range: cover 0% cover 100%;
 }
-
-@keyframes fade {
-    from {
-        filter: blur(3px);
-        opacity: 0;
-    }
-    to {
-        filter: blur(0px);
-        opacity: 1;
-    }
+@keyframes blur{
+    0%{ filter: blur(0); }
+    50%{ filter: blur(0); }
+    100%{ filter: blur(8px); }
 }
-/*.tate {
+  /*.tate {
     writing-mode: vertical-rl;
     line-height: 2.5rem;
 }*/
@@ -424,10 +421,9 @@ section img {
 /*===================== Top =====================*/
 .top .tabs .img {
     width: 100%;
-    position: absolute;
-    z-index: 1;
+    height: 100vh;
+    opacity: 0.3;
     background: url('https://raw.githubusercontent.com/mizukioyama/portfolio.github.io/main/img/230053-2.jpg') no-repeat center center;
-    background-color: var(--base-color);
     background-size: cover;
 }
 .top .section1 .box,
