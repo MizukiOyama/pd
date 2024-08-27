@@ -5,8 +5,8 @@
     --text-color: #2e2e2e;
     /*sub black*/
     --bg-color: #4b4b4b;
-    /*bg base*/
-    --bg-color: #9d9d9d;
+    /*bg base (217, 217, 217)*/
+    --bg-color: #d9d9d9;
     /*link accent*/
     --accent-color: #A07171;
 }
@@ -301,6 +301,7 @@ section .box {
     display: flex;
     align-items: center;
     filter: grayscale(0.65);
+    border-bottom: 1px solid;
 }
 
 /*#tab-1 .top-s,
