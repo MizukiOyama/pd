@@ -69,7 +69,7 @@ body {
     font-family: zen-maru-gothic, sans-serif;
     font-weight: 500;
     font-style: normal;
-    background-color: var(--bg-color);
+    background-color: var(--text-color);
     position: relative;
     width: 100%;
     height: auto;
@@ -78,7 +78,9 @@ body {
 }
 
 main {
-    width: 1400px;
+    width: 80%;
+    margin: 0 auto;
+    background: var(--bg-color);
 }
 
 h1 {
@@ -96,6 +98,8 @@ h2 {
     /*font-size: 62.5%;=16px 6rem=62px*/
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     width: fit-content;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-color);
 }
 
 h3 {
