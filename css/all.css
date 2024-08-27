@@ -192,9 +192,11 @@ a:hover::after {
 
 /*===================== リンク =====================*/
 
-hr {
+.hr {
     width: 100%;
-    margin-top: 1080px;
+    margin: 0;
+    position: relative;
+    z-index: -10;
 }
 
 /*===================== Section =====================*/
