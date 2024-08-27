@@ -77,12 +77,6 @@ body {
     overflow-x: hidden;
 }
 
-main {
-    width: 80%;
-    margin: 0 auto;
-    background: var(--bg-color);
-}
-
 h1 {
     /*font-size: 62.5%;=16px 12rem=120px*/
     font-size: clamp(12rem, calc(12rem + 0.1vw), 14rem);
@@ -205,8 +199,9 @@ hr {
 
 /*===================== Section =====================*/
 section {
+    width: 80%;
     margin: 0 auto;
-    background-size: cover;
+    background: var(--bg-color);
 }
 
 section .box {
