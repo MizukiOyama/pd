@@ -10,8 +10,13 @@
 .tabs-container {
     /*display: flex;
     flex-direction: row;*/
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: clamp(3rem, calc(3rem + 0.5vw), 3.4rem);
     position: absolute;
-    right: -30%;
+    right: -5%;
     bottom: 0;
     height: fit-content;
     padding: 2rem 4rem;
@@ -30,10 +35,10 @@
 }
 
 .tab {
-    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
-    text-shadow: 0px 1px 3px var(--text-color);
+    font-size: clamp(3rem, calc(3rem + 0.5vw), 3.4rem);
+    text-shadow: -2px 0px 1px var(--text-color);
     height: 25px;
-    color: var(--base-color);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,8 +47,8 @@
     transition: all 0.5s ease;
 }
 .tab:hover {
-    color: var(--white-color);
-    background: var(--base-color);
+    color: var(--bg-color);
+    background: var(--text-color);
     transition: all 0.5s ease;
 }
 
@@ -52,8 +57,6 @@
     right: 0;
     bottom: 0;
     color: var(--bg-color);
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--text-color);
 }
 .tabs-container a::after,
 .tabs-container a::before {
@@ -66,7 +69,7 @@
     width: 0;
     height: 2px;
     border-radius: 10px;
-    background-color: var(--base-color);
+    background-color: var(--text-color);
     transition: left 0.3s ease;
 }
 
@@ -78,7 +81,7 @@
         justify-content: center;
         height: 100vh;
         position: relative;
-        border: 5px double var(--base-color);
+        border: 5px double var(--text-color);
     }
     /*
     .tabs h1,
