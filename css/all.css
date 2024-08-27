@@ -1,18 +1,14 @@
 :root {
     font-size: 62.5%;
     --root-font-size: 16;
-    /*=メインカラー rgba(214, 228, 218)*/
-    --main-color: #D6E4DA;
-    /*=サブカラー rgba(45, 141, 134)*/
-    --sub-color: #2d8d86;
-    /*=リンク rgba(0, 58, 66)*/
-    --link-color: #003A42;
-    /*=ベースカラー rgba(46, 46, 46)*/
-    --base-color: #2E2E2E;
-    /*=アクセントカラー rgba(90, 202, 152)*/
-    --accent-color: #5ACA98;
-    /*=ホワイトカラー rgba(245, 252, 246)*/
-    --white-color: #F5FCF6;
+    /*text border main*/
+    --text-color: #2e2e2e;
+    /*sub black*/
+    --bg-color: #4b4b4b;
+    /*bg base*/
+    --bg-color: #9d9d9d;
+    /*link accent*/
+    --accent-color: #A07171;
 }
 
 ::selection {
@@ -73,13 +69,16 @@ body {
     font-family: zen-maru-gothic, sans-serif;
     font-weight: 500;
     font-style: normal;
-    background-color: #dae2dc;
+    background-color: var(--bg-color);
     position: relative;
     width: 100%;
     height: auto;
     overflow-x: hidden;
-/*    background: url('https://mizukioyama.github.io/pd/hp-img/body-modan.png') no-repeat center center;*/
     background-attachment: fixed;
+}
+
+main {
+    width: 1400px;
 }
 
 h1 {
@@ -87,8 +86,8 @@ h1 {
     font-size: clamp(12rem, calc(12rem + 0.1vw), 14rem);
     font-family: liana, script;
     font-weight: 400;
-    color: var(--base-color);
-    text-shadow: 3px 2px 4px  var(--base-color);
+    color: var(--text-color);
+    text-shadow: 3px 2px 4px  var(--text-color);
     width: fit-content;
     line-height: 1em;
 }

@@ -23,14 +23,14 @@
 }*/
 
 .tabs-container {
-    display: flex;
-    flex-direction: row;
+    /*display: flex;
+    flex-direction: row;*/
     position: absolute;
+    right: 10%;
     bottom: 0;
-    width: 100%;
     height: fit-content;
     margin: 0.5% auto 0;
-    padding: 1em 0;
+    padding: 2rem 4rem;
     box-shadow: 0 0px 1px 2px rgba(46, 46, 46, 0.35);
     backdrop-filter: blur(5px);
     background: rgba(46, 46, 46, 0.2);
@@ -39,9 +39,10 @@
 }
 
 .tabs-container--top {
+    width: fit-content;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 10%;
 }
 
 .tab {
@@ -49,7 +50,6 @@
     text-shadow: 0px 1px 3px var(--base-color);
     height: 30px;
     color: var(--base-color);
-    background: rgba(225, 232, 226, 0.7);
     display: flex;
     justify-content: center;
     align-items: center;
