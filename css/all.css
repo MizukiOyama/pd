@@ -199,17 +199,18 @@ a:hover::after {
 
 /*===================== Section =====================*/
 section {
-    /*width: 98%;*/
     margin: 0 auto;
-    /*background: linear-gradient(rgba(246, 246, 246, 0.255), rgba(246, 246, 246, 0.255)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;*/
     background-size: cover;
     border-bottom: 1px solid;
 }
-/*
-#tab-1 {
-    background: url('https://mizukioyama.github.io/pd/hp-img/original-bg.png') no-repeat center center;
-}*/
 
+section .box {
+    position: relative;
+    height: 1080px;
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+}
 
 /*===================== h1 top =====================*/
 section .top-h1 {
@@ -218,6 +219,9 @@ section .top-h1 {
     top: 40%;
     left: 3%;
     color: var(--base-color);
+    width: auto;
+    padding: 0.5rem 1rem;
+    border: 1px solid;
 }
 
 section .top-h1 .h1 {
@@ -262,29 +266,6 @@ section .top-s p {
 }
 
 /*===================== section in-box =====================*/
-/*
-#tab-1,
-#tab-2,
-#tab-3,
-#tab-4,
-#tab-5 {
-    background: linear-gradient(rgba(246, 246, 246, 0.255), rgba(246, 246, 246, 0.255)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;
-    margin-bottom: 0;
-}
-#tab-2 {
-    background: linear-gradient(rgba(246, 246, 246, 0.255), rgba(246, 246, 246, 0.255)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;
-}
-
-#tab-3 {
-    background: linear-gradient(rgba(246, 246, 246, 0.255), rgba(246, 246, 246, 0.255)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;
-}
-#tab-4 {
-    background: linear-gradient(rgba(246, 246, 246, 0.255), rgba(246, 246, 246, 0.255)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;
-}
-#tab-5 {
-    background: linear-gradient(rgba(246, 246, 246, 0.255), rgba(246, 246, 246, 0.255)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;
-}
-*/
 
 
 #tab-4 .top-s {
@@ -295,31 +276,6 @@ section .top-s p {
     justify-content: center;
 }
 
-section .box {
-    position: relative;
-    height: 1080px;
-    display: flex;
-    align-items: center;
-    border: 1px solid;
-}
-
-/*#tab-1 .top-s,
-#tab-3 .top-s,
-#tab-5 .top-s {
-    transform: translate(40%, 25%);
-}
-
-#tab-2 .top-s {
-    transform: translate(-40%, 25%);
-}*/
-
-/*.section2 p {
-    margin: 0 auto;
-    padding: 1em;
-    border: 1px solid var(--base-color);
-    display: flex;
-    justify-content: center;
-}*/
 
 
 
