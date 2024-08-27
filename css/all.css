@@ -198,16 +198,20 @@ a:hover::after {
 
 /*===================== リンク =====================*/
 
+hr {
+    width: 100%;
+    margin-top: 1080px;
+}
+
 /*===================== Section =====================*/
 section {
     margin: 0 auto;
     background-size: cover;
-    border-bottom: 1px solid;
 }
 
 section .box {
     position: relative;
-    height: 1080px;
+    height: 750px;
     display: flex;
     align-items: center;
     border: 1px solid;
