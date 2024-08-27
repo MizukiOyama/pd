@@ -43,7 +43,7 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
 .head {
     position: absolute;
     top: 0.3%;
-    left: 4%;
+    left: 10%;
     z-index: 1;
 
     a {
@@ -74,7 +74,6 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
-    background-attachment: fixed;
 }
 
 main {
@@ -112,7 +111,7 @@ h3,
 h4 {
     font-family: roca, sans-serif;
     font-weight: 300;
-    color: var(--sub-color);
+    color: var(--bg-color);
 }
 
 p {
@@ -204,6 +203,7 @@ section {
     margin: 0 auto;
     /*background: linear-gradient(rgba(246, 246, 246, 0.255), rgba(246, 246, 246, 0.255)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;*/
     background-size: cover;
+    border-bottom: 1px solid;
 }
 /*
 #tab-1 {
@@ -297,11 +297,10 @@ section .top-s p {
 
 section .box {
     position: relative;
-    height: 100vh;
+    height: 1080px;
     display: flex;
     align-items: center;
-    filter: grayscale(0.65);
-    border-bottom: 1px solid;
+    border: 1px solid;
 }
 
 /*#tab-1 .top-s,
