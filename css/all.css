@@ -213,8 +213,8 @@ section .box {
     border: 1px solid;
 }
 
-/*===================== h1 top =====================*/
-section .top-h1 {
+/*===================== tabs h1 top =====================*/
+.tabs .top-h1 {
     font-weight: 600;
     position: absolute;
     top: 40%;
@@ -225,14 +225,23 @@ section .top-h1 {
     border: 1px solid;
 }
 
-section .top-h1 .h1 {
+.tabs .top-h1 .h1 {
     font-size: clamp(8rem, calc(8rem + 0.1vw), 10rem);
     margin-left: 70%;
 }
 
-section .top-h1 .caption {
-    font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
+.tabs .caption {
+    position: absolute;
+    top: 50%;
+    left: 3%;
     margin: 0;
+    border: 1px solid;
+}
+
+.tabs .top-h1 .caption {
+    font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
+    border: 0;
+    border-top: 1px solid;
 }
 
 /*===================== h1 top =====================*/
@@ -388,7 +397,7 @@ section img {
 .top .tabs .img {
     width: 100%;
     height: 100vh;
-    opacity: 0.5;
+    opacity: 0;
     background: url('https://raw.githubusercontent.com/mizukioyama/portfolio.github.io/main/img/230053-2.jpg') no-repeat center center;
     background-size: cover;
 }
