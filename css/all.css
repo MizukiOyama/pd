@@ -217,14 +217,6 @@ section {
     background: var(--bg-color);
 }
 
-section .box {
-    position: relative;
-    height: 750px;
-    display: flex;
-    align-items: center;
-    border: 1px solid;
-}
-
 /*===================== tabs h1 top =====================*/
 .tabs .top-h1 {
     font-weight: 600;
@@ -269,6 +261,10 @@ section .top-s {
     flex-direction: column;
     /* 縦に並べる */
     /*縦方向の中央寄せ justify-content: center;*/
+    position: relative;
+    height: 750px;
+    align-items: center;
+    border: 1px solid;
 }
 section .top-s .text {
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2.4rem);
@@ -286,10 +282,6 @@ section .top-s p {
 
 #tab-4 .top-s {
     margin-top: 0;
-}
-
-#tab-4 .box {
-    justify-content: center;
 }
 
 
@@ -411,9 +403,9 @@ section img {
 
 .bg-aitem {
     width: 300px;
-    height: 150px;
-    position: absolute;
-    top: 30%;
+    height: 100px;
+    position: relative;
+    background: var(--text-color);
 }
 
 
@@ -425,17 +417,15 @@ section img {
     background: url('https://raw.githubusercontent.com/mizukioyama/portfolio.github.io/main/img/230053-2.jpg') no-repeat center center;
     background-size: cover;
 }
-.top .section1 .box,
-.top .section3 .box {
-    justify-content: flex-start;
-}
 
-.top .section1 .top-s h2,
-.top .section2 .top-s h2,
-.top .section3 .top-s h2 {
-    position: absolute;
-    top: -5%;
-    left: 0;
+.h2-bg {
+    position: relative;
+    top: 0;
+    left: 5%;
+}
+.h2-bg p {
+    position: relative;
+    left: 5%;
 }
 .top .section1 .top-s,
 .top .section2 .top-s,
