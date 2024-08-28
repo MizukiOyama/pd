@@ -1,7 +1,10 @@
-.all-col {
-    width: 50%;
+
+  .form-row {
     display: flex;
-}
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+  
 .col {
     padding: 0 2.5rem;
     /*float: left;*/
@@ -56,23 +59,6 @@ input:-webkit-autofill:focus {
     background-color: var(--bg-color);
 }
 
-.contact-form {
-    width: 100%;
-    max-width: 800px;
-  }
-  
-  .form-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1rem;
-  }
-  
-  .form-col {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-  }
-  
 .contact-form #message {
     height: 300px;
 }
