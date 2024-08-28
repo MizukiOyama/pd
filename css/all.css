@@ -264,6 +264,9 @@ section .top-s {
     position: relative;
     z-index: 1;
 }
+.section4 .top-s {
+    justify-content: center;
+}
 
 section .top-s .text {
     width: 650px;
