@@ -255,6 +255,8 @@ section {
 
 /*===================== section p =====================*/
 section .top-s {
+    height: 750px;
+    border: 1px solid var(--text-color);
     padding: 0 10rem;
     text-align: justify;
     display: flex;
@@ -264,11 +266,7 @@ section .top-s {
     position: relative;
     z-index: 1;
 }
-section .top-s::after {
-    width: 100%;
-    height: 750px;
-    border: 1px solid var(--text-color);
-}
+
 section .top-s .text {
     width: 650px;
     margin: 15% 0 3%;
