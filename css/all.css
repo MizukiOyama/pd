@@ -107,11 +107,6 @@ h3 {
     font-size: clamp(3rem, calc(3rem + 0.5vw), 4rem);
 }
 
-h2,.tabs-container {
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--text-color);
-}
-
 h2,
 h3,
 h4 {
@@ -250,7 +245,7 @@ section .box {
 }
 
 .tabs .caption {
-    padding: 0.5rem 1rem;
+    padding: 1.5rem 1rem 1.5rem 4rem;
     margin-bottom: 10%;
     border: 1px solid;
 }
