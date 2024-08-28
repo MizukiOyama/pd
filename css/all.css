@@ -284,6 +284,7 @@ section .top-s p {
     width: 650px;
     height: 100px;
     border-left: 1px solid;
+    border-bottom: 1px solid;
     padding-left: 1rem;
 }
 
@@ -297,14 +298,16 @@ section .top-s p {
     background: var(--text-color);
     margin-left: 20%;
 }
+
 .srvice .video-2 {
-    width: 550px;
+    width: 400px;
     height: 100px;
     background: var(--text-color);
     margin-left: 20%;
 }
+
 .srvice .video-3 {
-    width: 750px;
+    width: 500px;
     height: 100px;
     background: var(--text-color);
     margin-left: 20%;
