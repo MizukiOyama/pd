@@ -6,6 +6,7 @@
         bottom: 0;
         display: flex;
         justify-content: space-between;
+        border: 10px solid var(--bg-color);
         z-index: 100;
     }
 
@@ -35,18 +36,13 @@
 
     .foot {
         font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 2rem);
+        color: var(--bg-color);
         text-align: right;
         position: absolute;
         padding: 0.25em 2em;
         bottom: 0%;
         right: 0%;
     }
-
-    /*security logo*/
-    .grecaptcha-badge {
-        visibility: hidden;
-    }
-
 
     @media only screen and (max-width:600px) {
         footer {
