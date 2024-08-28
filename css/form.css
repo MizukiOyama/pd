@@ -1,5 +1,6 @@
 .all-col {
     width: 50%;
+    display: flex;
 }
 .col {
     padding: 0 2.5rem;
@@ -8,11 +9,14 @@
 }
 
 .col.x-50 {
+    width: 50%;
     margin-top: 2rem;
     margin-right: 1rem;
+    flex-direction: column;
 }
 
 .col.x-100 {
+    width: 50%;
     margin-top: 2rem;
 }
 
