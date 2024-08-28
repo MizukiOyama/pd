@@ -2,7 +2,7 @@
     footer {
         position: relative;
         height: 400px;
-        padding: 4em 3em 0;
+        padding: 4em 15em 0;
         bottom: 0;
         display: flex;
         justify-content: space-between;
@@ -13,11 +13,8 @@
     .fo1, .fo2 {
         width: 50%;
     }
-    .fo1 {
-        left: 16%;
-    }
     .fo2 {
-        right: 16%;
+        text-align: right;
     }
 
     footer a {
@@ -45,11 +42,9 @@
     .foot {
         font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 2rem);
         color: var(--bg-color);
-        text-align: right;
         position: absolute;
         padding: 0.25em 2em;
         bottom: 0%;
-        right: 0%;
     }
 
     @media only screen and (max-width:600px) {
