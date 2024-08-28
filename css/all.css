@@ -263,12 +263,8 @@ section .box {
 
 /*===================== section p =====================*/
 section .top-s {
-    height: 400px;
-    padding: 2em 0;
-    margin-top: 10%;
     z-index: 1;
     text-align: justify;
-    position: relative;
     display: flex;
     flex-direction: column;
     /* 縦に並べる */
@@ -279,10 +275,6 @@ section .top-s .text {
     font-weight: 600;
     margin-bottom: 5%;
     text-align: left;
-}
-
-section .top-s h2 {
-    top: -13%;
 }
 
 section .top-s p {
@@ -409,9 +401,12 @@ section img {
 /*===================== bg-aitem =====================*/
 
 .h2-bg {
-    width: 100px;
+    width: 250px;
     height: 80px;
-    border: 1px solid;
+    border: 1px solid var(--text-color);
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .bg-aitem {
