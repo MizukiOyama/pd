@@ -229,12 +229,13 @@ nav {
 		a {
 			font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
             color: var(--text-color);
-            width: 80px;
+            width: 85px;
 			height: fit-content;
 			text-decoration: none;
 			margin: 2% auto 0;
 			padding: 0.025rem 0.1rem;
-			display: block;
+			display: flex;
+            justify-content: center;
 			transition: color 0.3s ease;
 		}
         .manu_p {
