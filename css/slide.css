@@ -1,7 +1,7 @@
 .se-slider-container {
-    width: 100%;
+    width: 40%;
     position: absolute;
-    top: 70%;
+    bottom: 30%;
     overflow: hidden;
     z-index: 1;
   }
@@ -33,7 +33,7 @@
   .se-slide i {
     display: block;
     flex-basis: var(--logo-width, 20%);
-    font-size: clamp(6rem, 5vw, 10rem);
+    font-size: clamp(4rem, 3vw, 8rem);
     padding: clamp(20px, 2vw, 25px) 0;
     transition: transform .3s;
     cursor: pointer;
