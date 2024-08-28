@@ -82,10 +82,10 @@ input:-webkit-autofill:focus {
     top: 0%;
     transition: transform 0.3s ease-in-out;
 }
-
+/*
 .contact-form .label-test {
     left: 3.5%;
-}
+}*/
 
 .contact-form .submit-btn {
     font-family: zen-maru-gothic, sans-serif;
