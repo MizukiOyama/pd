@@ -20,7 +20,7 @@
     height: fit-content;
     padding: 3rem 3rem 5rem;
     /*box-shadow: -1px -1px 1px 0px var(--text-color);*/
-    border: 1px double var(--text-color);
+    border: 6px double var(--text-color);
     background: var(--bg-color);
     z-index: 10;
     mix-blend-mode: inherit;

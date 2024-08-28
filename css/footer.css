@@ -13,10 +13,15 @@
     .fo1, .fo2 {
         width: 50%;
     }
+    .fo1 {
+        left: 16%;
+    }
+    .fo2 {
+        right: 16%;
+    }
 
     footer a {
         font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 3rem);
-        left: 16%;
         margin-top: 0.5em;
         padding: 0.5rem;
     }
