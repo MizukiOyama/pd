@@ -15,7 +15,7 @@
 
     footer a {
         font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 3rem);
-        left: 10%;
+        left: 16%;
         margin-top: 0.5em;
         padding: 0.5rem;
     }

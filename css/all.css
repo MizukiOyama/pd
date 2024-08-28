@@ -407,19 +407,6 @@ section img {
     margin: 0 auto;
 }
 
-/*===================== Top / About*/
-.top .section4 .top-s,
-.about .section4 .top-s {
-    width: clamp(650px, 100%, 600px);
-    width: clamp(800px, 100%, 650px);
-    height: 600px;
-    padding: 2em 4.5em;
-    align-items: center;
-    background: rgba(245, 252, 246, 0.7);
-    /*縦方向の中央寄せ */
-    justify-content: center;
-}
-
 
 /*===================== Top / Contact*/
 

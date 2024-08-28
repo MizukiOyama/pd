@@ -27,6 +27,7 @@ input:-webkit-autofill:focus {
 
 .content-wrapper {
     position: relative;
+    background: var(--text-color);
 }
 
 .get-in-touch {
@@ -48,6 +49,10 @@ input:-webkit-autofill:focus {
     height: 55px;
     border-width: 0;
     background-color: var(--bg-color);
+}
+
+.contact-form #message {
+    height: 300px;
 }
 
 .contact-form .input-text:focus {
