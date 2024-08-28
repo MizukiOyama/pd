@@ -235,13 +235,11 @@ section {
     top: 0;
     border-right: 1px solid;
 }
-
 .tabs .caption {
     padding: 1.5rem 1rem 1.5rem 4rem;
     margin-top: 50%;
     border: 1px solid;
 }
-
 .tabs .top-h1 .caption {
     font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
     width: 100%;
@@ -396,11 +394,6 @@ section img {
     top: 0;
     left: 0;
 }
-.h2-bg p {
-    position: relative;
-    left: 5%;
-}
-
 
 .bg-aitem {
     width: 300px;
@@ -408,8 +401,6 @@ section img {
     position: relative;
     background: var(--text-color);
 }
-
-
 
 .top #tab-4 .top-s .text {
     text-align: center;
