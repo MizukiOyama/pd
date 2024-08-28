@@ -255,21 +255,22 @@ section {
 
 /*===================== section p =====================*/
 section .top-s {
-    z-index: 1;
+    padding: 0 10rem;
     text-align: justify;
     display: flex;
     flex-direction: column;
     /* 縦に並べる */
     /*縦方向の中央寄せ justify-content: center;*/
     position: relative;
+    z-index: 1;
+}
+section .top-s::after {
     height: 750px;
-    align-items: center;
     border: 1px solid;
 }
 section .top-s .text {
-    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2.4rem);
-    font-weight: 600;
-    margin-bottom: 5%;
+    width: 650px;
+    margin: 5% auto;
     text-align: left;
 }
 
@@ -396,10 +397,16 @@ section img {
     width: 250px;
     height: 80px;
     border: 1px solid var(--text-color);
+    padding-left: 2rem;
     position: absolute;
     top: 0;
     left: 0;
 }
+.h2-bg p {
+    position: relative;
+    left: 5%;
+}
+
 
 .bg-aitem {
     width: 300px;
@@ -418,15 +425,6 @@ section img {
     background-size: cover;
 }
 
-.h2-bg {
-    position: relative;
-    top: 0;
-    left: 5%;
-}
-.h2-bg p {
-    position: relative;
-    left: 5%;
-}
 .top .section1 .top-s,
 .top .section2 .top-s,
 .top .section3 .top-s {
