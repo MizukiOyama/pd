@@ -4,8 +4,7 @@
 }
 .col {
     padding: 0 2.5rem;
-    float: left;
-    box-sizing: border-box;
+    /*float: left;*/
     flex: 1;
 }
 
