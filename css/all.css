@@ -121,7 +121,7 @@ h4 {
 
 p {
     /*font-size: 62.5%;=16px 1.2rem=12px*/
-    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 2rem);
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
     width: fit-content;
     letter-spacing: 0.05rem;
     /*text-shadow: 1px 1px 4px rgba(86, 86, 86, 0.65);*/
@@ -267,12 +267,15 @@ section .top-s {
 section .top-s::after {
     width: 100%;
     height: 750px;
-    border: 1px solid;
+    border: 1px solid var(--text-color);
 }
 section .top-s .text {
     width: 650px;
-    margin: 5% auto;
-    text-align: left;
+    margin: 15% 0 3%;
+}
+section .top-s .text:nth-child(3) {
+    width: 350px;
+    margin: 3% 0;
 }
 section .top-s p {
     color: var(--base-color);
@@ -322,7 +325,6 @@ section img {
     bottom: -5%;
     left: 0;
     clip-path: circle(40% at left);
-    /*transform:rotate(-10deg);*/
 }
 
 .section2 img {
