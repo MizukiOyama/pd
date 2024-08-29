@@ -13,7 +13,7 @@
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     position: absolute;
-    right: -5%;
+    right: -10%;
     bottom: 0;
     height: fit-content;
     padding: 2rem;
@@ -26,7 +26,7 @@
 }
 
 .tabs-container p {
-    font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 3rem);
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     margin-bottom: 10%;
 }
 
@@ -38,7 +38,7 @@
 }
 
 .tab {
-    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     /*text-shadow: -2px 0px 1px var(--text-color);*/
     height: 25px;
     display: flex;
