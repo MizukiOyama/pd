@@ -12,8 +12,6 @@
     flex-direction: row;*/
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
     position: absolute;
     right: -5%;
     bottom: 0;
@@ -24,7 +22,7 @@
     background: var(--bg-color);
     z-index: 10;
     mix-blend-mode: inherit;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 }
 
 .tabs-container p {
