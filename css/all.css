@@ -325,9 +325,11 @@ section .top-s p {
     width: 720px;
     bottom: 0;
 }
-.service .video-1::after {
+.service .video-1::before {
     content: "";
-    width: 10px;
+    position: absolute;
+    left: 0;
+    width: 20px;
     background: var(--accent-color);
 }
 .service .video-1 {
