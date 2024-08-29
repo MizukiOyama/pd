@@ -350,27 +350,34 @@ section .top-s .text:nth-child(3) {
     background: var(--text-color);
 }
 
-.work .design {
+.work {
     position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.design,
+.art {
+    position: absolute;
+    border: 1px solid var(--text-color);
+}
+.design {
     left: 10%;
     bottom: 5%;
     width: 700px;
     height: 600px;
-    border: 1px solid var(--text-color);
 }
 .design video {
     width: 650px;
     height: 520px;
     background: var(--text-color);
 }
-
-.work .art {
-    position: relative;
-    left: 10%;
+.art {
+    right: 10%;
     bottom: 5%;
     width: 500px;
     height: 550px;
-    border: 1px solid var(--text-color);
 }
 .art video {
     width: 420px;
