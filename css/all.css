@@ -280,7 +280,8 @@ section {
 /*===================== section p =====================*/
 section .top-s {
     height: 600px;
-    border: 1px solid var(--text-color);
+    border-top: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
     padding: 0 10rem;
     text-align: justify;
     display: flex;
@@ -537,13 +538,22 @@ section img {
 .h2-bg {
     width: 250px;
     height: 80px;
-    border: 1px solid var(--text-color);
-    border-top: 0;
-    border-left: 0;
+    border-right: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
     padding-left: 2rem;
     position: absolute;
     top: 0;
     left: 0;
+}
+.h2-bg::before {
+    content: "";
+    width: 140px;
+    height: 30px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
 }
 
 .bg-aitem {
