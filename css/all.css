@@ -291,12 +291,12 @@ section .top-s p {
     width: 700px;
     height: 100px;
     margin-top: 1rem;
-    padding-left: 1rem;
 }
 
 .service h3 {
     color: var(--text-color);
-    border-left: 1px solid;
+    margin-top: 4rem;
+    padding-left: 1rem;
     border-bottom: 1px solid;
 }
 
