@@ -272,7 +272,7 @@ section .top-s {
 }
 
 section .top-s .text {
-    width: 650px;
+    width: 500px;
     margin: 15% 0 3%;
 }
 #tab-2 .top-s .text,
@@ -282,7 +282,7 @@ section .top-s .text {
 
 section .top-s .text:nth-child(3) {
     width: 350px;
-    margin: 3% 0;
+    margin: 3% 0 0;
 }
 
 /*===================== .service =====================*/
@@ -441,16 +441,18 @@ section img {
 }
 
 .section1 img {
-    width: 30%;
-    top: 20%;
+    width: 35%;
+    height: 480px;
+    top: 25%;
     right: 0;
     /*clip-path: circle(40% at left);*/
 }
 
 .section1 img:last-child {
-    width: 25%;
-    bottom: 3%;
-    right: 10%;
+    width: 350px;
+    height: 400px;
+    top: 45%;
+    right: 15%;
 }
 
 .section3 img {
