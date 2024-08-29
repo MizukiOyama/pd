@@ -354,8 +354,10 @@ section .top-s .text:nth-child(3) {
 .work {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
     display: flex;
+    align-items: flex-start;
+    justify-content: center;
 }
 
 .design,
@@ -364,25 +366,25 @@ section .top-s .text:nth-child(3) {
     border: 1px solid var(--text-color);
 }
 .design {
-    left: 10%;
+    left: 5%;
     bottom: 5%;
-    width: 700px;
-    height: 600px;
+    width: 380px;
+    height: 400px;
 }
 .design video {
-    width: 650px;
-    height: 520px;
+    width: 350px;
+    height: 350px;
+    margin-left: 2%;
     background: var(--text-color);
 }
 .art {
-    right: 10%;
-    bottom: 5%;
-    width: 500px;
-    height: 550px;
+    right: 5%;
+    width: 300px;
+    height: 260px;
 }
 .art video {
-    width: 420px;
-    height: 450px;
+    width: 280px;
+    height: 280px;
     background: var(--text-color);
 }
 
