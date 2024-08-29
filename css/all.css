@@ -276,9 +276,6 @@ section .top-s .text:nth-child(3) {
     width: 350px;
     margin: 3% 0;
 }
-section .top-s p {
-    color: var(--text-color);
-}
 
 .service-list {
     height: 50%;
@@ -310,8 +307,8 @@ section .top-s p {
 .se-01,
 .se-02,
 .se-03 {
-    right: 0;
     position: absolute;
+    right: 0;
 }
 .se-01 {
     width: 450px;
@@ -350,6 +347,34 @@ section .top-s p {
 .service .video-3 {
     width: 500px;
     height: 100px;
+    background: var(--text-color);
+}
+
+.work .design {
+    position: relative;
+    left: 10%;
+    bottom: 5%;
+    width: 700px;
+    height: 600px;
+    border: 1px solid var(--text-color);
+}
+.design video {
+    width: 650px;
+    height: 520px;
+    background: var(--text-color);
+}
+
+.work .art {
+    position: relative;
+    left: 10%;
+    bottom: 5%;
+    width: 500px;
+    height: 550px;
+    border: 1px solid var(--text-color);
+}
+.art video {
+    width: 420px;
+    height: 450px;
     background: var(--text-color);
 }
 
