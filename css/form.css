@@ -112,6 +112,7 @@ input:-webkit-autofill:focus {
 .align-center {
     display: flex;
     justify-content: flex-end;
+    padding-right: 1.5rem;
 }
 
 .note {
