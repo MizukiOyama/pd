@@ -121,7 +121,7 @@ h4 {
 
 p {
     /*font-size: 62.5%;=16px 1.2rem=12px*/
-    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
     width: fit-content;
     letter-spacing: 0.05rem;
     /*text-shadow: 1px 1px 4px rgba(86, 86, 86, 0.65);*/
@@ -227,6 +227,7 @@ section {
     width: auto;
     padding: 0.5rem 4rem;
     border: 1px solid;
+    border-left: 0;
 }
 .tabs .top-h1::after {
     content: "";
@@ -253,7 +254,7 @@ section {
 
 /*===================== section p =====================*/
 section .top-s {
-    height: 750px;
+    height: 600px;
     border: 1px solid var(--text-color);
     padding: 0 10rem;
     text-align: justify;
@@ -497,6 +498,7 @@ section img {
     width: 250px;
     height: 80px;
     border: 1px solid var(--text-color);
+    border-left: 0;
     padding-left: 2rem;
     position: absolute;
     top: 0;
