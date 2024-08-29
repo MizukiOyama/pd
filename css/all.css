@@ -281,9 +281,10 @@ section .top-s p {
 }
 
 .service-list {
+    height: 50%;
     position: absolute;
     right: 0;
-    bottom: 5%;
+    bottom: 0;
 }
 .service {
     position: relative;
@@ -306,17 +307,23 @@ section .top-s p {
     top: 0;
     right: 0;
 }
+.se-01,
+.se-02,
+.se-03 {
+    right: 0;
+    position: absolute;
+}
 .se-01 {
     width: 450px;
-    position: absolute;
+    top: 0;
 }
 .se-02 {
     width: 550px;
-    position: absolute;
+    bottom: 35%;
 }
 .se-03 {
     width: 650px;
-    position: absolute;
+    bottom: 0;
 }
 
 .service .video-1 {
