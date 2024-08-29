@@ -236,8 +236,8 @@ section {
     position: absolute;
     top: 20%;
     left: 0;
-    color: var(--base-color);
-    width: auto;
+    background: var(--bg-color);
+    mix-blend-mode: luminosity;
     padding: 0.5rem 4rem;
     border: 1px solid;
     border-left: 0;
@@ -256,7 +256,7 @@ section {
     position: absolute;
     top: 10%;
     right: 0;
-    background: var(--accent-color);
+    background: var(--text-color);
     z-index: 0;
 }
 .tabs .caption {
@@ -545,12 +545,17 @@ section img {
     top: 0;
     left: 0;
 }
+.h2-bg p {
+    color: var(--bg-color);
+}
 .h2-bg p::before {
     content: "";
-    width: 150px;
-    height: 100%;
+    width: 50%;
+    height: 37.5%;
     position: absolute;
     left: 0;
+    bottom: 0;
+    background: var(--text-color);
     border-top: 1px solid var(--text-color);
     border-right: 1px solid var(--text-color);
 }
