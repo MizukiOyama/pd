@@ -78,6 +78,12 @@ body {
     height: auto;
     overflow-x: hidden;
 }
+body::after {
+    width: 100%;
+    border-top: 5px solid;
+    border-right: 5px solid;
+    z-index: 0;
+}
 
 h1 {
     /*font-size: 62.5%;=16px 12rem=120px*/
