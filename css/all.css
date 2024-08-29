@@ -277,7 +277,7 @@ section .top-s .text:nth-child(3) {
     margin: 3% 0;
 }
 section .top-s p {
-    color: var(--base-color);
+    color: var(--text-color);
 }
 
 .service-list {
