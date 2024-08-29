@@ -438,10 +438,10 @@ section img {
 .section3 img,
 .section4 img {
     width: 35%;
+    background: var(--hover-color);
 }
 
 .section1 img {
-    width: 35%;
     height: 480px;
     top: 25%;
     right: 0;
@@ -449,8 +449,8 @@ section img {
 }
 
 .section1 img:last-child {
-    width: 350px;
-    height: 400px;
+    width: 40%;
+    height: 430px;
     top: 45%;
     right: 15%;
 }
