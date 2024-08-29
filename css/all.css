@@ -545,12 +545,11 @@ section img {
     top: 0;
     left: 0;
 }
-.h2-bg::before {
+.h2-bg p::before {
     content: "";
-    width: 140px;
-    height: 30px;
+    width: 150px;
+    height: 100%;
     position: absolute;
-    bottom: 0;
     left: 0;
     border-top: 1px solid var(--text-color);
     border-right: 1px solid var(--text-color);
