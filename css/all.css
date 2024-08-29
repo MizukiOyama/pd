@@ -318,14 +318,18 @@ section .top-s p {
     top: 0;
 }
 .se-02 {
-    width: 550px;
+    width: 590px;
     bottom: 35%;
 }
 .se-03 {
-    width: 650px;
+    width: 720px;
     bottom: 0;
 }
-
+.service .video-1::after {
+    content: "";
+    width: 10px;
+    background: var(--accent-color);
+}
 .service .video-1 {
     width: 300px;
     height: 100px;
