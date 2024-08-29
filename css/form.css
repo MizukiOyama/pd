@@ -11,12 +11,12 @@
 
 .col.x-50 {
     padding: 0 1.5rem 0;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .col.x-100 {
     padding-right: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 input:-internal-autofill-selected,
@@ -98,8 +98,8 @@ input:-webkit-autofill:focus {
     letter-spacing: 0.2rem;
     line-height: 1.5rem;
     padding: 0.35rem 0.8rem 0.5rem 1.2rem;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
     border: none;
     cursor: pointer;
     transition: all 0.35s ease;
@@ -112,7 +112,7 @@ input:-webkit-autofill:focus {
 .align-center {
     display: flex;
     justify-content: flex-end;
-    padding-right: 1.5rem;
+    padding-right: 1rem;
 }
 
 .note {
