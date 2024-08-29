@@ -30,9 +30,9 @@
 
     footer div a {
         font-size: clamp(2.4rem, calc(2.4rem + 0.1vw), 2.8rem);
+        font-weight: 600;
         color: var(--text-color);
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: var(--bg-color);
+        text-shadow: -1px -1px  var(--text-color), -1px 1px  var(--text-color), 1px -1px  var(--text-color), 1px 1px var(--text-color);
     }
 
     footer a:hover {
