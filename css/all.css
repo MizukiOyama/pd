@@ -325,11 +325,14 @@ section .top-s p {
     width: 720px;
     bottom: 0;
 }
-.service .video-1::before {
+.service .video-1::before,
+.service .video-2::before,
+.service .video-3::before {
     content: "";
+    width: 35px;
+    height: 100%;
     position: absolute;
     left: 0;
-    width: 20px;
     background: var(--accent-color);
 }
 .service .video-1 {
