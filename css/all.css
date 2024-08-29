@@ -280,9 +280,17 @@ section .top-s p {
     color: var(--base-color);
 }
 
+.srvice-list {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
 .srvice {
-    width: 650px;
+    position: relative;
+    width: 700px;
     height: 100px;
+    margin-left: 40%;
     border-left: 1px solid;
     border-bottom: 1px solid;
     padding-left: 1rem;
@@ -290,6 +298,14 @@ section .top-s p {
 
 .srvice h3 {
     color: var(--text-color);
+}
+
+.srvice .video-1,
+.srvice .video-2,
+.srvice .video-3 {
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 .srvice .video-1 {
