@@ -230,6 +230,7 @@ section {
     padding: 0.5rem 4rem;
     border: 1px solid;
     border-left: 0;
+    z-index: 1;
 }
 .tabs .top-h1::after {
     content: "";
@@ -245,11 +246,14 @@ section {
     top: 10%;
     right: 0;
     background: var(--accent-color);
+    z-index: 0;
 }
 .tabs .caption {
+    margin-top: 50%;
     padding: 1.5rem 1rem 1.5rem 4rem;
     border: 1px solid;
     border-left: 0;
+    z-index: 1;
 }
 .tabs .top-h1 .caption {
     font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
