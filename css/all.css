@@ -441,16 +441,16 @@ section img {
 }
 
 .section1 img {
-    width: 45%;
-    bottom: -5%;
-    left: 0;
-    clip-path: circle(40% at left);
+    width: 30%;
+    top: 20%;
+    right: 0;
+    /*clip-path: circle(40% at left);*/
 }
 
-.section2 img {
+.section1 img:last-child {
     width: 25%;
     bottom: 3%;
-    right: 3%;
+    right: 10%;
 }
 
 .section3 img {
