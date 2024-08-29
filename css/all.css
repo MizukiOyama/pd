@@ -545,9 +545,7 @@ section img {
     top: 0;
     left: 0;
 }
-.h2-bg p {
-    color: var(--bg-color);
-}
+
 .h2-bg p::before {
     content: "";
     width: 50%;
@@ -555,7 +553,6 @@ section img {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: var(--text-color);
     border-top: 1px solid var(--text-color);
     border-right: 1px solid var(--text-color);
 }
