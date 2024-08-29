@@ -238,9 +238,16 @@ section {
     top: 0;
     border-right: 1px solid;
 }
+.top .tabs video {
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    background: var(--accent-color);
+}
 .tabs .caption {
     padding: 1.5rem 1rem 1.5rem 4rem;
-    margin-top: 50%;
     border: 1px solid;
     border-left: 0;
 }
