@@ -80,7 +80,7 @@ input:-webkit-autofill:focus {
     position: absolute;
     left: 6%;
     top: 0%;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.2s ease-in-out;
 }
 /*
 .contact-form .label-test {
@@ -103,7 +103,7 @@ input:-webkit-autofill:focus {
     margin-bottom: 2rem;
     border: none;
     cursor: pointer;
-    transition: all 0.5s ease;
+    transition: all 0.35s ease;
 }
 .contact-form .submit-btn:hover {
     color: var(--text-color);
