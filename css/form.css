@@ -90,7 +90,7 @@ input:-webkit-autofill:focus {
 .contact-form .submit-btn {
     font-family: zen-maru-gothic, sans-serif;
     font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
-    width: 350px;
+    width: 380px;
     height: 35pt;
     display: inline-block;
     color: var(--bg-color);
@@ -99,6 +99,7 @@ input:-webkit-autofill:focus {
     letter-spacing: 0.2rem;
     line-height: 1.5rem;
     padding: 0.35rem 0.8rem 0.5rem 1.2rem;
+    margin-top: 2rem;
     margin-bottom: 2rem;
     border: none;
     cursor: pointer;
@@ -116,16 +117,20 @@ input:-webkit-autofill:focus {
 }
 
 .note {
-    position: relative;
-    z-index: -1;
+    position: absolute;
+    left: 1.5rem;
+    bottom: 3rem;
+    z-index: 1;
 }
 
 .note a {
+    font-size: clamp(1rem, calc(1rem + 0.1vw), 1.2rem);
     letter-spacing: 0.065rem;
 }
 
 .note p {
-    margin: 0 auto;
+    font-size: clamp(1rem, calc(1rem + 0.1vw), 1.2rem);
+    color: var(--bg-color);
 }
 
 
