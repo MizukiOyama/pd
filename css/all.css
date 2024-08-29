@@ -255,7 +255,7 @@ section {
     height: 60%;
     position: absolute;
     top: 10%;
-    right: 0;
+    right: 1%;
     background: var(--text-color);
     z-index: 0;
 }
