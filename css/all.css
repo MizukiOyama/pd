@@ -317,6 +317,8 @@ section .top-s::before {
     left: 0;
     border-top: 1px solid var(--text-color);
     border-right: 1px solid var(--text-color);
+    background-color: rgba(217, 217, 217, 0.35);
+    background-image: repeating-linear-gradient(20deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px );
 }
 
 .h2-bg {
@@ -341,6 +343,8 @@ section .top-s::before {
     left: 0;
     bottom: 0;
     border-top: 1px solid var(--text-color);
+    background-color: rgba(217, 217, 217, 0.35);
+    background-image: repeating-linear-gradient(20deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px );
 }
 
 .section4 .top-s {
