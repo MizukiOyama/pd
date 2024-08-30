@@ -88,11 +88,14 @@ body::before {
     border-top: 5px solid var(--bg-color);
     border-right: 10px solid var(--bg-color);
     z-index: 0;
+    background-size: auto auto;
+background-color: rgba(217, 217, 217, 0.35);
+background-image: repeating-linear-gradient(20deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px );
 }
 
 h1 {
     /*font-size: 62.5%;=16px 12rem=120px*/
-    font-size: clamp(8rem, calc(8rem + 0.1vw), 10rem);
+    font-size: clamp(6rem, calc(6rem + 0.1vw), 8rem);
     /*font-family: liana, script;
     font-weight: 400;*/
     font-family: "Inter", sans-serif;
@@ -127,13 +130,13 @@ h2 {
 
 h3 {
     /*font-size: 62.5%;=16px 4rem=42px*/
-    font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3.4rem);
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 4rem);
     color: var(--text-color);
 }
 
 p {
     /*font-size: 62.5%;=16px 1.2rem=12px*/
-    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
     width: fit-content;
     letter-spacing: 0.05rem;
     /*text-shadow: 1px 1px 4px rgba(86, 86, 86, 0.65);*/
