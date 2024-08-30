@@ -52,7 +52,7 @@ jQuery(document).ready(function ($) {
             } else {
                 $('.tabs-container').removeClass('tabs-container--top');
             }
-        }
+        }        
 
         findCurrentTabSelector() {
             let newCurrentId;
