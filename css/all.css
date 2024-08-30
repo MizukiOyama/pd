@@ -640,7 +640,7 @@ section img {
     position: relative;
     width: 10px;
     bottom: -15px;
-    left: 0;
+    left: -10px;
     margin-right: 0.5rem;
     border-bottom: 1px solid var(--text-color);
 }
