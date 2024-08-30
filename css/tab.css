@@ -34,7 +34,10 @@
     width: fit-content;
     position: fixed;
     bottom: 0;
-    right: 9.5%;
+    right: 0;
+}
+.tabs-container--hide {
+    right: -100%;
 }
 
 .tab {
