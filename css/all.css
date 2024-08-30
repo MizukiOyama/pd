@@ -115,6 +115,7 @@ h1 {
     color: var(--text-color);
     width: fit-content;
     line-height: 10rem;
+    letter-spacing: 0.4rem;
 }
 .top h1 {
     margin-left: -5px;
@@ -262,7 +263,7 @@ section {
     left: 0;
     background: var(--bg-color);
     mix-blend-mode: luminosity;
-    padding: 0.5rem 4rem;
+    padding: 0.15rem 4rem;
     border: 1px solid;
     border-left: 0;
     z-index: 1;
