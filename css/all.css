@@ -424,7 +424,7 @@ section .top-s .text:nth-child(3) {
     background: var(--text-color);
 }
 .art {
-    right: -2%;
+    right: -8vmin;
     width: 300px;
     height: 260px;
     border-left: 0;
