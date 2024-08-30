@@ -598,6 +598,16 @@ section img {
     height: 90%;
     background: var(--text-color);
 }
+.profile {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.oyama,
+.like {
+    width: 50%;
+}
+
 .profile ol {
     width: 100%;
     height: 100%;
