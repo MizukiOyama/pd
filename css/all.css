@@ -579,7 +579,7 @@ section img {
     font-size: clamp(14rem, calc(14rem + 0.1vw), 16rem);
     color: var(--bg-color);
     position: relative;
-    padding-left: 0.5rem;
+    padding-left: 0;
     z-index: 1;
 }
 .about .design,
@@ -599,10 +599,10 @@ section img {
 .about .design video,
 .about .art video {
     position: absolute;
-    top: 5%;
-    left: 5%;
-    width: 90%;
-    height: 90%;
+    top: 2.5%;
+    left: 2.5%;
+    width: 95%;
+    height: 95%;
     margin: 0;
     background: var(--text-color);
 }
