@@ -558,6 +558,7 @@ section img {
 .about #tab-1 .top-s .text:nth-child(n - 3) {
     width: 35%;
     margin: 3% 0 0;
+    padding: 1rem;
 }
 
 
