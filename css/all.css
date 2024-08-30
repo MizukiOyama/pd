@@ -624,7 +624,6 @@ section img {
 }
 .profile li {
     width: 100%;
-    border-left: 1px solid var(--text-color);
 }
 .profile li br {
     display: block;
@@ -633,10 +632,12 @@ section img {
 }
 .profile li::before {
     content: "";
-    position: absolute;
-    top: 0;
+    display: block;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    bottom: 15px;
     left: 0;
-    margin-left: -1px;
     margin-right: 0.5rem;
     border-left: 1px solid var(--text-color);
     border-bottom: 1px solid var(--text-color);
