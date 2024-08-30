@@ -338,12 +338,6 @@ section .top-s::before {
     border-top: 1px solid var(--text-color);
 }
 
-.bg-aitem {
-    width: 300px;
-    height: 100px;
-    position: relative;
-    background: var(--text-color);
-}
 .section4 .top-s {
     justify-content: center;
 }
@@ -356,11 +350,6 @@ section .top-s .text {
 #tab-2 .top-s .text,
 #tab-3 .top-s .text {
     margin-bottom: 0;
-}
-
-.top section .top-s .text:nth-child(3) {
-    width: 350px;
-    margin: 3% 0 0;
 }
 
 /*===================== .service =====================*/
@@ -528,7 +517,17 @@ section img {
 }
 
 /*===================== bg-aitem =====================*/
+.bg-aitem {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    background: var(--text-color);
+}
 
+.top section .top-s .text:nth-child(3) {
+    width: 350px;
+    margin: 3% 0 0;
+}
 
 .top #tab-4 .top-s .text {
     text-align: center;
@@ -543,7 +542,23 @@ section img {
     width: 70%;
     margin: 15% auto 3%;
 }
-
+.about .bg-aitem {
+    width: 70%;
+    height: 100px;
+    position: relative;
+    background: var(--text-color);
+    margin: 0 auto;
+}
+.thoughts {
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.about #tab-1 .top-s .text:nth-child(3) {
+    width: 35%;
+    margin: 3% 0 0;
+}
 
 
 /*===================== About =====================*/
