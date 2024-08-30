@@ -539,7 +539,7 @@ section img {
 
 /*===================== About =====================*/
 .about section .top-s {
-    flex-direction: column;
+    flex-direction: row;
 }
 .about #tab-1 .top-s .text {
     width: 70%;
@@ -629,6 +629,10 @@ section img {
 }
 .profile li span {
     font-size: clamp(1rem, calc(1rem + 0.1vw), 1.2rem);
+}
+
+.profile video {
+    background: var(--hover-color);
 }
 
 /*===================== About =====================*/
