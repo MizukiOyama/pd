@@ -94,7 +94,6 @@ body::before {
     background-color: rgba(217, 217, 217, 0.38);
     background-image: repeating-linear-gradient(340deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
     animation: moveBackground 0.65s linear infinite;
-    
 }
 @keyframes moveBackground {
     0% {
@@ -327,7 +326,8 @@ section .top-s::before {
     border-top: 1px solid var(--text-color);
     border-right: 1px solid var(--text-color);
     background-color: rgba(217, 217, 217, 0.35);
-    background-image: repeating-linear-gradient(60deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px );
+    background-image: repeating-linear-gradient(60deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
+    animation: moveBackground 0.55s linear infinite;
 }
 
 .h2-bg {
@@ -353,7 +353,8 @@ section .top-s::before {
     bottom: 0;
     border-top: 1px solid var(--text-color);
     background-color: rgba(217, 217, 217, 0.35);
-    background-image: repeating-linear-gradient(50deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px );
+    background-image: repeating-linear-gradient(50deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
+    animation: moveBackground 0.85s linear infinite;
 }
 
 .section4 .top-s {
