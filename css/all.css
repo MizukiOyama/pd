@@ -633,7 +633,7 @@ section img {
 }
 .profile ol div {
     height: 83px;
-    padding-left: 15px;
+    padding-left: 10px;
     border-left: 1px solid var(--text-color);
 }
 .profile li {
@@ -650,7 +650,7 @@ section img {
     position: relative;
     width: 5px;
     bottom: -10px;
-    left: -15px;
+    left: -10px;
     margin-right: 0.5rem;
     border-bottom: 1px solid var(--text-color);
 }
