@@ -315,8 +315,8 @@ section .top-s::before {
 }
 
 .h2-bg {
-    width: 270px;
-    height: 120px;
+    width: 250px;
+    height: 100px;
     border-right: 1px solid var(--text-color);
     border-bottom: 1px solid var(--text-color);
     padding-left: 2rem;
@@ -555,10 +555,10 @@ section img {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap: 2%;
 }
 .thoughts p {
-    width: 35%;
+    width: 34%;
     margin: 3% 0 0;
 }
 
