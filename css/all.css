@@ -170,12 +170,6 @@ li {
     list-style: none;
 }
 
-br {
-    display: block;
-    content: "";
-    margin: 10px 0;
-}
-
 /*===================== リンク =====================*/
 main a {
     letter-spacing: 0.75rem;
@@ -609,6 +603,7 @@ section img {
     left: 5%;
     width: 90%;
     height: 90%;
+    margin: 0;
     background: var(--text-color);
 }
 .profile {
@@ -627,6 +622,11 @@ section img {
     height: 100%;
     border-left: 1px solid var(--text-color);
     margin-bottom: 5%;
+}
+.profile li br {
+    display: block;
+    content: "";
+    margin: -10px 0;
 }
 .profile li::before {
     content: "-";
