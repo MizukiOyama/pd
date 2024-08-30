@@ -575,8 +575,12 @@ section img {
     align-items: center;
     justify-content: center;
 }
-.about .design h3 {
+.about h3 {
+    font-size: clamp(3rem, calc(3rem + 0.1vw), 4rem);
+    color: var(--bg-color);
+    position: relative;
     padding-left: 0.5rem;
+    z-index: 1;
 }
 .about .design,
 .about .art {
