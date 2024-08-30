@@ -51,7 +51,7 @@ input:-webkit-autofill:focus {
     font-family: Lusitana, serif;
     font-weight: 400;
     display: block;
-    width: 300px;
+    width: 270px;
     height: 75px;
     border-width: 0;
     background-color: var(--bg-color);
@@ -69,7 +69,7 @@ input:-webkit-autofill:focus {
 
 .contact-form .input-text:focus+.label,
 .contact-form .input-text.not-empty+.label {
-    transform: translateY(-5rem);
+    transform: translateY(-3.5rem);
 }
 
 .contact-form .label {
@@ -88,8 +88,8 @@ input:-webkit-autofill:focus {
 
 .contact-form .submit-btn {
     font-family: zen-maru-gothic, sans-serif;
-    font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
-    width: 380px;
+    font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
+    width: 42.5%;
     height: 35pt;
     display: inline-block;
     color: var(--bg-color);
