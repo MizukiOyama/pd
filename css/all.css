@@ -579,23 +579,23 @@ section img {
 .about .art {
     width: 380px;
     height: 380px;
-    position: absolute;
+    position: relative;
     border: 1px solid var(--text-color);
 }
 
 .about .design {
-    left: 0;
+    left: -2.5%;
 }
 .about .art {
-    right: 0;
+    right: -2.5%;
 }
 .about .design video,
 .about .art video {
     position: absolute;
-    top: 4%;
-    left: 4%;
-    width: 360px;
-    height: 360px;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
     background: var(--text-color);
 }
 
