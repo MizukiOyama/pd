@@ -80,10 +80,10 @@ jQuery(document).ready(function ($) {
         setSliderCss() {
             if (this.currentTab) {
                 let width = this.currentTab.outerWidth();
-                let left = this.currentTab.offset().left;
+                let right = this.currentTab.offset().right;
                 $('.tab-slider').css({
                     width: width,
-                    left: left
+                    right: right
                 });
             }
         }

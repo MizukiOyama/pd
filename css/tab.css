@@ -13,7 +13,7 @@
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     position: absolute;
-    right: -10%;
+    right: -8%;
     bottom: 0;
     height: fit-content;
     padding: 2rem;
@@ -34,7 +34,7 @@
     width: fit-content;
     position: fixed;
     bottom: 0;
-    right: 5%;
+    right: 9.5%;
 }
 
 .tab {
