@@ -159,9 +159,7 @@ p {
 
 ol,
 ul {
-    font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 2.8rem);
-    font-weight: 600;
-    color: var(--base-color);
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
 }
 
 li {
@@ -623,7 +621,8 @@ section img {
     margin-bottom: 5%;
 }
 .profile ol div {
-    height: fit-content;
+    height: 110px;
+    padding-left: 10px;
     border-left: 1px solid var(--text-color);
 }
 .profile li {
@@ -649,6 +648,7 @@ section img {
 }
 
 .profile .like video {
+    width: 450px;
     margin-bottom: 5%;
 }
 
