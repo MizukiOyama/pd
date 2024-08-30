@@ -79,14 +79,19 @@ jQuery(document).ready(function ($) {
 
         setSliderCss() {
             if (this.currentTab) {
-                let height = this.currentTab.outerWidth();
-                let left = this.currentTab.offset().left;
+                // 幅を正確に取得
+                let width = this.currentTab.outerWidth();
+                // タブの左からの位置を取得
+                let left = this.currentTab.position().left;
+                
+                // タブスライダーのCSSを設定
                 $('.tab-slider').css({
-                    height: height,
-                    left: left
+                    width: width,  // 高さではなく幅を設定
+                    left: left     // leftの位置を設定
                 });
             }
         }
+        
 
         updateTabPosition() {
             // 強制的にスクロールイベントをトリガーしてバーの位置を更新

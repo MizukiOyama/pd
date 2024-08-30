@@ -17,7 +17,6 @@
     display: flex;
     width: 200%;
     animation: slide var(--duration, 20s) linear infinite;
-    --duration: 25s;
   }
   .se-slides.alternate {
     animation: slide_alternate var(--duration, 20s) linear infinite;

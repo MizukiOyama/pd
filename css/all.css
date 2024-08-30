@@ -130,7 +130,6 @@ h3 {
     color: var(--text-color);
 }
 
-
 p {
     /*font-size: 62.5%;=16px 1.2rem=12px*/
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
@@ -152,7 +151,6 @@ p {
     transform: translateY(0);
 }
 
-
   /*.tate {
     writing-mode: vertical-rl;
     line-height: 2.5rem;
@@ -170,8 +168,6 @@ li {
     font-weight: 500;
     list-style: none;
 }
-
-/*===================== body text =====================*/
 
 /*===================== リンク =====================*/
 main a {
@@ -221,6 +217,22 @@ a:hover::after {
     position: relative;
     z-index: -10;
 }
+
+/*===================== img =====================*/
+img {
+    max-width: 100%;
+    width: 65%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 0.75rem;
+    mix-blend-mode: color-burn;
+    z-index: 0;
+}
+
 
 /*===================== Section =====================*/
 section {
@@ -276,7 +288,7 @@ section {
 
 /*===================== h1 top =====================*/
 
-/*===================== section p =====================*/
+/*===================== section =====================*/
 section .top-s {
     height: 600px;
     border-top: 1px solid var(--text-color);
@@ -299,6 +311,37 @@ section .top-s::before {
     left: 0;
     border-top: 1px solid var(--text-color);
     border-right: 1px solid var(--text-color);
+}
+
+.h2-bg {
+    width: 270px;
+    height: 120px;
+    border-right: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+    padding-left: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.h2-bg p::before {
+    content: "";
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid var(--text-color);
+}
+
+.bg-aitem {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    background: var(--text-color);
 }
 .section4 .top-s {
     justify-content: center;
@@ -436,25 +479,6 @@ section .top-s .text:nth-child(3) {
 
 /*===================== section in-box =====================*/
 
-
-
-/*===================== Section =====================*/
-
-/*===================== img =====================*/
-img {
-    max-width: 100%;
-    width: 65%;
-    height: auto;
-    object-fit: cover;
-    vertical-align: middle;
-    font-style: italic;
-    background-repeat: no-repeat;
-    background-size: cover;
-    shape-margin: 0.75rem;
-    mix-blend-mode: color-burn;
-    z-index: 0;
-}
-
 section #top-img {
     width: 75%;
     top: -10%;
@@ -500,80 +524,9 @@ section img {
     right: 0;
     transform:rotate(180deg);
 }
-/*===================== .img*/
-.section1 .img,
-.section2 .img,
-.section3 .img,
-.section4 .img {
-    width: clamp(750px, 100%, 500px);
-    height: 70%;
-    /*border: 3px solid var(--base-color);*/
-    position: absolute;
-    z-index: 1;
-    background-size: cover;
-    mix-blend-mode: color-burn;
-}
-
-.section1 .img,
-.section3 .img {
-    content: "";
-    top: 0;
-    right: 0%;
-    background: linear-gradient(rgba(246, 246, 246, 0.455), rgba(246, 246, 246, 0.455)), url('https://mizukioyama.github.io/pd/hp-img/tower.png') no-repeat center center;
-}
-
-.section3 .img {
-    background: url('https://mizukioyama.github.io/pd/hp-img/skill01.png') no-repeat center center;
-}
-
-.section2 .img,
-.section4 .img {
-    content: "";
-    width: 50%;
-    height: 500px;
-    left: 0%;
-    top: 0%;
-    background: url('https://mizukioyama.github.io/pd/hp-img/overall.png') no-repeat center center;
-}
-
-.section4 .img {
-/*    width: clamp(600px, 100%, 400px);
-    height: 450px;*/
-    background: url('https://mizukioyama.github.io/pd/hp-img/ai-service01.png') no-repeat center center;
-}
 
 /*===================== bg-aitem =====================*/
 
-.h2-bg {
-    width: 270px;
-    height: 120px;
-    border-right: 1px solid var(--text-color);
-    border-bottom: 1px solid var(--text-color);
-    padding-left: 2rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.h2-bg p::before {
-    content: "";
-    width: 100%;
-    height: 10%;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    border-top: 1px solid var(--text-color);
-}
-
-.bg-aitem {
-    width: 300px;
-    height: 100px;
-    position: relative;
-    background: var(--text-color);
-}
 
 .top #tab-4 .top-s .text {
     text-align: center;
