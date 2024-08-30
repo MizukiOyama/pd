@@ -79,11 +79,11 @@ jQuery(document).ready(function ($) {
 
         setSliderCss() {
             if (this.currentTab) {
-                let width = this.currentTab.outerWidth();
-                let right = this.currentTab.offset().right;
+                let height = this.currentTab.outerWidth();
+                let left = this.currentTab.offset().left;
                 $('.tab-slider').css({
-                    width: width,
-                    right: right
+                    height: height,
+                    left: left
                 });
             }
         }
