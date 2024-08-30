@@ -48,12 +48,11 @@ jQuery(document).ready(function ($) {
         checkTabContainerPosition() {
             let offset = $('.tabs').offset().top + $('.tabs').height() - this.tabContainerHeight + this.offsetAdjust;
             if ($(window).scrollTop() > offset) {
-                $('.tabs-container').removeClass('tabs-container--hide').addClass('tabs-container--top');
+                $('.tabs-container').addClass('tabs-container--top');
             } else {
-                $('.tabs-container').removeClass('tabs-container--top').addClass('tabs-container--hide');
+                $('.tabs-container').removeClass('tabs-container--top');
             }
-        }
-                
+        }        
 
         findCurrentTabSelector() {
             let newCurrentId;
