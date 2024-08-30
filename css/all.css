@@ -622,6 +622,10 @@ section img {
     height: 100%;
     margin-bottom: 5%;
 }
+.profile ol div {
+    height: fit-content;
+    border-left: 1px solid var(--text-color);
+}
 .profile li {
     width: 100%;
 }
@@ -635,11 +639,9 @@ section img {
     display: block;
     position: relative;
     width: 10px;
-    height: 10px;
-    bottom: 15px;
+    bottom: -15px;
     left: 0;
     margin-right: 0.5rem;
-    border-left: 1px solid var(--text-color);
     border-bottom: 1px solid var(--text-color);
 }
 .profile li span {
