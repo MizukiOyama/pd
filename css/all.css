@@ -555,7 +555,7 @@ section img {
     justify-content: baseline;
     align-items: center;
 }
-.about #tab-1 .top-s .text:nth-child(3) {
+.about #tab-1 .top-s .text:nth-child(n - 3) {
     width: 35%;
     margin: 3% 0 0;
 }
