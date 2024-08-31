@@ -374,7 +374,6 @@ section .top-s .text {
 /*===================== .service =====================*/
 
 .service-list {
-    height: 60%;
     position: absolute;
     right: 0;
     bottom: 5%;
