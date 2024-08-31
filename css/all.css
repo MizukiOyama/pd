@@ -87,7 +87,7 @@ body::before {
     top: 0;
     left: 0;
     width: 50%;
-    height: 50%;
+    height: 95%;
     border-top: 5px solid var(--bg-color);
     z-index: 0;
     background-size: auto auto;
