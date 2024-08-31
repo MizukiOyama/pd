@@ -374,34 +374,40 @@ section .top-s .text {
 /*===================== .service =====================*/
 
 .service-list {
+    width: 650px;
     position: absolute;
     right: 0;
     bottom: 5%;
 }
 .top .service {
     position: relative;
-    width: 700px;
+    width: 100%;
     height: 100px;
     margin-top: 1rem;
 }
 
 .top .service h3 {
+    width: 50%;
     margin-top: 4rem;
     padding-left: 1rem;
     border-bottom: 1px solid;
+    position: absolute;
 }
+
+.top .se-01 h3,
+.top .se-01 p {
+    left: 35%;
+}
+.top .se-02 h3,
+.top .se-02 p {}
+.top .se-03 h3,
+.top .se-03 p {}
 
 .top .service .video-1,
 .top .service .video-2,
 .top .service .video-3 {
     position: absolute;
     top: 0;
-    right: 0;
-}
-.se-01,
-.se-02,
-.se-03 {
-    position: absolute;
     right: 0;
 }
 .se-01 {
