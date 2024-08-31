@@ -392,6 +392,7 @@ section .top-s .text {
     padding-left: 1rem;
     border-bottom: 1px solid;
     position: absolute;
+    bottom: 20%;
 }
 .top .service p {
     position: absolute;
