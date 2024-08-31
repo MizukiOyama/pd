@@ -15,10 +15,8 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/glitch.css">
   <link rel="stylesheet" href="css/tab.css">
-  <!--h1-->
-  <link rel="stylesheet" href="https://use.typekit.net/gjh0htb.css">
-  <!--h2-->
-  <link rel="stylesheet" href="https://use.typekit.net/vht8cvv.css">
+  <!-- a -->
+  <link rel="stylesheet" href="https://use.typekit.net/wez8dvq.css">
 
   <!-- jQueryの読み込み -->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -39,8 +37,8 @@
   <script src="js/menu.js"></script>
   <script src="js/cursor.js"></script>
   <script src="js/template-head.js"></script>
+  <script src="js/form.js"></script>
   <script src="js/tab.js"></script>
-
 
   <!--Search-->
   <meta name="description" content="Your website description">
@@ -58,23 +56,25 @@
 
 <!--作品保護-->
 
-<body oncontextmenu="return false;" class="top">
+<body oncontextmenu="return false;" class="contact">
   <div id="head-container"></div>
   <!-- Hero -->
   <section class="tabs">
     <div class="top-h1">
       <h1>Contact</h1>
-      <p class="caption">こだわりを形に、想いをデザインする。</p>
+      <p class="caption">問合せ / 申込ページ。</p>
     </div>
+    <video src=""></video>
+    <p class="caption">
+      当ページで制作や見積の申込が行えます。
+    </p>
     <img src="https://mizukioyama.github.io/pd/hp-img/sinju-suisai.png" alt="" class="">
 
     <!-- tab list -->
     <div class="tabs-container">
-      <a class="tab" href="#tab-1">About Us</a>
-      <a class="tab" href="#tab-2">Service</a>
-      <a class="tab" href="#tab-3">Skill</a>
-      <a class="tab" href="#tab-4">Contact</a>
-      <a class="tab" href="#tab-4">End</a>
+      <a class="tab" href="#tab-1">About forms</a>
+      <a class="tab" href="#tab-2">Form</a>
+      <a class="tab" href="#tab-3">FAQ</a>
       <span class="tab-slider"></span>
     </div>
   </section>
@@ -82,10 +82,11 @@
   <!-- Main -->
   <main class="main">
 
-    <section class="slide" id="tab-1 section1">
-      <img src="https://mizukioyama.github.io/pd/hp-img/sousou-suisai.png" alt="" class="glitch">
+    <section class="slide section1" id="tab-1">
       <div class="top-s">
-        <h2>About Us</h2>
+        <h2>About forms</h2>
+        <p>フォームについて</p>
+        </div>
         <p class="text">僕たちについて</p>
         <p>
           僕たちのデザイン哲学は『こだわりの創造』にあります。
@@ -97,40 +98,121 @@
       </div>
     </section>
 
-    <section class="slide" id="tab-2 section2">
+    <div class="hr"></div>
+
+    <section class="slide section2" id="tab-2">
       <div class="top-s">
-        <h2>Service</h2>
-        <p class="text">提供するサービス</p>
-        <p>
-          僕たちが提供するサービスは、こだわりや想いを形にして、それをデザインする事です。
-          「色、レイアウト、フォント」だけでなく「表示速度、アニメーション、素材」などの
-          細部へのこだわりを表現し、想いを具体的なデザインとして世に広めます。
-          精緻なディテールと創造性豊かなデザイン力と想像力で、あなたのこだわりや想いを制作します。
-        </p>
-        <a href="https://mizukioyama.github.io/pd/tab.html">Service</a>
+        <div class="h2-bg">
+          <h2>Contact</h2>
+          <p>問合せ、申込</p>
+        </div>
+        <div class="content-wrapper">
+          <div class="get-in-touch">
+
+            <form id="contactForm" class="contact-form"
+              action="https://script.google.com/macros/s/AKfycbx0x7x1McI0UX_Jx2JvuDCbiYwDiOpKs-1zXrnegeNXvp6HXF5Yv6XpR11tV3fkWXfJag/exec"
+              method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+
+              <div class="form-row">
+                <div class="form-col">
+                  <div class="form-field col x-50">
+                    <input type="text" id="name" name="name" class="input-text" required>
+                    <label for="name" class="label">Your-name</label>
+                  </div>
+                  <div class="form-field col x-50">
+                    <input type="email" id="email" name="email" class="input-text" required>
+                    <label for="email" class="label">Your-address</label>
+                  </div>
+                  <div class="form-field col x-50">
+                    <input type="business" id="business" name="business" class="input-text" required>
+                    <label for="business" class="label">Your-business</label>
+                  </div>
+                </div>
+                <div class="form-field col x-100">
+                  <textarea id="message" name="message" class="input-text" required></textarea>
+                  <label for="message" class="label label-test">Text</label>
+                </div>
+              </div>
+
+              <div class="note">
+                <p>当サイトをご利用の際は、<a href="#">SitePolicy</a>をご確認ください。</p>
+              </div>
+              <div class="form-field col align-center">
+                <button type="submit" class="submit-btn">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
       </div>
-      <img src="https://mizukioyama.github.io/pd/hp-img/utusigami-suisai.png" alt="" class="glitch">
-      <p></p>
     </section>
 
-    <section class="slide" id="tab-3 section3">
-      <h2>Skill</h2>
-      <p>習得スキル</p>
-    </section>
+    <div class="hr"></div>
 
-    <section class="slide" id="tab-4 section4">
-      <div class="top-s">
-        <h3>Contact</h3>
-        <p class="text c">問合せ、申込</p>
+    <section class="slide section3" id="tab-3">
+      <div class="h2-bg">
+      <h2>FAQ</h2>
+      <p>よくある質問</p>
       </div>
-    </section>
-
-    <section class="slide" id="tab-5 section5">
+      <p class="text"></p>
     </section>
 
   </main>
 
   <div id="footer-container"></div>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"
+    onload="if(submitted) { alert('Successfully submitted'); submitted=false; }"></iframe>
+
+  <!-- モーダルウィンドウ -->
+  <div id="thanksModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>
+        問合せありがとうございます。
+        <br>
+        返信まで1日～2日ほどお待ちください。
+      </p>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var modal = document.getElementById('thanksModal');
+      var span = document.getElementsByClassName('close')[0];
+
+      document.getElementById('contactForm').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var form = e.target;
+        var formData = new FormData(form);
+        fetch(form.action, {
+          method: 'POST',
+          body: formData
+        }).then(response => {
+          if (response.ok) {
+            modal.style.display = "block";
+            form.reset();
+            document.querySelectorAll('.input-text').forEach(input => {
+              input.classList.remove('not-empty');
+            });
+          } else {
+            alert('There was a problem with the submission.');
+          }
+        }).catch(error => {
+          alert('There was a problem with the submission.');
+        });
+      });
+
+      span.onclick = function () {
+        modal.style.display = "none";
+      }
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }
+    });
+  </script>
 
 </body>
 
