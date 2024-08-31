@@ -334,7 +334,7 @@ section .top-s::before {
     height: 100px;
     border-right: 1px solid var(--text-color);
     border-bottom: 1px solid var(--text-color);
-    padding-left: 2rem;
+    padding: 0 2rem;
     position: absolute;
     top: 0;
     left: 0;
