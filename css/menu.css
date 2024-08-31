@@ -7,7 +7,7 @@ nav {
     right: -100%;
     bottom: 0;
     width: 40%;
-    background: var(--white-color);
+    background: var(--bg-color);
     overflow-x: hidden;
     overflow-y: auto;
     transition: 0.8s ease;
@@ -232,7 +232,7 @@ nav {
 	}
 
 	.pc_menu a {
-		font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+		font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 2rem);
         font-weight: 400;
 		color: var(--text-color);
 		width: 100px;

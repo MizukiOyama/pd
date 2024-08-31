@@ -385,15 +385,15 @@ section .top-s .text {
     margin-top: 1rem;
 }
 
-.service h3 {
+.top .service h3 {
     margin-top: 4rem;
     padding-left: 1rem;
     border-bottom: 1px solid;
 }
 
-.service .video-1,
-.service .video-2,
-.service .video-3 {
+.top .service .video-1,
+.top .service .video-2,
+.top .service .video-3 {
     position: absolute;
     top: 0;
     right: 0;
