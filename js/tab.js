@@ -3,7 +3,7 @@ jQuery(document).ready(function ($) {
         constructor() {
             this.currentId = null;
             this.currentTab = null;
-            this.tabContainerHeight = 10;
+            this.tabContainerHeight = 0;
             this.offsetAdjust = 0; // 調整用のオフセット変数
             this.init();
         }
@@ -27,7 +27,7 @@ jQuery(document).ready(function ($) {
             let target = $(element.attr('href'));
             if (target.length) {
                 let scrollTop = target.offset().top - this.tabContainerHeight + 1 + this.offsetAdjust;
-                $('html, body').animate({ scrollTop: scrollTop }, 10, () => {
+                $('html, body').animate({ scrollTop: scrollTop }, 100, () => {
                     // アニメーション完了後に強制的にスクロールイベントをトリガー
                     this.updateTabPosition();
                 });
