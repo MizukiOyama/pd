@@ -330,7 +330,7 @@ section .top-s::before {
 }
 
 .h2-bg {
-    width: 250px;
+    width: fit-content;
     height: 100px;
     border-right: 1px solid var(--text-color);
     border-bottom: 1px solid var(--text-color);
