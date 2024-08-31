@@ -1,32 +1,30 @@
 @charset "UTF-8";
-/*
-Theme Name: SC
-Theme URL: https://smilecoordinate.com/
-Description: Smile Coordinate
-Author: Oyama
-Version: 2023
-*/
 
 .section2 .top-s .text {
     margin-bottom: 5px;
 }
 #wrap {
-    width: calc(1000px - 10px);
+    width: 75%;
     height: fit-content;
+    margin: 0 auto;
 }
-
+.se-tab-w {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #wrap p {
     width: calc(100% - 100px);
     margin: 1% auto 0;
 }
-
 .list-tab {
     font-family: roca, sans-serif;
     width: calc(35% - 50px);
-    height: 9vmin;
+    height: 7vmin;
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
-    color: var(--white-color);
-    background: var(--link-color);
+    color: var(--bg-color);
+    background: var(--text-color);
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
@@ -40,13 +38,12 @@ Version: 2023
 .list-tab::after {
 border-bottom: 1px solid;
 }
-
 .selected {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     width: calc(40% - 10px);
-    height: 12vmin;
-    color: var(--base-color);
-    background-color: rgba(245, 252, 246, 0.7);
+    height: 9.25vmin;
+    color: var(--text-color);
+    background-color: var(--accent-color);
 }
 
 #tab1 p,
@@ -91,8 +88,8 @@ border-bottom: 1px solid;
 }
 
 #container {
-    height: 450px;
-    min-height: 350px;
+    width: 91.5%;
+    height: 300px;
     overflow-x: hidden;
     overflow-y: scroll;
     display: flex;
@@ -121,7 +118,7 @@ section #container .se-box {
 }
 
 #wrap .container h3 {
-    font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 2.8rem);
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     font-weight: 600;
     color: var(--link-color);
     margin-top: 6%;
