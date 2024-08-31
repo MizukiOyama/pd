@@ -166,7 +166,8 @@ nav {
     justify-content: center;
     align-items: end;
     z-index: 998;
-    background-image: repeating-linear-gradient(340deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
+    background: var(--text-color);
+    background-image: repeating-linear-gradient(360deg, transparent, transparent 1px, rgba(146, 146, 146, 1) 1px, rgba(146, 146, 146, 1) 2px);
     animation: moveBackground 0.65s linear infinite;
 }
 @keyframes menu-left {
