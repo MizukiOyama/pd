@@ -379,7 +379,7 @@ section .top-s .text {
     right: 0;
     bottom: 5%;
 }
-.service {
+.top .service {
     position: relative;
     width: 700px;
     height: 100px;
