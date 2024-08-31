@@ -342,7 +342,9 @@ section .top-s::before {
     justify-content: center;
     flex-direction: column;
 }
-
+.h2-bg p {
+    margin-top: -8px;
+}
 .h2-bg p::before {
     content: "";
     width: 100%;
