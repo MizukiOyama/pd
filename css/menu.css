@@ -186,7 +186,7 @@ nav {
 }
 .open #mask ul p {
     font-size: clamp(2.4rem, calc(2.4rem + 0.1vw), 3rem);
-    color: var(--bg-color);
+    color: var(--text-color);
     margin: 0;
 }
 .open #mask li {
