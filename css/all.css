@@ -393,15 +393,22 @@ section .top-s .text {
     border-bottom: 1px solid;
     position: absolute;
 }
-
+.top .service p {
+    position: absolute;
+    bottom: 0;
+}
 .top .se-01 h3,
 .top .se-01 p {
     left: 35%;
 }
 .top .se-02 h3,
-.top .se-02 p {}
+.top .se-02 p {
+    left: 15%;
+}
 .top .se-03 h3,
-.top .se-03 p {}
+.top .se-03 p {
+    left: -5%;
+}
 
 .top .service .video-1,
 .top .service .video-2,
