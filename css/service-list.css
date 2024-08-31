@@ -90,7 +90,7 @@ border-bottom: 1px solid;
     display: flex;
     align-items: start;
     justify-content: center;
-    background: rgba(245, 252, 246, 0.7);
+    background: var(--accent-color);
 }
 
 section #container .se-box {
