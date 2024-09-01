@@ -5,19 +5,55 @@ const cardModalContents = [
         button: "カード1のボタン"
     },
     {
-        left: "<img src='https://paradigmart.natureinspire.jp/wp-content/uploads/2023/08/PXL_20230717_081904915-Edit.jpg'>左側のコンテンツ2",
+        left: "左側のコンテンツ2",
         right: "右側のコンテンツ2",
         button: "カード2のボタン"
     },
     {
-        left: "<img src='image3.jpg'>左側のコンテンツ3",
+        left: "左側のコンテンツ3",
         right: "右側のコンテンツ3",
         button: "カード3のボタン"
     },
     {
-        left: "<img src='image4.jpg'>左側のコンテンツ4",
+        left: "左側のコンテンツ4",
         right: "右側のコンテンツ4",
         button: "カード4のボタン"
+    }
+    ,
+    {
+        left: "<img src='image3.jpg'>左側のコンテンツ3",
+        right: "右側のコンテンツ3",
+        button: "カード5のボタン"
+    },
+    {
+        left: "<img src='image4.jpg'>左側のコンテンツ4",
+        right: "右側のコンテンツ4",
+        button: "カード6のボタン"
+    },
+    {
+        left: "<img src='image3.jpg'>左側のコンテンツ3",
+        right: "右側のコンテンツ3",
+        button: "カード7のボタン"
+    },
+    {
+        left: "<img src='image4.jpg'>左側のコンテンツ4",
+        right: "右側のコンテンツ4",
+        button: "カード8のボタン"
+    },
+    {
+        left: "<img src='image3.jpg'>左側のコンテンツ3",
+        right: "右側のコンテンツ3",
+        button: "カード9のボタン"
+    },
+    {
+        left: "<img src='image4.jpg'>左側のコンテンツ4",
+        right: "右側のコンテンツ4",
+        button: "カード10のボタン"
+    },
+    {
+        left: "<img src='image4.jpg'>左側のコンテンツ4",
+        right: "右側のコンテンツ4",
+        button: "カード11のボタン"
     }
 ];
 
