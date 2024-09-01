@@ -18,8 +18,7 @@ const cardModalContents = [
         left: "左側のコンテンツ4",
         right: "右側のコンテンツ4",
         button: "カード4のボタン"
-    }
-    ,
+    },
     {
         left: "<img src='image3.jpg'>左側のコンテンツ3",
         right: "右側のコンテンツ3",
