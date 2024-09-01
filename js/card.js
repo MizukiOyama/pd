@@ -56,49 +56,49 @@ const cardModalContents = [
     }
 ];
 
-// Store the clicked card element
-let clickedCard = null;
+let clickedCard; // グローバル変数
 
-function cardClicked(cardElement, cardNumber) {
-    clickedCard = cardElement;
+function cardClicked(cardIndex) {
+    const cards = document.querySelectorAll(".card");
+    clickedCard = cards[cardIndex - 1];
     clickedCard.classList.add("card-clicked");
-    moveCardToCenter(clickedCard, cardNumber);
+    moveCardToCenter(clickedCard, cardIndex);
 }
 
-function moveCardToCenter(card, cardNumber) {
+function moveCardToCenter(card, cardIndex) {
     const cardRect = card.getBoundingClientRect();
     const windowWidth = window.innerWidth;
     const cardWidth = cardRect.width;
     const centerX = (windowWidth / 2) - (cardWidth / 2);
 
-    // Move the clicked card to the center
+    // カードを画面中央に移動
     card.style.transform = `translateX(${centerX - cardRect.left}px) scale(1.2)`;
 
-    // After the card's movement animation finishes, open the modal
+    // カードの移動アニメーションが終了した後にモーダルを開く
     card.addEventListener("transitionend", function () {
-        openModal(cardNumber);
+        openModal(cardIndex);
     }, { once: true });
 
-    // Slide out all other cards in the same container
-    const siblingCards = card.parentElement.querySelectorAll(".card:not(.card-clicked)");
-    siblingCards.forEach((siblingCard) => {
-        siblingCard.style.transform = "translateY(50%)";
-        siblingCard.style.opacity = "1";
+    // クリックされたカード以外のカードを下にスライドアウトさせる
+    const otherCards = document.querySelectorAll(".card:not(.card-clicked)");
+    otherCards.forEach((otherCard) => {
+        otherCard.style.transform = "translateY(50%)";
+        otherCard.style.opacity = "0.5";
     });
 }
 
-function openModal(cardNumber) {
+function openModal(cardIndex) {
     const modal = document.getElementById("modal");
     modal.classList.remove('close');
     modal.classList.add('open');
 
     modal.style.display = "flex";
 
-    // Update the modal content based on the clicked card
+    // カードごとのモーダルウィンドウのコンテンツを更新
     const modalLeftContent = document.getElementById("modal-left-content");
     const modalRightContent = document.getElementById("modal-right-content");
-    modalLeftContent.innerHTML = cardModalContents[cardNumber - 1].left;
-    modalRightContent.innerHTML = cardModalContents[cardNumber - 1].right;
+    modalLeftContent.innerHTML = cardModalContents[cardIndex - 1].left;
+    modalRightContent.innerHTML = cardModalContents[cardIndex - 1].right;
 }
 
 function closeModal() {
@@ -106,29 +106,24 @@ function closeModal() {
     modal.classList.remove('open');
     modal.classList.add('close');
 
-    // Hide the modal after the close animation finishes
+    // アニメーション終了後に非表示にする
     setTimeout(() => {
         modal.style.display = "none";
     }, 500);
 
-    // Reset the position and style of all cards
-    const allCards = document.querySelectorAll(".card");
-    allCards.forEach((card) => {
+    // カードを元の位置に戻す
+    const cards = document.querySelectorAll(".card");
+    cards.forEach((card) => {
         card.style.transform = "none";
         card.classList.remove("card-clicked");
     });
 }
 
-// Event listener for all card elements
-document.querySelectorAll('.card-container .card').forEach((card, index) => {
-    card.addEventListener('click', () => cardClicked(card, index + 1));
-});
-
-// Close modal when clicking outside of it
+// モーダルウィンドウ外のクリックでモーダルを閉じる
 window.addEventListener("click", function (event) {
     const modal = document.getElementById("modal");
 
-    // Check if the clicked area is outside the modal
+    // クリックした場所がモーダルの中か外かをチェック
     if (modal.style.display === "flex" && !modal.contains(event.target)) {
         closeModal();
     }
