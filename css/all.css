@@ -709,4 +709,14 @@ section img {
 
 /*===================== Service =====================*/
 
+.service .section1 video {
+    width: 80%;
+    height: 60%;
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    background: var(--text-color);
+    z-index: 0;
+}
+
 /*===================== Service =====================*/

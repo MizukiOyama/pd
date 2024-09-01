@@ -204,6 +204,10 @@
        left: 5%;
        top: 5%;
     }
+
+    .c-2 .title {
+        color: var(--text-color);
+    }
     
     .bar {
        position: absolute;
