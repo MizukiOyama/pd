@@ -134,6 +134,11 @@
    .c-c-3 {
       width: 100%;
    }
+   .c-c-2 .card,
+   .c-c-3 .card  {
+      width: 280px;
+      height: 200px;
+   }
    .c-c-3 {
        margin-top: 20%;
    }

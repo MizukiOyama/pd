@@ -1,58 +1,47 @@
 const cardModalContents = [
     {
-        left: "text",
-        right: "当ページは過去作品のまとめページです.",
-        button: "カード1のボタン"
+        left: "Web Design",
+        right: "HP、LPの制作を行います。"
     },
     {
-        left: "左側のコンテンツ2",
-        right: "右側のコンテンツ2",
-        button: "カード2のボタン"
+        left: "Art Order",
+        right: "Abstract Art、Digital Art、などの制作が可能です。"
     },
     {
-        left: "左側のコンテンツ3",
-        right: "右側のコンテンツ3",
-        button: "カード3のボタン"
+        left: "Consulting",
+        right: "新規事業の立ち上げへのアドバイスや事業の土台固めを行います。"
     },
     {
-        left: "左側のコンテンツ4",
-        right: "右側のコンテンツ4",
-        button: "カード4のボタン"
+        left: "illustration",
+        right: "ウェブ、印刷物、イメージキャラクター、などのイラストを制作します。"
     },
     {
-        left: "<img src='image3.jpg'>左側のコンテンツ3",
-        right: "右側のコンテンツ3",
-        button: "カード5のボタン"
+        left: "writing",
+        right: "ウェブ、印刷物、などのライティングを行います。"
     },
     {
-        left: "<img src='image4.jpg'>左側のコンテンツ4",
-        right: "右側のコンテンツ4",
-        button: "カード6のボタン"
+        left: "photo",
+        right: "ウェブ、ポートレート、商品、などの写真撮影を行います。"
     },
     {
-        left: "<img src='image3.jpg'>左側のコンテンツ3",
-        right: "右側のコンテンツ3",
-        button: "カード7のボタン"
+        left: "video",
+        right: "ウェブ、などで使用する映像を撮影・制作を行います。"
     },
     {
-        left: "<img src='image4.jpg'>左側のコンテンツ4",
-        right: "右側のコンテンツ4",
-        button: "カード8のボタン"
+        left: "DTP",
+        right: "印刷物の制作を行います。「メニュー表、名刺、チラシ、ポスター」etc..."
     },
     {
-        left: "<img src='image3.jpg'>左側のコンテンツ3",
-        right: "右側のコンテンツ3",
-        button: "カード9のボタン"
+        left: "banner",
+        right: "広告用のバナー制作を行います。"
     },
     {
-        left: "<img src='image4.jpg'>左側のコンテンツ4",
-        right: "右側のコンテンツ4",
-        button: "カード10のボタン"
+        left: "logo",
+        right: "会社や組織団体のオリジナルのロゴを制作します。"
     },
     {
-        left: "<img src='image4.jpg'>左側のコンテンツ4",
-        right: "右側のコンテンツ4",
-        button: "カード11のボタン"
+        left: "その他",
+        right: "表記のないものを依頼したい場合は、Contactページからお問合せください。"
     }
 ];
 
