@@ -179,11 +179,11 @@
        /*box-shadow: 0rem 0 1rem var(--bg-color);*/
        transition: 0.4s ease-out;
        position: relative;
-       left: 0px;
+       left: -1.5rem;
     }
     
     .card:not(:first-child) {
-       margin-left: -35px;
+       margin-left: -20rem;
     }
     .c-1 {
        margin-top: 5%;

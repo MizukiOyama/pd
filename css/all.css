@@ -710,13 +710,14 @@ section img {
 /*===================== Service =====================*/
 
 .service .section1 video {
-    width: 80%;
-    height: 60%;
+    width: 75%;
+    height: 75%;
     position: absolute;
-    top: 15%;
-    right: 1%;
+    top: 10%;
+    right: 0%;
     background: var(--text-color);
-    z-index: 0;
+    z-index: -1;
+    mix-blend-mode: difference;
 }
 
 /*===================== Service =====================*/
