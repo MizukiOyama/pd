@@ -83,7 +83,7 @@ function moveCardToCenter(card, cardIndex) {
     const otherCards = document.querySelectorAll(".card:not(.card-clicked)");
     otherCards.forEach((otherCard) => {
         otherCard.style.transform = "translateY(50%)";
-        otherCard.style.opacity = "0.5";
+        otherCard.style.opacity = "1";
     });
 }
 
