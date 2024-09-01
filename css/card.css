@@ -97,11 +97,11 @@
     }
     
     .close-btn:hover {
-       color: #fff;
-       background: #ddd;
+       color: var(--bg-color);
+       background: var(--bg-color);
     }
     
-    /* 新しいスタイル */
+    /* 新しいスタイル 
     .slide-out {
        transform: translateY(100%);
        opacity: 0.5;
@@ -114,13 +114,11 @@
        transition: transform 0.5s ease, opacity 0.5s ease;
     }
     
-    /* 新しいスタイル */
     .card-clicked {
        transform: rotateX(180deg);
        transition: transform 1s ease;
-       /* アニメーション速度を調整 */
        z-index: 2;
-    }
+    }*/
     
     .card-container {
        position: absolute;
@@ -171,10 +169,10 @@
     
     .bar {
        position: absolute;
-       top: 100px;
-       left: 20px;
+       top: 65px;
+       left: 0;
        height: 5px;
-       width: 210px;
+       width: 100%;
     }
     
     /*bar*/
@@ -196,7 +194,7 @@
     }
     
     .card:hover .filledbar {
-       width: 210px;
+       width: 100%;
        transition: 0.4s ease-out;
     }
     
