@@ -278,7 +278,7 @@ section {
     width: 80%;
     height: 60%;
     position: absolute;
-    top: 10%;
+    top: 15%;
     right: 1%;
     background: var(--text-color);
     z-index: 0;
@@ -288,6 +288,7 @@ section {
     padding: 1.5rem 1rem 1.5rem 4rem;
     border: 1px solid;
     border-left: 0;
+    background: var(--bg-color);
     z-index: 1;
 }
 .tabs .top-h1 .caption {

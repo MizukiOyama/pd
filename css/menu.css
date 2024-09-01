@@ -32,7 +32,7 @@ nav {
 #navArea .inner li a {
     display: block;
     position: relative;
-    font-size: clamp(3rem, calc(3rem + 0.1vw), 3.4rem);
+    font-size: clamp(2.8rem, calc(2.8rem + 0.1vw), 3rem);
     color: var(--accent-color);
     height: 100%;
     margin-top: 1.5rem;
