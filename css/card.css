@@ -37,6 +37,12 @@
        border-radius: 10px;
        background: var(--text-color);
        animation: modalFadeIn 0.35s ease forwards;
+       background-color: rgba(46, 46, 46, 0.2);
+       backdrop-filter: blur(15px);
+       -webkit-backdrop-filter: blur(15px);
+       border-radius: 10px;
+       border: 1px solid rgba(217, 217, 217, 0.45);
+       box-shadow: 0 2px 3px rgba(160, 113, 113, 0.4);
     }
     
     @keyframes modalFadeIn {
@@ -152,6 +158,12 @@
        transition: 0.4s ease-out;
        position: relative;
        left: -1.5rem;
+       background-color: rgba(46, 46, 46, 0.2);
+       backdrop-filter: blur(15px);
+       -webkit-backdrop-filter: blur(15px);
+       border-radius: 10px;
+       border: 1px solid rgba(217, 217, 217, 0.45);
+       box-shadow: 0 2px 3px rgba(160, 113, 113, 0.4);
     }
     
     .card:not(:first-child) {
