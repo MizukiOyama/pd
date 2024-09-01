@@ -1,0 +1,83 @@
+
+    /*==アコーディオン==*/
+    .accordion-wrap {
+        width: 100%;
+        padding: 0.5em;
+        margin-top: 0.5em;
+        border-bottom: 1px solid #FEF6B7;
+        background-color: #fff;
+    }
+        .accordion-item {
+            width: 100%;
+            margin: 0 auto;
+            cursor: pointer;
+            margin-top: .5%;
+        }
+        .accordion-header {
+            color: var(--def);
+            font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
+            height: 50px;
+            transition: color 100ms;
+            padding: auto;
+        }
+        .accordion-header.active {
+            color: rgb(255, 150, 48);
+        }
+        .accordion-text {
+            width: 100%;
+            display: none;
+        }
+        .accordion-text p {
+            font-size: clamp(0.8rem, calc(0.8rem + 0.5vw), 0.9rem);
+            padding: 1em 0.8em;
+            white-space: pre-line;
+            word-break: break-all;
+        }
+        .fa {
+            padding: 8% -5% 0.3% 0;
+            transition: transform 300ms, color 100ms;
+        }
+        .rotate-fa {
+            transform: rotate(90deg);
+        }
+        .accordion-header .fa {
+            float: right;
+            padding-top: 0;
+            line-height: 5%;
+        }
+        .accordion-gold .accordion-header {
+            color: #FEF6B7;
+        }
+        .accordion-no-bar {
+            border-bottom: 0;
+        }
+/*== アコーディオンEND ==*/
+/*==アコーディオン==*/
+    .accordion-wrap {
+        width: calc(70% - 100px);
+        padding: 3em 3em 1em 2em;
+        margin: 0 auto;
+    }
+        .accordion-wrap .accordion-item {
+            margin-top: .5%;
+        }
+        .accordion-wrap .accordion-item h3 {
+            font-size: clamp(1.4rem, calc(1.4rem + 1vw), 1.6rem);
+        }
+        .accordion-wrap .accordion-header {
+            padding: auto;
+            transition: color 100ms;
+        }
+        .accordion-wrap .accordion-text p {
+            font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
+            font-weight: 700;
+            padding: 0 2em 2em;
+        }
+        .accordion-wrap .fa {
+            padding: 0.5em 0 .2em 0;
+            transition: transform 300ms, color 100ms;
+        }
+        .accordion-wrap .accordion-header .fa {
+            line-height: 10%;
+        }
+/* アコーディオンEND */
