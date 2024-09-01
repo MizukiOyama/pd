@@ -246,6 +246,10 @@ nav {
 		transform: rotate(90deg); /* テキストの回転を保持 */
 		transition: color 0.3s ease;
 	}
+    .pc_menu a:hover {
+        color: var(--hover-color);
+        background-color: var(--accent-color);
+    }
 
 	.manu_p {
 		margin-top: auto;

@@ -194,7 +194,7 @@ a {
     color: var(--accent-color);
     width: fit-content;
     height: fit-content;
-    padding: 0.25em 0;
+    padding: 0.25rem 0.5rem;
     left: 0;
     bottom: 0;
     position: relative;
