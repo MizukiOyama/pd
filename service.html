@@ -15,6 +15,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/tab.css">
   <link rel="stylesheet" href="css/service-list.css">
+  <link rel="stylesheet" href="css/card.css">
   <!-- a -->
   <link rel="stylesheet" href="https://use.typekit.net/wez8dvq.css">
   <!-- jQueryの読み込み -->
@@ -36,6 +37,7 @@
   <script src="js/cursor.js"></script>
   <script src="js/service-list.js"></script>
   <script src="js/tab.js"></script>
+  <script src="js/card.js"></script>
 
   <!--Search-->
   <meta name="description" content="想いを形に、こだわりをデザインする。">
@@ -82,7 +84,6 @@
     <div class="hr"></div>
 
     <section class="slide section1" id="tab-1">
-      <img src="https://mizukioyama.github.io/pd/hp-img/sousou-suisai.png" alt="" class="glitch">
       <div class="top-s">
         <div class="h2-bg">
           <h2>Contents</h2>
@@ -96,6 +97,63 @@
           （事業の土台固め、事業の見直し）etc...
         </p>
         <a href="">事業サポートについて</a>
+      </div>
+      <div class="container">
+
+        <div class="card c-1" onclick="cardClicked(1)">
+            <!-- Card 1 のコンテンツ -->
+            <h3 class="title">All Art.</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="card c-2" onclick="cardClicked(2)">
+            <!-- Card 2 のコンテンツ -->
+            <h3 class="title">展示作品.</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="card c-3" onclick="cardClicked(3)">
+            <!-- Card 3 のコンテンツ -->
+            <h3 class="title">デジタル展示.</h3>
+            <div class="bar">
+                <div class="emptybar"></div>
+                <div class="filledbar"></div>
+            </div>
+            <div class="circle">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="stroke" cx="60" cy="60" r="50" />
+                </svg>
+            </div>
+        </div>
+
+        </div>
+        <div class="modal" id="modal">
+          <div class="modal-content">
+              <span class="close-btn" onclick="closeModal()">&times;</span>
+              <div class="modal-left" id="modal-left-content">
+                  <!-- 左側のコンテンツ -->
+              </div>
+  
+              <div class="modal-right" id="modal-right-content">
+                  <!-- 右側のコンテンツ -->
+              </div>
+          </div>
       </div>
     </section>
 
