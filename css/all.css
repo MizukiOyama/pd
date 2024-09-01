@@ -297,7 +297,7 @@ section {
     z-index: 1;
 }
 .tabs .top-h1 .caption {
-    font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
+    font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
     width: 100%;
     padding: 1rem 0;
     margin: 0;
