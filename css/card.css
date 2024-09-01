@@ -122,12 +122,21 @@
     
     .card-container {
        position: absolute;
-       right: 1rem;
        display: flex;
        justify-content: center;
        z-index: 1;
     }
-    
+
+    .c-c-1 {
+      right: 1rem;
+   }
+   .c-c-2,
+   .c-c-3 {
+      width: 100%;
+   }
+   .c-c-3 {
+       margin-top: 20%;
+   }
     .card {
        display: flex;
        width: 260px;
