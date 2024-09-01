@@ -143,14 +143,14 @@
     .card:not(:first-child) {
        margin-left: -20rem;
     }
-    .card-container-01 .c-1 {
+    .c-c-1 .c-1 {
        margin-top: 5%;
     }
-    .card-container-01 .c-2 {
+    .c-c-1 .c-2 {
        margin-top: -5%;
        background: var(--bg-color);
     }
-    .card-container-01 .c-3 {
+    .c-c-1 .c-3 {
        margin-top: -15%;
     }
     
