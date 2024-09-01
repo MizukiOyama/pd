@@ -49,7 +49,7 @@ function moveCardToCenter(cardNumber) {
     cards.forEach((card) => {
         if (card !== clickedCard) {
             card.style.transform = "translateY(50%)";
-            card.style.opacity = "0.5";
+            card.style.opacity = "1";
         }
     });
 }

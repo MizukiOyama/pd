@@ -172,27 +172,27 @@
     
     .card {
        display: flex;
-       width: 280px;
-       height: 380px;
+       width: 260px;
+       height: 345px;
        background-color: var(--text-color);
        border-radius: 10px;
-       box-shadow: 0rem 0 1rem var(--bg-color);
+       /*box-shadow: 0rem 0 1rem var(--bg-color);*/
        transition: 0.4s ease-out;
        position: relative;
        left: 0px;
     }
     
     .card:not(:first-child) {
-       margin-left: -50px;
+       margin-left: -35px;
     }
     .c-1 {
-       margin-top: 0%;
+       margin-top: 5%;
     }
     .c-2 {
        margin-top: -5%;
     }
     .c-3 {
-       margin-top: -10%;
+       margin-top: -15%;
     }
     
     .title {
