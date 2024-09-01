@@ -174,7 +174,7 @@
        display: flex;
        width: 260px;
        height: 345px;
-       background-color: var(--text-color);
+       background-color: var(--hover-color);
        border-radius: 10px;
        /*box-shadow: 0rem 0 1rem var(--bg-color);*/
        transition: 0.4s ease-out;
@@ -190,6 +190,7 @@
     }
     .c-2 {
        margin-top: -5%;
+       background: var(--bg-color);
     }
     .c-3 {
        margin-top: -15%;
