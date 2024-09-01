@@ -23,7 +23,7 @@
     /* モーダルが閉じられるときのスタイル */
     #modal.close {
        opacity: 0;
-       transform: translateY(-10%);
+       transform: translateY(20%);
        /* 画面外にスライドアウト */
     }
     
