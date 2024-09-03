@@ -80,6 +80,7 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
+    background: url('https://mizukioyama.github.io/pd/hp-img/photo-bgimg.png');
 }
 body::before {
     content: "";

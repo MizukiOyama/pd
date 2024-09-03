@@ -29,6 +29,8 @@
     align-items: center;
     flex-direction: column;
     transition: all 0.5s ease;
+    background-image: repeating-linear-gradient(137deg, transparent, transparent 1px, rgba(146, 146, 146, 0.24) 1px, rgba(146, 146, 146, 0.24) 2px);
+    animation: moveBackground 0.55s linear infinite;
 }
 .list-tab::before {
     border-left: 1px solid;
@@ -41,7 +43,9 @@ border-bottom: 1px solid;
     width: calc(42% - 10px);
     height: 9.25vmin;
     color: var(--text-color);
-    background-color: rgba(46, 46, 46, 0.2);
+    background-color: rgba(217, 217, 217, 0.8);
+    background-image: repeating-linear-gradient(137deg, transparent, transparent 1px, rgba(46, 46, 46, 0.24) 1px, rgba(46, 46, 46, 0.24) 2px);
+    animation: moveBackground 0.55s linear infinite;
 }
 
 #tab1 p,
@@ -90,7 +94,6 @@ border-bottom: 1px solid;
     display: flex;
     align-items: start;
     justify-content: center;
-    background-color: rgba(46, 46, 46, 0.2);
     background-image: repeating-linear-gradient(137deg, transparent, transparent 1px, rgba(46, 46, 46, 0.24) 1px, rgba(46, 46, 46, 0.24) 2px);
     animation: moveBackground 0.55s linear infinite;
 }
