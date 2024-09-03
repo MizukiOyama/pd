@@ -725,7 +725,8 @@ section img {
     mix-blend-mode: difference;
 }
 
-.service .top-s {
+.service .top-s,
+.policy .top-s {
     align-items: center;
     justify-content: center;
 }
