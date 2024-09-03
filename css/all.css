@@ -726,11 +726,13 @@ section img {
 }
 
 .service .top-s,
-.policy .top-s {
+.policy .top-s,
+.contact .top-s {
     align-items: center;
     justify-content: center;
 }
-.policy .top-s .text {
+.policy .top-s .text,
+.contact .top-s .text {
     margin: 0;
 }
 
