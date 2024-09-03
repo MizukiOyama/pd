@@ -2,16 +2,18 @@
     /*==アコーディオン==*/
     .accordion-wrap {
         width: calc(80% - 100px);
-        padding: 0.5em;
-        margin-top: 0.5em;
+        padding: 0.5rem 1rem;
         border-bottom: 1px solid var(--bg-color);
         background-color: var(--text-color);
     }
+    /*title*/
         .accordion-item {
             width: 100%;
             margin: 0 auto;
             cursor: pointer;
-            margin-top: .5%;
+            display: flex;
+            align-items: center;
+            justify-items: center;    
         }
         .accordion-header {
             color: var(--bg-color);
@@ -22,6 +24,7 @@
         .accordion-header.active {
             color: var(--accent-color);
         }
+    /*in-text*/
         .accordion-text {
             width: 85%;
             margin: 0 auto;
@@ -29,22 +32,22 @@
         }
         .accordion-text p {
             font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.8rem);
+            color: var(--bg-color);
             padding: 0 1rem;
         }
+    /*i*/
         .fa {
-            padding: 8% -5% 0.3% 0;
             transition: transform 300ms, color 100ms;
         }
         .rotate-fa {
             transform: rotate(90deg);
         }
-        .accordion-header .fa {
+        /*.accordion-header .fa {
             float: right;
             padding-top: 0;
-            line-height: 5%;
-        }
+        }*/
         .accordion-gold .accordion-header {
-            color: #FEF6B7;
+            color: var(--bg-color);
         }
         .accordion-no-bar {
             border-bottom: 0;
