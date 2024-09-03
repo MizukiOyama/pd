@@ -91,6 +91,8 @@ border-bottom: 1px solid;
     align-items: start;
     justify-content: center;
     background-color: rgba(46, 46, 46, 0.2);
+    background-image: repeating-linear-gradient(60deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
+    animation: moveBackground 0.55s linear infinite;
 }
 
 section #container .se-box {
