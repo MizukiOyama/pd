@@ -91,6 +91,8 @@ border-bottom: 1px solid;
     align-items: start;
     justify-content: center;
     background: var(--accent-color);
+    background-color: rgba(46, 46, 46, 0.2);
+    backdrop-filter: blur(15px);
 }
 
 section #container .se-box {
