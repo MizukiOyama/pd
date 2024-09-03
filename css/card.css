@@ -162,14 +162,15 @@
        margin-left: -20rem;
     }
     .c-c-1 .c-1 {
-       margin-top: 5%;
+       left: -10%;
+       margin-top: 30%;
     }
     .c-c-1 .c-2 {
-       margin-top: -5%;
+       left: -5%;
+       margin-top: 15%;
     }
-    .c-c-1 .c-3 {
-       margin-top: -15%;
-    }
+/*    .c-c-1 .c-3 {
+    }*/
     
     .title {
        color: var(--bg-color);

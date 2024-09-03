@@ -715,8 +715,8 @@ section img {
 /*===================== Service =====================*/
 
 .service .section1 video {
-    width: 75%;
-    height: 75%;
+    width: 70%;
+    height: 80%;
     position: absolute;
     top: 10%;
     right: 0%;
