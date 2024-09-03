@@ -17,7 +17,7 @@
         }
         .accordion-header {
             color: var(--bg-color);
-            font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
+            font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.8rem);
             transition: color 100ms;
             padding: auto;
         }
@@ -31,9 +31,9 @@
             display: none;
         }
         .accordion-text p {
-            font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.8rem);
+            font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
             color: var(--bg-color);
-            padding: 0 1rem;
+            padding: 0.5rem 1rem 1.5rem;
         }
     /*i*/
         .fa {
