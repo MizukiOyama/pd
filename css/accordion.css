@@ -20,10 +20,14 @@
             font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.8rem);
             transition: color 100ms;
         }
+        .accordion-header span {
+            font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+            color: var(--accent-color);
+        }
         .accordion-header.active {
             color: var(--accent-color);
         }
-    /*in-text*/
+    /*in-text*/ 
         .accordion-text {
             width: 85%;
             margin: 0 auto;
@@ -41,13 +45,14 @@
         .rotate-fa {
             transform: rotate(90deg);
         }
-        .accordion-header .fa {
+        /*.accordion-header .fa {
             float: right;
-        }
+        }*/
         .accordion-gold .accordion-header {
             color: var(--bg-color);
         }
         .accordion-no-bar {
             border-bottom: 0;
         }
+
 /*== アコーディオンEND ==*/
