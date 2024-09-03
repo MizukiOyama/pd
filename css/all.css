@@ -761,11 +761,12 @@ section img {
     align-items: center;
 }
 .option .flex ol {
-    border-left: 0;
+    border-right: 0;
     border-radius: 10px 0 0 10px;
 }
 .option .flex ol:nth-child(2) {
-    border-right: 0;
+    border-left: 0;
+    border-right: 1px solid;
     border-radius: 0 10px 10px 0;
 }
 
