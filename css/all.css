@@ -741,7 +741,9 @@ section img {
     margin-bottom: 2rem;
     padding-left: 1.5rem;
 }
-
+.option h3:nth-child(n - 2) {
+    margin-top: 2rem;
+}
 .option ol {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     font-weight: 600;
@@ -754,6 +756,9 @@ section img {
     display: flex;
     justify-content: baseline;
     align-items: center;
+}
+.option .flex ol {
+    border-radius: 0 10px 0 10px;
 }
 
 .option ol li {
