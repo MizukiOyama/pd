@@ -26,7 +26,7 @@
             font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
             color: var(--accent-color);
             border-right: 1px solid var(--bg-color);
-            padding-right: 1rem;
+            padding: 0 1rem;
             margin-right: 1rem;
         }
         .accordion-header.active {
@@ -54,8 +54,8 @@
             transform: rotate(90deg);
         }
         .accordion-header .fa {
-            text-align: right;
-            /*float: right;*/
+            float: right;
+            padding-top: 0.8rem 1rem 0;
         }
         .accordion-gold .accordion-header {
             color: var(--bg-color);
