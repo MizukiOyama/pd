@@ -725,4 +725,8 @@ section img {
     mix-blend-mode: difference;
 }
 
+.service .top-s {
+    justify-content: center;
+}
+
 /*===================== Service =====================*/
