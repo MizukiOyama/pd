@@ -726,19 +726,40 @@ section img {
 }
 
 .service .top-s {
+    align-items: center;
     justify-content: center;
 }
 
 .flow-ol {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     font-weight: 600;
-    width: 100%;
-    padding-left: 1rem;
 }
 
 .flow {
     font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
-    list-style: none;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
 }
 
+.option {
+    width: 100%;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.option ol {
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+    font-weight: 600;
+    padding: 1rem;
+    border: 1px solid var(--text-color);
+    border-radius: 10px;
+}
+.option ol text {
+    border-bottom: 1px solid var(--text-color);
+}
+.option ol li {
+    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
+    width: fit-content;
+}
 /*===================== Service =====================*/
