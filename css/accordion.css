@@ -19,7 +19,6 @@
             color: var(--bg-color);
             font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.8rem);
             transition: color 100ms;
-            padding: auto;
         }
         .accordion-header.active {
             color: var(--accent-color);
@@ -42,10 +41,9 @@
         .rotate-fa {
             transform: rotate(90deg);
         }
-        /*.accordion-header .fa {
+        .accordion-header .fa {
             float: right;
-            padding-top: 0;
-        }*/
+        }
         .accordion-gold .accordion-header {
             color: var(--bg-color);
         }
