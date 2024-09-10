@@ -47,12 +47,9 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
 /*===================== footer =====================*/
 .logo {
     position: absolute;
-    bottom: 0.3%;
-    left: 10%;
+    top: 0.3%;
+    left: 1%;
     z-index: 1;
-
-    a {
-        padding: 0.25em 0.5em;
 
         img {
             width: 35vmin;
