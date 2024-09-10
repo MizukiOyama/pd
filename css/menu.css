@@ -243,13 +243,28 @@ nav {
 		padding: 0.5rem 0;
 		display: flex;
 		justify-content: center;
-		transform: rotate(90deg); /* テキストの回転を保持 */
+		transform: rotate(90deg);
 		transition: color 0.3s ease;
 	}
     .pc_menu a:hover {
         color: var(--hover-color);
         background-color: var(--accent-color);
     }
+
+/*===================== footer =====================*/
+.logo {
+    position: absolute;
+    top: 0.3%;
+    left: 1%;
+    z-index: 1;
+    transform: rotate(0deg);
+
+        img {
+            width: 35vmin;
+        }
+
+}
+/*===================== footer =====================*/
 
 	.manu_p {
 		margin-top: auto;
