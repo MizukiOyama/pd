@@ -657,9 +657,8 @@ section img {
     position: relative;
 }
 .profile ol div {
-    height: 83px;
     padding-left: 10px;
-    border-left: 1px solid var(--text-color);
+
 }
 .profile li {
     width: 100%;
@@ -670,11 +669,11 @@ section img {
     margin: -3px 0;
 }
 .profile li::before {
-    content: "";
+    content: "・";
     display: block;
     position: relative;
     width: 5px;
-    bottom: -10px;
+    bottom: 0;
     left: -10px;
     margin-right: 0.5rem;
     border-bottom: 1px solid var(--text-color);
