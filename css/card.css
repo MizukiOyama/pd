@@ -45,7 +45,6 @@
     .modal-content:hover {
       background-color: rgba(146, 146, 146, 0.4);
       backdrop-filter: blur(20px);
-      z-index: 10;
     }
     
     @keyframes modalFadeIn {
