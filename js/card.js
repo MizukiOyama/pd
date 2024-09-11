@@ -1,47 +1,47 @@
 const cardModalContents = [
     {
         left: "Web Design",
-        right: "HP、LPの制作を行います。"
+        right: "<p>HP、LPの制作を行います。</p>"
     },
     {
         left: "Art Order",
-        right: "Abstract Art、Digital Art、などの制作が可能です。"
+        right: "<p>Abstract Art、Digital Art、などの制作が可能です。</p>"
     },
     {
         left: "Consulting",
-        right: "新規事業の立ち上げへのアドバイスや事業の土台固めを行います。"
+        right: "<p>新規事業の立ち上げへのアドバイスや事業の土台固めを行います。</p>"
     },
     {
         left: "illustration",
-        right: "ウェブ、印刷物、イメージキャラクター、などのイラストを制作します。"
+        right: "<p>ウェブ、印刷物、イメージキャラクター、などのイラストを制作します。</p>"
     },
     {
         left: "writing",
-        right: "ウェブ、印刷物、などのライティングを行います。"
+        right: "<p>ウェブ、印刷物、などのライティングを行います。</p>"
     },
     {
         left: "photo",
-        right: "ウェブ、ポートレート、商品、などの写真撮影を行います。"
+        right: "<p>ウェブ、ポートレート、商品、などの写真撮影を行います。</p>"
     },
     {
         left: "video",
-        right: "ウェブ、などで使用する映像を撮影・制作を行います。"
+        right: "<p>ウェブ、などで使用する映像を撮影・制作を行います。</p>"
     },
     {
         left: "DTP",
-        right: "印刷物の制作を行います。「メニュー表、名刺、チラシ、ポスター」etc..."
+        right: "<p>印刷物の制作を行います。「メニュー表、名刺、チラシ、ポスター」etc...</p>"
     },
     {
         left: "banner",
-        right: "広告用のバナー制作を行います。"
+        right: "<p>広告用のバナー制作を行います。</p>"
     },
     {
         left: "logo",
-        right: "会社や組織団体のオリジナルのロゴを制作します。"
+        right: "<p>会社や組織団体のオリジナルのロゴを制作します。</p>"
     },
     {
         left: "その他",
-        right: "表記のないものを依頼したい場合は、Contactページからお問合せください。"
+        right: "<p>表記のないものを依頼したい場合は、Contactページからお問合せください。</p>"
     }
 ];
 

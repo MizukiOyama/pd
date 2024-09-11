@@ -81,7 +81,6 @@
 .modal-left,
 .modal-right {
    flex: 1;
-   width: 50%;
    height: 100%;
    display: flex;
    justify-content: center;
@@ -96,8 +95,7 @@
 }
 
 .modal-right {
-   font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
-   color: var(--bg-color);
+   font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
 }
 
 /* ボタンのスタイルをカスタマイズ */
