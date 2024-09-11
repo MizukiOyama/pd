@@ -91,6 +91,7 @@
     }
     
     .modal-right {
+      font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
       color: var(--bg-color);
     }
     
