@@ -36,7 +36,7 @@
        color: var(--bg-color);
        transition: all 0.3s ease;
        animation: modalFadeIn 0.35s ease forwards;
-       background-color: rgba(106, 86, 86, 0.2);
+       background-color: rgba(106, 106, 106, 0.5);
        backdrop-filter: blur(10px);
        border-radius: 10px;
        border: 1px solid rgba(217, 217, 217, 0.45);
@@ -91,7 +91,7 @@
     }
     
     .modal-right {
-      color: var(--hover-color);
+      color: var(--bg-color);
     }
     
     /* ボタンのスタイルをカスタマイズ */
