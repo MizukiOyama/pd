@@ -34,6 +34,7 @@
        overflow: auto;
        display: flex;
        color: var(--bg-color);
+       transition: all 0.3s ease;
        animation: modalFadeIn 0.35s ease forwards;
        background-color: rgba(46, 46, 46, 0.2);
        backdrop-filter: blur(10px);
@@ -46,9 +47,8 @@
       backdrop-filter: blur(20px);
     }
 
-    .modal-content:hover {
+    .section2 .card:hover {
       background-color: rgba(46, 46, 46, 0.54);
-      backdrop-filter: blur(20px);
     }
     
     @keyframes modalFadeIn {
