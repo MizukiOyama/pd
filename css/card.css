@@ -94,8 +94,9 @@
    align-items: flex-start;
 }
 
-.modal-right {
+.modal-right p {
    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
+   width: 40%;
 }
 
 /* ボタンのスタイルをカスタマイズ */
