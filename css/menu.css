@@ -233,11 +233,6 @@ nav {
 		height: 85px;
 	}
 
-    .manu_p {
-        font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
-        margin-top: 5%;
-    }
-
 	.pc_menu a {
 		font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
         font-weight: 400;
@@ -252,12 +247,16 @@ nav {
 		transition: color 0.3s ease;
 	}
 
+    .manu_p a {
+        font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
+    }
+
     .pc_menu a:hover {
         color: var(--hover-color);
         background-color: var(--accent-color);
     }
 
-/*===================== footer =====================*/
+
 .logo {
     position: relative;
     top: -3vmin;
@@ -268,11 +267,7 @@ nav {
         img {
             width: 7vmin;
         }
-
 }
-/*===================== footer =====================*/
 
-	.manu_p {
-		margin-top: auto;
-	}
+
 }
