@@ -55,7 +55,7 @@
         }
         .accordion-header .fa {
             float: right;
-            padding-top: 0.8rem 1rem 0;
+            padding-top: 0.5rem;
         }
         .accordion-gold .accordion-header {
             color: var(--bg-color);
