@@ -47,7 +47,7 @@
     }
 
     .modal-content:hover {
-      background-color: rgba(146, 146, 146, 0.4);
+      background-color: rgba(46, 46, 46, 0.54);
       backdrop-filter: blur(20px);
     }
     
