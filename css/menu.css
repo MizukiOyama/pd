@@ -233,8 +233,13 @@ nav {
 		height: 85px;
 	}
 
+    .manu_p {
+        font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
+        margin-top: 5%;
+    }
+
 	.pc_menu a {
-		font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 2rem);
+		font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
         font-weight: 400;
 		color: var(--text-color);
 		width: 100px;
@@ -246,6 +251,7 @@ nav {
 		transform: rotate(90deg);
 		transition: color 0.3s ease;
 	}
+
     .pc_menu a:hover {
         color: var(--hover-color);
         background-color: var(--accent-color);
@@ -253,14 +259,14 @@ nav {
 
 /*===================== footer =====================*/
 .logo {
-    position: absolute;
-    top: 0.3%;
-    left: 1%;
+    position: relative;
+    top: -3vmin;
+    margin-bottom: -3%;
     z-index: 1;
     transform: rotate(-90deg);
 
         img {
-            width: 35vmin;
+            width: 7vmin;
         }
 
 }
