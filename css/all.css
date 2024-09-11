@@ -662,6 +662,7 @@ section img {
 }
 .profile li {
     width: 100%;
+    margin-bottom: -2%;
 }
 .profile li br {
     display: block;
