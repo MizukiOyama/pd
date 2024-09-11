@@ -267,6 +267,10 @@ nav {
         img {
             width: 7vmin;
         }
+        a:hover {
+            color: var(--accent-color);
+            background: none;
+        }
 }
 
 
