@@ -36,10 +36,15 @@
        color: var(--bg-color);
        animation: modalFadeIn 0.35s ease forwards;
        background-color: rgba(46, 46, 46, 0.2);
-       backdrop-filter: blur(15px);
+       backdrop-filter: blur(10px);
        border-radius: 10px;
        border: 1px solid rgba(217, 217, 217, 0.45);
        box-shadow: 0 2px 3px rgba(46, 46, 46, 0.4);
+    }
+    .modal-content:hover {
+      background-color: rgba(146, 146, 146, 0.4);
+      backdrop-filter: blur(20px);
+      z-index: 10;
     }
     
     @keyframes modalFadeIn {
