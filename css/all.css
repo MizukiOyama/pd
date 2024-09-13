@@ -237,7 +237,7 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     shape-margin: 0.75rem;
-    mix-blend-mode: color-burn;
+    mix-blend-mode: luminosity;
     z-index: 0;
 }
 
@@ -514,7 +514,10 @@ section #top-img {
 section img {
     position: absolute;
 }
-
+.tabs img {
+    width: 75%;
+    background: var(--text-color);
+}
 .section1 img,
 .section2 img,
 .section3 img,
