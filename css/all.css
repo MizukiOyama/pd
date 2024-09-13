@@ -516,7 +516,7 @@ section img {
 }
 .tabs img {
     width: 75%;
-    background: var(--text-color);
+    right: 0;
 }
 .section1 img,
 .section2 img,
