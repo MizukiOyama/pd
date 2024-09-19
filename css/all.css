@@ -332,7 +332,7 @@ section .top-s::before {
 
 .h2-bg {
     width: fit-content;
-    height: 100px;
+    height: 90px;
     border-right: 1px solid var(--text-color);
     border-bottom: 1px solid var(--text-color);
     padding: 0 2rem;
@@ -349,7 +349,7 @@ section .top-s::before {
 .h2-bg p::before {
     content: "";
     width: 100%;
-    height: 10%;
+    height: 7%;
     position: absolute;
     left: 0;
     bottom: 0;
@@ -688,7 +688,7 @@ section img {
     bottom: -18px;
 }
 .profile li span {
-    font-size: clamp(1rem, calc(1rem + 0.1vw), 1.2rem);
+    font-size: clamp(0.8rem, calc(0.8rem + 0.1vw), 1rem);
 }
 
 .profile .like video {
