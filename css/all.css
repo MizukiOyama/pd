@@ -743,7 +743,12 @@ section img {
 }
 
 .option h3 {
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+    height: 30px;
     padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     border: 1px solid var(--text-color);
 }
@@ -751,12 +756,13 @@ section img {
     margin-top: 2rem;
 }*/
 .option ol {
-    margin: 0 1rem;
+    margin: 0.5rem 1rem;
 }
 
 .option ol div {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     font-weight: 600;
+    height: 220px;
     padding: 1rem;
     border: 1px solid var(--text-color);
 }
