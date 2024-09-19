@@ -82,12 +82,12 @@ jQuery(document).ready(function ($) {
                 // 幅を正確に取得
                 let width = this.currentTab.outerWidth();
                 // タブの左からの位置を取得
-                let left = this.currentTab.position().left;
+                let right = this.currentTab.position().right;
                 
                 // タブスライダーのCSSを設定
                 $('.tab-slider').css({
                     width: width,  // 高さではなく幅を設定
-                    left: left     // leftの位置を設定
+                    right: right     // leftの位置を設定
                 });
             }
         }
