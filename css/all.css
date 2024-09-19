@@ -736,7 +736,10 @@ section img {
 
 .option {
     width: 80%;
+    padding: 1rem 0;
+    border: 1px solid var(--text-color);
     display: flex;
+    justify-content: center;
 }
 
 .option h3 {
@@ -747,12 +750,11 @@ section img {
 /*.option h3:nth-child(n + 3) {
     margin-top: 2rem;
 }*/
-.option ol {
+.option ol div {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     font-weight: 600;
     padding: 1rem;
     border: 1px solid var(--text-color);
-    border-radius: 10px;
 }
 /*.option .flex {
     width: 100%;
