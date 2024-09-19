@@ -751,39 +751,22 @@ section img {
     text-align: center;
     border: 1px solid var(--text-color);
 }
-/*.option h3:nth-child(n + 3) {
-    margin-top: 2rem;
-}*/
+
 .option ol {
     margin: 0 0.6rem;
 }
 
 .option ol div {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
-    font-weight: 600;
+    font-weight: 500;
     height: 230px;
     margin-top: 0.5rem;
     padding: 1rem;
     border: 1px solid var(--text-color);
 }
-/*.option .flex {
-    width: 100%;
-    display: flex;
-    justify-content: baseline;
-    align-items: center;
-}
-.option .flex ol {
-    border-right: 0;
-    border-radius: 10px 0 0 10px;
-}
-.option .flex ol:nth-child(2) {
-    border-left: 1px solid;
-    border-right: 1px solid;
-    border-radius: 0 10px 10px 0;
-}*/
 
 .option ol li {
-    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
     width: fit-content;
 }
 /*===================== Service =====================*/
