@@ -275,11 +275,9 @@ section {
 }
 .tabs video {
     width: 80%;
-    height: 60%;
     position: absolute;
-    top: 15%;
-    right: 1%;
-    background: var(--text-color);
+    top: 10%;
+    right: 0.5%;
     z-index: 0;
 }
 .tabs .caption {
