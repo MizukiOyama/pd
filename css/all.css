@@ -735,8 +735,7 @@ section img {
 }
 
 .option {
-    width: 80%;
-    padding: 1rem 0;
+    padding: 1rem 0.5rem;
     border: 1px solid var(--text-color);
     display: flex;
     justify-content: center;
@@ -756,13 +755,14 @@ section img {
     margin-top: 2rem;
 }*/
 .option ol {
-    margin: 0.25rem 0.5rem;
+    margin: 0 0.6rem;
 }
 
 .option ol div {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     font-weight: 600;
-    height: 220px;
+    height: 230px;
+    margin-top: 0.5rem;
     padding: 1rem;
     border: 1px solid var(--text-color);
 }
