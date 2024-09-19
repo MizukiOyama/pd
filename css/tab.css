@@ -21,12 +21,13 @@
     z-index: 10;
     opacity: 0;
     mix-blend-mode: inherit;
-    background: linear-gradient(180deg, rgba(217, 217, 217, 0.8), rgba(160, 113, 113, 0.5));
+    background: var(--base-color);
     background-image: repeating-linear-gradient(120deg, transparent, transparent 1px, rgba(46, 46, 46, 0.5) 1px, rgba(46, 46, 46, 0.1) 2px);
 }
 
 .tabs-container p {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+    color: var(--hover-color);
     margin-bottom: 10%;
 }
 
@@ -52,17 +53,16 @@
     text-shadow: -1px -1px  var(--text-color), -1px 1px  var(--text-color), 1px -1px  var(--text-color), 1px 1px var(--text-color);
 }
 .tab:hover {
-    color: var(--bg-color);
-    background: var(--text-color);
+    color: var(--accent-color);
     transition: all 0.35s ease;
 }
 
 .tabs-container a {
     width: 100%;
+    color: var(--bg-color);
     position: relative;
     right: 0;
     bottom: 0;
-    color: var(--bg-color);
 }
 .tabs-container a::after,
 .tabs-container a::before {
