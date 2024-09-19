@@ -750,6 +750,10 @@ section img {
 /*.option h3:nth-child(n + 3) {
     margin-top: 2rem;
 }*/
+.option ol {
+    margin: 0 1rem;
+}
+
 .option ol div {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     font-weight: 600;
