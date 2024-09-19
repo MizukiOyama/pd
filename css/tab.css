@@ -13,7 +13,7 @@
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     position: absolute;
-    bottom: 10%;
+    bottom: -15%;
     height: fit-content;
     padding: 2rem;
     /*box-shadow: -1px -1px 1px 0px var(--text-color);*/
