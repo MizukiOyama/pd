@@ -735,12 +735,14 @@ section img {
 }
 
 .option {
+    width: 80%;
     display: flex;
-
 }
 
 .option h3 {
+    padding: 1rem 2rem;
     text-align: center;
+    border: 1px solid var(--text-color);
 }
 /*.option h3:nth-child(n + 3) {
     margin-top: 2rem;
@@ -752,7 +754,7 @@ section img {
     border: 1px solid var(--text-color);
     border-radius: 10px;
 }
-.option .flex {
+/*.option .flex {
     width: 100%;
     display: flex;
     justify-content: baseline;
@@ -766,7 +768,7 @@ section img {
     border-left: 1px solid;
     border-right: 1px solid;
     border-radius: 0 10px 10px 0;
-}
+}*/
 
 .option ol li {
     font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
