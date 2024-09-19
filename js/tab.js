@@ -27,7 +27,7 @@ jQuery(document).ready(function ($) {
             let target = $(element.attr('href'));
             if (target.length) {
                 let scrollTop = target.offset().top - this.tabContainerHeight + 1 + this.offsetAdjust;
-                $('html, body').animate({ scrollTop: scrollTop }, -50, () => {
+                $('html, body').animate({ scrollTop: scrollTop }, -150, () => {
                     // アニメーション完了後に強制的にスクロールイベントをトリガー
                     this.updateTabPosition();
                 });
