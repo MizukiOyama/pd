@@ -306,8 +306,8 @@ section .top-s {
     padding: 0 10rem;
     text-align: justify;
     display: flex;
-    flex-direction: column;
     /* 縦に並べる */
+    flex-direction: column;
     /*縦方向の中央寄せ justify-content: center;*/
     position: relative;
     z-index: 1;
@@ -733,12 +733,18 @@ section img {
     margin-bottom: 2rem;
     padding-left: 1.5rem;
 }
+
+.option {
+    display: flex;
+
+}
+
 .option h3 {
     text-align: center;
 }
-.option h3:nth-child(n + 3) {
+/*.option h3:nth-child(n + 3) {
     margin-top: 2rem;
-}
+}*/
 .option ol {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     font-weight: 600;
@@ -761,7 +767,6 @@ section img {
     border-right: 1px solid;
     border-radius: 0 10px 10px 0;
 }
-
 
 .option ol li {
     font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
