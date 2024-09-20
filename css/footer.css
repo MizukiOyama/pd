@@ -45,9 +45,9 @@
         font-family: "Inter", sans-serif;
         color: var(--bg-color);
         position: absolute;
-        left: -3.5%;
-        bottom: 13%;
-        transform: rotate(90deg);
+        right: -6%;
+        bottom: 25%;
+        transform: rotate(-90deg);
     }
 
     @media only screen and (max-width:600px) {
