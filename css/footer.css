@@ -2,12 +2,13 @@
     footer {
         position: relative;
         height: 400px;
-        padding: 4em 20rem 0;
+        padding: 4rem 25rem 0 5rem;
         bottom: 0;
         display: flex;
         justify-content: space-between;
         background: var(--text-color);
-        border: 5px solid var(--bg-color);
+        border-top: 5px solid var(--bg-color);
+        border-right: 5px solid var(--bg-color);
         z-index: 100;
     }
 
@@ -40,11 +41,13 @@
     }
 
     .foot {
-        font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
+        font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
+        font-family: "Inter", sans-serif;
         color: var(--bg-color);
         position: absolute;
-        bottom: 0%;
-        left: 4%;
+        left: -3.5%;
+        bottom: 13%;
+        transform: rotate(90deg);
     }
 
     @media only screen and (max-width:600px) {
