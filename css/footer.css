@@ -7,8 +7,8 @@
         display: flex;
         justify-content: space-between;
         background: var(--text-color);
-        border-top: 5px solid var(--bg-color);
-        border-right: 5px solid var(--bg-color);
+        /*border-top: 5px solid var(--bg-color);
+        border-right: 5px solid var(--bg-color);*/
         z-index: 100;
     }
 
