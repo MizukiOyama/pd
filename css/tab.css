@@ -15,7 +15,7 @@
     position: absolute;
     bottom: -15%;
     height: fit-content;
-    padding: 2rem;
+    padding: 4rem 2rem 0;
     /*box-shadow: -1px -1px 1px 0px var(--text-color);*/
     border-radius: 10px 10px 0 0;
     z-index: 10;
@@ -27,15 +27,19 @@
 
 .tabs-container p {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
-    color: var(--hover-color);
+    width: auto;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--text-color);
     margin-bottom: 10%;
 }
 
 .tabs-container--top {
-    width: fit-content;
+    width: 180px;
+    height: 200px;
     position: fixed;
     bottom: 0;
-    right: 9%;
+    right: 5%;
     transition: all 0.5s ease;
     opacity: 1;
 }
@@ -58,7 +62,7 @@
 }
 
 .tabs-container a {
-    width: 100%;
+    width: 75%;
     color: var(--bg-color);
     position: relative;
     right: 0;
