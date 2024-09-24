@@ -140,6 +140,7 @@
 .card-container {
    position: absolute;
    display: flex;
+   align-items: center;
    justify-content: center;
    z-index: 1;
 }
@@ -177,23 +178,18 @@
    box-shadow: 0 2px 3px rgba(46, 46, 46, 0.4);
 }
 
-.card:not(:first-child) {
-   margin-left: -20rem;
-}
-
 .c-c-1 .c-1 {
    left: -10%;
-   margin-top: 30%;
+   margin-top: -5%;
 }
 
 .c-c-1 .c-2 {
-   left: -5%;
-   margin-top: 15%;
+   left: 5%;
 }
 
-/*
 .c-c-1 .c-3 {
-}*/
+   margin-top: 5%;
+}
 
 .title {
    color: var(--bg-color);
