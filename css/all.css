@@ -211,7 +211,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: var(--bg-color);
+    color: rgba(217, 217, 217, 0.5);
 }
 a::after {
     content: "";
