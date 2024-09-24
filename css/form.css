@@ -30,7 +30,7 @@ input:-webkit-autofill:focus {
 }
 
 .content-wrapper {
-    width: 75%;
+    width: calc(750px - 100px);
     padding: 0.5rem 1rem;
     margin: 0 auto;
     position: relative;
