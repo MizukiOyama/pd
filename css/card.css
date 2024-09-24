@@ -138,6 +138,7 @@
 */
 
 .card-container {
+   width: 100%;
    position: absolute;
    display: flex;
    align-items: center;
@@ -179,7 +180,7 @@
 }
 
 .c-c-1 .c-1 {
-   left: -10%;
+   left: 10%;
    margin-top: -5%;
 }
 
