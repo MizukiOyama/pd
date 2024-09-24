@@ -56,8 +56,8 @@ body {
     font-family: zen-maru-gothic, sans-serif;
     font-weight: 500;
     font-style: normal;
-    color: var(--text-color);
-    background-color: var(--text-color);
+    color: var(--bg-color);
+    /*background-color: var(--text-color);*/
     position: relative;
     width: 100%;
     height: auto;
@@ -94,7 +94,7 @@ h1 {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    color: var(--text-color);
+    color: var(--bg-color);
     width: fit-content;
     line-height: 10rem;
     letter-spacing: 0.4rem;
@@ -124,8 +124,9 @@ h2 {
     /*font-size: 62.5%;=16px 6rem=62px*/
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     width: fit-content;
+    color: var(--text-color);
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--text-color);
+    -webkit-text-stroke-color: var(--bg-color);
 }
 
 .service .section2 h2 {
@@ -139,7 +140,6 @@ h2 {
 h3 {
     /*font-size: 62.5%;=16px 4rem=42px*/
     font-size: clamp(2rem, calc(2rem + 0.5vw), 4rem);
-    color: var(--text-color);
 }
 
 p {
@@ -263,7 +263,7 @@ section {
     border-left: 0;
     z-index: 1;
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(217, 217, 217, 0.45);
+    /*border: 1px solid rgba(217, 217, 217, 0.45);*/
     /*box-shadow: 0 2px 3px rgba(46, 46, 46, 0.4);*/
 }
 .tabs .top-h1::after {
@@ -281,22 +281,23 @@ section {
     z-index: 0;
 }
 .tabs .caption {
-    margin-top: 50%;
+    position: absolute;
+    top: 75%;
+    left: 0;
     padding: 1.5rem 1rem 1.5rem 4rem;
     border: 1px solid;
     border-left: 0;
     /*background: var(--bg-color);*/
-    border: 1px solid var(--bg-color);
     z-index: 1;
 }
 .tabs .top-h1 .caption {
+    position: relative;
     font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
     width: 100%;
     padding: 1rem 0;
     margin: 0;
     border: 0;
     border-top: 1px solid;
-    background-color: rgba(46, 46, 46, 0);
 }
 
 /*===================== h1 top =====================*/
