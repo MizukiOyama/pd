@@ -137,7 +137,7 @@ h2 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     width: fit-content;
     color: var(--text-color);
-    margin-top: -10px;
+    margin-top: -15px;
     margin-bottom: -20px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--bg-color);
