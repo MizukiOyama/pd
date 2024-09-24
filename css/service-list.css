@@ -4,7 +4,7 @@
     margin-bottom: 5px;
 }
 #wrap {
-    width: 75%;
+    width: calc(800px - 100px);
     height: fit-content;
     margin: 0 auto;
 }

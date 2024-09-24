@@ -755,6 +755,8 @@ section img {
 }
 
 .option {
+    width: calc(800px - 100px);
+    height: 350px;
     padding: 1rem 0.5rem;
     border: 1px solid;
     display: flex;
@@ -780,7 +782,7 @@ section img {
 .option ol div {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     font-weight: 500;
-    height: 230px;
+    height: 275px;
     margin-top: 0.5rem;
     padding: 1rem;
     border: 1px solid;
