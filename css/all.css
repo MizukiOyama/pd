@@ -246,7 +246,9 @@ img {
 section {
     width: 70%;
     margin: 0 auto;
-    background: var(--bg-color);
+    /*background: var(--bg-color);*/
+    border-left: 1px solid var(--bg-color);
+    border-right: 1px solid var(--bg-color);
 }
 
 /*===================== tabs h1 top =====================*/
@@ -283,7 +285,8 @@ section {
     padding: 1.5rem 1rem 1.5rem 4rem;
     border: 1px solid;
     border-left: 0;
-    background: var(--bg-color);
+    /*background: var(--bg-color);*/
+    border: 1px solid var(--bg-color);
     z-index: 1;
 }
 .tabs .top-h1 .caption {
@@ -301,8 +304,8 @@ section {
 /*===================== section =====================*/
 section .top-s {
     height: 600px;
-    border-top: 1px solid var(--text-color);
-    border-bottom: 1px solid var(--text-color);
+    border-top: 1px solid var(--bg-color);
+    border-bottom: 1px solid var(--bg-color);
     padding: 0 10rem;
     text-align: justify;
     display: flex;
@@ -329,8 +332,8 @@ section .top-s::before {
 .h2-bg {
     width: fit-content;
     height: 90px;
-    border-right: 1px solid var(--text-color);
-    border-bottom: 1px solid var(--text-color);
+    border-right: 1px solid var(--bg-color);
+    border-bottom: 1px solid var(--bg-color);
     padding: 0 2rem;
     position: absolute;
     top: 0;
@@ -349,7 +352,7 @@ section .top-s::before {
     position: absolute;
     left: 0;
     bottom: 0;
-    border-top: 1px solid var(--text-color);
+    border-top: 1px solid var(--bg-color);
     background-color: rgba(217, 217, 217, 0.35);
     background-image: repeating-linear-gradient(50deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
     animation: moveBackground 0.85s linear infinite;
@@ -441,19 +444,19 @@ section .top-s .text {
 .service .video-1 {
     width: 300px;
     height: 100px;
-    background: var(--text-color);
+    background: var(--bg-color);
 }
 
 .service .video-2 {
     width: 400px;
     height: 100px;
-    background: var(--text-color);
+    background: var(--bg-color);
 }
 
 .service .video-3 {
     width: 500px;
     height: 100px;
-    background: var(--text-color);
+    background: var(--bg-color);
 }
 
 /*===================== .works =====================*/
@@ -470,7 +473,7 @@ section .top-s .text {
 .design,
 .art {
     position: absolute;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--bg-color);
 }
 .design {
     left: 25%;
@@ -484,7 +487,7 @@ section .top-s .text {
     width: 350px;
     height: 350px;
     margin-left: 2%;
-    background: var(--text-color);
+    background: var(--bg-color);
 }
 .art {
     right: -8vmin;
@@ -495,7 +498,7 @@ section .top-s .text {
 .art video {
     width: 280px;
     height: 280px;
-    background: var(--text-color);
+    background: var(--bg-color);
 }
 
 /*===================== section in-box =====================*/
@@ -554,7 +557,7 @@ section img {
     width: 300px;
     height: 100px;
     position: relative;
-    background: var(--text-color);
+    background: var(--bg-color);
 }
 
 .top section .top-s .text:nth-child(3) {
@@ -582,7 +585,7 @@ section img {
     width: 70%;
     height: 100px;
     position: relative;
-    background: var(--text-color);
+    background: var(--bg-color);
     margin: 0 auto;
 }
 .thoughts {

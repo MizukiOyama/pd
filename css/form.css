@@ -34,7 +34,8 @@ input:-webkit-autofill:focus {
     padding: 0.5rem 1rem;
     margin: 0 auto;
     position: relative;
-    background: var(--text-color);
+    /*background: var(--text-color);*/
+    border: 1px solid var(--bg-color);
 }
 
 .get-in-touch {
