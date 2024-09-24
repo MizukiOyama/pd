@@ -345,6 +345,7 @@ section .top-s::before {
 }
 
 .h2-bg {
+    font-family: sans-serif;
     width: fit-content;
     height: 90px;
     border-right: 1px solid;
@@ -379,7 +380,7 @@ section .top-s::before {
 
 section .top-s .text {
     width: 500px;
-    margin: 15% 0 3%;
+    margin: 17vmin 0 2%;
 }
 
 #tab-2 .top-s .text,
@@ -577,7 +578,7 @@ section img {
 
 .top section .top-s .text:nth-child(3) {
     width: 350px;
-    margin: 3% 0 0;
+    margin: 2% 0 0;
 }
 
 .top #tab-4 .top-s .text {
