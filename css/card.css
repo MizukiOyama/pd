@@ -151,6 +151,7 @@
 .c-c-2,
 .c-c-3 {
    width: 100%;
+   margin-top: -7%;
 }
 
 .c-c-2 .card,
@@ -160,7 +161,7 @@
 }
 
 .c-c-3 {
-   margin-top: 20%;
+   margin-top: 18%;
 }
 
 .card {

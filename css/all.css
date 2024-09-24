@@ -137,12 +137,13 @@ h2 {
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     width: fit-content;
     color: var(--text-color);
+    margin-bottom: -20px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--bg-color);
 }
 
 .service .section2 h2 {
-    margin-bottom: 5%;
+    margin-bottom: -12px;
 }
 .policy .section4 h2,
 .section7 h2 {
@@ -316,7 +317,7 @@ section {
 
 /*===================== section =====================*/
 section .top-s {
-    height: 600px;
+    height: 650px;
     border-top: 1px solid;
     border-bottom: 1px solid;
     padding: 0 10rem;
@@ -355,8 +356,8 @@ section .top-s::before {
     justify-content: center;
     flex-direction: column;
 }
-.h2-bg p {
-    margin-top: -8px;
+.policy .h2-bg p {
+    margin-top: -17px;
 }
 .h2-bg p::before {
     content: "";
