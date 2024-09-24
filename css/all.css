@@ -157,7 +157,7 @@ h3 {
 
 p {
     /*font-size: 62.5%;=16px 1.2rem=12px*/
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
     width: fit-content;
     letter-spacing: 0.05rem;
     /*text-shadow: 1px 1px 4px rgba(86, 86, 86, 0.65);*/
