@@ -77,6 +77,15 @@ body::before {
     background-image: repeating-linear-gradient(340deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
     animation: moveBackground 0.65s linear infinite;
 }
+@keyframes moveBackground {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
 body::after {
     content: '';
     width: 100%;
@@ -86,14 +95,16 @@ body::after {
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize-bg-img.png");
     opacity: 0.4;
     z-index: -1;
-    animation: moveBackground 0.65s linear infinite;
+    animation: bg-img 0.65s linear infinite;
 }
-@keyframes moveBackground {
+@keyframes bg-img {
     0% {
-        background-position: 0 0;
+        background-size: 100%;
+        transform: rotate(-50%, -50%);
     }
     100% {
-        background-position: 100% 100%;
+        background-size: 200%;
+        transform: rotate(100%, 100%);
     }
 }
 
