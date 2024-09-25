@@ -95,6 +95,26 @@ body::after {
         background-position: 100% 100%;
     }
 }
+
+.noise {
+    --lines: 0.0003px;
+    mask: repeating-radial-gradient(
+      circle at center,
+      #000,
+      var(--lines),
+      #000,
+      0,
+      #0000,
+      calc(var(--lines) * 2),
+      #0000 0
+    );
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 h1 {
     /*font-size: 62.5%;=16px 12rem=120px*/
     font-size: clamp(6rem, calc(6rem + 0.1vw), 8rem);
@@ -108,6 +128,21 @@ h1 {
     width: fit-content;
     line-height: 10rem;
     letter-spacing: 0.4rem;
+}
+.noise {
+    display: flex;
+    gap: 5vmin;
+    background: linear-gradient(to bottom right, deeppink, blue) fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media (prefers-color-scheme: light) {
+    .noise {
+        background: linear-gradient(to bottom, black, gray) fixed;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 }
 /*.top h1,
 .policy h1 {
