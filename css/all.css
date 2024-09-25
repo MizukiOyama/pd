@@ -132,7 +132,7 @@ h1 {
 .noise {
     display: flex;
     gap: 5vmin;
-    background: linear-gradient(to bottom right, deeppink, blue) fixed;
+    background: linear-gradient(to bottom right, var(--bg-color), var(--text-color)) fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
