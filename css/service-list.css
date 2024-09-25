@@ -96,8 +96,9 @@ border-bottom: 1px solid;
     align-items: start;
     justify-content: center;
     border: 1px solid var(--border);
-    background-image: repeating-linear-gradient(137deg, transparent, transparent 1px, rgba(46, 46, 46, 0.24) 1px, rgba(46, 46, 46, 0.24) 2px);
-    animation: moveBackground 0.55s linear infinite;
+    border-top: 0;
+    /*background-image: repeating-linear-gradient(137deg, transparent, transparent 1px, rgba(46, 46, 46, 0.24) 1px, rgba(46, 46, 46, 0.24) 2px);
+    animation: moveBackground 0.55s linear infinite;*/
 }
 
 section #container .se-box {
