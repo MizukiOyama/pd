@@ -63,16 +63,17 @@
 }
 
 .tabs-container a {
-    width: 75%;
+    width: 85%;
     color: var(--bg-color);
     position: relative;
     right: 0;
     bottom: 0;
+    margin-bottom: 5%;
 }
-.tabs-container a::after,
+/*.tabs-container a::after,
 .tabs-container a::before {
     display: none;
-}
+}*/
 
 .tab-slider {
     position: absolute;
