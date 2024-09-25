@@ -16,7 +16,7 @@
 #cursor {
     width: 10px;
     height: 10px;
-    border: 2px solid rgb(217, 217, 217, 0.7);
+    border: 1px solid rgb(217, 217, 217, 0.7);
     /*background-color: rgb(217, 217, 217, 0.7);*/
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.75); /* 光沢のある効果 */
 }
