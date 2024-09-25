@@ -14,17 +14,17 @@
 
 /* カーソルのスタイル */
 #cursor {
-    width: 10px;
-    height: 10px;
-    border: 1px solid rgb(217, 217, 217, 0.5);
+    width: 14px;
+    height: 14px;
+    border: 1px solid var(--border);
     /*background-color: rgb(217, 217, 217, 0.7);*/
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); /* 光沢のある効果 */
 }
 
 #stalker {
-    width: 16px;
-    height: 16px;
-    border: 1px solid rgb(217, 217, 217, 0.5);
+    width: 18px;
+    height: 18px;
+    border: 1px solid var(--border);
     transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
