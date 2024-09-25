@@ -267,6 +267,9 @@ nav {
         img {
             width: 6vmin;
         }
+        a {
+            width: fit-content;
+        }
         a:hover {
             display: none;
         }
