@@ -271,7 +271,8 @@ nav {
             width: fit-content;
         }
         a:hover {
-            display: none;
+            color: var(--accent-color);
+            background: none;
         }
 }
 
