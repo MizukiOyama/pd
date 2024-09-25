@@ -664,14 +664,16 @@ section img {
 /*========== .works */
 
 .profile {
-    width: 100%;
+    width: 80%;
     height: 100%;
     display: flex;
     align-items: center;
+    margin: 0 auto;
 }
 .oyama,
 .like {
     width: 50%;
+    margin: 0 0.5%;
 }
 
 .profile ol {
