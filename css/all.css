@@ -86,6 +86,7 @@ body::after {
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize-bg-img.png");
     opacity: 0.4;
     z-index: -1;
+    animation: moveBackground 0.65s linear infinite;
 }
 @keyframes moveBackground {
     0% {
