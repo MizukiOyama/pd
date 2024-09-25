@@ -8,7 +8,7 @@
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
-    mix-blend-mode: difference;
+    mix-blend-mode: color-dodge;
     z-index: 9999;
 }
 
@@ -16,16 +16,17 @@
 #cursor {
     width: 10px;
     height: 10px;
+    border: 2px solid rgb(217, 217, 217, 0.7);
     background-color: rgb(217, 217, 217, 0.7);
-    box-shadow: 0 0 5px rgba(217, 217, 217, 0.5); /* 光沢のある効果 */
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.75); /* 光沢のある効果 */
 }
 
 #stalker {
     width: 16px;
     height: 16px;
-    border: 2px solid rgb(217, 217, 217, o.7);
+    border: 2px solid rgb(217, 217, 217, 0.7);
     transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
-    box-shadow: 0 0 5px rgba(217, 217, 217, 0.5);
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 /* ホバー時のスタイル */
