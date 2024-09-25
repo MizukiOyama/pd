@@ -21,16 +21,17 @@
     width: calc(38% - 50px);
     height: 7vmin;
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
-    color: var(--bg-color);
-    background: var(--text-color);
+    color: var(--border);
+    border: 1px solid var(--border);
+    border-bottom: 0;
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     transition: all 0.5s ease;
-    background-image: repeating-linear-gradient(137deg, transparent, transparent 1px, rgba(146, 146, 146, 0.24) 1px, rgba(146, 146, 146, 0.24) 2px);
-    animation: moveBackground 0.55s linear infinite;
+    /*background-image: repeating-linear-gradient(137deg, transparent, transparent 1px, rgba(146, 146, 146, 0.24) 1px, rgba(146, 146, 146, 0.24) 2px);
+    animation: moveBackground 0.55s linear infinite;*/
 }
 .list-tab::before {
     border-left: 1px solid;
@@ -42,10 +43,10 @@ border-bottom: 1px solid;
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     width: calc(42% - 10px);
     height: 9.25vmin;
-    color: var(--text-color);
-    background-color: rgba(217, 217, 217, 0.8);
+    color: var(--bg-color);
+    /*background-color: rgba(217, 217, 217, 0.8);
     background-image: repeating-linear-gradient(137deg, transparent, transparent 1px, rgba(46, 46, 46, 0.24) 1px, rgba(46, 46, 46, 0.24) 2px);
-    animation: moveBackground 0.55s linear infinite;
+    animation: moveBackground 0.55s linear infinite;*/
 }
 
 #tab1 p,
@@ -94,7 +95,7 @@ border-bottom: 1px solid;
     display: flex;
     align-items: start;
     justify-content: center;
-    border: 1px solid;
+    border: 1px solid var(--border);
     background-image: repeating-linear-gradient(137deg, transparent, transparent 1px, rgba(46, 46, 46, 0.24) 1px, rgba(46, 46, 46, 0.24) 2px);
     animation: moveBackground 0.55s linear infinite;
 }
@@ -122,9 +123,9 @@ section #container .se-box {
     font-weight: 600;
     color: var(--link-color);
     margin-top: 6%;
-    padding-left: 0.5rem;
-    border-left: 1px solid;
-    border-bottom: 1px solid;
+    padding-left: 0.85rem;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
 }
 
 #wrap .container p {
