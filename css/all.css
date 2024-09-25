@@ -92,19 +92,26 @@ body::after {
     height: 100%;
     position: fixed;
     top: 0;
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize-bg-img.png");
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
     opacity: 0.4;
     z-index: -1;
-    animation: bg-img 0.65s linear infinite;
+    animation: bg-img-move 5s linear infinite, bg-img-rotate 10s linear infinite;
 }
-@keyframes bg-img {
+@keyframes bg-img-move {
     0% {
-        background-size: 100%;
-        transform: rotate(-50%, -50%);
+        background-position: 0% 0%;
     }
     100% {
-        background-size: 200%;
-        transform: rotate(100%, 100%);
+        background-position: 100% 100%;
+    }
+}
+
+@keyframes bg-img-rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }
 
