@@ -95,7 +95,7 @@ body::after {
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
     opacity: 0.4;
     z-index: -1;
-    animation: bg-img-move 5s linear infinite, bg-img-rotate 10s linear infinite;
+    /*animation: bg-img-move 5s linear infinite, bg-img-rotate 10s linear infinite;*/
 }
 @keyframes bg-img-move {
     0% {
