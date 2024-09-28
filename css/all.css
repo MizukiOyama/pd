@@ -408,7 +408,7 @@ section .top-s::before {
 .h2-bg {
     font-family: sans-serif;
     width: fit-content;
-    height: 90px;
+    height: 100px;
     border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     padding: 0 2rem;
