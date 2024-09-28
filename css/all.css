@@ -194,7 +194,7 @@ h2 {
     width: fit-content;
     color: var(--text-color);
     margin-top: -15px;
-    margin-bottom: -20px;
+    margin-bottom: -15px;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--bg-color);
 }
