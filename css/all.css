@@ -467,7 +467,7 @@ section .top-s .text {
     margin-top: 2.5rem;
 }
 .top .se h3 {
-    width: 40%;
+    width: 260px;
     position: absolute;
     bottom: 20%;
     margin-top: 4rem;
@@ -479,10 +479,10 @@ section .top-s .text {
     right: 0;
 }
 .top .se-02 h3 {
-    width: 55.5%;
+    width: 360px;
 }
 .top .se-03 h3 {
-    width: 70.5%;
+    width: 460px;
 }
 .top .se p {
     position: absolute;
