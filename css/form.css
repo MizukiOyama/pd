@@ -34,7 +34,6 @@ input:-webkit-autofill:focus {
     padding: 0.5rem 1rem;
     margin: 0 auto;
     position: relative;
-    /*background: var(--text-color);*/
     border: 1px solid var(--bg-color);
 }
 
@@ -55,7 +54,7 @@ input:-webkit-autofill:focus {
     width: 270px;
     height: 75px;
     border-width: 0;
-    background-color: rgba(217, 217, 217, 0.65);
+    background-color: rgba(217, 217, 217, 0.7);
 }
 
 .contact-form #message {
@@ -93,8 +92,8 @@ input:-webkit-autofill:focus {
     width: 42.5%;
     height: 35pt;
     display: inline-block;
-    color: var(--bg-color);
-    background-color: var(--hover-color);
+    color: rgba(217, 217, 217, 0.5);
+    background-color: rgba(75, 75, 75, 0.65);
     text-transform: uppercase;
     letter-spacing: 0.2rem;
     line-height: 1.5rem;
@@ -113,7 +112,7 @@ input:-webkit-autofill:focus {
 .align-center {
     display: flex;
     justify-content: flex-end;
-    padding-right: 1rem;
+    padding-right: 1.5rem;
 }
 
 .note {
