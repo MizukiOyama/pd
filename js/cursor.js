@@ -6,7 +6,7 @@ jQuery.noConflict();
         var stalker = $("<div id='stalker'></div>");
         $("body").addClass("custom-cursor").append(cursor).append(stalker);
 
-        $(".head,a,nav").hover(
+        $("nav a, a").hover(
             function () {
                 cursor.addClass('cursor--hover');
                 stalker.addClass('stalker--hover');
