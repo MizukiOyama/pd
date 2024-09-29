@@ -106,7 +106,7 @@ input:-webkit-autofill:focus {
 }
 .contact-form .submit-btn:hover {
     color: var(--text-color);
-    background: var(--accent-color);
+    background: rgba(160, 113, 113, 0.6);
 }
 
 .align-center {
