@@ -3,8 +3,8 @@ jQuery(document).ready(function ($) {
         constructor() {
             this.currentId = null;
             this.currentTab = null;
-            this.tabContainerHeight = 0;
-            this.offsetAdjust = 0; // 調整用のオフセット変数
+            this.tabContainerHeight = 100;
+            this.offsetAdjust = 50; // 調整用のオフセット変数
             this.init();
         }
 
