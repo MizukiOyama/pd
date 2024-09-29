@@ -479,10 +479,9 @@ section .top-s .text {
     position: absolute;
     bottom: 0;
 }
-.top .se-01 h3,
-.top .se-p {
+.top .service-list h3,
+.top .service-list p {
     right: 0;
-    padding: 0 1.5rem;
 }
 
 .top .service .video-1,
