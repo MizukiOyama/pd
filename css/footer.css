@@ -8,6 +8,16 @@
         border-right: 5px solid var(--bg-color);*/
         z-index: 9;
     }
+    footer::before {
+        content: "";
+        width: 10%;
+        height: 100%;
+        border-left: 1px solid var(--border);
+        border-right: 1px solid var(--border);
+        position: absolute;
+        right: 5%;
+        z-index: 9;
+    }
 
     .fo1, .fo2 {
         width: 35%;
@@ -29,8 +39,8 @@
     }
 
     footer a:hover {
-        color: var(--base-color) !important;
-        opacity: 0.95;
+        color: var(--bg-color) !important;
+        opacity: 0.9;
     }
 
     .foot {
