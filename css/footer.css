@@ -2,7 +2,7 @@
     footer {
         position: relative;
         height: 400px;
-        padding: 4rem 15% 0;
+        padding: 0 15% 0;
         bottom: 0;
         /*border-top: 5px solid var(--bg-color);
         border-right: 5px solid var(--bg-color);*/
@@ -15,12 +15,12 @@
         border-left: 1px solid var(--border);
         border-right: 1px solid var(--border);
         position: absolute;
-        right: 5%;
+        right: 15%;
         z-index: 9;
     }
 
-    .fo1, .fo2 {
-        width: 35%;
+    .fo1 {
+        margin-top: 3rem;
     }
     .fo2 {
         margin-top: 5rem;
