@@ -6,17 +6,16 @@ jQuery.noConflict();
         var stalker = $("<div id='stalker'></div>");
         $("body").addClass("custom-cursor").append(cursor).append(stalker);
 
-        // すべての a タグにホバーアニメーションを適用
-        $("a").hover(
-            function () {
-                cursor.addClass('cursor--hover');
-                stalker.addClass('stalker--hover');
-            },
-            function () {
-                cursor.removeClass('cursor--hover');
-                stalker.removeClass('stalker--hover');
-            }
-        );
+        // すべての a タグにホバーアニメーションを動的に適用
+        $(document).on("mouseenter", "a", function () {
+            cursor.addClass('cursor--hover');
+            stalker.addClass('stalker--hover');
+        });
+
+        $(document).on("mouseleave", "a", function () {
+            cursor.removeClass('cursor--hover');
+            stalker.removeClass('stalker--hover');
+        });
 
         $(document).on("mousemove", function (e) {
             var x = e.clientX;
@@ -29,17 +28,17 @@ jQuery.noConflict();
                 "left": x + "px"
             });
 
-            // 少し遅れてストーカー要素を追従させる
+            // ストーカー要素を少し遅れて追従させる
             setTimeout(function () {
                 stalker.css({
                     "opacity": "1",
                     "top": y + "px",
                     "left": x + "px"
                 });
-            }, 150); // 遅延時間を150msに設定
+            }, 150); // 150ms遅延
         });
 
-        // 初期状態では透明に設定
+        // 初期状態で透明に設定
         cursor.css("opacity", "0");
         stalker.css("opacity", "0");
     });
