@@ -468,9 +468,9 @@ section .top-s .text {
 }
 
 .top .service h3 {
-    width: 50%;
+    width: 40%;
     margin-top: 4rem;
-    padding-left: 1rem;
+    padding: 0 1rem;
     border-bottom: 1px solid var(--border);
     position: absolute;
     bottom: 20%;
