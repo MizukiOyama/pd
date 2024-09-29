@@ -3,8 +3,8 @@ jQuery(document).ready(function ($) {
         constructor() {
             this.currentId = null;
             this.currentTab = null;
-            this.tabContainerHeight = 100;
-            this.offsetAdjust = 50; // 調整用のオフセット変数
+            this.tabContainerHeight = 0;
+            this.offsetAdjust = 0; // 調整用のオフセット変数
             this.init();
         }
 
@@ -27,7 +27,8 @@ jQuery(document).ready(function ($) {
             let target = $(element.attr('href'));
             if (target.length) {
                 let scrollTop = target.offset().top - this.tabContainerHeight + 1 + this.offsetAdjust;
-                $('html, body').animate({ scrollTop: scrollTop }, -150, () => {
+                // アニメーションの速度を500msに設定
+                $('html, body').animate({ scrollTop: scrollTop }, 500, () => {
                     // アニメーション完了後に強制的にスクロールイベントをトリガー
                     this.updateTabPosition();
                 });
@@ -91,7 +92,6 @@ jQuery(document).ready(function ($) {
                 });
             }
         }
-        
 
         updateTabPosition() {
             // 強制的にスクロールイベントをトリガーしてバーの位置を更新
