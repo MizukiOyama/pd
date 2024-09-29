@@ -250,7 +250,7 @@
 .circle {
    width: 100%;
    position: absolute;
-   top: 150px;
+   bottom: 80px;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -266,8 +266,8 @@
 svg {
    width: fit-content;
    fill: var(--text-color);
-   stroke-width: 2px;
-   border: 1px solid var(--hover-color);
+   stroke-width: 1px;
+   border: 1px solid var(--text-color);
    border-radius: 100px;
 }
 
