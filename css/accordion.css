@@ -1,10 +1,11 @@
 
     /*==アコーディオン==*/
     .accordion-wrap {
-        width: calc(80% - 100px);
-        padding: 0.5rem 1rem;
+        width: calc(80% - 50px);
+        padding: 1rem;
+        margin-bottom: 0.5%;
         border-bottom: 1px solid var(--bg-color);
-        background-color: var(--text-color);
+        background-color: rgba(46, 46, 46, 0.7);
     }
     /*title*/
         .accordion-item {
@@ -37,14 +38,15 @@
         }
     /*in-text*/ 
         .accordion-text {
-            width: 85%;
-            margin: 0 auto;
+            width: 80%;
+            height: 150px;
+            margin: 5% auto 0;
             display: none;
         }
         .accordion-text p {
-            font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
-            color: var(--bg-color);
-            padding: 0.5rem 1rem 1.5rem;
+            font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
+            line-height: 2.4rem;
+            letter-spacing: 0.1rem;
         }
     /*i*/
         .fa {
@@ -56,6 +58,7 @@
         .accordion-header .fa {
             float: right;
             padding-top: 0.5rem;
+            padding-right: 0.5rem;
         }
         .accordion-gold .accordion-header {
             color: var(--bg-color);
