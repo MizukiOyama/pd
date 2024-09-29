@@ -498,6 +498,8 @@ section .top-s .text {
     position: absolute;
     top: 0;
     right: 0;
+    border: 1px solid var(--border);
+    border-right: 0;
 }
 .se-01 {
     width: 450px;
@@ -519,24 +521,21 @@ section .top-s .text {
     height: 100%;
     position: absolute;
     left: 0;
-    background: var(--accent-color);
+    border-right: 1px solid var(--border);
 }
 .service .video-1 {
     width: 300px;
     height: 100px;
-    background: var(--hover-color);
 }
 
 .service .video-2 {
     width: 400px;
     height: 100px;
-    background: var(--hover-color);
 }
 
 .service .video-3 {
     width: 500px;
     height: 100px;
-    background: var(--hover-color);
 }
 
 /*===================== .works =====================*/
