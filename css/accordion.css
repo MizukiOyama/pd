@@ -1,7 +1,7 @@
 
     /*==アコーディオン==*/
     .accordion-wrap {
-        width: calc(80% - 50px);
+        width: calc(70% - 50px);
         padding: 1rem;
         margin-bottom: 0.5%;
         border: 1px solid var(--border);
@@ -47,7 +47,7 @@
             overflow-y: auto;
         }
         .accordion-text p {
-            font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
+            font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
             line-height: 2.4rem;
             letter-spacing: 0.1rem;
         }
