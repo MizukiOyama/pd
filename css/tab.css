@@ -17,12 +17,11 @@
     height: fit-content;
     padding: 1rem 2rem 0;
     box-shadow: 0px 0px 8px 0px #000;
-    border-radius: 5px 0 0 0;
     z-index: 10;
     opacity: 0;
-    mix-blend-mode: inherit;
+    mix-blend-mode: difference;
     background: rgba(46, 46, 46, 0.75);
-    border: 1px solid;
+    border: 1px solid var(--border);
     background-image: repeating-linear-gradient(120deg, transparent, transparent 1px, rgba(146, 146, 146, 0.45) 1px, rgba(146, 146, 146, 0.01) 2px);
 }
 
@@ -37,7 +36,9 @@
 
 .tabs-container--top {
     width: 40%;
+    height: 40px;
     position: fixed;
+    right: 0;
     bottom: 0;
     transition: all 0.5s ease;
     opacity: 1;
@@ -46,9 +47,8 @@
 .tab {
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     /*text-shadow: -2px 0px 1px var(--text-color);*/
-    height: 25px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
     flex: 1;
     letter-spacing: 0.1rem;
@@ -61,12 +61,10 @@
 }
 
 .tabs-container a {
-    width: 85%;
     color: var(--bg-color);
     position: relative;
     right: 0;
     bottom: 0;
-    margin-bottom: 5%;
 }
 .tabs-container a::after,
 .tabs-container a::before {
