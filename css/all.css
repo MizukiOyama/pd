@@ -474,9 +474,15 @@ section .top-s .text {
     padding: 0 1rem;
     border-bottom: 1px solid var(--border);
 }
-.top .se-list h3,
+.top .se-01 h3,
 .top .se-list p {
     right: 0;
+}
+.top .se-02 h3 {
+    right: 5%;
+}
+.top .se-03 h3 {
+    right: 10%;
 }
 .top .se p {
     position: absolute;
