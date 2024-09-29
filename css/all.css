@@ -71,7 +71,7 @@ body::before {
     top: 0;
     left: 0;
     width: 15%;
-    height: 95%;
+    height: 100%;
     border-top: 5px solid var(--bg-color);
     z-index: 0;
     background-size: auto auto;
@@ -252,6 +252,9 @@ li {
 }
 
 /*===================== リンク =====================*/
+main {
+    border-bottom: 1px solid var(--border);
+}
 main a {
     letter-spacing: 0.75rem;
 }

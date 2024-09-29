@@ -2,31 +2,24 @@
     footer {
         position: relative;
         height: 400px;
-        padding: 4rem 25rem 0 10rem;
+        padding: 4rem 25rem 0;
         bottom: 0;
-        display: flex;
-        justify-content: flex-start;
-        background: var(--text-color);
         /*border-top: 5px solid var(--bg-color);
         border-right: 5px solid var(--bg-color);*/
-        z-index: 100;
+        z-index: 9;
     }
 
     .fo1, .fo2 {
         width: 35%;
     }
     .fo2 {
-        text-align: right;
+        margin-top: 5rem;
     }
 
     footer a {
         font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 3rem);
-        margin-top: 0.5em;
+        margin: 1rem 0 0 2rem;
         padding: 0.5rem;
-    }
-
-    footer div {
-        margin-top: 2rem;
     }
 
     footer div a {
