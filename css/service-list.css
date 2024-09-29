@@ -17,10 +17,10 @@
 }
 
 .list-tab {
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     font-family: roca, sans-serif;
     width: calc(38% - 50px);
     height: 7vmin;
-    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     color: var(--border);
     border: 1px solid var(--border);
     border-bottom: 0;
@@ -89,7 +89,7 @@ border-bottom: 1px solid;
 
 #container {
     width: 100%;
-    height: 300px;
+    height: 320px;
     overflow-x: hidden;
     overflow-y: scroll;
     display: flex;
@@ -161,8 +161,8 @@ section #container .se-box {
     }
 
     #container {
-        height: 400px;
-        min-height: 350px;
+        height: 300px;
+        min-height: 280px;
     }
 
     .container {

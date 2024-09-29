@@ -41,7 +41,7 @@
    background-color: rgba(106, 106, 106, 0.5);
    backdrop-filter: blur(10px);
    border-radius: 10px;
-   border: 1px solid rgba(217, 217, 217, 0.45);
+   border: 1px solid var(--border);
    box-shadow: 0 2px 3px rgba(46, 46, 46, 0.4);
 }
 
@@ -166,7 +166,7 @@
 
 .c-c-2,
 .c-c-3 {
-   width: 100%;
+   width: 80%;
    margin-top: -7%;
 }
 
@@ -200,11 +200,11 @@
    height: 345px;
    transition: 0.4s ease-out;
    position: relative;
-   background-color: rgba(46, 46, 46, 0.2);
-   backdrop-filter: blur(15px);
-   border-radius: 10px;
-   border: 1px solid rgba(217, 217, 217, 0.45);
-   box-shadow: 0 2px 3px rgba(46, 46, 46, 0.4);
+   background-color: rgba(217, 217, 217, 0.1);
+   backdrop-filter: blur(10px);
+   border-radius: 8px;
+   border: 1px solid var(--border);
+   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5);
 }
 
 .title {

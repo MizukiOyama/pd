@@ -23,16 +23,8 @@
     background: rgba(46, 46, 46, 0.75);
     border: 1px solid var(--border);
     background-image: repeating-linear-gradient(120deg, transparent, transparent 1px, rgba(146, 146, 146, 0.45) 1px, rgba(146, 146, 146, 0.01) 2px);
+    backdrop-filter: blur(10px);
 }
-
-/*.tabs-container p {
-    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
-    width: auto;
-    text-align: center;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--text-color);
-    margin-bottom: 10%;
-}*/
 
 .tabs-container--top {
     width: 40%;
@@ -46,7 +38,6 @@
 
 .tab {
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
-    /*text-shadow: -2px 0px 1px var(--text-color);*/
     display: flex;
     justify-content: center;
     align-items: center;

@@ -4,8 +4,10 @@
         width: calc(80% - 50px);
         padding: 1rem;
         margin-bottom: 0.5%;
-        border-bottom: 1px solid var(--border);
-        background-color: rgba(46, 46, 46, 0.7);
+        border: 1px solid var(--border);
+        background-color: rgba(217, 217, 217, 0.1);
+        backdrop-filter: blur(1px);
+        border-radius: 5px;
     }
     /*title*/
         .accordion-item {
@@ -42,6 +44,7 @@
             height: 150px;
             margin: 5% auto 0;
             display: none;
+            overflow-y: auto;
         }
         .accordion-text p {
             font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
