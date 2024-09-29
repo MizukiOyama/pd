@@ -247,7 +247,7 @@ ul {
 }
 
 li {
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
     list-style: none;
 }
 
