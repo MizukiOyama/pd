@@ -120,7 +120,7 @@ section #container .se-box {
 }
 
 #wrap .container h3 {
-    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2.2rem);
     font-weight: 600;
     color: var(--link-color);
     margin-top: 6%;
