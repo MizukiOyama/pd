@@ -1,6 +1,5 @@
     /*PC*/
     footer {
-        color: var(--text-color);
         position: relative;
         height: 400px;
         padding: 0 15% 0;
@@ -9,6 +8,7 @@
         border-right: 5px solid var(--bg-color);*/
         z-index: 9;
     }
+
     footer::before {
         content: "";
         width: 10%;
@@ -29,13 +29,15 @@
 
     footer a {
         font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 3rem);
+        color: var(--text-color);
         margin: 1rem 0 0 2rem;
         padding: 0.5rem;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--bg-color);
     }
 
     footer div a {
-        font-size: clamp(2.4rem, calc(2.4rem + 0.1vw), 2.8rem);
-        text-shadow: 0px -1px  var(--bg-color), 0px 0px  var(--bg-color), 0px 1px  var(--bg-color), 0px 0px var(--bg-color);
+        font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
     }
 
     footer a:hover {
