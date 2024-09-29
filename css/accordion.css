@@ -26,6 +26,7 @@
             transition: color 100ms;
         }
         .accordion-header span {
+            font-family: sans-serif;
             font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
             color: var(--accent-color);
             border-right: 1px solid var(--bg-color);
