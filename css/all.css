@@ -480,16 +480,9 @@ section .top-s .text {
     bottom: 0;
 }
 .top .se-01 h3,
-.top .se-01 p {
-    left: 35%;
-}
-.top .se-02 h3,
-.top .se-02 p {
-    left: 15%;
-}
-.top .se-03 h3,
-.top .se-03 p {
-    left: -5%;
+.top .se-p {
+    right: 0;
+    padding: 0 1.5rem;
 }
 
 .top .service .video-1,
