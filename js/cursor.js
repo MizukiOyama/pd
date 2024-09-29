@@ -6,6 +6,7 @@ jQuery.noConflict();
         var stalker = $("<div id='stalker'></div>");
         $("body").addClass("custom-cursor").append(cursor).append(stalker);
 
+        // ホバー時のクラスを追加
         $("nav a, a").hover(
             function () {
                 cursor.addClass('cursor--hover');
@@ -17,22 +18,36 @@ jQuery.noConflict();
             }
         );
 
+        // マウスの動きを追跡する
+        let cursorPos = { x: 0, y: 0 };
+        let stalkerPos = { x: 0, y: 0 };
+
         $(document).on("mousemove", function (e) {
-            var x = e.clientX;
-            var y = e.clientY;
+            cursorPos.x = e.clientX;
+            cursorPos.y = e.clientY;
+        });
+
+        function updateCursor() {
             cursor.css({
                 "opacity": "1",
-                "top": y + "px",
-                "left": x + "px"
+                "top": cursorPos.y + "px",
+                "left": cursorPos.x + "px"
             });
-            setTimeout(function () {
-                stalker.css({
-                    "opacity": "1",
-                    "top": y + "px",
-                    "left": x + "px"
-                });
-            }, 150);
-        });
+            
+            // 少し遅れてストーカーを追随させる
+            stalkerPos.x += (cursorPos.x - stalkerPos.x) * 0.1;
+            stalkerPos.y += (cursorPos.y - stalkerPos.y) * 0.1;
+
+            stalker.css({
+                "opacity": "1",
+                "top": stalkerPos.y + "px",
+                "left": stalkerPos.x + "px"
+            });
+
+            requestAnimationFrame(updateCursor);
+        }
+
+        requestAnimationFrame(updateCursor);
 
         cursor.css("opacity", "0");
         stalker.css("opacity", "0");
@@ -48,8 +63,8 @@ document.addEventListener('DOMContentLoaded', function () {
             var elementTop = rect.top;
             var windowHeight = window.innerHeight;
 
-            // 要素が画面の指定位置に到達したらクラスを追加
-            var triggerPosition = windowHeight * 0.5; // 画面の50%位置に到達時に発火
+            // 要素が画面の50%に到達したらクラスを追加
+            var triggerPosition = windowHeight * 0.5;
             
             if (elementTop < triggerPosition) {
                 element.classList.add('visible');
