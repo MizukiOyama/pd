@@ -21,7 +21,7 @@
         .accordion-header {
             width: 100%;
             color: var(--bg-color);
-            font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.8rem);
+            font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
             border-bottom: 1px solid var(--border);
             transition: color 100ms;
         }
@@ -47,7 +47,7 @@
             overflow-y: auto;
         }
         .accordion-text p {
-            font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
+            font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
             line-height: 2.4rem;
             letter-spacing: 0.1rem;
         }
