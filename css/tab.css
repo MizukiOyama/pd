@@ -15,9 +15,9 @@
     position: absolute;
     bottom: -15%;
     height: fit-content;
-    padding: 4rem 2rem 0;
+    padding: 1rem 2rem 0;
     box-shadow: 0px 0px 8px 0px #000;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 0 0 0;
     z-index: 10;
     opacity: 0;
     mix-blend-mode: inherit;
@@ -26,17 +26,17 @@
     background-image: repeating-linear-gradient(120deg, transparent, transparent 1px, rgba(146, 146, 146, 0.45) 1px, rgba(146, 146, 146, 0.01) 2px);
 }
 
-.tabs-container p {
+/*.tabs-container p {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     width: auto;
     text-align: center;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--text-color);
     margin-bottom: 10%;
-}
+}*/
 
 .tabs-container--top {
-    width: 200px;
+    width: 40%;
     position: fixed;
     bottom: 0;
     right: 7.5%;
@@ -69,10 +69,10 @@
     bottom: 0;
     margin-bottom: 5%;
 }
-/*.tabs-container a::after,
+.tabs-container a::after,
 .tabs-container a::before {
     display: none;
-}*/
+}
 
 .tab-slider {
     position: absolute;
