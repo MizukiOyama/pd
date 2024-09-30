@@ -30,7 +30,7 @@ nav {
     border-bottom: 1px solid var(--hover-color);
 }
 .inner ul li:nth-child(4) {
-    margin-top: 5rem;
+    margin-top: 10rem;
 }
 #navArea .inner li a {
     display: block;
