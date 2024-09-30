@@ -7,7 +7,7 @@ nav {
     right: -100%;
     bottom: 0;
     width: 40%;
-    background: url("https://mizukioyama.github.io/pd/hp-img/noize-mune.png");
+    background: var(--border);
     overflow-x: hidden;
     overflow-y: auto;
     transition: 0.8s ease;
