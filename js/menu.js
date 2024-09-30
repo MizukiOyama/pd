@@ -97,3 +97,29 @@ document.addEventListener("DOMContentLoaded", function() {
         });
 
 });
+
+const img = document.getElementById("menu-img");
+let isDragging = false;
+let offsetX, offsetY;
+
+// マウスダウンでドラッグ開始
+img.addEventListener("mousedown", (e) => {
+    isDragging = true;
+    img.style.cursor = "grabbing";
+    offsetX = e.clientX - img.offsetLeft;
+    offsetY = e.clientY - img.offsetTop;
+});
+
+// マウスムーブで画像を移動
+document.addEventListener("mousemove", (e) => {
+    if (isDragging) {
+        img.style.left = `${e.clientX - offsetX}px`;
+        img.style.top = `${e.clientY - offsetY}px`;
+    }
+});
+
+// マウスアップでドラッグ終了
+document.addEventListener("mouseup", () => {
+    isDragging = false;
+    img.style.cursor = "grab";
+});
