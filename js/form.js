@@ -1,57 +1,70 @@
-document.addEventListener("DOMContentLoaded", function () {
-  const inputs = document.querySelectorAll(".input-text");
-  
-  inputs.forEach(input => {
-    // 初期チェック
-    toggleLabel(input);
+  // グローバル変数 'submitted' を宣言
+  let submitted = false;
 
-    // 入力イベントに応じてクラスを切り替え
-    input.addEventListener("input", function () {
+  document.addEventListener("DOMContentLoaded", function () {
+    const inputs = document.querySelectorAll(".input-text");
+
+    inputs.forEach(input => {
+      // 初期チェック
       toggleLabel(input);
+
+      // 入力イベントに応じてクラスを切り替え
+      input.addEventListener("input", function () {
+        toggleLabel(input);
+      });
+
+      function toggleLabel(input) {
+        if (input.value !== "") {
+          input.classList.add("not-empty");
+        } else {
+          input.classList.remove("not-empty");
+        }
+      }
     });
 
-    function toggleLabel(input) {
-      if (input.value !== "") {
-        input.classList.add("not-empty");
-      } else {
-        input.classList.remove("not-empty");
-      }
-    }
-  });
+    var modal = document.getElementById('thanksModal');
+    var span = document.getElementsByClassName('close')[0];
 
-  var modal = document.getElementById('thanksModal');
-  var span = document.getElementsByClassName('close')[0];
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var form = e.target;
+      var formData = new FormData(form);
 
-  document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault();
-    var form = e.target;
-    var formData = new FormData(form);
-    
-    fetch(form.action, {
-      method: 'POST',
-      body: formData
-    }).then(response => {
-      if (response.ok) {
-        modal.style.display = "block";
-        form.reset();
-        document.querySelectorAll('.input-text').forEach(input => {
-          input.classList.remove('not-empty');
-        });
-      } else {
+      fetch(form.action, {
+        method: 'POST',
+        body: formData,
+        target: 'hidden_iframe'  // 送信結果をhidden_iframeにターゲット
+      }).then(response => {
+        if (response.ok) {
+          submitted = true;  // 送信成功時に submitted を true にする
+          modal.style.display = "block";
+          form.reset();
+          document.querySelectorAll('.input-text').forEach(input => {
+            input.classList.remove('not-empty');
+          });
+        } else {
+          alert('There was a problem with the submission.');
+        }
+      }).catch(error => {
         alert('There was a problem with the submission.');
-      }
-    }).catch(error => {
-      alert('There was a problem with the submission.');
+      });
     });
-  });
 
-  span.onclick = function () {
-    modal.style.display = "none";
-  };
+    // iframe の onload イベントを別途設定
+    document.getElementById('hidden_iframe').onload = function () {
+      if (submitted) {
+        alert('Successfully submitted');
+        submitted = false;  // リセット
+      }
+    };
 
-  window.onclick = function (event) {
-    if (event.target == modal) {
+    span.onclick = function () {
       modal.style.display = "none";
-    }
-  };
-});
+    };
+
+    window.onclick = function (event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  });
