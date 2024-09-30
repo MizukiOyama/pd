@@ -71,8 +71,10 @@ nav {
     position: absolute;
     top: 5%;
     right: 10%;
-    animation: rotate-r 25s infinite linear;
     cursor: grab;
+}
+.menu-img {
+    animation: rotate-r 25s infinite linear;
 }
 @keyframes rotate-r {
     from {
@@ -83,13 +85,7 @@ nav {
     }
 }
 .menu-img2 {
-    width: 100%;
-    mix-blend-mode: difference;
-    position: absolute;
-    top: 5%;
-    right: 10%;
     animation: rotate-l 20s infinite linear;
-    cursor: grab;
 }
 @keyframes rotate-l {
     from {
