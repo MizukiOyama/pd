@@ -80,14 +80,6 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("header-container").innerHTML = headerData;
             // メニューの初期化を再度呼び出し
             initializeMenu();
-
-            // SVGの初期化
-            var svgElement = document.getElementById('svgElement');
-            if (svgElement) {
-                svgElement.classList.add('active');
-            } else {
-                console.error('SVG element not found');
-            }
         });
 
     fetch("footer.html")
@@ -98,28 +90,31 @@ document.addEventListener("DOMContentLoaded", function() {
 
 });
 
+// ドラッグ可能な画像の処理
 const img = document.getElementById("menu-img");
 let isDragging = false;
 let offsetX, offsetY;
 
 // マウスダウンでドラッグ開始
-img.addEventListener("mousedown", (e) => {
-    isDragging = true;
-    img.style.cursor = "grabbing";
-    offsetX = e.clientX - img.offsetLeft;
-    offsetY = e.clientY - img.offsetTop;
-});
+if (img) {
+    img.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        img.style.cursor = "grabbing";
+        offsetX = e.clientX - img.offsetLeft;
+        offsetY = e.clientY - img.offsetTop;
+    });
 
-// マウスムーブで画像を移動
-document.addEventListener("mousemove", (e) => {
-    if (isDragging) {
-        img.style.left = `${e.clientX - offsetX}px`;
-        img.style.top = `${e.clientY - offsetY}px`;
-    }
-});
+    // マウスムーブで画像を移動
+    document.addEventListener("mousemove", (e) => {
+        if (isDragging) {
+            img.style.left = `${e.clientX - offsetX}px`;
+            img.style.top = `${e.clientY - offsetY}px`;
+        }
+    });
 
-// マウスアップでドラッグ終了
-document.addEventListener("mouseup", () => {
-    isDragging = false;
-    img.style.cursor = "grab";
-});
+    // マウスアップでドラッグ終了
+    document.addEventListener("mouseup", () => {
+        isDragging = false;
+        img.style.cursor = "grab";
+    });
+}
