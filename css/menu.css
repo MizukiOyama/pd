@@ -67,23 +67,27 @@ nav {
     transform: translate(0, 0);
 }
 .menu-img {
-    width: 35%;
-    animation: rotate 12s infinite linear;
+    width: 90%;
+    animation: rotate-r 25s infinite linear;
 }
-.menu-img::before {
-    content: "";
-    width: 35%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/head-aut.png");
-}
-@keyframes rotate {
+@keyframes rotate-r {
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(360deg);
+    }
+}
+.menu-img:last-child {
+    width: 100%;
+    animation: rotate-l 12s infinite linear;
+}
+@keyframes rotate-l {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
     }
 }
   
