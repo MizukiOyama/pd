@@ -66,11 +66,11 @@ nav {
 }
 
 #menu-img {
-    width: 100%;
+    width: 75%;
     mix-blend-mode: difference;
     position: absolute;
-    top: 5%;
-    right: 10%;
+    top: 15px;
+    right: 15%;
     cursor: grab;
 }
 .menu-img {
