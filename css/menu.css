@@ -7,7 +7,7 @@ nav {
     right: -100%;
     bottom: 0;
     width: 40%;
-    background: var(--border);
+    background: rgba(217, 217, 217, 0.8);
     overflow-x: hidden;
     overflow-y: auto;
     transition: 0.8s ease;
@@ -29,11 +29,14 @@ nav {
     width: fit-content;
     border-bottom: 1px solid var(--hover-color);
 }
+.inner ul li:nth-child(4) {
+    margin-top: 5rem;
+}
 #navArea .inner li a {
     display: block;
     position: relative;
     font-size: clamp(2.8rem, calc(2.8rem + 0.1vw), 3rem);
-    color: var(--accent-color);
+    color: var(--text-color);
     height: 100%;
     margin-top: 1.5rem;
     padding: .35em .65em 0 .2em;
