@@ -67,9 +67,9 @@ nav {
     transform: translate(0, 0);
 }
 .toggle_btn span {
-    content: "MENU";
     display: block;
     position: absolute;
+    top: 25px;
     width: 30px;
     height: 1px;
     background: var(--text-color);
@@ -94,6 +94,12 @@ nav {
     transition: all 2s;
     animation-delay: 2s;
     animation-duration: 3.5s;
+}
+.toggle_btn span::after {
+    content: "MENU";
+    position: absolute;
+    top: 1%;
+    right: 5%;
 }
 @keyframes scroll-left {
     0% {
