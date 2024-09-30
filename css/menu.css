@@ -53,26 +53,26 @@ nav {
 }
 /* .toggle_btn styles */
 .toggle_btn {
-    display: block;
     position: fixed;
     top: 0;
     right: 0;
     width: 10%;
-    height: 5%;
-    border-left: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-    transition: all 1.3s;
     cursor: pointer;
     z-index: 9999;
-    transform: translate(0, 0);
 }
-.menu-img {
+
+.image-container {
+    position: relative;
+}
+
+#menu-img {
     width: 100%;
     mix-blend-mode: difference;
     position: absolute;
     top: 5%;
     right: 10%;
     animation: rotate-r 25s infinite linear;
+    cursor: grab;
 }
 @keyframes rotate-r {
     from {
@@ -89,6 +89,7 @@ nav {
     top: 5%;
     right: 10%;
     animation: rotate-l 20s infinite linear;
+    cursor: grab;
 }
 @keyframes rotate-l {
     from {
@@ -98,7 +99,23 @@ nav {
       transform: rotate(-360deg);
     }
 }
-  
+
+/* .toggle_btn styles
+.toggle_btn {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 10%;
+    height: 5%;
+    border-left: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+    transition: all 1.3s;
+    cursor: pointer;
+    z-index: 9999;
+    transform: translate(0, 0);
+}
+
 .toggle_btn span {
     display: block;
     position: absolute;
@@ -137,7 +154,7 @@ nav {
     100% {
         transform: translateX(100%);
     }
-}
+}*/
 /*== OPEN ==*/
 .open nav {
     right: 0;

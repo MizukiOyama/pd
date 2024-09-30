@@ -3,12 +3,13 @@
     <div class="pc pc_menu">
         <div class="logo">
             <a href="https://mizukioyama.github.io/pd/">
-                <img src="https://mizukioyama.github.io/pd/hp-img/hp-logo02.png" alt="PrecisionDesign,Precision,Design,デザイン,Webデザイン">
+                <img src="https://mizukioyama.github.io/pd/hp-img/hp-logo02.png"
+                    alt="PrecisionDesign,Precision,Design,デザイン,Webデザイン">
             </a>
         </div>
         <ul>
             <li>
-				<a href="https://mizukioyama.github.io/pd/">
+                <a href="https://mizukioyama.github.io/pd/">
                     Top
                 </a>
             </li>
@@ -29,16 +30,16 @@
             </li>
         </ul>
         <ul class="manu_p">
-                <li>
-                    <a href="https://mizukioyama.github.io/pd/policy.html">
-                        Policy
-                    </a>
-                </li>
-                <li>
-                    <a href="https://mizukioyama.github.io/pd/contact.html">
-                            Contact
-                    </a>
-                </li>
+            <li>
+                <a href="https://mizukioyama.github.io/pd/policy.html">
+                    Policy
+                </a>
+            </li>
+            <li>
+                <a href="https://mizukioyama.github.io/pd/contact.html">
+                    Contact
+                </a>
+            </li>
         </ul>
     </div>
 
@@ -62,11 +63,10 @@
             </div>
         </nav>
         <div class="toggle_btn">
-            <img src="https://mizukioyama.github.io/pd/hp-img/head-in.png" class="menu-img">
-            <img src="https://mizukioyama.github.io/pd/hp-img/head-aut.png" class="menu-img2">
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="image-container">
+                <img src="https://mizukioyama.github.io/pd/hp-img/head-in.png" class="menu-img" id="menu-img">
+                <img src="https://mizukioyama.github.io/pd/hp-img/head-aut.png" class="menu-img2" id="menu-img">
+            </div>
         </div>
         <div id="mask">
             <ul>
@@ -81,3 +81,31 @@
         </div>
     </div>
 </header>
+<script>
+    const img = document.getElementById("draggableImage");
+    let isDragging = false;
+    let offsetX, offsetY;
+
+    // マウスダウンでドラッグ開始
+    img.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        img.style.cursor = "grabbing";
+        offsetX = e.clientX - img.offsetLeft;
+        offsetY = e.clientY - img.offsetTop;
+    });
+
+    // マウスムーブで画像を移動
+    document.addEventListener("mousemove", (e) => {
+        if (isDragging) {
+            img.style.left = `${e.clientX - offsetX}px`;
+            img.style.top = `${e.clientY - offsetY}px`;
+        }
+    });
+
+    // マウスアップでドラッグ終了
+    document.addEventListener("mouseup", () => {
+        isDragging = false;
+        img.style.cursor = "grab";
+    });
+
+</script>
