@@ -68,6 +68,7 @@ nav {
 }
 .menu-img {
     width: 100%;
+    mix-blend-mode: difference;
     position: absolute;
     top: 5%;
     right: 10%;
@@ -83,6 +84,7 @@ nav {
 }
 .menu-img2 {
     width: 100%;
+    mix-blend-mode: difference;
     position: absolute;
     top: 5%;
     right: 10%;
