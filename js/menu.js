@@ -1,42 +1,4 @@
-console.log('Menu cursor');
-
 document.addEventListener("DOMContentLoaded", function() {
-    // カーソルとストーカーの作成と追加
-    var cursor = document.createElement("div");
-    cursor.id = "cursor";
-    document.body.appendChild(cursor);
-
-    var stalker = document.createElement("div");
-    stalker.id = "stalker";
-    document.body.appendChild(stalker);
-
-    // リンクのホバーエフェクト
-    document.querySelectorAll("a").forEach(function(link) {
-        link.addEventListener("mouseenter", function() {
-            cursor.classList.add("cursor--hover");
-            stalker.classList.add("stalker--hover");
-        });
-        link.addEventListener("mouseleave", function() {
-            cursor.classList.remove("cursor--hover");
-            stalker.classList.remove("stalker--hover");
-        });
-    });
-
-    // マウスムーブイベント
-    document.addEventListener("mousemove", function(e) {
-        var x = e.clientX;
-        var y = e.clientY;
-        cursor.style.opacity = "1";
-        cursor.style.top = y + "px";
-        cursor.style.left = x + "px";
-
-        setTimeout(function() {
-            stalker.style.opacity = "1";
-            stalker.style.top = y + "px";
-            stalker.style.left = x + "px";
-        }, 150);
-    });
-
     // メニューの初期化関数
     function initializeMenu() {
         var $nav = document.getElementById('navArea');
@@ -60,9 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
             console.error('Menu button or mask not found');
         }
     }
-
-    // メニューの初期化
-    initializeMenu();
 
     // 画像の遅延読み込み
     var lazyImages = document.querySelectorAll('img[data-src]');
@@ -88,33 +47,32 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById("footer-container").innerHTML = footerData;
         });
 
+    // ドラッグ機能
+    const img = document.getElementById("menu-img");
+    if (img) {
+        let isDragging = false;
+        let offsetX, offsetY;
+
+        // マウスダウンでドラッグ開始
+        img.addEventListener("mousedown", (e) => {
+            isDragging = true;
+            img.style.cursor = "grabbing";
+            offsetX = e.clientX - img.offsetLeft;
+            offsetY = e.clientY - img.offsetTop;
+        });
+
+        // マウスムーブで画像を移動
+        document.addEventListener("mousemove", (e) => {
+            if (isDragging) {
+                img.style.left = `${e.clientX - offsetX}px`;
+                img.style.top = `${e.clientY - offsetY}px`;
+            }
+        });
+
+        // マウスアップでドラッグ終了
+        document.addEventListener("mouseup", () => {
+            isDragging = false;
+            img.style.cursor = "grab";
+        });
+    }
 });
-
-// ドラッグ可能な画像の処理
-const img = document.getElementById("menu-img");
-let isDragging = false;
-let offsetX, offsetY;
-
-// マウスダウンでドラッグ開始
-if (img) {
-    img.addEventListener("mousedown", (e) => {
-        isDragging = true;
-        img.style.cursor = "grabbing";
-        offsetX = e.clientX - img.offsetLeft;
-        offsetY = e.clientY - img.offsetTop;
-    });
-
-    // マウスムーブで画像を移動
-    document.addEventListener("mousemove", (e) => {
-        if (isDragging) {
-            img.style.left = `${e.clientX - offsetX}px`;
-            img.style.top = `${e.clientY - offsetY}px`;
-        }
-    });
-
-    // マウスアップでドラッグ終了
-    document.addEventListener("mouseup", () => {
-        isDragging = false;
-        img.style.cursor = "grab";
-    });
-}
