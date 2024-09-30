@@ -67,7 +67,16 @@ nav {
     transform: translate(0, 0);
 }
 .menu-img {
+    width: 35%;
     animation: rotate 12s infinite linear;
+}
+.menu-img::before {
+    content: "";
+    width: 35%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/head-aut.png");
 }
 @keyframes rotate {
     from {
