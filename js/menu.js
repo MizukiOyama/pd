@@ -50,15 +50,20 @@ document.addEventListener("DOMContentLoaded", function() {
     // ドラッグ機能
     const img = document.getElementById("menu-img");
     if (img) {
+        // 画像のスタイルを絶対位置に設定（必要に応じて）
+        img.style.position = "absolute";
+        img.style.cursor = "grab"; // 初期状態でgrabカーソルに設定
+
         let isDragging = false;
         let offsetX, offsetY;
 
         // マウスダウンでドラッグ開始
         img.addEventListener("mousedown", (e) => {
+            e.preventDefault(); // 画像保護が影響しないようにデフォルトの動作を防ぐ
             isDragging = true;
             img.style.cursor = "grabbing";
-            offsetX = e.clientX - img.offsetLeft;
-            offsetY = e.clientY - img.offsetTop;
+            offsetX = e.clientX - img.getBoundingClientRect().left;
+            offsetY = e.clientY - img.getBoundingClientRect().top;
         });
 
         // マウスムーブで画像を移動
