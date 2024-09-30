@@ -66,6 +66,18 @@ nav {
     z-index: 9999;
     transform: translate(0, 0);
 }
+.menu-img {
+    animation: rotate 12s infinite linear;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+  
 .toggle_btn span {
     display: block;
     position: absolute;
@@ -95,12 +107,7 @@ nav {
     animation-delay: 2s;
     animation-duration: 3.5s;
 }
-.toggle_btn span::after {
-    content: "MENU";
-    position: absolute;
-    top: 1%;
-    right: 5%;
-}
+
 @keyframes scroll-left {
     0% {
         transform: translateX(-100%);
