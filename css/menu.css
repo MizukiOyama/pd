@@ -7,7 +7,7 @@ nav {
     right: -100%;
     bottom: 0;
     width: 40%;
-    background: var(--bg-color);
+    background: url("https://mizukioyama.github.io/pd/hp-img/noize-mune.png");
     overflow-x: hidden;
     overflow-y: auto;
     transition: 0.8s ease;
@@ -66,7 +66,7 @@ nav {
 }
 
 #menu-img {
-    width: 75%;
+    width: 70%;
     mix-blend-mode: difference;
     position: absolute;
     top: 15px;
@@ -155,7 +155,7 @@ nav {
 .open nav {
     right: 0;
 }
-.open .toggle_btn {
+/*.open .toggle_btn {
     transition: all 1s ease;
 }
 .open .toggle_btn span {
@@ -197,7 +197,7 @@ nav {
     transform: translate(0%, 0%) rotate(0deg);
     transition: all 1s ease;
     opacity: 1;
-}
+}*/
 /* Mask */
 #mask {
     display: none;
