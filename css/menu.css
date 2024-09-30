@@ -67,7 +67,10 @@ nav {
     transform: translate(0, 0);
 }
 .menu-img {
-    width: 90%;
+    width: 100%;
+    position: absolute;
+    top: 5%;
+    right: 10%;
     animation: rotate-r 25s infinite linear;
 }
 @keyframes rotate-r {
@@ -80,7 +83,10 @@ nav {
 }
 .menu-img2 {
     width: 100%;
-    animation: rotate-l 12s infinite linear;
+    position: absolute;
+    top: 5%;
+    right: 10%;
+    animation: rotate-l 20s infinite linear;
 }
 @keyframes rotate-l {
     from {
