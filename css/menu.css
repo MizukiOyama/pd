@@ -7,7 +7,7 @@ nav {
     right: -100%;
     bottom: 0;
     width: 40%;
-    background: var(--accent-color);
+    background: var(--bg-color);
     mix-blend-mode: difference;
     overflow-x: hidden;
     overflow-y: auto;
