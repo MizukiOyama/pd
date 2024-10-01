@@ -810,12 +810,14 @@ section img {
     margin: 0 1%;
 }
 .about .section4 .bg-aitem:nth-child(1) {
-    color: var(--bg-color);
     background: var(--text-color);
 }
 .about .section4 .bg-aitem:nth-child(2) {
     color: var(--border);
     background: var(--hover-color);
+}
+.about .section4 .bg-aitem:nth-child(3) {
+    color: var(--bg-color);
 }
 .about .section4 .bg-aitem:nth-child(4) {
     color: var(--bg-color);
