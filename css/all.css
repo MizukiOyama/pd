@@ -795,16 +795,18 @@ section img {
 }
 
 /*===================== About Concept =====================*/
+.about section .top-s .text {
+    margin: 17vmin auto 2%;
+}
 .about .section4 .color {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
 }
 .about .section4 .bg-aitem {
     width: 20%;
-    height: 15%;
-    border-radius: 10px;
+    border-radius: 8px;
+    margin: 0 1%;
 }
 
 
