@@ -105,10 +105,11 @@ body::before {
     z-index: 0;
     background-size: auto auto;
     background-color: rgba(217, 217, 217, 0.3);
-    background-image: 
-    repeating-linear-gradient(90deg, transparent, transparent 4px, rgba(46, 46, 46, 0.5) 1px), /* Vertical lines */
-    repeating-linear-gradient(0deg, transparent, transparent 4px, rgba(146, 146, 146, 0.5) 1px); /* Horizontal lines */
-    background-size: 5px 5px;
+    background-image:
+    linear-gradient(90deg, transparent 50%, rgba(46, 46, 46, 1) 50%), /* Vertical line */
+    linear-gradient(0deg, transparent 50%, rgba(146, 146, 146, 1) 50%); /* Horizontal line */
+    background-size: 100% 1px, 1px 100%; /* Horizontal line spans full width, vertical line spans full height */
+    background-position: center;
     animation: moveBackground 0.65s linear infinite;
 }
 @keyframes moveBackground {
