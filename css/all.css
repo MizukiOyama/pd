@@ -674,9 +674,10 @@ section img {
 }
 .about #tab-1 .top-s .text {
     width: 500px;
+    margin: 17vmin auto 2%;
 }
 .about .bg-aitem {
-    width: 62%;
+    width: 500px;
     height: 80px;
     position: relative;
     margin: 0 auto;
@@ -690,7 +691,7 @@ section img {
     gap: 2%;
 }
 .thoughts p {
-    width: 30%;
+    width: 245px;
     margin: 2% 0 0;
 }
 
@@ -793,7 +794,7 @@ section img {
     background: var(--hover-color);
 }
 
-/*========== .about */
+/*========== .color */
 
 .about .section4 .color {
     display: flex;
