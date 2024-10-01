@@ -4,35 +4,34 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: var(--inv); /* 必要に応じて背景色を調整 */
+    background: var(--inv); /* 必要に応じて背景色を指定 */
     display: flex;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(10px);
     z-index: 100;
-    opacity: 0; /* 初期状態で見えないように */
-    visibility: hidden; /* 初期状態で不可視 */
-    transition: opacity 1s ease, visibility 0s 1s; /* visibilityはdelayを使って切り替え */
+    opacity: 0; /* 初期表示で透明 */
+    visibility: hidden; /* 初期表示で不可視 */
+    transition: opacity 1s ease-in-out, visibility 0s 1s; /* visibilityはフェードアウト完了後に切り替え */
 }
 
 .typing00 {
     font-size: clamp(1.8em, calc(1.8em + 0.5vw), 2.4em);
-    color: var(--def);
+    color: var(--def); /* 適宜色を設定 */
     letter-spacing: 1em;
-    opacity: 0; /* 初期表示をオフに */
+    opacity: 0; /* 初期状態は透明 */
     transition: opacity 1s ease-in-out;
 }
 
 .js_typing.endAnime {
-    opacity: 1; /* テキスト表示 */
+    opacity: 1; /* アニメーション終了時にテキストを表示 */
 }
 
 #sound-toggle {
     margin-top: 20px;
-    opacity: 0; /* 初期状態は見えない */
-    visibility: hidden;
+    opacity: 0; /* 初期状態で透明 */
+    visibility: hidden; /* 初期状態で不可視 */
     display: flex;
     justify-content: center;
     gap: 20px;
-    transition: opacity 1s ease, visibility 0s 1s; /* フェードイン/アウトに合わせてvisibilityを切り替え */
+    transition: opacity 1s ease-in-out, visibility 0s 1s;
 }

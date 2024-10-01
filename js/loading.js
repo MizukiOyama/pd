@@ -1,79 +1,78 @@
 jQuery(document).ready(function($) {
-    let firstVisit = !sessionStorage.getItem('visited');
     const $loadingBg = $('#loading-bg');
     const $typing = $('.js_typing');
     const $soundToggle = $('#sound-toggle');
     const $music = $('#background-music');
-    
-    // ローディング画面をフェードインして表示
+
+    // ローディング画面のフェードイン
     function showLoadingScreen() {
         $loadingBg.css({ visibility: 'visible', opacity: 1 }); // フェードイン
     }
 
-    // ローディング画面をフェードアウトして非表示
+    // ローディング画面のフェードアウト
     function hideLoadingScreen() {
         $loadingBg.css({ opacity: 0 }); // フェードアウト
         setTimeout(() => {
-            $loadingBg.css({ visibility: 'hidden' }); // 完全にフェードアウト後に非表示
-        }, 1000); // フェードアウトに合わせて1秒後にvisibilityをhiddenに
+            $loadingBg.css({ visibility: 'hidden' }); // フェードアウト後に完全非表示
+        }, 1000);
     }
 
-    // サウンドオン/オフボタンをフェードインして表示
+    // テキストを表示しシャッフルアニメーションを実行
+    function startTextAnimation() {
+        $typing.addClass('endAnime');
+        const shuffleText = new ShuffleText($typing[0]);
+        shuffleText.setText($typing.text());
+        shuffleText.start();
+    }
+
+    // サウンドオプションを表示
     function showSoundOptions() {
         $soundToggle.css({ visibility: 'visible', opacity: 1 }); // フェードイン
     }
 
-    // サウンドオン/オフボタンをフェードアウトして非表示
+    // サウンドオプションをフェードアウトして非表示
     function hideSoundOptions() {
-        $soundToggle.css({ opacity: 0 }); // フェードアウト
+        $soundToggle.css({ opacity: 0 });
         setTimeout(() => {
-            $soundToggle.css({ visibility: 'hidden' }); // 完全にフェードアウト後に非表示
-        }, 1000); // フェードアウトに合わせて1秒後にvisibilityをhiddenに
+            $soundToggle.css({ visibility: 'hidden' });
+        }, 1000);
+    }
+
+    // サウンドのオン・オフ切り替え
+    $('#sound-on').on('click', function() {
+        $music[0].play();
+        finishLoading();
+    });
+
+    $('#sound-off').on('click', function() {
+        $music[0].pause();
+        finishLoading();
+    });
+
+    // ローディング画面終了処理
+    function finishLoading() {
+        hideSoundOptions(); // サウンドオプションをフェードアウト
+        setTimeout(hideLoadingScreen, 1000); // サウンドオプションが消えた後にローディング画面をフェードアウト
     }
 
     // 初回訪問時のみローディング画面を表示
-    if (firstVisit) {
+    if (!sessionStorage.getItem('visited')) {
         sessionStorage.setItem('visited', true);
 
-        // 1. ローディング画面フェードイン
+        // ローディング画面表示
         showLoadingScreen();
 
-        // 2. テキスト表示とシャッフルアニメーション
-        setTimeout(function() {
-            $typing.addClass('endAnime');
-            const shuffleText = new ShuffleText($typing[0]);
-            shuffleText.setText($typing.text());
-            shuffleText.start();
-        }, 500);
+        // テキスト表示とアニメーション
+        setTimeout(startTextAnimation, 500);
 
-        // 3. テキストフェードアウト
-        setTimeout(function() {
+        // テキストフェードアウトとサウンドオプション表示
+        setTimeout(() => {
             $typing.removeClass('endAnime').fadeOut(1000);
+            showSoundOptions();
         }, 3000);
 
-        // 4. サウンドオン/オフボタンの表示
-        setTimeout(function() {
-            showSoundOptions();
-        }, 4000); 
-
-        // 5. サウンドのオン/オフ切り替え
-        $('#sound-on').on('click', function() {
-            $music[0].play();
-            finishLoading();
-        });
-
-        $('#sound-off').on('click', function() {
-            $music[0].pause();
-            finishLoading();
-        });
-
-        // 6. ローディング画面フェードアウト
-        function finishLoading() {
-            hideSoundOptions(); // サウンドオプションを非表示
-            setTimeout(hideLoadingScreen, 1000); // サウンドオプションがフェードアウトした後にローディングをフェードアウト
-        }
     } else {
-        // 再読み込み時にはローディング画面をスキップ
+        // 再訪問時はローディング画面をスキップ
         $loadingBg.css({ opacity: 0, visibility: 'hidden' });
     }
 });
