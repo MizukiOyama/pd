@@ -320,7 +320,7 @@ a:hover::after {
             transparent);
     animation: scroll-left 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
     background-size: 200% 100%;
-    transition: all 2s;
+    transition: all 20s;
     animation-delay: 2s;
     animation-duration: 3.5s;
 }
