@@ -235,6 +235,7 @@ p {
 ol,
 ul {
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
+    font-family: sans-serif;
 }
 
 li {
