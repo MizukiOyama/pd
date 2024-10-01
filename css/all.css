@@ -679,7 +679,6 @@ section img {
     width: 70%;
     height: 100px;
     position: relative;
-    background: var(--bg-color);
     margin: 0 auto;
 }
 .thoughts {
@@ -807,6 +806,22 @@ section img {
     width: 20%;
     border-radius: 8px;
     margin: 0 1%;
+}
+.about .section4 .bg-aitem:nth-child(2) {
+    color: var(--bg-color);
+    background: var(--text-color);
+}
+.about .section4 .bg-aitem:nth-child(3) {
+    color: var(--border);
+    background: var(--hover-color);
+}
+.about .section4 .bg-aitem:nth-child(5) {
+    color: var(--bg-color);
+    background: var(--accent-color);
+}
+.about .section4 .bg-aitem:nth-child(6) {
+    color: var(--text-color);
+    background: var(--border);
 }
 
 
