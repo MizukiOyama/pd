@@ -362,7 +362,6 @@ section {
 
 /*===================== tabs h1 top =====================*/
 .tabs .top-h1 {
-    font-weight: 600;
     position: absolute;
     top: 0;
     left: 0;
@@ -401,7 +400,6 @@ section {
     z-index: 1;
 }
 .tabs .top-h1 .caption {
-    font-family: sans-serif;
     font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
     position: relative;
     width: 100%;
