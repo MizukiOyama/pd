@@ -32,35 +32,6 @@ body,header,footer,h1,h2,h3,h4,p,ul,ol,li,a,div,span,img {
     width: 0.2rem;
     background: rgba(40, 0, 0, 0.4);
 }
-::-webkit-scrollbar::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg,
-            transparent,
-            var(--accent-color) 0%,
-            var(--text-color) 100%,
-            transparent);
-    animation: scroll-left 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
-    background-size: 200% 100%;
-    transition: all 2s;
-    animation-delay: 2s;
-    animation-duration: 3.5s;
-}
-
-@keyframes scroll-left {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(100%);
-    }
-}
 
 ::-webkit-scrollbar-track {
     box-shadow: 0 0 0px rgba(255, 255, 255, 0) inset;
@@ -106,9 +77,9 @@ body::before {
     background-size: auto auto;
     background-color: rgba(217, 217, 217, 0.3);
     background-image:
-    linear-gradient(90deg, transparent 50%, rgba(46, 46, 46, 1) 50%), /* Vertical line */
-    linear-gradient(0deg, transparent 50%, rgba(146, 146, 146, 1) 50%); /* Horizontal line */
-    background-size: 100% 1px, 1px 100%; /* Horizontal line spans full width, vertical line spans full height */
+    linear-gradient(90deg, transparent 30%, rgba(46, 46, 46, 1) 5%), /* Vertical line */
+    linear-gradient(0deg, transparent 40%, rgba(146, 146, 146, 1) 15%); /* Horizontal line */
+    background-size: 4% 5px, 5px 1%; /* Horizontal line spans full width, vertical line spans full height */
     background-position: center;
     animation: moveBackground 0.65s linear infinite;
 }
@@ -359,7 +330,35 @@ section {
     border-left: 1px solid var(--border);
     border-right: 1px solid var(--border);
 }
+section::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,
+            transparent,
+            var(--accent-color) 0%,
+            var(--text-color) 100%,
+            transparent);
+    animation: scroll-left 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    background-size: 200% 100%;
+    transition: all 2s;
+    animation-delay: 2s;
+    animation-duration: 3.5s;
+}
 
+@keyframes scroll-left {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
 /*===================== tabs h1 top =====================*/
 .tabs .top-h1 {
     font-weight: 600;
