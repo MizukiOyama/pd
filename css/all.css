@@ -305,32 +305,7 @@ a:hover::after {
     background: var(--border);
     position: relative;
 }
-
-/*===================== img =====================*/
-img {
-    max-width: 100%;
-    width: 65%;
-    height: auto;
-    object-fit: cover;
-    vertical-align: middle;
-    font-style: italic;
-    background-repeat: no-repeat;
-    background-size: cover;
-    shape-margin: 0.75rem;
-    mix-blend-mode: luminosity;
-    z-index: 0;
-}
-
-
-/*===================== Section =====================*/
-section {
-    width: 70%;
-    margin: 0 auto;
-    /*background: var(--bg-color);*/
-    border-left: 1px solid var(--border);
-    border-right: 1px solid var(--border);
-}
-section::before {
+.hr::before {
     content: "";
     display: block;
     position: absolute;
@@ -359,6 +334,32 @@ section::before {
         transform: translateX(100%);
     }
 }
+
+/*===================== img =====================*/
+img {
+    max-width: 100%;
+    width: 65%;
+    height: auto;
+    object-fit: cover;
+    vertical-align: middle;
+    font-style: italic;
+    background-repeat: no-repeat;
+    background-size: cover;
+    shape-margin: 0.75rem;
+    mix-blend-mode: luminosity;
+    z-index: 0;
+}
+
+
+/*===================== Section =====================*/
+section {
+    width: 70%;
+    margin: 0 auto;
+    /*background: var(--bg-color);*/
+    border-left: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+}
+
 /*===================== tabs h1 top =====================*/
 .tabs .top-h1 {
     font-weight: 600;
