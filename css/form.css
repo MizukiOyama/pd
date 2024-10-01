@@ -125,6 +125,8 @@ input:-webkit-autofill:focus {
 .note a {
     font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
     letter-spacing: 0.065rem;
+    padding: 0.5rem 1rem;
+    border: 0;
 }
 
 section .top-s .note p {
