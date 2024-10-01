@@ -801,17 +801,19 @@ section img {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    bottom: 40%;
 }
 .about .section4 .bg-aitem {
     width: 20%;
     border-radius: 8px;
     margin: 0 1%;
 }
-.about .section4 .bg-aitem:nth-child(2) {
+.about .section4 .bg-aitem:nth-child(1) {
     color: var(--bg-color);
     background: var(--text-color);
 }
-.about .section4 .bg-aitem:nth-child(3) {
+.about .section4 .bg-aitem:nth-child(2) {
     color: var(--border);
     background: var(--hover-color);
 }
