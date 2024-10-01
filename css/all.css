@@ -891,7 +891,7 @@ section img {
 }
 
 .option ol li {
-    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
     width: fit-content;
 }
 /*===================== Service =====================*/
