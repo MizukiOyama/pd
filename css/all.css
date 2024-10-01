@@ -599,10 +599,10 @@ section img {
     width: 75%;
     right: 0;
 }
-.section1 img,
-.section2 img,
-.section3 img,
-.section4 img {
+.top .section1 img,
+.top .section2 img,
+.top .section3 img,
+.top .section4 img {
     width: 35%;
     background: var(--hover-color);
 }
@@ -842,6 +842,10 @@ section img {
 .policy .top-s .text,
 .contact .top-s .text {
     margin: 0;
+}
+
+.section3 img {
+    width: 70%;
 }
 
 .flow-ol {
