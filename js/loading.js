@@ -27,7 +27,7 @@ jQuery(document).ready(function($) {
 
     // サウンドオプションを表示
     function showSoundOptions() {
-        $soundToggle.css({ visibility: 'visible', opacity: 1 }); // フェードイン
+        $soundToggle.css({ display: 'flex', visibility: 'visible', opacity: 1 }); // フェードイン
     }
 
     // サウンドオプションをフェードアウトして非表示

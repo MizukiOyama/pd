@@ -608,15 +608,15 @@ section img {
 }
 
 .top .section1 img {
-    height: 480px;
+    height: 400px;
     top: 25%;
-    right: 0;
+    right: -5%;
     /*clip-path: circle(40% at left);*/
 }
 
 .top .section1 img:last-child {
-    width: 38%;
-    height: 430px;
+    width: 30%;
+    height: 350px;
     top: 45%;
     right: 15%;
 }

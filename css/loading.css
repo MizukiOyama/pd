@@ -4,32 +4,32 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: var(--inv); /* 必要に応じて背景色を指定 */
+    background: var(--inv); /* 背景色を適宜設定 */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 100;
-    opacity: 0; /* 初期表示で透明 */
-    visibility: hidden; /* 初期表示で不可視 */
-    transition: opacity 1s ease-in-out, visibility 0s 1s; /* visibilityはフェードアウト完了後に切り替え */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out, visibility 0s 1s; /* フェードアウト時にvisibilityを切り替える */
 }
 
 .typing00 {
     font-size: clamp(1.8em, calc(1.8em + 0.5vw), 2.4em);
     color: var(--def); /* 適宜色を設定 */
     letter-spacing: 1em;
-    opacity: 0; /* 初期状態は透明 */
+    opacity: 0;
     transition: opacity 1s ease-in-out;
 }
 
 .js_typing.endAnime {
-    opacity: 1; /* アニメーション終了時にテキストを表示 */
+    opacity: 1;
 }
 
 #sound-toggle {
     margin-top: 20px;
-    opacity: 0; /* 初期状態で透明 */
-    visibility: hidden; /* 初期状態で不可視 */
+    opacity: 0;
+    visibility: hidden;
     display: flex;
     justify-content: center;
     gap: 20px;
