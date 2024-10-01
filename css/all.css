@@ -223,7 +223,7 @@ p {
     /*font-size: 62.5%;=16px 1.2rem=12px*/
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
     width: fit-content;
-    letter-spacing: 0.05rem;
+    letter-spacing: -0.075rem;
     /*text-shadow: 1px 1px 4px rgba(86, 86, 86, 0.65);*/
 }
 /*== fade ==*/
@@ -440,8 +440,8 @@ section .top-s::before {
     background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
     animation: moveBackground 0.55s linear infinite;
 }
-
 .h2-bg {
+
     font-family: sans-serif;
     width: fit-content;
     height: 100px;
