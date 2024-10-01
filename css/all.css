@@ -77,9 +77,9 @@ body::before {
     background-size: auto auto;
     background-color: rgba(217, 217, 217, 0.3);
     background-image:
-    linear-gradient(90deg, transparent 30%, rgba(46, 46, 46, 1) 5%), /* Vertical line */
-    linear-gradient(0deg, transparent 40%, rgba(146, 146, 146, 1) 15%); /* Horizontal line */
-    background-size: 4% 5px, 5px 1%; /* Horizontal line spans full width, vertical line spans full height */
+    linear-gradient(90deg, transparent 15%, rgba(46, 46, 46, 0.8) 5%), /* Vertical line */
+    linear-gradient(0deg, transparent 20%, rgba(146, 146, 146, 0.8) 5%); /* Horizontal line */
+    background-size: 2% 5px, 10px 1%; /* Horizontal line spans full width, vertical line spans full height */
     background-position: center;
     animation: moveBackground 0.65s linear infinite;
 }
@@ -315,7 +315,7 @@ a:hover::after {
     height: 100%;
     background: linear-gradient(90deg,
             transparent,
-            var(--accent-color) 0%,
+            var(--bg-color) 0%,
             var(--text-color) 100%,
             transparent);
     animation: scroll-left 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
