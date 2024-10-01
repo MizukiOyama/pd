@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
         sessionStorage.setItem('visited', true);
 
         // ローディング画面フェードイン
-        $loadingBg.addClass('show');
+        $loadingBg.css({ opacity: 1, visibility: 'visible' });
 
         // テキスト表示とシャッフルアニメーション
         setTimeout(function() {
@@ -45,11 +45,11 @@ jQuery(document).ready(function($) {
         function finishLoading() {
             $soundToggle.fadeOut(1000); 
             setTimeout(function() {
-                $loadingBg.removeClass('show');
+                $loadingBg.css({ opacity: 0, visibility: 'hidden' });
             }, 1000); 
         }
     } else {
         // 再読み込み時にはローディング画面をスキップ
-        $loadingBg.removeClass('show');
+        $loadingBg.css({ opacity: 0, visibility: 'hidden' });
     }
 });
