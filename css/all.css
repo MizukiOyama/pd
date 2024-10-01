@@ -744,7 +744,7 @@ section img {
 .profile ol {
     height: 100%;
     padding-left: 1rem;
-    margin-bottom: 5%;
+    margin: 0 auto 5%;
 }
 .profile ol p {
     position: relative;
