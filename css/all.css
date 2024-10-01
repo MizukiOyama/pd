@@ -794,6 +794,20 @@ section img {
     background: var(--hover-color);
 }
 
+/*===================== About Concept =====================*/
+.about .section4 .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+.about .section4 .bg-aitem {
+    width: 20%;
+    height: 15%;
+    border-radius: 10px;
+}
+
+
 /*===================== About =====================*/
 
 /*===================== Service =====================*/

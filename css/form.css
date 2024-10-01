@@ -151,11 +151,11 @@ section .top-s .note p {
     margin: 0 auto;
     padding: 20px;
     color: var(--text-color);
-    background: rgba(217, 217, 217, 0.8);
+    background: rgba(255, 255, 255, 0.25);
     box-shadow: 0 2px 3px 0 rgba(46, 46, 46, 0.57);
     backdrop-filter: blur(6.5px);
-    border: 1px solid var(--bg-color);
-    border-radius: 15px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,6 +163,7 @@ section .top-s .note p {
 }
 .modal-content p {
     font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
+    color: var(--bg-color);
 }
 
 .close {
