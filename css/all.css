@@ -607,27 +607,27 @@ section img {
     background: var(--hover-color);
 }
 
-.section1 img {
+.top .section1 img {
     height: 480px;
     top: 25%;
     right: 0;
     /*clip-path: circle(40% at left);*/
 }
 
-.section1 img:last-child {
+.top .section1 img:last-child {
     width: 38%;
     height: 430px;
     top: 45%;
     right: 15%;
 }
 
-.section3 img {
+.top .section3 img {
     width: 25%;
     left: 0;
     bottom: 3%;
 }
 
-.section4 img {
+.top .section4 img {
     width: 45%;
     bottom: -5%;
     right: 0;
