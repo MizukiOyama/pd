@@ -5,14 +5,40 @@ jQuery(document).ready(function($) {
     const $soundToggle = $('#sound-toggle');
     const $music = $('#background-music');
     
+    // ローディング画面をフェードインして表示
+    function showLoadingScreen() {
+        $loadingBg.css({ visibility: 'visible', opacity: 1 }); // フェードイン
+    }
+
+    // ローディング画面をフェードアウトして非表示
+    function hideLoadingScreen() {
+        $loadingBg.css({ opacity: 0 }); // フェードアウト
+        setTimeout(() => {
+            $loadingBg.css({ visibility: 'hidden' }); // 完全にフェードアウト後に非表示
+        }, 1000); // フェードアウトに合わせて1秒後にvisibilityをhiddenに
+    }
+
+    // サウンドオン/オフボタンをフェードインして表示
+    function showSoundOptions() {
+        $soundToggle.css({ visibility: 'visible', opacity: 1 }); // フェードイン
+    }
+
+    // サウンドオン/オフボタンをフェードアウトして非表示
+    function hideSoundOptions() {
+        $soundToggle.css({ opacity: 0 }); // フェードアウト
+        setTimeout(() => {
+            $soundToggle.css({ visibility: 'hidden' }); // 完全にフェードアウト後に非表示
+        }, 1000); // フェードアウトに合わせて1秒後にvisibilityをhiddenに
+    }
+
     // 初回訪問時のみローディング画面を表示
     if (firstVisit) {
         sessionStorage.setItem('visited', true);
 
-        // ローディング画面フェードイン
-        $loadingBg.css({ opacity: 1, visibility: 'visible' });
+        // 1. ローディング画面フェードイン
+        showLoadingScreen();
 
-        // テキスト表示とシャッフルアニメーション
+        // 2. テキスト表示とシャッフルアニメーション
         setTimeout(function() {
             $typing.addClass('endAnime');
             const shuffleText = new ShuffleText($typing[0]);
@@ -20,17 +46,17 @@ jQuery(document).ready(function($) {
             shuffleText.start();
         }, 500);
 
-        // テキストフェードアウト
+        // 3. テキストフェードアウト
         setTimeout(function() {
             $typing.removeClass('endAnime').fadeOut(1000);
         }, 3000);
 
-        // サウンドオン/オフボタンの表示
+        // 4. サウンドオン/オフボタンの表示
         setTimeout(function() {
-            $soundToggle.fadeIn(1000);
+            showSoundOptions();
         }, 4000); 
 
-        // サウンドのオン/オフ切り替え
+        // 5. サウンドのオン/オフ切り替え
         $('#sound-on').on('click', function() {
             $music[0].play();
             finishLoading();
@@ -41,12 +67,10 @@ jQuery(document).ready(function($) {
             finishLoading();
         });
 
-        // ローディング画面フェードアウト
+        // 6. ローディング画面フェードアウト
         function finishLoading() {
-            $soundToggle.fadeOut(1000); 
-            setTimeout(function() {
-                $loadingBg.css({ opacity: 0, visibility: 'hidden' });
-            }, 1000); 
+            hideSoundOptions(); // サウンドオプションを非表示
+            setTimeout(hideLoadingScreen, 1000); // サウンドオプションがフェードアウトした後にローディングをフェードアウト
         }
     } else {
         // 再読み込み時にはローディング画面をスキップ

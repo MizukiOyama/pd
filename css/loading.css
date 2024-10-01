@@ -4,15 +4,15 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: var(--inv); /* 背景色を確認しやすい色に変更してみてください */
+    background: var(--inv); /* 必要に応じて背景色を調整 */
     display: flex;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
     z-index: 100;
-    opacity: 1; /* 常に表示されるように修正 */
-    visibility: visible; /* 可視状態に変更 */
-    transition: opacity 1s ease, visibility 1s ease;
+    opacity: 0; /* 初期状態で見えないように */
+    visibility: hidden; /* 初期状態で不可視 */
+    transition: opacity 1s ease, visibility 0s 1s; /* visibilityはdelayを使って切り替え */
 }
 
 .typing00 {
@@ -29,8 +29,10 @@
 
 #sound-toggle {
     margin-top: 20px;
-    opacity: 1; /* 常に表示状態に */
-    display: flex; /* フレックス表示 */
+    opacity: 0; /* 初期状態は見えない */
+    visibility: hidden;
+    display: flex;
     justify-content: center;
-    gap: 20px; /* ボタンの間にスペースを追加 */
+    gap: 20px;
+    transition: opacity 1s ease, visibility 0s 1s; /* フェードイン/アウトに合わせてvisibilityを切り替え */
 }
