@@ -8,7 +8,7 @@ nav {
     bottom: 0;
     width: 40%;
     background: var(--bg-color);
-    mix-blend-mode: difference;
+    mix-blend-mode: screen;
     overflow-x: hidden;
     overflow-y: auto;
     transition: 0.8s ease;
