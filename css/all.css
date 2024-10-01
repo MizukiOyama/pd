@@ -672,12 +672,12 @@ section img {
     flex-direction: row;
 }
 .about #tab-1 .top-s .text {
-    width: 70%;
-    margin: 15% auto 3%;
+    width: 62%;
+    margin: 15% auto 2%;
 }
 .about .bg-aitem {
-    width: 70%;
-    height: 100px;
+    width: 62%;
+    height: 80px;
     position: relative;
     margin: 0 auto;
 }
@@ -690,8 +690,8 @@ section img {
     gap: 2%;
 }
 .thoughts p {
-    width: 34%;
-    margin: 3% 0 0;
+    width: 30%;
+    margin: 2% 0 0;
 }
 
 /*========== .works */
