@@ -844,8 +844,9 @@ section img {
     margin: 0;
 }
 
-.section3 img {
-    width: 70%;
+/*========== .service img */
+.service .section3 img {
+    width: 55%;
 }
 
 .flow-ol {
