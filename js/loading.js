@@ -34,9 +34,11 @@ class ShuffleText {
             clearInterval(shuffleInterval);
             this.element.innerHTML = this.originalText; // 元のテキストを設定
             $(this.element).addClass('endAnime'); // アニメーションが終了したことを示すクラスを追加
+            
+            // ローディング画面をフェードアウト
             setTimeout(() => {
-                $('#loading-bg').fadeOut(); // ローディング画面をフェードアウト
-            }, 500); // テキスト表示後0.5秒後にローディング画面をフェードアウト
+                $('#loading-bg').fadeOut(1000); // 1秒かけてフェードアウト
+            }, 500); // 元のテキストが表示されてから0.5秒後にローディング画面をフェードアウト
         }, 1000); // シャッフルを1秒後に停止
     }
 }
