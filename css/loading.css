@@ -9,21 +9,28 @@
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(10px);
-    z-index: 9998;
+    z-index: 9999; /* コンテンツの上に表示 */
+}
+
+#content {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 1s ease-in-out;
 }
 
 .typing {
     font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 2rem);
     color: var(--text-color);
+    letter-spacing: 1rem;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+}
+
+.js_typing.endAnime {
+    opacity: 1;
 }
 
 .typing span {
     letter-spacing: 1rem;
     letter-spacing: 0.005;
-}
-
-.js_typing.endAnime {
-    opacity: 1;
 }

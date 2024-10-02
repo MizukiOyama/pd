@@ -24,13 +24,13 @@ class ShuffleText {
         // シャッフルを開始
         const shuffleInterval = setInterval(() => {
             this.shuffle();
-        }, 25);
+        }, 100);
 
         // 1秒後にシャッフルを停止して元のテキストを表示
         setTimeout(() => {
             clearInterval(shuffleInterval);
             this.element.innerHTML = this.originalText;
-        }, 800);
+        }, 1000);
     }
 }
 
@@ -43,11 +43,11 @@ jQuery(document).ready(function($) {
             shuffleText.start();
         }
 
-        // 3.5秒後にローディング画面をフェードアウトし、コンテンツをフェードイン
+        // ローディングとコンテンツのフェードを同時に行う
         setTimeout(function() {
-            $('#loading-bg').fadeOut(1000, function() {
-                $('#content').css('visibility', 'visible').animate({ opacity: 1 }, 0); // コンテンツをフェードイン
-            });
-        }, 3200);
+            // 同時にアニメーションを開始
+            $('#loading-bg').fadeOut(1500); // 1.5秒かけてフェードアウト
+            $('#content').css('visibility', 'visible').animate({ opacity: 1 }, 1500); // 同時に1.5秒かけてフェードイン
+        }, 3500); // 3.5秒後にフェード開始
     });
 });
