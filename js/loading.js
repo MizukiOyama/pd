@@ -36,7 +36,7 @@ class ShuffleText {
             $(this.element).addClass('endAnime'); // アニメーションが終了したことを示すクラスを追加
             setTimeout(() => {
                 $('#loading-bg').fadeOut(); // ローディング画面をフェードアウト
-            }, 1500); // テキスト表示後0.5秒後にローディング画面をフェードアウト
+            }, 500); // テキスト表示後0.5秒後にローディング画面をフェードアウト
         }, 1000); // シャッフルを1秒後に停止
     }
 }
@@ -46,11 +46,11 @@ jQuery(document).ready(function($) {
     $('#loading-bg').css({ visibility: 'visible', opacity: 1 });
 
     // 要素が存在する場合のみシャッフルアニメーションを開始
-    const typingElement = $('.js_typing')[0];
-    if (typingElement) {
-        const shuffleText = new ShuffleText(typingElement);
+    const typingElement = $('.js_typing'); // 要素を検索
+    if (typingElement.length > 0) { // 要素が存在するか確認
+        const shuffleText = new ShuffleText(typingElement[0]);
         shuffleText.start();
     } else {
-        console.error("Typing element not found.");
+        console.error("Typing element not found."); // エラーメッセージ
     }
 });
