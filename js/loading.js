@@ -26,23 +26,48 @@ class ShuffleText {
             this.shuffle();
         }, 100);
 
-        // シャッフルを1秒後に停止
         setTimeout(() => {
             clearInterval(shuffleInterval);
-            this.element.innerHTML = this.originalText; // 元のテキストを設定
-            $(this.element).addClass('endAnime'); // アニメーションが終了したことを示すクラスを追加
-            setTimeout(() => {
-                $('#loading-bg').fadeOut(); // ローディング画面をフェードアウト
-            }, 500); // テキスト表示後0.5秒後にローディング画面をフェードアウト
-        }, 1000); // シャッフルを1秒後に停止
+            this.element.innerHTML = this.originalText;
+        }, 2000);
     }
 }
 
 jQuery(document).ready(function($) {
-    // ローディング画面を表示する
-    $('#loading-bg').css({ visibility: 'visible', opacity: 1 });
+    // ページの読み込み後にローディング背景を非表示にする
+    $(window).on('load', function() {
+        setTimeout(function() {
+            $('#loading-bg').fadeOut();
+        }, 1500);
+    });
 
-    // テキストのシャッフルアニメーションを開始
-    const shuffleText = new ShuffleText($('.js_typing')[0]);
-    shuffleText.start();
+    // テキストのアニメーション効果を実装する関数
+    function TypingAnimation() {
+        $(".js_typing").each(function(i) {
+            var elemPos = $(this).offset().top - 50; // 要素より、50px上の位置
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll >= elemPos - windowHeight) {
+                if (!$(this).hasClass("endAnime")) {
+                    $(this).addClass("endAnime"); // アニメーションが終了したことを示すクラスを追加
+                    var text = $(this).text(); // テキストを取得
+                    $(this).text(''); // テキストを空にする
+                    var shuffleText = new ShuffleText(this); // ShuffleTextのインスタンスを生成
+                    $(this).append(shuffleText); // ShuffleTextを要素に追加
+                    shuffleText.setText(text); // テキストを設定
+                    shuffleText.start(); // アニメーションを開始
+                }
+            }
+        });
+    }
+
+    // 画面をスクロールしたときのイベント
+    $(window).scroll(function() {
+        TypingAnimation(); // テキストのアニメーション効果を実行
+    });
+
+    // ページが読み込まれたときのイベント
+    $(window).on("load", function() {
+        TypingAnimation(); // テキストのアニメーション効果を実行
+    });
 });
