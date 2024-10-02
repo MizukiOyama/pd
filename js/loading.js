@@ -29,7 +29,7 @@ class ShuffleText {
         setTimeout(() => {
             clearInterval(shuffleInterval);
             this.element.innerHTML = this.originalText;
-        }, 2000);
+        }, 1000);
     }
 }
 
@@ -38,7 +38,7 @@ jQuery(document).ready(function($) {
     $(window).on('load', function() {
         setTimeout(function() {
             $('#loading-bg').fadeOut();
-        }, 3000);
+        }, 6000);
     });
 
     // テキストのアニメーション効果を実装する関数
