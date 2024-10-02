@@ -18,7 +18,7 @@ class ShuffleText {
     }
 
     start() {
-        // テキストを表示させるためにopacityを1に設定
+        // テキストを表示
         jQuery(this.element).css('opacity', 1);
 
         // シャッフルを開始
@@ -43,9 +43,11 @@ jQuery(document).ready(function($) {
             shuffleText.start();
         }
 
-        // 3.5秒後にローディング画面をフェードアウト
+        // 3.5秒後にローディング画面をフェードアウトし、コンテンツをフェードイン
         setTimeout(function() {
-            $('#loading-bg').fadeOut();
-        }, 5000);
+            $('#loading-bg').fadeOut(500, function() {
+                $('#content').css('visibility', 'visible').animate({ opacity: 1 }, 1000); // コンテンツをフェードイン
+            });
+        }, 5500);
     });
 });
