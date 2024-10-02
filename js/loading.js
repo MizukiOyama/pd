@@ -45,9 +45,9 @@ jQuery(document).ready(function($) {
 
         // 3.5秒後にローディング画面をフェードアウトし、コンテンツをフェードイン
         setTimeout(function() {
-            $('#loading-bg').fadeOut(800, function() {
+            $('#loading-bg').fadeOut(1000, function() {
                 $('#content').css('visibility', 'visible').animate({ opacity: 1 }, 500); // コンテンツをフェードイン
             });
-        }, 3000);
+        }, 3200);
     });
 });
