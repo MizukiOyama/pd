@@ -22,6 +22,9 @@ class ShuffleText {
     }
 
     start() {
+        // テキストを表示させる（透明状態からフェードイン）
+        $(this.element).css('opacity', 1);
+
         const shuffleInterval = setInterval(() => {
             this.shuffle();
         }, 100);
