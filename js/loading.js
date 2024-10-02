@@ -42,6 +42,6 @@ jQuery(document).ready(function($) {
         // 2.5秒後にローディング画面をフェードアウト
         setTimeout(function() {
             $('#loading-bg').fadeOut();
-        }, 3500);
+        }, 4500);
     });
 });
