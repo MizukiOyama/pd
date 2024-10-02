@@ -18,6 +18,10 @@ class ShuffleText {
     }
 
     start() {
+        // テキストを表示させるためにopacityを1に設定
+        jQuery(this.element).css('opacity', 1);
+
+        // シャッフルを開始
         const shuffleInterval = setInterval(() => {
             this.shuffle();
         }, 100);
@@ -26,7 +30,7 @@ class ShuffleText {
         setTimeout(() => {
             clearInterval(shuffleInterval);
             this.element.innerHTML = this.originalText;
-        }, 3500);
+        }, 2500);
     }
 }
 
@@ -39,9 +43,9 @@ jQuery(document).ready(function($) {
             shuffleText.start();
         }
 
-        // 2.5秒後にローディング画面をフェードアウト
+        // 3.5秒後にローディング画面をフェードアウト
         setTimeout(function() {
             $('#loading-bg').fadeOut();
-        }, 6500);
+        }, 5000);
     });
 });
