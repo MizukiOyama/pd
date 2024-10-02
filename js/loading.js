@@ -1,5 +1,8 @@
 class ShuffleText {
     constructor(element) {
+        if (!element) {
+            throw new Error("Element is not defined.");
+        }
         this.element = element;
         this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
         this.originalText = element.innerHTML;
@@ -33,7 +36,7 @@ class ShuffleText {
             $(this.element).addClass('endAnime'); // アニメーションが終了したことを示すクラスを追加
             setTimeout(() => {
                 $('#loading-bg').fadeOut(); // ローディング画面をフェードアウト
-            }, 500); // テキスト表示後0.5秒後にローディング画面をフェードアウト
+            }, 1500); // テキスト表示後0.5秒後にローディング画面をフェードアウト
         }, 1000); // シャッフルを1秒後に停止
     }
 }
@@ -42,7 +45,12 @@ jQuery(document).ready(function($) {
     // ローディング画面を表示する
     $('#loading-bg').css({ visibility: 'visible', opacity: 1 });
 
-    // テキストのシャッフルアニメーションを開始
-    const shuffleText = new ShuffleText($('.js_typing')[0]);
-    shuffleText.start();
+    // 要素が存在する場合のみシャッフルアニメーションを開始
+    const typingElement = $('.js_typing')[0];
+    if (typingElement) {
+        const shuffleText = new ShuffleText(typingElement);
+        shuffleText.start();
+    } else {
+        console.error("Typing element not found.");
+    }
 });
