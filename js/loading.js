@@ -26,7 +26,7 @@ class ShuffleText {
         setTimeout(() => {
             clearInterval(shuffleInterval);
             this.element.innerHTML = this.originalText;
-        }, 2500);
+        }, 3500);
     }
 }
 
@@ -42,6 +42,6 @@ jQuery(document).ready(function($) {
         // 2.5秒後にローディング画面をフェードアウト
         setTimeout(function() {
             $('#loading-bg').fadeOut();
-        }, 4500);
+        }, 6500);
     });
 });
