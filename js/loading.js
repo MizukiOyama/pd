@@ -24,13 +24,13 @@ class ShuffleText {
     start() {
         const shuffleInterval = setInterval(() => {
             this.shuffle();
-        }, 100);
+        }, 100); // シャッフル間隔は100ミリ秒
 
-        // 1秒後にシャッフルを停止し、元のテキストを表示
+        // 1秒後にシャッフルを停止
         setTimeout(() => {
             clearInterval(shuffleInterval);
-            this.element.innerHTML = this.originalText;
-        }, 1000);  // 1秒でシャッフルを止める
+            this.element.innerHTML = this.originalText; // 元のテキストに戻す
+        }, 1000); // 1秒で停止
     }
 }
 
@@ -105,7 +105,7 @@ jQuery(document).ready(function($) {
         setTimeout(() => {
             $typing.removeClass('endAnime').fadeOut(1000);
             showSoundOptions();
-        }, 3000);
+        }, 1500);
 
     } else {
         // 再訪問時はローディング画面をスキップ
