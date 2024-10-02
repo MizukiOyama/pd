@@ -38,7 +38,7 @@ jQuery(document).ready(function($) {
     $(window).on('load', function() {
         setTimeout(function() {
             $('#loading-bg').fadeOut();
-        }, 1500);
+        }, 3000);
     });
 
     // テキストのアニメーション効果を実装する関数
