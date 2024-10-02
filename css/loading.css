@@ -8,8 +8,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 100;
-    opacity: 0;
+    z-index: 10000;
+
     visibility: hidden;
     transition: opacity 1s ease-in-out, visibility 0s 1s; /* フェードアウト時にvisibilityを切り替える */
 }
@@ -18,7 +18,7 @@
     font-size: clamp(1.8em, calc(1.8em + 0.5vw), 2.4em);
     color: var(--def); /* 適宜色を設定 */
     letter-spacing: 1em;
-    opacity: 0;
+    
     transition: opacity 1s ease-in-out;
 }
 
@@ -28,7 +28,7 @@
 
 #sound-toggle {
     margin-top: 20px;
-    opacity: 0;
+    
     visibility: hidden;
     display: flex;
     justify-content: center;
