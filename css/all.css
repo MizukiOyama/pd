@@ -64,6 +64,10 @@ body {
     width: 100%;
     height: auto;
     overflow-x: hidden;
+    position: fixed;
+    top: 0;
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
+    opacity: 0.1;
 }
 body::before {
     content: "";
@@ -92,7 +96,7 @@ body::before {
         background-position: 10% 10%;
     }
 }
-
+/*
 body::after {
     content: '';
     width: 100%;
@@ -102,7 +106,7 @@ body::after {
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
     opacity: 0.1;
     z-index: -1;
-    /*animation: bg-img-move 5s linear infinite, bg-img-rotate 10s linear infinite;*/
+    animation: bg-img-move 5s linear infinite, bg-img-rotate 10s linear infinite;
 }
 @keyframes bg-img-move {
     0% {
@@ -120,7 +124,7 @@ body::after {
     100% {
         transform: rotate(360deg);
     }
-}
+}*/
 
 .noise {
     --lines: 0.0003px;
