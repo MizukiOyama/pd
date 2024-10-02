@@ -1,78 +1,73 @@
+class ShuffleText {
+    constructor(element) {
+        this.element = element;
+        this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        this.originalText = element.innerHTML;
+    }
+
+    setText(text) {
+        this.originalText = text;
+    }
+
+    randomChar() {
+        return this.chars[Math.floor(Math.random() * this.chars.length)];
+    }
+
+    shuffle() {
+        let shuffledText = '';
+        for (let i = 0; i < this.originalText.length; i++) {
+            shuffledText += this.randomChar();
+        }
+        this.element.innerHTML = shuffledText;
+    }
+
+    start() {
+        const shuffleInterval = setInterval(() => {
+            this.shuffle();
+        }, 100);
+
+        setTimeout(() => {
+            clearInterval(shuffleInterval);
+            this.element.innerHTML = this.originalText;
+        }, 2000);
+    }
+}
+
 jQuery(document).ready(function($) {
-    const $loadingBg = $('#loading-bg');
-    const $typing = $('.js_typing');
-    const $soundToggle = $('#sound-toggle');
-    const $music = $('#background-music');
-
-    // ローディング画面のフェードイン
-    function showLoadingScreen() {
-        $loadingBg.css({ visibility: 'visible', opacity: 1 });
-    }
-
-    // ローディング画面のフェードアウト
-    function hideLoadingScreen() {
-        $loadingBg.css({ opacity: 0 });
-        setTimeout(() => {
-            $loadingBg.css({ visibility: 'hidden' });
-        }, 1000);
-    }
-
-    // テキストを表示しシャッフルアニメーションを実行
-    function startTextAnimation() {
-        $typing.addClass('endAnime');
-        const shuffleText = new ShuffleText($typing[0]);
-        shuffleText.setText($typing.text());
-        shuffleText.start();
-    }
-
-    // サウンドオプションを表示
-    function showSoundOptions() {
-        $soundToggle.css({ display: 'flex', visibility: 'visible', opacity: 1 });
-    }
-
-    // サウンドオプションをフェードアウトして非表示
-    function hideSoundOptions() {
-        $soundToggle.css({ opacity: 0 });
-        setTimeout(() => {
-            $soundToggle.css({ visibility: 'hidden' });
-        }, 1000);
-    }
-
-    // サウンドのオン・オフ切り替え
-    $('#sound-on').on('click', function() {
-        $music[0].play();
-        finishLoading();
+    // ページの読み込み後にローディング背景を非表示にする
+    $(window).on('load', function() {
+        setTimeout(function() {
+            $('#loading-bg').fadeOut();
+        }, 1500);
     });
 
-    $('#sound-off').on('click', function() {
-        $music[0].pause();
-        finishLoading();
+    // テキストのアニメーション効果を実装する関数
+    function TypingAnimation() {
+        $(".js_typing").each(function(i) {
+            var elemPos = $(this).offset().top - 50; // 要素より、50px上の位置
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll >= elemPos - windowHeight) {
+                if (!$(this).hasClass("endAnime")) {
+                    $(this).addClass("endAnime"); // アニメーションが終了したことを示すクラスを追加
+                    var text = $(this).text(); // テキストを取得
+                    $(this).text(''); // テキストを空にする
+                    var shuffleText = new ShuffleText(this); // ShuffleTextのインスタンスを生成
+                    $(this).append(shuffleText); // ShuffleTextを要素に追加
+                    shuffleText.setText(text); // テキストを設定
+                    shuffleText.start(); // アニメーションを開始
+                }
+            }
+        });
+    }
+
+    // 画面をスクロールしたときのイベント
+    $(window).scroll(function() {
+        TypingAnimation(); // テキストのアニメーション効果を実行
     });
 
-    // ローディング画面終了処理
-    function finishLoading() {
-        hideSoundOptions(); 
-        setTimeout(hideLoadingScreen, 1000); 
-    }
-
-    // 初回訪問時のみローディング画面を表示
-    if (!sessionStorage.getItem('visited')) {
-        sessionStorage.setItem('visited', true);
-
-        // ローディング画面表示
-        showLoadingScreen();
-
-        // テキスト表示とアニメーション
-        setTimeout(startTextAnimation, 500);
-
-        // テキストフェードアウトとサウンドオプション表示
-        setTimeout(() => {
-            $typing.removeClass('endAnime').fadeOut(1000);
-            showSoundOptions();
-        }, 3000);
-
-    } else {
-        // 再訪問時はローディング画面をスキップ
-        $loadingBg.css({ opacity: 0, visibility: 'hidden' });
-    }
+    // ページが読み込まれたときのイベント
+    $(window).on("load", function() {
+        TypingAnimation(); // テキストのアニメーション効果を実行
+    });
 });
