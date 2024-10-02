@@ -15,10 +15,13 @@
 .typing {
     font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 2rem);
     color: var(--text-color);
-    letter-spacing: 1rem;
-    letter-spacing: 0.005;
     opacity: 0;
     transition: opacity 1s ease-in-out;
+}
+
+.typing span {
+    letter-spacing: 1rem;
+    letter-spacing: 0.005;
 }
 
 .js_typing.endAnime {
