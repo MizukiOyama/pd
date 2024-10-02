@@ -30,7 +30,7 @@ class ShuffleText {
         setTimeout(() => {
             clearInterval(shuffleInterval);
             this.element.innerHTML = this.originalText;
-        }, 2500);
+        }, 1500);
     }
 }
 
