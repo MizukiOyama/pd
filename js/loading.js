@@ -5,10 +5,6 @@ class ShuffleText {
         this.originalText = element.innerHTML;
     }
 
-    setText(text) {
-        this.originalText = text;
-    }
-
     randomChar() {
         return this.chars[Math.floor(Math.random() * this.chars.length)];
     }
@@ -22,14 +18,11 @@ class ShuffleText {
     }
 
     start() {
-        // jQueryをフルネームで使用
-        jQuery(this.element).css('opacity', 1);
-
         const shuffleInterval = setInterval(() => {
             this.shuffle();
         }, 100);
 
-        // 2.5秒後にシャッフルを停止して元のテキストに戻す
+        // 1秒後にシャッフルを停止して元のテキストを表示
         setTimeout(() => {
             clearInterval(shuffleInterval);
             this.element.innerHTML = this.originalText;
@@ -37,19 +30,18 @@ class ShuffleText {
     }
 }
 
-jQuery(document).ready(function() {
-    // ページの読み込み後にローディング背景を非表示にする
-    jQuery(window).on('load', function() {
-        // ローディングアニメーション開始
-        const typingElement = jQuery('.js_typing')[0]; // js_typingクラスの最初の要素を取得
-        if (typingElement) {
-            const shuffleText = new ShuffleText(typingElement);
+jQuery(document).ready(function($) {
+    // ページの読み込み後にテキストシャッフルを開始
+    $(window).on('load', function() {
+        const typingElement = $('.js_typing');
+        if (typingElement.length > 0) {
+            const shuffleText = new ShuffleText(typingElement[0]);
             shuffleText.start();
         }
 
-        // 4秒後にローディング画面をフェードアウト
+        // 2.5秒後にローディング画面をフェードアウト
         setTimeout(function() {
-            jQuery('#loading-bg').fadeOut();
-        }, 4000); // シャッフル終了後にフェードアウト
+            $('#loading-bg').fadeOut();
+        }, 4500);
     });
 });
