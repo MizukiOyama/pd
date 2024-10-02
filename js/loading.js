@@ -22,8 +22,8 @@ class ShuffleText {
     }
 
     start() {
-        // テキストを表示させる（透明状態からフェードイン）
-        $(this.element).css('opacity', 1);
+        // jQueryをフルネームで使用
+        jQuery(this.element).css('opacity', 1);
 
         const shuffleInterval = setInterval(() => {
             this.shuffle();
@@ -37,11 +37,11 @@ class ShuffleText {
     }
 }
 
-jQuery(document).ready(function($) {
+jQuery(document).ready(function() {
     // ページの読み込み後にローディング背景を非表示にする
-    $(window).on('load', function() {
+    jQuery(window).on('load', function() {
         // ローディングアニメーション開始
-        const typingElement = $('.js_typing')[0]; // js_typingクラスの最初の要素を取得
+        const typingElement = jQuery('.js_typing')[0]; // js_typingクラスの最初の要素を取得
         if (typingElement) {
             const shuffleText = new ShuffleText(typingElement);
             shuffleText.start();
@@ -49,7 +49,7 @@ jQuery(document).ready(function($) {
 
         // 4秒後にローディング画面をフェードアウト
         setTimeout(function() {
-            $('#loading-bg').fadeOut();
+            jQuery('#loading-bg').fadeOut();
         }, 4000); // シャッフル終了後にフェードアウト
     });
 });
