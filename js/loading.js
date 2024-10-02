@@ -24,13 +24,12 @@ class ShuffleText {
     start() {
         const shuffleInterval = setInterval(() => {
             this.shuffle();
-        }, 100); // シャッフル間隔は100ミリ秒
+        }, 100);
 
-        // 1秒後にシャッフルを停止
         setTimeout(() => {
             clearInterval(shuffleInterval);
-            this.element.innerHTML = this.originalText; // 元のテキストに戻す
-        }, 1000); // 1秒で停止
+            this.element.innerHTML = this.originalText;
+        }, 2000); // テキストが元に戻るまでの時間
     }
 }
 
@@ -66,14 +65,6 @@ jQuery(document).ready(function($) {
         $soundToggle.css({ display: 'flex', visibility: 'visible', opacity: 1 }); // フェードイン
     }
 
-    // サウンドオプションをフェードアウトして非表示
-    function hideSoundOptions() {
-        $soundToggle.css({ opacity: 0 });
-        setTimeout(() => {
-            $soundToggle.css({ visibility: 'hidden' });
-        }, 1000);
-    }
-
     // サウンドのオン・オフ切り替え
     $('#sound-on').on('click', function() {
         $music[0].play();
@@ -103,9 +94,10 @@ jQuery(document).ready(function($) {
 
         // テキストフェードアウトとサウンドオプション表示
         setTimeout(() => {
-            $typing.removeClass('endAnime').fadeOut(1000);
-            showSoundOptions();
-        }, 1500);
+            $typing.removeClass('endAnime').fadeOut(1000, () => {
+                showSoundOptions(); // サウンドオプションを表示
+            });
+        }, 3000);
 
     } else {
         // 再訪問時はローディング画面をスキップ

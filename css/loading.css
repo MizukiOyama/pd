@@ -4,13 +4,13 @@
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(217, 217, 217, 0.5); /* 背景色を適宜設定 */
+    background: var(--border); /* 背景色を適宜設定 */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 10000;
-    opacity: 1;
-    visibility: visible;
+    opacity: 0;
+    visibility: hidden;
     transition: opacity 1s ease-in-out, visibility 0s 1s; /* フェードアウト時にvisibilityを切り替える */
 }
 
