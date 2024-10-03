@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Precision Design</title>
-  <link rel="icon" href="https://mizukioyama.github.io/pd/hp-img/pd-icon01.ico">
+  <link rel="icon" href="https://mizukioyama.github.io/pd/hp-img/pd-logo.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- CSSファイルの読み込み -->
@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="css/glitch.css">
   <link rel="stylesheet" href="css/tab.css">
   <link rel="stylesheet" href="css/slide.css">
+  <link rel="stylesheet" href="css/loading.css">
   <!-- a -->
   <link rel="stylesheet" href="https://use.typekit.net/wez8dvq.css">
 
@@ -38,8 +39,8 @@
 
   <script src="js/menu.js"></script>
   <script src="js/cursor.js"></script>
-  <!--<script src="js/template-head.js"></script>-->
   <script src="js/tab.js"></script>
+  <script src="js/loading.js"></script>
 
   <!--Search-->
   <meta name="description" content="想いを形に、こだわりをデザインする。">
@@ -60,7 +61,7 @@
 <body oncontextmenu="return false;" class="about">
   <div id="header-container"></div>
   <!-- Main -->
-  <main class="main">
+  <main class="main" id="content" style="opacity: 0; visibility: hidden;">
     <!-- Hero -->
     <section class="tabs">
       <div class="top-s">

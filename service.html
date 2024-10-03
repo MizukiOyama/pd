@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Precision Design</title>
-  <link rel="icon" href="https://mizukioyama.github.io/pd/hp-img/pd-icon01.ico">
+  <link rel="icon" href="https://mizukioyama.github.io/pd/hp-img/pd-logo.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- CSSファイルの読み込み -->
   <link rel="stylesheet" href="css/all.css">
@@ -38,6 +39,7 @@
   <script src="js/service-list.js"></script>
   <script src="js/tab.js"></script>
   <script src="js/card.js"></script>
+  <script src="js/loading.js"></script>
 
   <!--Search-->
   <meta name="description" content="想いを形に、こだわりをデザインする。">
@@ -57,7 +59,7 @@
 <body oncontextmenu="return false;" class="service">
   <div id="header-container"></div>
   <!-- Main -->
-  <main class="main">
+  <main class="main" id="content" style="opacity: 0; visibility: hidden;">
     <section class="tabs">
       <div class="top-s">
       <div class="top-h1">
