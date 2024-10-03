@@ -30,10 +30,10 @@
       var form = e.target;
       var formData = new FormData(form);
 
+      // 送信処理
       fetch(form.action, {
         method: 'POST',
-        body: formData,
-        target: 'hidden_iframe'  // 送信結果をhidden_iframeにターゲット
+        body: formData
       }).then(response => {
         if (response.ok) {
           submitted = true;  // 送信成功時に submitted を true にする
