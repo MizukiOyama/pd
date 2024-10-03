@@ -30,7 +30,7 @@ nav {
     width: fit-content;
     border-bottom: 1px solid var(--hover-color);
 }
-.inner ul li:nth-child(4) {
+.inner ul li:nth-child(3) {
     margin-top: 10rem;
 }
 #navArea .inner li a {
