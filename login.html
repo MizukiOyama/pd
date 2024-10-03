@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      .form-container {
+        width: 300px;
+        margin: 0 auto;
+      }
+      .input-field {
+        margin: 10px 0;
+      }
+      .error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>会員登録</h2>
+      <div id="errorMessage" class="error"></div>
+      <div class="input-field">
+        <label>氏名:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="input-field">
+        <label>メールアドレス:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="input-field">
+        <label>パスワード:</label>
+        <input type="password" id="password" required>
+      </div>
+      <div class="input-field">
+        <label>パスワード（再入力）:</label>
+        <input type="password" id="confirmPassword" required>
+      </div>
+      <button onclick="register()">登録</button>
+    </div>
+
+    <script>
+      function register() {
+        var name = document.getElementById('name').value;
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+        var confirmPassword = document.getElementById('confirmPassword').value;
+
+        // パスワードの一致確認
+        google.script.run.withSuccessHandler(function(result) {
+          if (result.status === 'error') {
+            document.getElementById('errorMessage').textContent = result.message;
+            return;
+          }
+          
+          // ユーザー登録処理
+          google.script.run.withSuccessHandler(function(result) {
+            if (result.status === 'error') {
+              document.getElementById('errorMessage').textContent = result.message;
+            } else {
+              document.getElementById('errorMessage').textContent = result.message;
+              document.getElementById('name').value = '';
+              document.getElementById('email').value = '';
+              document.getElementById('password').value = '';
+              document.getElementById('confirmPassword').value = '';
+            }
+          }).registerUser(name, email, password);
+        }).checkPassword(password, confirmPassword);
+      }
+    </script>
+  </body>
+</html>
