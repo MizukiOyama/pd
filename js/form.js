@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  var modal = document.getElementById('thanksModal');
-  var span = document.getElementsByClassName('close')[0];
+  const modal = document.getElementById('thanksModal');
+  const closeButton = document.getElementsByClassName('close')[0];
 
   document.getElementById('contactForm').addEventListener('submit', function (e) {
     e.preventDefault();
-    var form = e.target;
-    var formData = new FormData(form);
+    const form = e.target;
+    const formData = new FormData(form);
 
     // 送信処理
     fetch(form.action, {
@@ -43,24 +43,28 @@ document.addEventListener("DOMContentLoaded", function () {
           input.classList.remove('not-empty');
         });
       } else {
-        alert('送信に問題が発生しました。');
+        alert('送信に問題が発生しました。サーバーからエラーが返されました。');
+        console.error('送信エラー:', response);
       }
     }).catch(error => {
-      alert('送信に問題が発生しました。');
-      console.error('Error:', error);  // エラーをコンソールに出力
+      alert('送信に問題が発生しました。ネットワークエラーの可能性があります。');
+      console.error('ネットワークエラー:', error);  // エラーをコンソールに出力
     });
   });
 
   // iframe の onload イベントを別途設定
-  document.getElementById('hidden_iframe').onload = function () {
-    if (submitted) {
-      alert('送信が完了しました。');
-      submitted = false;  // リセット
-    }
-  };
+  const hiddenIframe = document.getElementById('hidden_iframe');
+  if (hiddenIframe) {
+    hiddenIframe.onload = function () {
+      if (submitted) {
+        alert('送信が完了しました。');
+        submitted = false;  // リセット
+      }
+    };
+  }
 
   // モーダルのクローズボタン
-  span.onclick = function () {
+  closeButton.onclick = function () {
     modal.style.display = "none";
   };
 
