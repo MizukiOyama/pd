@@ -16,17 +16,26 @@
 #cursor {
     width: 1px;
     height: 26px;
-    margin-top: -0.25%;
-    margin-left: 0.5%;
+    margin-top: -0.85%;
+    margin-left: -1.75%;
+    transform: rotate(-40deg);
+    border: 1px solid var(--border);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); /* 光沢のある効果 */
+}
+#cursor::before {
+    width: 16px;
+    height: 16px;
     transform: rotate(-40deg);
     border: 1px solid #894646;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); /* 光沢のある効果 */
+    transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 #stalker {
     width: 30px;
     height: 30px;
-    border: 1px solid var(--border);
+    transform: rotate(-40deg);
+    border: 1px solid #894646;
     transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
