@@ -35,7 +35,7 @@
 .cursor--hover {
     width: 30px !important;
     height: 30px !important;
-    transform: translate(1000%, 50%) rotate(-40deg);
+    transform: translate(-50%, -50%) rotate(-40deg);
 }
 
 .stalker--hover {
