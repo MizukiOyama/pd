@@ -595,8 +595,9 @@ section img {
     position: absolute;
 }
 .tabs img {
-    width: 75%;
-    right: 0;
+    width: 80%;
+    top: -5%;
+    right: -10%;
 }
 .top .section1 img,
 .top .section2 img,
