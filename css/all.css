@@ -665,7 +665,7 @@ section img {
 }
 .about .bg-aitem {
     width: 500px;
-    height: 80px;
+    height: 55px;
     position: relative;
     margin: 0 auto;
 }
@@ -788,14 +788,18 @@ section img {
     justify-content: center;
     align-items: center;
     position: absolute;
-    bottom: 40%;
+    bottom: 20vmin;
+    padding: 1rem;
+    background-color: var(--border);
 }
 .about .section4 .bg-aitem {
     font-size: clamp(1.2rem, calc(1.2rem + 0.1vw), 1.6rem);
-    width: 100px;
-    border-radius: 8px;
+    width: 95px;
+    height: 170px;
+    border-radius: 5px;
     margin: 0 1%;
     padding: 1rem;
+    border: 1px solid var(--hover-color);
 }
 .about .section4 .bg-aitem:nth-child(1) {
     background: var(--text-color);
@@ -813,7 +817,7 @@ section img {
 }
 .about .section4 .bg-aitem:nth-child(5) {
     color: var(--text-color);
-    background: var(--border);
+    background: none;
 }
 
 
