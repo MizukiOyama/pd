@@ -585,7 +585,7 @@ section .top-s .text {
 /*===================== section in-box =====================*/
 
 section #top-img {
-    width: 75%;
+    width: 80%;
     top: -10%;
     right: 0;
 }
