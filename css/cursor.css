@@ -14,15 +14,15 @@
 
 /* カーソルのスタイル */
 #cursor {
-    width: 14px;
-    height: 14px;
-    border: 1px solid var(--border);
+    width: 1px;
+    height: 26px;
+    border: 1px solid #894646;
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); /* 光沢のある効果 */
 }
 
 #stalker {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border: 1px solid var(--border);
     transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
@@ -30,13 +30,13 @@
 
 /* ホバー時のスタイル */
 .cursor--hover {
-    width: 28px !important;
-    height: 28px !important;
+    width: 32px !important;
+    height: 32px !important;
     background: rgba(160, 113, 113, 0.5);
     box-shadow: 0 0 10px rgba(217, 217, 217, 0.6);
 }
 .stalker--hover {
-    width: 20px !important;
-    height: 20px !important;
+    width: 1px !important;
+    height: 28px !important;
     box-shadow: 0 0 10px rgba(217, 217, 217, 0.6);
 }
