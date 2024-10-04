@@ -9,7 +9,6 @@
     pointer-events: none;
     transform: translate(-50%, -50%);
     mix-blend-mode: difference;
-    z-index: 9999;
 }
 
 /* カーソルのスタイル */
@@ -20,6 +19,7 @@
     border: 1px solid #894646;
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); /* 光沢のある効果 */
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+    z-index: 10000;
 }
 
 #stalker {
@@ -29,6 +29,7 @@
     border: 1px solid var(--border);
     transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    z-index: 9999;
 }
 
 /* ホバー時のスタイル */
