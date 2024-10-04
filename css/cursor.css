@@ -16,6 +16,9 @@
 #cursor {
     width: 1px;
     height: 26px;
+    margin-top: -0.25%;
+    margin-left: 0.5%;
+    transform: rotate(-40deg);
     border: 1px solid #894646;
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); /* 光沢のある効果 */
 }

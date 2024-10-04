@@ -24,7 +24,7 @@ jQuery.noConflict();
             // カーソルの位置をマウスの位置に追従させる
             cursor.css({
                 "opacity": "1",
-                "top": y + "60px",
+                "top": y + "px",
                 "left": x + "px"
             });
 
