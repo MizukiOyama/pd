@@ -796,7 +796,6 @@ section img {
     font-size: clamp(1.2rem, calc(1.2rem + 0.1vw), 1.6rem);
     width: 95px;
     height: 170px;
-    border-radius: 5px;
     margin: 0 1%;
     padding: 1rem;
     border: 1px solid var(--hover-color);
