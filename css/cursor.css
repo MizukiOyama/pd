@@ -16,25 +16,14 @@
 #cursor {
     width: 1px;
     height: 26px;
-    margin-top: -0.85%;
-    margin-left: -1.75%;
-    transform: rotate(-40deg);
+    transform: translate(14px, 0) rotate(-40deg); /* Adjusted for the tip to be in the center */
     border: 1px solid var(--border);
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); /* 光沢のある効果 */
-}
-#cursor::before {
-    width: 16px;
-    height: 16px;
-    transform: rotate(-40deg);
-    border: 1px solid #894646;
-    transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
 }
 
 #stalker {
     width: 30px;
     height: 30px;
-    transform: rotate(-40deg);
     border: 1px solid #894646;
     transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
     box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
