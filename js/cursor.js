@@ -44,6 +44,7 @@ jQuery.noConflict();
     });
 })(jQuery);
 
+//fade-in
 document.addEventListener('DOMContentLoaded', function () {
     function fadeInOnScroll() {
         var fadeElements = document.querySelectorAll('.fade_bottom');

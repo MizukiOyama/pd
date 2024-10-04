@@ -16,7 +16,7 @@
 #cursor {
     width: 1px;
     height: 26px;
-    transform: rotate(-40deg);
+    transform: translate(1000%, 50%) rotate(-40deg);
     border: 1px solid var(--border);
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); /* 光沢のある効果 */
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
@@ -35,6 +35,7 @@
 .cursor--hover {
     width: 30px !important;
     height: 30px !important;
+    transform: translate(1000%, 50%) rotate(-40deg);
 }
 
 .stalker--hover {
