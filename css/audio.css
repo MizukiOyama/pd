@@ -1,9 +1,7 @@
 .audio {
-    text-align: center;
-    position: absolute;
+    position: fixed;
     top: 5%;
-    right: 5%;
-    display: grid;
+    right: 10%;
 }
 
 .toggle-switch {
@@ -26,7 +24,6 @@
     font-size: clamp(3rem, calc(3rem + 0.1vw), 3.4rem);
     color: var(--accent-color);
     transition: all 0.3s ease;
-    transform: rotate(-90deg);
 }
 
 /* ON状態のスタイル */
@@ -36,7 +33,7 @@
 
 .toggle-checkbox:checked + .toggle-label i {
     color: var(--border);
-    transform: rotate(-130deg);
+    transform: rotate(-135deg);
 }
 
 .fa-power-off:before {
