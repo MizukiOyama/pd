@@ -248,11 +248,10 @@ main {
 }
 main::before {
     content: "";
-    width: 100%;
-    height: 5px;
-    border-bottom: 1px solid var(--border);
-    position: absolute;
-    top: 0;
+    width: 70%;
+    margin: 0 auto;
+    border-top: 1px solid var(--border);
+    display: block;
 }
 
 main a {
