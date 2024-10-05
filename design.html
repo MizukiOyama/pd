@@ -3,9 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>モーダルでログイン</title>
+  <title>ログインが必要なページ</title>
   <style>
-    /* 上記で指定したモーダルのスタイルをコピー */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #content {
+      display: none;
+      text-align: center;
+    }
+
+    /* ログインモーダルスタイル */
     .modal {
       display: none;
       position: fixed;
@@ -15,71 +30,117 @@
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.5);
+      justify-content: center;
+      align-items: center;
     }
+
     .modal-content {
       background-color: #fff;
-      margin: 15% auto;
       padding: 20px;
       width: 80%;
       max-width: 400px;
       border-radius: 8px;
+      text-align: center;
     }
-    .close {
-      color: #aaa;
-      float: right;
-      font-size: 28px;
-      font-weight: bold;
+
+    input {
+      width: 90%;
+      padding: 10px;
+      margin: 10px 0;
+      box-sizing: border-box;
     }
-    .close:hover,
-    .close:focus {
-      color: black;
-      text-decoration: none;
+
+    button {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
       cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #45a049;
+    }
+
+    .error {
+      color: red;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>design</h1>
-  <p>このページではモーダルを使ってログインを促します。</p>
+
+  <!-- ログイン後に表示するコンテンツ -->
+  <div id="content">
+    <h1>ようこそ、メンバー専用ページへ</h1>
+    <p>このページのコンテンツはログイン後にのみ閲覧できます。</p>
+  </div>
 
   <!-- ログインモーダル -->
   <div id="loginModal" class="modal">
     <div class="modal-content">
-      <span class="close" onclick="closeModal()">&times;</span>
-      <h2>ログインが必要です</h2>
-      <p>サイトを閲覧するためにログインしてください。</p>
-      <button onclick="goToLoginPage()">ログインページへ</button>
+      <h2>ログイン</h2>
+      <div id="errorMessage" class="error"></div>
+      <form id="loginForm">
+        <input type="email" id="email" placeholder="メールアドレス" required>
+        <input type="password" id="password" placeholder="パスワード" required>
+        <button type="button" onclick="loginUser()">ログイン</button>
+      </form>
     </div>
   </div>
 
   <script>
-    // 仮のログインチェック関数
+    // ページロード時にログイン状態を確認
+    window.onload = function() {
+      checkLoginStatus();
+    };
+
+    // ログイン状態を確認する関数
     function checkLoginStatus() {
-      // ローカルストレージやCookieを使ってログイン状態を確認
-      const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
-
-      // 未ログインならモーダルを表示
-      if (!isLoggedIn) {
-        document.getElementById('loginModal').style.display = 'block';
-      }
+      fetch('https://script.google.com/macros/s/AKfycby69J2onbfcAKRozvXnTn_nqua2mIYz-noHwE76KiiTTKGb4KbnylYA2f65bUjnk0Op/exec')
+        .then(response => response.json())
+        .then(data => {
+          if (data.status === "logged_in") {
+            // ログイン済みならコンテンツを表示
+            document.getElementById('content').style.display = 'block';
+          } else {
+            // 未ログインならログインモーダルを表示
+            document.getElementById('loginModal').style.display = 'flex';
+          }
+        })
+        .catch(error => {
+          console.error('Error:', error);
+        });
     }
 
-    // モーダルを閉じる関数
-    function closeModal() {
-      document.getElementById('loginModal').style.display = 'none';
+    // ログイン処理
+    function loginUser() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Google Apps Scriptへのログインリクエスト
+      fetch('https://script.google.com/macros/s/AKfycby69J2onbfcAKRozvXnTn_nqua2mIYz-noHwE76KiiTTKGb4KbnylYA2f65bUjnk0Op/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email: email, password: password })
+      })
+      .then(response => response.json())
+      .then(data => {
+        if (data.status === "success") {
+          // ログイン成功時はページをリロードしてコンテンツ表示
+          document.getElementById('loginModal').style.display = 'none';
+          document.getElementById('content').style.display = 'block';
+        } else {
+          // エラーメッセージを表示
+          document.getElementById('errorMessage').textContent = data.message;
+        }
+      })
+      .catch(error => {
+        console.error('Error:', error);
+      });
     }
-
-    // ログインページに遷移する関数
-    function goToLoginPage() {
-      window.location.href = 'https://script.google.com/macros/s/AKfycby69J2onbfcAKRozvXnTn_nqua2mIYz-noHwE76KiiTTKGb4KbnylYA2f65bUjnk0Op/exec'; // ログインページに遷移
-    }
-
-    // ページ読み込み時にログイン状態を確認
-    window.onload = checkLoginStatus;
-
-    const redirectUrl = window.location.href; // 現在のページのURL
-    window.location.href = `login.html?redirect=${encodeURIComponent(redirectUrl)}`;
-
   </script>
 </body>
 </html>
