@@ -81,3 +81,23 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const soundToggleBtn = document.getElementById('soundToggleBtn');
+    const backgroundAudio = document.getElementById('backgroundAudio');
+    let isPlaying = false;
+
+    soundToggleBtn.addEventListener('click', function () {
+        if (isPlaying) {
+            backgroundAudio.pause(); // 音声を一時停止
+            soundToggleBtn.textContent = 'Sound ON';
+            soundToggleBtn.classList.remove('sound-on');
+        } else {
+            backgroundAudio.play(); // 音声を再生
+            soundToggleBtn.textContent = 'Sound OFF';
+            soundToggleBtn.classList.add('sound-on');
+        }
+        isPlaying = !isPlaying; // 状態を切り替える
+    });
+});
