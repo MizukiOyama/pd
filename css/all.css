@@ -494,7 +494,7 @@ section .top-s .text {
     margin-top: 2.5rem;
 }
 .top .se h3 {
-    width: 260px;
+    width: 300px;
     position: absolute;
     bottom: 20%;
     margin-top: 4rem;
@@ -506,10 +506,10 @@ section .top-s .text {
     right: 0;
 }
 .top .se-02 h3 {
-    width: 360px;
+    width: 400px;
 }
 .top .se-03 h3 {
-    width: 460px;
+    width: 500px;
 }
 .top .se p {
     position: absolute;
