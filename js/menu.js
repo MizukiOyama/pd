@@ -84,18 +84,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const soundOnBtn = document.getElementById('soundOnBtn');
-    const soundOffBtn = document.getElementById('soundOffBtn');
+    const toggleSoundBtn = document.getElementById('toggleSoundBtn');
     const backgroundAudio = document.getElementById('backgroundAudio');
 
-    // サウンドをONにするボタンのクリックイベント
-    soundOnBtn.addEventListener('click', function () {
-        backgroundAudio.play(); // 音声を再生
-    });
+    // サウンドの状態を保持するフラグ
+    let isSoundOn = false;
 
-    // サウンドをOFFにするボタンのクリックイベント
-    soundOffBtn.addEventListener('click', function () {
-        backgroundAudio.pause(); // 音声を一時停止
-        backgroundAudio.currentTime = 0; // 再生位置をリセット
+    // トグルボタンのクリックイベント
+    toggleSoundBtn.addEventListener('click', function () {
+        if (isSoundOn) {
+            // 音声が再生中の場合、音声を停止
+            backgroundAudio.pause();
+            backgroundAudio.currentTime = 0; // 再生位置をリセット
+            toggleSoundBtn.textContent = "Sound ON";
+            toggleSoundBtn.classList.remove('sound-off');
+        } else {
+            // 音声が停止中の場合、音声を再生
+            backgroundAudio.play();
+            toggleSoundBtn.textContent = "Sound OFF";
+            toggleSoundBtn.classList.add('sound-off');
+        }
+
+        // 状態を反転
+        isSoundOn = !isSoundOn;
     });
 });
