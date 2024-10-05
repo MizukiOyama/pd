@@ -1,28 +1,85 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ログイン / 会員登録モーダル</title>
-    <link rel="stylesheet" href="css/design.css">
-
-    <script src="js/design.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>モーダルでログイン</title>
+  <style>
+    /* 上記で指定したモーダルのスタイルをコピー */
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+      background-color: #fff;
+      margin: 15% auto;
+      padding: 20px;
+      width: 80%;
+      max-width: 400px;
+      border-radius: 8px;
+    }
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <div id="modal" class="modal">
-        <div class="modal-content">
-            <span id="close-modal" class="close">&times;</span>
-            <h2>ログインまたは会員登録</h2>
-            <p>このコンテンツを利用するにはログインまたは会員登録が必要です。</p>
-            <button id="login-btn">ログイン</button>
-            <button id="signup-btn">会員登録</button>
-        </div>
+  <h1>design</h1>
+  <p>このページではモーダルを使ってログインを促します。</p>
+
+  <!-- ログインモーダル -->
+  <div id="loginModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h2>ログインが必要です</h2>
+      <p>サイトを閲覧するためにログインしてください。</p>
+      <button onclick="goToLoginPage()">ログインページへ</button>
     </div>
-    <div class="content">
-        <h1>ようこそ！</h1>
-        <p>このページの内容はログイン後に利用できます。</p>
-    </div>
-    <script src="script.js"></script>
+  </div>
+
+  <script>
+    // 仮のログインチェック関数
+    function checkLoginStatus() {
+      // ローカルストレージやCookieを使ってログイン状態を確認
+      const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+
+      // 未ログインならモーダルを表示
+      if (!isLoggedIn) {
+        document.getElementById('loginModal').style.display = 'block';
+      }
+    }
+
+    // モーダルを閉じる関数
+    function closeModal() {
+      document.getElementById('loginModal').style.display = 'none';
+    }
+
+    // ログインページに遷移する関数
+    function goToLoginPage() {
+      window.location.href = 'login.html'; // ログインページに遷移
+    }
+
+    // ページ読み込み時にログイン状態を確認
+    window.onload = checkLoginStatus;
+
+    const redirectUrl = window.location.href; // 現在のページのURL
+    window.location.href = `login.html?redirect=${encodeURIComponent(redirectUrl)}`;
+
+  </script>
 </body>
 </html>
-
