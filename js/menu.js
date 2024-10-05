@@ -86,14 +86,19 @@ document.addEventListener("DOMContentLoaded", function() {
 document.addEventListener('DOMContentLoaded', function () {
     const toggleSwitch = document.getElementById('soundToggle');
     const backgroundAudio = document.getElementById('backgroundAudio');
+    const toggleIcon = document.getElementById('toggleIcon');
 
-    // チェックボックスの状態に応じてサウンドを制御
+    // チェックボックスの状態に応じてアイコンとサウンドを制御
     toggleSwitch.addEventListener('change', function () {
         if (toggleSwitch.checked) {
-            // 音声を再生
+            // ON状態: アイコンを変更してサウンドを再生
+            toggleIcon.classList.remove('fa-volume-mute');
+            toggleIcon.classList.add('fa-volume-up');
             backgroundAudio.play();
         } else {
-            // 音声を停止
+            // OFF状態: アイコンを変更してサウンドを停止
+            toggleIcon.classList.remove('fa-volume-up');
+            toggleIcon.classList.add('fa-volume-mute');
             backgroundAudio.pause();
             backgroundAudio.currentTime = 0; // 再生位置をリセット
         }
