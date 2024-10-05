@@ -1,23 +1,25 @@
 .audio {
     text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 10px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    padding: 2rem 2.5rem;
+    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
+    color: var(--bg-color);
+    background: rgba(217, 217, 217, 0);
+    border: 1px solid var(--border);
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button:focus {
     outline: none;
+    background: var(--bg-color);
 }
 
 #soundOffBtn {
-    background-color: #f44336; /* 赤色 */
+    
 }
