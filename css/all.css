@@ -154,7 +154,6 @@ h1 {
 }
 .noise {
     display: flex;
-    gap: 5vmin;
     background: linear-gradient(to bottom right, var(--bg-color), var(--text-color)) fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -449,9 +448,6 @@ section .top-s::before {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
-.h2-bg .noise {
-    gap: 0;
 }
 .policy .h2-bg p {
     margin-top: -17px;
