@@ -89,19 +89,24 @@ document.addEventListener('DOMContentLoaded', function () {
     var toggleIcon = document.getElementById('toggleIcon');
     var backgroundAudio = document.getElementById('backgroundAudio');
 
-    // チェックボックスの状態に応じてアイコンとサウンドを制御
-    toggleSwitch.addEventListener('change', function () {
-        if (toggleSwitch.checked) {
-            // ON状態: アイコンを変更してサウンドを再生
-            toggleIcon.classList.remove('fa-power-off');
-            toggleIcon.classList.add('fa-volume-up');
-            backgroundAudio.play();
-        } else {
-            // OFF状態: アイコンを変更してサウンドを停止
-            toggleIcon.classList.remove('fa-volume-up');
-            toggleIcon.classList.add('fa-power-off');
-            backgroundAudio.pause();
-            backgroundAudio.currentTime = 0; // 再生位置をリセット
-        }
-    });
+    // 要素が存在するかチェック
+    if (toggleSwitch && toggleIcon && backgroundAudio) {
+        // チェックボックスの状態に応じてアイコンとサウンドを制御
+        toggleSwitch.addEventListener('change', function () {
+            if (toggleSwitch.checked) {
+                // ON状態: アイコンを変更してサウンドを再生
+                toggleIcon.classList.remove('fa-power-off');
+                toggleIcon.classList.add('fa-volume-up');
+                backgroundAudio.play();
+            } else {
+                // OFF状態: アイコンを変更してサウンドを停止
+                toggleIcon.classList.remove('fa-volume-up');
+                toggleIcon.classList.add('fa-power-off');
+                backgroundAudio.pause();
+                backgroundAudio.currentTime = 0; // 再生位置をリセット
+            }
+        });
+    } else {
+        console.error("要素が見つかりません。HTMLのid属性を確認してください。");
+    }
 });
