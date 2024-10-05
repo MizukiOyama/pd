@@ -97,7 +97,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 // ON状態: アイコンを変更してサウンドを再生
                 toggleIcon.classList.remove('fa-power-off');
                 toggleIcon.classList.add('fa-volume-up');
-                backgroundAudio.play();
+                
+                // ブラウザの自動再生制限を回避するためにユーザーの操作後に再生
+                backgroundAudio.play().catch(function(error) {
+                    console.log("自動再生がブロックされました:", error);
+                });
             } else {
                 // OFF状態: アイコンを変更してサウンドを停止
                 toggleIcon.classList.remove('fa-volume-up');
