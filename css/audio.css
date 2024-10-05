@@ -43,5 +43,5 @@
 }
 
 .fa-volume-high:before, .fa-volume-up:before {
-    content: 'f011';
+    content: "\f011";
 }
