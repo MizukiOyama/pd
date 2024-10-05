@@ -23,7 +23,7 @@
         z-index: 0;
     }
     footer::after {
-        contain: "";
+        content: "";
         width: 5%;
         height: 100%;
         border-right: 1px solid var(--border);
