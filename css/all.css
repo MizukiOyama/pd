@@ -156,14 +156,14 @@ h1 {
     display: flex;
     background: linear-gradient(to bottom right, var(--bg-color), var(--text-color)) fixed;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: darkgray;
 }
 
 @media (prefers-color-scheme: light) {
     .noise {
         background: linear-gradient(to bottom, black, gray) fixed;
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: darkgray;
     }
 }
 

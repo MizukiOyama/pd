@@ -57,6 +57,7 @@
     bottom: -12.5%;
     padding: 0.5rem;
     margin-top: 0;
+    -webkit-text-fill-color: aliceblue;
 }
 .tabs-container a::after,
 .tabs-container a::before {
