@@ -92,13 +92,13 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleSwitch.addEventListener('change', function () {
         if (toggleSwitch.checked) {
             // ON状態: アイコンを変更してサウンドを再生
-            toggleIcon.classList.remove('fa-volume-mute');
+            toggleIcon.classList.remove('fa-gear');
             toggleIcon.classList.add('fa-volume-up');
             backgroundAudio.play();
         } else {
             // OFF状態: アイコンを変更してサウンドを停止
             toggleIcon.classList.remove('fa-volume-up');
-            toggleIcon.classList.add('fa-volume-mute');
+            toggleIcon.classList.add('fa-gear');
             backgroundAudio.pause();
             backgroundAudio.currentTime = 0; // 再生位置をリセット
         }
