@@ -5,19 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Precision Design</title>
-  <link rel="icon" href="https://mizukioyama.github.io/pd/hp-img/pd-icon.ico">
+  <link rel="icon" href="https://mizukioyama.github.io/pd/hp-img/pd-logo.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
   <!-- CSSファイルの読み込み -->
   <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/mobile.css">
   <link rel="stylesheet" href="css/cursor.css">
   <link rel="stylesheet" href="css/menu.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/glitch.css">
   <link rel="stylesheet" href="css/tab.css">
-  <!--h1-->
-  <link rel="stylesheet" href="https://use.typekit.net/gjh0htb.css">
-  <!--h2-->
-  <link rel="stylesheet" href="https://use.typekit.net/vht8cvv.css">
+  <link rel="stylesheet" href="css/slide.css">
+  <link rel="stylesheet" href="css/loading.css">
   <!-- a -->
   <link rel="stylesheet" href="https://use.typekit.net/wez8dvq.css">
 
@@ -39,12 +39,11 @@
 
   <script src="js/menu.js"></script>
   <script src="js/cursor.js"></script>
-  <!--<script src="js/template-head.js"></script>-->
   <script src="js/tab.js"></script>
-
+  <script src="js/loading.js"></script>
 
   <!--Search-->
-  <meta name="description" content="Your website description">
+  <meta name="description" content="想いを形に、こだわりをデザインする。">
   <meta name="keywords" content="Precision Design, こだわり, デザイン, 想い, 伝える">
   <!--cash-->
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
@@ -61,78 +60,119 @@
 
 <body oncontextmenu="return false;" class="about">
   <div id="header-container"></div>
-  <!-- Hero -->
-  <section class="tabs">
-    <div class="top-h1">
-      <h1>Blog / News</h1>
-      <p class="caption">活動記録とお知らせ。</p>
-    </div>
-    <img src="https://mizukioyama.github.io/pd/hp-img/2341suisai.png" alt="" id="top-img">
-
-    <!-- tab list -->
-    <div class="tabs-container">
-      <a class="tab" href="#tab-1">Topic</a>
-      <a class="tab" href="#tab-2">Blog</a>
-      <a class="tab" href="#tab-3">News</a>
-      <a class="tab" href="#tab-4">School</a>
-      <span class="tab-slider"></span>
-    </div>
-  </section>
-
   <!-- Main -->
-  <main class="main">
+  <main class="main" id="content" style="opacity: 0; visibility: hidden;">
+    <!-- Hero -->
+    <section class="tabs">
+      <div class="top-s">
+        <div class="top-h1">
+          <h1 class="noise">Blog / News</h1>
+          <p class="caption">活動記録とお知らせ。</p>
+        </div>
+        <video src=""></video>
+        <p class="caption">
+          自己表現こそが己を確立する。
+          <br>
+          自己表現は人生最大限のパフォーマンス。
+        </p>
+      </div>
+      <!-- tab list -->
+      <div class="tabs-container">
+        <a class="tab" href="#tab-1">Topic</a>
+        <a class="tab" href="#tab-2">Blog</a>
+        <a class="tab" href="#tab-3">News</a>
+        <a class="tab" href="#tab-4">School</a>
+        <span class="tab-slider"></span>
+      </div>
+    </section>
+
+    <div class="hr"></div>
 
     <section class="slide section1" id="tab-1">
       <div class="top-s">
-        <h2>Topic</h2>
-        <p class="text">注目記事</p>
-        <p>
-          僕たちは、想いを形に、こだわりをデザインしています。
-          「色、レイアウト、フォント、強弱」の4原則だけでなく、
-          「表示速度、アニメーション、素材、UI/UX」などの細部にもこだわりを持ち、
-          デザインに落とし込み世の中へ広めます。
-          精緻なディテールと豊かな「創造力・デザイン力・想像力」で、あなたのこだわりや想いを制作します。
-        </p>
+        <div class="h2-bg">
+          <h2>Topic</h2>
+          <p>想い/考え</p>
+        </div>
+        <div class="fade_bottom">
+          <p class="text">
+            あなたの想いが未来の形を作る。
+            細かすぎるくらいがちょうどいい。 こだわることは妥協しない。とことんこだわる。
+            僕たちは、個々の想いやこだわりを魅力的なデザインとして
+            具現化したい思いでPrecisionDesignとして活動をしています。
+          </p>
+          <div class="bg-aitem noise"></div>
+          <div class="thoughts">
+            <p>
+              僕たちは、個々の想いやこだわりを魅力的なデザインとして
+              具現化したい思いでPrecisionDesignとして活動をしています。
+              僕たちは、個々の想いやこだわりを魅力的なデザインとして
+              具現化したい思いでPrecisionDesignとして活動をしています。
+            </p>
+            <p>
+              僕たちは、個々の想いやこだわりを魅力的なデザインとして
+              具現化したい思いでPrecisionDesignとして活動をしています。
+              僕たちは、個々の想いやこだわりを魅力的なデザインとして
+              具現化したい思いでPrecisionDesignとして活動をしています。
+            </p>
+          </div>
+        </div>
       </div>
-      <img src="https://mizukioyama.github.io/pd/hp-img/utusigami-suisai.png" alt="" class="glitch">
     </section>
 
+    <div class="hr"></div>
+
     <section class="slide section2" id="tab-2">
-      <img src="https://mizukioyama.github.io/pd/hp-img/sousou-suisai.png" alt="" class="glitch">
       <div class="top-s">
-        <h2>Blog</h2>
-        <p class="text">活動記録</p>
-        <p>
-          僕たちのデザイン哲学は『未来の創造』にあります。
-          <br>
-          あなたの想いが未来の形を作る。
-          僕たちは、個々の想いやこだわりを魅力的なデザインとして
-          具現化したい思いでPrecisionDesignとして活動をしています。
-        </p>
+        <div class="h2-bg">
+          <h2>Blog</h2>
+          <p>活動記録</p>
+        </div>
+        <div class="fade_bottom">
+          Blog
+        </div>
       </div>
     </section>
+
+    <div class="hr"></div>
 
     <section class="slide section3" id="tab-3">
       <div class="top-s">
-        <h2>News</h2>
-        <p class="text">お知らせ</p>
-        <p>
-        </p>
-        <a href="https://mizukioyama.github.io/pd/tab.html">Service</a>
+        <div class="h2-bg">
+          <h2>News</h2>
+          <p>お知らせ</p>
+        </div>
+        <div class="work">
+          <div class="design">
+            <h3>Design</h3>
+            <video src=""></video>
+          </div>
+          <div class="art">
+            <h3>Art</h3>
+            <video src=""></video>
+          </div>
+        </div>
       </div>
-      <img src="https://mizukioyama.github.io/pd/hp-img/utusigami-suisai.png" alt="" class="glitch">
     </section>
+
+    <div class="hr"></div>
 
     <section class="slide section4" id="tab-4">
       <div class="top-s">
-        <h2>School</h2>
-        <p class="text">デザインスクール</p>
-        <p>無料で学べるデザインスクール。</p>
-        <a href="https://mizukioyama.github.io/pd/design.html"></a>
-      </div>
+        <div class="h2-bg">
+          <h2>School</h2>
+          <p>デザインスクール</p>
+        </div>
+        <div class="fade_bottom">
+          <p class="text">
+            無料スクール
+          </p>
+        </div>
+        <a href=""></a>
+          </div>
     </section>
 
-
+    <div class="hr"></div>
   </main>
 
   <div id="footer-container"></div>
