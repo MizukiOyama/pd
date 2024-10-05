@@ -3,11 +3,12 @@
     position: absolute;
     top: 0;
     right: 0;
+    display: grid;
 }
 
 button {
     padding: 2rem 2.5rem;
-    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
     color: var(--bg-color);
     background: rgba(217, 217, 217, 0);
     border: 1px solid var(--border);

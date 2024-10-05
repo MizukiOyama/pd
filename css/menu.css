@@ -58,7 +58,7 @@ nav {
 /* .toggle_btn styles */
 .toggle_btn {
     position: fixed;
-    top: 0;
+    bottom: 30vmin;
     right: 0;
     width: 10%;
     cursor: pointer;
@@ -70,7 +70,7 @@ nav {
 }
 
 #menu-img {
-    width: 70%;
+    width: 100%;
     mix-blend-mode: difference;
     position: absolute;
     top: 15px;
