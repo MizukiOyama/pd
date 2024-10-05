@@ -1,8 +1,8 @@
 .audio {
     position: absolute;
-    bottom: 2%;
+    bottom: 1%;
     left: 0;
-    padding: 2rem;
+    padding: 1rem 0;
     border: 1px solid var(--border);
 }
 
