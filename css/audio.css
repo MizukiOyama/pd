@@ -39,3 +39,6 @@
     transform: rotate(-130deg);
 }
 
+.fa-power-off:before {
+    content: "\f011";
+}
