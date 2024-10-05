@@ -89,6 +89,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const toggleIcon = document.getElementById('toggleIcon');
     const backgroundAudio = document.getElementById('backgroundAudio');
 
+    // 各要素が正しく取得されているかログで確認
+    console.log('toggleSwitch:', toggleSwitch);
+    console.log('toggleIcon:', toggleIcon);
+    console.log('backgroundAudio:', backgroundAudio);
+
     // 要素が正常に取得されているか確認
     if (toggleSwitch && toggleIcon && backgroundAudio) {
         // チェックボックスの状態に応じてアイコンとサウンドを制御
@@ -107,6 +112,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     } else {
-        console.error('要素が見つかりません');
+        if (!toggleSwitch) console.error('toggleSwitchが見つかりません');
+        if (!toggleIcon) console.error('toggleIconが見つかりません');
+        if (!backgroundAudio) console.error('backgroundAudioが見つかりません');
     }
 });
