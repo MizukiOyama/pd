@@ -71,14 +71,14 @@
 
     // ログインページに遷移する関数
     function goToLoginPage() {
-      window.location.href = 'login.html'; // ログインページに遷移
+      window.location.href = 'https://script.google.com/macros/s/AKfycby69J2onbfcAKRozvXnTn_nqua2mIYz-noHwE76KiiTTKGb4KbnylYA2f65bUjnk0Op/exec'; // ログインページに遷移
     }
 
     // ページ読み込み時にログイン状態を確認
     window.onload = checkLoginStatus;
 
     const redirectUrl = window.location.href; // 現在のページのURL
-    window.location.href = `https://script.google.com/macros/s/AKfycby69J2onbfcAKRozvXnTn_nqua2mIYz-noHwE76KiiTTKGb4KbnylYA2f65bUjnk0Op/exec?redirect=${encodeURIComponent(redirectUrl)}`;
+    window.location.href = `design.html?redirect=${encodeURIComponent(redirectUrl)}`;
 
   </script>
 </body>
