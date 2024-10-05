@@ -437,7 +437,6 @@ section .top-s::before {
     animation: moveBackground 0.55s linear infinite;
 }
 .h2-bg {
-
     font-family: sans-serif;
     width: fit-content;
     height: 100px;
@@ -450,6 +449,9 @@ section .top-s::before {
     display: flex;
     justify-content: center;
     flex-direction: column;
+}
+.h2-bg .noise {
+    gap: 0;
 }
 .policy .h2-bg p {
     margin-top: -17px;
@@ -604,9 +606,9 @@ section img {
     position: absolute;
 }
 .tabs img {
-    width: 80%;
-    top: -5%;
-    right: -10%;
+    width: 70%;
+    top: -15%;
+    right: -5%;
 }
 .top .section1 img,
 .top .section2 img,
