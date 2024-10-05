@@ -39,11 +39,9 @@
     }
 
     footer a {
-        font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 3rem);
+        font-size: clamp(2.8rem, calc(2.8rem + 0.1vw), 3rem);
         margin: 1rem 0 0 2rem;
         padding: 0.5rem;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: var(--accent-color);
     }
 
     footer div a {
