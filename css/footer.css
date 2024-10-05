@@ -8,6 +8,9 @@
         border-right: 5px solid var(--bg-color);*/
         z-index: 9;
     }
+    footer .noise {
+        display: block;
+    }
 
     footer::before {
         content: "";
