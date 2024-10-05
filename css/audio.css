@@ -41,3 +41,7 @@
     color: var(--bg-color);
     transition: color 0.3s ease;
 }
+
+.fa-volume-high:before, .fa-volume-up:before {
+    content: 'f011';
+}
