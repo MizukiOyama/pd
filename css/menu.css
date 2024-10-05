@@ -275,6 +275,13 @@ nav {
 		animation: fadeIn_bg 3s ease forwards;
 		transition: background-color 0.45s ease;
 	}
+    .pc_menu::before {
+        content: "";
+        width: 88%;
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+    }
 
 	.pc_menu ul {
 		width: 100%;
