@@ -44,10 +44,10 @@
 }
 
 .icon-container {
-    font-size: 30px;
-    color: #333;
+    font-size: clamp(1rem, calc(1rem + 0.1vw), 1.4rem);
 }
 
 #toggleIcon {
+    color: var(--bg-color);
     transition: color 0.3s ease;
 }
