@@ -24,8 +24,9 @@
 
 .toggle-label i {
     font-size: clamp(3rem, calc(3rem + 0.1vw), 3.4rem);
-    border: 1px solid var(--border);
-    transition: transform 0.3s ease-in-out;
+    color: var(--accent-color);
+    transition: all 0.3s ease;
+    transform: rotate(-90deg);
 }
 
 /* ON状態のスタイル */
@@ -34,11 +35,7 @@
 }
 
 .toggle-checkbox:checked + .toggle-label i {
-    transform: rotate(90deg);
-}
-
-#toggleIcon {
-    color: var(--bg-color);
-    transition: color 0.3s ease;
+    color: var(--border);
+    transform: rotate(-130deg);
 }
 
