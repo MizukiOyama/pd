@@ -84,28 +84,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    const toggleSoundBtn = document.getElementById('toggleSoundBtn');
+    const toggleSwitch = document.getElementById('soundToggle');
     const backgroundAudio = document.getElementById('backgroundAudio');
 
-    // サウンドの状態を保持するフラグ
-    let isSoundOn = false;
-
-    // トグルボタンのクリックイベント
-    toggleSoundBtn.addEventListener('click', function () {
-        if (isSoundOn) {
-            // 音声が再生中の場合、音声を停止
+    // チェックボックスの状態に応じてサウンドを制御
+    toggleSwitch.addEventListener('change', function () {
+        if (toggleSwitch.checked) {
+            // 音声を再生
+            backgroundAudio.play();
+        } else {
+            // 音声を停止
             backgroundAudio.pause();
             backgroundAudio.currentTime = 0; // 再生位置をリセット
-            toggleSoundBtn.textContent = "Sound ON";
-            toggleSoundBtn.classList.remove('sound-off');
-        } else {
-            // 音声が停止中の場合、音声を再生
-            backgroundAudio.play();
-            toggleSoundBtn.textContent = "Sound OFF";
-            toggleSoundBtn.classList.add('sound-off');
         }
-
-        // 状態を反転
-        isSoundOn = !isSoundOn;
     });
 });
