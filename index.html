@@ -43,7 +43,27 @@
   <script src="js/form.js"></script>
   <script src="js/tab.js"></script>
   <script src="js/loading.js"></script>
-  <script src="js/audio.js"></script>
+  <script>
+    
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleSwitch = document.getElementById('soundToggle');
+    const backgroundAudio = document.getElementById('backgroundAudio');
+
+    if (toggleSwitch && backgroundAudio) {
+        toggleSwitch.addEventListener('change', function () {
+            if (toggleSwitch.checked) {
+                backgroundAudio.play();
+            } else {
+                backgroundAudio.pause();
+                backgroundAudio.currentTime = 0;
+            }
+        });
+    } else {
+        console.error('Toggle switch or background audio element not found');
+    }
+});
+
+  </script>
 
   <!--Search-->
   <meta name="description" content="想いを形に、こだわりをデザインする。">
