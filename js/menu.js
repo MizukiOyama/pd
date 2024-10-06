@@ -84,37 +84,24 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    // DOMが完全にロードされた後で要素にアクセス
-    var toggleSwitch = document.getElementById('soundToggle');
-    var toggleIcon = document.getElementById('toggleIcon');
-    var backgroundAudio = document.getElementById('backgroundAudio');
+    const toggleSwitch = document.getElementById('soundToggle');
+    const backgroundAudio = document.getElementById('backgroundAudio');
+    const toggleIcon = document.getElementById('toggleIcon');
 
-    // 要素が存在するかチェック
-    if (toggleSwitch && toggleIcon && backgroundAudio) {
-        // チェックボックスの状態に応じてアイコンとサウンドを制御
-        toggleSwitch.addEventListener('change', function () {
-            if (toggleSwitch.checked) {
-                // ON状態: アイコンを変更してサウンドを再生
-                toggleIcon.classList.remove('fa-power-off');
-                toggleIcon.classList.add('fa-volume-up');
-                
-                // サウンドを再生
-                backgroundAudio.play().then(() => {
-                    console.log("サウンドが再生されました");
-                }).catch(function(error) {
-                    console.log("自動再生がブロックされました:", error);
-                });
-            } else {
-                // OFF状態: アイコンを変更してサウンドを停止
-                toggleIcon.classList.remove('fa-volume-up');
-                toggleIcon.classList.add('fa-power-off');
-                backgroundAudio.pause();
-                backgroundAudio.currentTime = 0; // 再生位置をリセット
-                console.log("サウンドが停止されました");
-            }
-        });
-    } else {
-        console.error("要素が見つかりません。HTMLのid属性を確認してください。");
-    }
+    // チェックボックスの状態に応じてアイコンとサウンドを制御
+    toggleSwitch.addEventListener('change', function () {
+        if (toggleSwitch.checked) {
+            // ON状態: アイコンを変更してサウンドを再生
+            toggleIcon.classList.remove('fa-volume-mute');
+            toggleIcon.classList.add('fa-volume-up');
+            backgroundAudio.play();
+        } else {
+            // OFF状態: アイコンを変更してサウンドを停止
+            toggleIcon.classList.remove('fa-volume-up');
+            toggleIcon.classList.add('fa-volume-mute');
+            backgroundAudio.pause();
+            backgroundAudio.currentTime = 0; // 再生位置をリセット
+        }
+    });
 });
 
