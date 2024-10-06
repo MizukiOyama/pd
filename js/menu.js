@@ -97,9 +97,11 @@ document.addEventListener('DOMContentLoaded', function () {
                 // ON状態: アイコンを変更してサウンドを再生
                 toggleIcon.classList.remove('fa-power-off');
                 toggleIcon.classList.add('fa-volume-up');
-                
+
                 // ブラウザの自動再生制限を回避するためにユーザーの操作後に再生
-                backgroundAudio.play().catch(function(error) {
+                backgroundAudio.play().then(function () {
+                    console.log("サウンド再生中");
+                }).catch(function (error) {
                     console.log("自動再生がブロックされました:", error);
                 });
             } else {
@@ -114,3 +116,4 @@ document.addEventListener('DOMContentLoaded', function () {
         console.error("要素が見つかりません。HTMLのid属性を確認してください。");
     }
 });
+
