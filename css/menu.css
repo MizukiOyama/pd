@@ -353,7 +353,7 @@ nav {
 
     .logo {
         position: relative;
-        top: -4vmin;
+        top: 0;
         transform: rotate(-90deg);
         border-left: 1px solid var(--border);
         border-right: 1px solid var(--border);
