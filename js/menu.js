@@ -83,13 +83,11 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 document.addEventListener('DOMContentLoaded', function () {
+    // 要素の取得
     const toggleSwitch = document.getElementById('soundToggle');
     const backgroundAudio = document.getElementById('backgroundAudio');
 
-    // 取得できているか確認
-    console.log('Toggle switch:', toggleSwitch);
-    console.log('Background audio:', backgroundAudio);
-
+    // 要素が正しく取得できたか確認
     if (toggleSwitch && backgroundAudio) {
         // チェックボックスの状態に応じてサウンドを制御
         toggleSwitch.addEventListener('change', function () {
@@ -103,6 +101,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     } else {
+        // 要素が取得できなかった場合のエラーメッセージ
         console.error('Toggle switch or background audio element not found');
     }
 });
