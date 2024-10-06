@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // メニューの初期化関数
     function initializeMenu() {
         var $nav = document.getElementById('navArea');
@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var open = 'open';
 
         if ($btn && $mask) {
-            $btn.addEventListener('click', function() {
+            $btn.addEventListener('click', function () {
                 if (!$nav.classList.contains(open)) {
                     $nav.classList.add(open);
                 } else {
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             });
 
-            $mask.addEventListener('click', function() {
+            $mask.addEventListener('click', function () {
                 $nav.classList.remove(open);
             });
         } else {
@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // 画像の遅延読み込み
     var lazyImages = document.querySelectorAll('img[data-src]');
-    lazyImages.forEach(function(img) {
+    lazyImages.forEach(function (img) {
         img.setAttribute('src', img.getAttribute('data-src'));
-        img.onload = function() {
+        img.onload = function () {
             img.removeAttribute('data-src');
         };
     });
@@ -37,7 +37,6 @@ document.addEventListener("DOMContentLoaded", function() {
         .then(response => response.text())
         .then(headerData => {
             document.getElementById("header-container").innerHTML = headerData;
-            // メニューの初期化を再度呼び出し
             initializeMenu();
         });
 
@@ -50,23 +49,20 @@ document.addEventListener("DOMContentLoaded", function() {
     // ドラッグ機能
     const img = document.getElementById("menu-img");
     if (img) {
-        // 画像のスタイルを絶対位置に設定（必要に応じて）
         img.style.position = "absolute";
-        img.style.cursor = "grab"; // 初期状態でgrabカーソルに設定
+        img.style.cursor = "grab";
 
         let isDragging = false;
         let offsetX, offsetY;
 
-        // マウスダウンでドラッグ開始
         img.addEventListener("mousedown", (e) => {
-            e.preventDefault(); // 画像保護が影響しないようにデフォルトの動作を防ぐ
+            e.preventDefault();
             isDragging = true;
             img.style.cursor = "grabbing";
             offsetX = e.clientX - img.getBoundingClientRect().left;
             offsetY = e.clientY - img.getBoundingClientRect().top;
         });
 
-        // マウスムーブで画像を移動
         document.addEventListener("mousemove", (e) => {
             if (isDragging) {
                 img.style.left = `${e.clientX - offsetX}px`;
@@ -74,10 +70,28 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
 
-        // マウスアップでドラッグ終了
         document.addEventListener("mouseup", () => {
             isDragging = false;
             img.style.cursor = "grab";
         });
+    }
+
+    // オーディオトグル機能
+    const toggleSwitch = document.getElementById('soundToggle');
+    const backgroundAudio = document.getElementById('backgroundAudio');
+
+    if (toggleSwitch && backgroundAudio) {
+        toggleSwitch.addEventListener('change', function () {
+            if (toggleSwitch.checked) {
+                console.log('Audio playing...');
+                backgroundAudio.play();
+            } else {
+                console.log('Audio stopped...');
+                backgroundAudio.pause();
+                backgroundAudio.currentTime = 0; // 再生位置をリセット
+            }
+        });
+    } else {
+        console.error('Toggle switch or background audio element not found');
     }
 });
