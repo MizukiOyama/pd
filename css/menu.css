@@ -290,7 +290,7 @@ nav {
         align-items: center;
         justify-content: space-evenly;
         text-align: center;
-        width: clamp(3%, 100%, 4%);
+        width: clamp(3%, 10%, 4%);
         height: 100%;
         top: 0;
         left: 1.5%;
@@ -308,14 +308,6 @@ nav {
         transition: background-color 0.45s ease;
     }
 
-    .pc_menu::before {
-        content: "";
-        width: 88%;
-        margin: 0 auto;
-        position: fixed;
-        top: 0;
-    }
-
     .pc_menu ul {
         width: 100%;
         padding: 0;
@@ -330,7 +322,7 @@ nav {
     }
 
     .pc_menu li {
-        height: 85px;
+        height: 100px;
     }
 
     .pc_menu a {
@@ -361,23 +353,21 @@ nav {
 
     .logo {
         position: relative;
-        top: -3vmin;
-        margin-bottom: -3%;
+        top: -4vmin;
         transform: rotate(-90deg);
         border-left: 1px solid var(--border);
         border-right: 1px solid var(--border);
         z-index: 1;
 
         img {
-            width: 6vmin;
+            width: 5vmin;
         }
 
         a {
-            width: fit-content;
+            width: 55px;
         }
 
         a:hover {
-            color: var(--accent-color);
             background: none;
         }
     }
