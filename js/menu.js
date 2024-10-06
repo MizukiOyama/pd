@@ -76,22 +76,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // オーディオトグル機能
-    const toggleSwitch = document.getElementById('soundToggle');
-    const backgroundAudio = document.getElementById('backgroundAudio');
-
-    if (toggleSwitch && backgroundAudio) {
-        toggleSwitch.addEventListener('change', function () {
-            if (toggleSwitch.checked) {
-                console.log('Audio playing...');
-                backgroundAudio.play();
-            } else {
-                console.log('Audio stopped...');
-                backgroundAudio.pause();
-                backgroundAudio.currentTime = 0; // 再生位置をリセット
-            }
-        });
-    } else {
-        console.error('Toggle switch or background audio element not found');
-    }
-});
