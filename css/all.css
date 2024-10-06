@@ -180,22 +180,9 @@ h2 {
     font-weight: 500;
     font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
     width: fit-content;
-    color: rgba(46, 46, 46, 0);
-    margin-top: -15px;
-    margin-bottom: -15px;
+    line-height: 5rem;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--bg-color);
-}
-
-.service .section2 h2 {
-    margin-bottom: -12px;
-}
-.policy h2 {
-    margin-bottom: 0.5%;
-}
-.policy .section4 h2,
-.section7 h2 {
-    margin-bottom: 1.5%;
 }
 
 h3 {
@@ -434,8 +421,8 @@ section .top-s::before {
 }
 .h2-bg {
     font-family: sans-serif;
-    width: fit-content;
-    height: 100px;
+    width: 50%;
+    height: 150px;
     border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     padding: 0 2rem;
@@ -446,9 +433,7 @@ section .top-s::before {
     justify-content: center;
     flex-direction: column;
 }
-.policy .h2-bg p {
-    margin-top: -17px;
-}
+
 .h2-bg p::before {
     content: "";
     width: 100%;
@@ -457,7 +442,7 @@ section .top-s::before {
     left: 0;
     bottom: 0;
     border-top: 1px solid var(--border);
-    background-color: rgba(217, 217, 217, 0.35);
+    background-color: rgba(217, 217, 217, 0.15);
     background-image: repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
     animation: moveBackground 0.85s linear infinite;
 }
