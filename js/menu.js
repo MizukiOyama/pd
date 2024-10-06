@@ -75,33 +75,27 @@ document.addEventListener("DOMContentLoaded", function () {
             img.style.cursor = "grab";
         });
     }
+});
 
-    // オーディオ再生のトグル機能
+
+document.addEventListener('DOMContentLoaded', function () {
     const toggleSwitch = document.getElementById('soundToggle');
     const backgroundAudio = document.getElementById('backgroundAudio');
-    const toggleIcon = document.getElementById('toggleIcon');
+
+    // 要素の確認
+    console.log('Toggle Switch:', toggleSwitch);
+    console.log('Background Audio:', backgroundAudio);
 
     if (toggleSwitch && backgroundAudio) {
-        // 初期設定：オーディオはミュート
-        backgroundAudio.muted = true;
-
         toggleSwitch.addEventListener('change', function () {
             if (toggleSwitch.checked) {
-                backgroundAudio.muted = false;  // ミュート解除
-                backgroundAudio.play().catch(error => {
-                    console.error('Audio play failed:', error);
-                });
-                toggleIcon.classList.remove('fa-power-off');
-                toggleIcon.classList.add('fa-volume-up');
+                backgroundAudio.play();
             } else {
                 backgroundAudio.pause();
-                backgroundAudio.currentTime = 0;  // 再生位置をリセット
-                toggleIcon.classList.remove('fa-volume-up');
-                toggleIcon.classList.add('fa-power-off');
+                backgroundAudio.currentTime = 0;
             }
         });
     } else {
         console.error('Toggle switch or background audio element not found');
     }
-
 });
