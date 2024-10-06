@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
     const toggleSwitch = document.getElementById('soundToggle');
     const backgroundAudio = document.getElementById('backgroundAudio');
