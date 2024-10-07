@@ -406,7 +406,7 @@ section {
 
 .tabs .caption {
     position: absolute;
-    top: 75%;
+    bottom: 0;
     left: 0;
     padding: 1.5rem 1rem 1.5rem 4rem;
     border: 1px solid var(--border);
