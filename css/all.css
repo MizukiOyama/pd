@@ -154,14 +154,14 @@ body::after {
 
 h1 {
     /*font-size: 62.5%;=16px 12rem=120px*/
-    font-size: clamp(6rem, calc(6rem + 0.1vw), 8rem);
+    font-size: clamp(20rem, calc(20rem + 0.1vw), 24rem);
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     color: var(--bg-color);
     width: fit-content;
-    line-height: 10rem;
-    letter-spacing: 0.4rem;
+    line-height: 24rem;
+    letter-spacing: 5.4rem;
 }
 
 .noise {
