@@ -484,9 +484,11 @@ section .top-s::before {
     left: 0;
     bottom: 0;
     border-top: 1px solid var(--border);
-    background-color: rgba(217, 217, 217, 0.15);
     background-image: repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
     animation: moveBackground 0.85s linear infinite;
+}
+.tabs .h2-bg p::before {
+    display: none;
 }
 
 .section4 .top-s {
