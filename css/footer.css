@@ -41,13 +41,13 @@
     }
 
     footer a {
-        font-size: clamp(2.8rem, calc(2.8rem + 0.1vw), 3rem);
+        font-size: clamp(3rem, calc(3rem + 0.1vw), 3.4rem);
         margin: 1rem 0 0 2rem;
         padding: 0.5rem;
     }
 
     footer div a {
-        font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
+        font-size: clamp(2.4rem, calc(2.4rem + 0.1vw), 2.8rem);
     }
 
     footer a:hover {
