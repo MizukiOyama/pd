@@ -458,6 +458,16 @@ section .top-s::before {
     display: none;
 }
 
+section .top-s::after {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border-right: 1px solid var(--border);
+    z-index: -1;
+}
+
 
 .h2-bg {
     font-family: sans-serif;
