@@ -202,9 +202,9 @@ h2 {
     /*font-size: 62.5%;=16px 6rem=62px*/
     font-family: sans-serif;
     font-weight: 500;
-    font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
+    font-size: clamp(7.4rem, calc(7.4rem + 0.1vw), 8rem);
     width: fit-content;
-    line-height: 5rem;
+    line-height: 6rem;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--bg-color);
 }
@@ -462,7 +462,7 @@ section .top-s::before {
 .h2-bg {
     font-family: sans-serif;
     width: fit-content;
-    height: 100px;
+    height: 120px;
     border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     padding: 0 2rem;
