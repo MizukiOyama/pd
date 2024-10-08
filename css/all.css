@@ -286,12 +286,15 @@ a {
     text-decoration: none;
 }
 
-head a:hover,
-footer a:hover {
+main a {
+    border: 1px solid var(--border);
+}
+
+a:hover {
     color: rgba(217, 217, 217, 0.5);
 }
 
-head a::after,
+header a::after,
 footer a::after {
     content: "";
     width: 100%;
@@ -305,20 +308,18 @@ footer a::after {
     transition: transform 0.3s ease;
 }
 
-head a:hover::after,
+header a:hover::after,
 footer a:hover::after {
     transform-origin: left top;
     transform: scale(1, 1);
 }
 
-body .button {
+main .button {
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 1;
     text-decoration: none;
-    font-size: 18px;
-    border-radius: 0px;
     width: 200px;
     height: 40px;
     position: relative;
@@ -326,7 +327,7 @@ body .button {
     border: 1px solid var(--border);
   }
 
-body .button::before, body.button::after {
+main .button::before, main .button::after {
     content: "";
     display: block;
     position: absolute;
@@ -336,17 +337,17 @@ body .button::before, body.button::after {
     transition: .3s;
   }
 
-  body .button::before {
+  main .button::before {
     top: -2px;
     left: -2px;
   }
   
-  body .button::after {
+  main .button::after {
     top: 2px;
     left: 2px;
   }
   
-  body .button:hover::before, body .button:hover::after {
+  main .button:hover::before, main .button:hover::after {
     top: 0;
     left: 0;
   }
