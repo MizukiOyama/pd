@@ -286,7 +286,7 @@ a {
     text-decoration: none;
 }
 
-main a {
+.top-s a {
     border: 1px solid var(--border);
 }
 
@@ -338,13 +338,13 @@ main .button::before, main .button::after {
   }
 
   main .button::before {
-    top: -2px;
-    left: -2px;
+    top: -3px;
+    left: -3px;
   }
   
   main .button::after {
-    top: 2px;
-    left: 2px;
+    top: 3px;
+    left: 3px;
   }
   
   main .button:hover::before, main .button:hover::after {

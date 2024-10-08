@@ -47,6 +47,7 @@
 }
 .tab a:hover {
     color: var(--accent-color);
+    background: var(--accent-color);
     transition: all 0.35s ease;
 }
 
