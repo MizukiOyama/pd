@@ -347,7 +347,7 @@ nav {
 
     .pc_menu a:hover {
         color: var(--hover-color);
-        background-color: var(--accent-color);
+        -webkit-text-stroke-color: var(--accent-color);
     }
 
 

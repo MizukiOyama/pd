@@ -45,7 +45,7 @@
     transition: all 0.5s ease;
     text-shadow: -1px -1px  var(--text-color), -1px 1px  var(--text-color), 1px -1px  var(--text-color), 1px 1px var(--text-color);
 }
-.tab:hover {
+.tab a:hover {
     color: var(--accent-color);
     transition: all 0.35s ease;
 }
