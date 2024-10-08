@@ -285,12 +285,14 @@ a {
     display: inline-block;
     text-decoration: none;
 }
-/*
-a:hover {
+
+head a:hover,
+footer a:hover {
     color: rgba(217, 217, 217, 0.5);
 }
 
-a::after {
+head a::after,
+footer a::after {
     content: "";
     width: 100%;
     height: 1px;
@@ -303,12 +305,13 @@ a::after {
     transition: transform 0.3s ease;
 }
 
-a:hover::after {
+head a:hover::after,
+footer a:hover::after {
     transform-origin: left top;
     transform: scale(1, 1);
-}*/
+}
 
-.button {
+body .button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,8 +325,8 @@ a:hover::after {
     transition: 0.3s;
     border: 1px solid var(--border);
   }
-  
-.button::before, .button::after {
+
+body .button::before, body.button::after {
     content: "";
     display: block;
     position: absolute;
@@ -332,18 +335,18 @@ a:hover::after {
     height: 100%;
     transition: .3s;
   }
-  
-  .button::before {
+
+  body .button::before {
     top: -2px;
     left: -2px;
   }
   
-  .button::after {
+  body .button::after {
     top: 2px;
     left: 2px;
   }
   
-  .button:hover::before, .button:hover::after {
+  body .button:hover::before, body .button:hover::after {
     top: 0;
     left: 0;
   }
