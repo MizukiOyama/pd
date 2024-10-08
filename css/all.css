@@ -318,7 +318,7 @@ a:hover::after {
     position: relative;
 }
 
-.hr::before {
+/*.hr::before {
     content: "";
     display: block;
     position: absolute;
@@ -346,7 +346,7 @@ a:hover::after {
     100% {
         transform: translateX(100%);
     }
-}
+}*/
 
 /*===================== img =====================*/
 img {
