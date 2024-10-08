@@ -458,7 +458,10 @@ section .top-s::before {
     display: none;
 }
 
-section .top-s::after {
+.top .tabs::after,
+.top .section1::after,
+.top .section2::after,
+.top .section3::after {
     content: "";
     width: 50%;
     height: 100%;
