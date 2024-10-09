@@ -41,8 +41,8 @@ h1 {
     /*font-size: 62.5%;=16px 12rem=120px*/
     font-size: clamp(10rem, calc(10rem + 0.1vw), 14rem);
     width: 100%;
-    line-height: 24rem;
-    letter-spacing: 5.4rem;
+    line-height: 10rem;
+    letter-spacing: 0.85rem;
 }
 
 /*.noise {
@@ -108,7 +108,7 @@ main::before {
 
 main a {
     padding: 1rem;
-    margin-top: 1rem;
+    margin-top: 12vmin;
     letter-spacing: 0.15rem;
 }
 
@@ -214,7 +214,7 @@ section {
     left: 0;
     width: 100%;
     mix-blend-mode: plus-lighter;
-    padding: 0.15rem 4rem;
+    padding: 0.15rem 1rem;
     border: 1px solid var(--border);
     border-top: 0;
     border-left: 0;
@@ -233,14 +233,14 @@ section {
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 1.5rem 1rem 1.5rem 4rem;
+    padding: 1.5rem 1rem 1.5rem 1rem;
     border: 1px solid var(--border);
     border-left: 0;
 }
 
 .tabs .top-h1 .caption {
     font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     border-top: 1px solid var(--border);
 }
 
@@ -248,8 +248,10 @@ section {
 
 /*===================== section =====================*/
 section .top-s {
-    height: 500px;
+    height: 550px;
     padding: 0 5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 section .top-s::before {
@@ -293,8 +295,8 @@ section .top-s::before {
 }
 
 section .top-s .text {
-    width: 500px;
-    margin: 17vmin 0 2%;
+    width: 90%;
+    margin: 40vmin auto 2%;
 }
 
 #tab-2 .top-s .text,
