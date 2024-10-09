@@ -296,7 +296,7 @@ section .top-s::before {
 
 section .top-s .text {
     width: 90%;
-    margin: 40vmin auto 2%;
+    margin: 0;
 }
 
 #tab-2 .top-s .text,
@@ -307,7 +307,7 @@ section .top-s .text {
 /*===================== .service =====================*/
 
 .se-list {
-    width: 650px;
+    width: 450px;
     position: absolute;
     right: 0;
     bottom: 5%;
