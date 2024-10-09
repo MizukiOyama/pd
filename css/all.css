@@ -105,7 +105,7 @@ body::before {
     /*animation: moveBackground 10s linear infinite;*/
 }
 
-@keyframes moveBackground {
+/*@keyframes moveBackground {
     0% {
         background-position: 0 0;
     }
@@ -113,7 +113,7 @@ body::before {
     100% {
         background-position: 10% 10%;
     }
-}
+}*/
 
 body::after {
     content: '';
@@ -127,7 +127,7 @@ body::after {
     /*animation: bg-img-move 5s linear infinite, bg-img-rotate 10s linear infinite;*/
 }
 
-@keyframes bg-img-move {
+/*@keyframes bg-img-move {
     0% {
         background-position: 0% 0%;
     }
@@ -145,7 +145,7 @@ body::after {
     100% {
         transform: rotate(360deg);
     }
-}
+}*/
 
 * {
     box-sizing: border-box;
@@ -507,8 +507,8 @@ section .top-s::before {
     left: 0;
     border-top: 1px solid var(--border);
     border-right: 1px solid var(--border);
-    /*background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);*/
-    animation: moveBackground 0.55s linear infinite;
+    /*background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
+    animation: moveBackground 0.55s linear infinite;*/
 }
 .tabs .top-s::before {
     display: none;

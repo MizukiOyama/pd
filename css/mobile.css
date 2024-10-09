@@ -6,222 +6,439 @@
         display: block;
     }
 
-/*===================== head =====================*/
-.head {
-    position: absolute;
-    top: 0.3%;
-    left: 2%;
-    z-index: 1;
-
-    a {
-        padding: 0.25em 0.5em;
-
-        img {
-            width: 60vmin;
-        }
-    }
-
-}
-/*===================== head =====================*/
+/*===================== Scrollbar =====================*/
 
 /*===================== body text =====================*/
 
-h1 {
-    font-size: clamp(4rem, calc(4rem + 0.1vw), 6rem);
-    line-height: 1em;
+body {
+    font-weight: 500;
+    padding-top: 1.5%;
 }
 
+body::before {
+    top: 0;
+    left: 7%;
+    width: 8%;
+    height: 100%;
+    background-size: auto auto;
+    background-image:
+        linear-gradient(90deg, transparent 1%, rgba(146, 146, 146, 0.25) 2%),
+        /* Vertical line */
+        linear-gradient(0deg, transparent 1%, rgba(146, 146, 146, 0.25) 2%);
+    /* Horizontal line */
+    background-size: 50px 5px, 5px 50px;
+    /* Horizontal line spans full width, vertical line spans full height */
+    background-position: center;
+    /*animation: moveBackground 10s linear infinite;*/
+}
+
+body::after {
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
+    opacity: 0.1;
+}
+
+h1 {
+    /*font-size: 62.5%;=16px 12rem=120px*/
+    font-size: clamp(10rem, calc(10rem + 0.1vw), 14rem);
+    line-height: 24rem;
+    letter-spacing: 5.4rem;
+}
+
+/*.noise {
+    background: linear-gradient(to bottom right, var(--bg-color), var(--text-color)) fixed;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: darkgray;
+    --lines: 0.0003px;
+    mask: repeating-radial-gradient(circle at center,
+            #000,
+            var(--lines),
+            #000,
+            0,
+            #0000,
+            calc(var(--lines) * 2),
+            #0000 0);
+}
+
+
+@media (prefers-color-scheme: light) {
+    .noise {
+        background: linear-gradient(to bottom, black, gray) fixed;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: darkgray;
+    }
+}*/
+
 h2 {
-    font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3rem);
+    /*font-size: 62.5%;=16px 6rem=62px*/
+    font-size: clamp(8rem, calc(8rem + 0.1vw), 8.4rem);
+    line-height: 7rem;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--bg-color);
+}
+.policy h2 {
+    line-height: 8rem;
 }
 
 h3 {
-    font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 2.8rem);
+    /*font-size: 62.5%;=16px 4rem=42px*/
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 4rem);
 }
 
-main p {
-    line-height: 2.2rem;
-}
-p,
-main .section4 .note p {
-    font-size: clamp(0.9rem, calc(0.9rem + 0.5vw), 1rem);
-    letter-spacing: 0.05rem;
-    line-height: 1.2rem;
-    text-shadow: 1px 1px 4px rgba(86, 86, 86, 0.65);
-    animation: fade 1s ease-in-out forwards;
-}
-
-
-@keyframes fade {
-    from {
-        filter: blur(3px);
-        opacity: 0;
-    }
-    to {
-        filter: blur(0px);
-        opacity: 1;
-    }
-}
-.tate {
-    writing-mode: vertical-rl;
-    line-height: 2.5rem;
+p {
+    /*font-size: 62.5%;=16px 1.2rem=12px*/
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
+    letter-spacing: -0.075rem;
 }
 
 ol,
 ul {
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
 }
 
 li {
-    font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
 }
-
-/*===================== body text =====================*/
 
 /*===================== リンク =====================*/
+
+main::before {
+    width: 89%;
+}
+
 main a {
+    padding: 1rem;
+    margin-top: 1rem;
     letter-spacing: 0.15rem;
 }
-a,
-.note a {
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
-    padding: 0.25em 0;
+
+a {
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2.4rem);
+    padding: 0.25rem 0.5rem;
+    left: 0;
+    bottom: 0;
 }
+
+.top-s a {
+    border: 1px solid var(--border);
+}
+
 a:active {
-    color: var(--sub-color);
+    color: rgba(217, 217, 217, 0.5);
 }
-a::after {
-    background-color: var(--base-color);
+
+header a::after,
+footer a::after {
     content: "";
+    width: 100%;
+    height: 1px;
     bottom: 5px;
+    position: absolute;
+    left: 0;
+    background-color: var(--bg-color);
+    transform: scale(0, 1);
+    transform-origin: right top;
     transition: transform 0.3s ease;
 }
-a:active::after {
+
+header a:hover::after,
+footer a:hover::after {
     transform-origin: left top;
     transform: scale(1, 1);
 }
 
+main .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    width: 200px;
+    height: 40px;
+    position: relative;
+    transition: 0.3s;
+    border: 1px solid var(--border);
+  }
+
+main .button::before, main .button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 1px solid var(--border);
+    width: 100%;
+    height: 100%;
+    transition: .3s;
+  }
+
+  main .button::before {
+    top: -5px;
+    left: -5px;
+  }
+  
+  main .button::after {
+    top: 3px;
+    left: 3px;
+  }
+  
+  main .button:active::before, main .button:active::after {
+    top: 0;
+    left: 0;
+  }
 /*===================== リンク =====================*/
 
-/*===================== Section =====================*/
-section {
-    width: 95%;
-    margin: 0 auto;
-    background: linear-gradient(rgba(246, 246, 246, 0.455), rgba(246, 246, 246, 0.455)), url("https://mizukioyama.github.io/pd/hp-img/section01-modan-new.png") no-repeat center center;
-    background-size: cover;
+.hr {
+    height: 0.5px;
 }
-/*
-#tab-1 {
-    background: url('https://mizukioyama.github.io/pd/hp-img/original-bg.png') no-repeat center center;
-}*/
-
-
-/*===================== h1 top =====================*/
-section .top-h1 {
-    font-weight: 600;
-    position: absolute;
-    top: 45%;
-    left: 5%;
-    color: var(--base-color);
+.hr::after {
+    height: 140px;
+    top: -70px;
 }
 
-section .top-h1 .h1 {
-    font-size: clamp(3rem, calc(3rem + 0.1vw), 4rem);
-    margin-left: 70%;
-}
-
-section .top-h1 .caption {
-    font-size: clamp(1.2rem, calc(1.3rem + 0.1vw), 1.4rem);
-    margin: 0;
-}
-/*===================== h1 top =====================*/
-
-/*===================== section p =====================*/
-section .top-s {
-    height: 400px;
-    padding: 2em 0;
-    margin-top: 10%;
-    z-index: 1;
-    text-align: justify;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    /* 縦に並べる */
-    justify-content: center;
-    /*縦方向の中央寄せ */
-}
-section .top-s .text {
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
-    font-weight: 600;
-    margin: 0 0 5% 0;
-    text-align: left;
-}
-
-
-section .top-s h2 {
-    top: -13%;
-}
-
-section .top-s p {
-    color: var(--base-color);
-}
-
-/*===================== section in-box =====================*/
-#tab-1,
-#tab-2,
-#tab-3,
-#tab-4,
-#tab-5 {
-    margin-bottom: 2%;
-}
-#tab-4 .top-s {
-    margin-top: 0;
-}
-
-#tab-4 .box {
-    justify-content: center;
-}
-
-
-/*#tab-1 .top-s,
-#tab-3 .top-s,
-#tab-5 .top-s {
-    transform: translate(40%, 25%);
-}
-
-#tab-2 .top-s {
-    transform: translate(-40%, 25%);
-}*/
-
-/*.section2 p {
-    margin: 0 auto;
-    padding: 1em;
-    border: 1px solid var(--base-color);
-    display: flex;
-    justify-content: center;
-}*/
-
-
-
-/*===================== Section =====================*/
 
 /*===================== img =====================*/
 img {
     max-width: 100%;
     width: 65%;
-    height: auto;
-    object-fit: cover;
-    vertical-align: middle;
-    font-style: italic;
-    background-repeat: no-repeat;
-    background-size: cover;
     shape-margin: 0.75rem;
-    mix-blend-mode: color-burn;
+    mix-blend-mode: luminosity;
+}
+
+
+/*===================== Section =====================*/
+section {
+    width: 89%;
+}
+
+/*===================== tabs h1 top =====================*/
+.tabs .top-h1 {
+    top: 0;
+    left: 0;
+    mix-blend-mode: plus-lighter;
+    padding: 0.15rem 4rem;
+    border: 1px solid var(--border);
+    border-top: 0;
+    border-left: 0;
+    z-index: 1;
+}
+
+.tabs video {
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    right: 0.5%;
     z-index: 0;
 }
 
-section #top-img {
+.tabs .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 1.5rem 1rem 1.5rem 4rem;
+    border: 1px solid var(--border);
+    border-left: 0;
+}
+
+.tabs .top-h1 .caption {
+    font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
+    padding: 1rem 0;
+    border-top: 1px solid var(--border);
+}
+
+/*===================== h1 top =====================*/
+
+/*===================== section =====================*/
+section .top-s {
+    height: 500px;
+    padding: 0 5rem;
+}
+
+section .top-s::before {
+    content: "";
+    width: 120px;
+    height: 80px;
+}
+
+.top .tabs::after,
+.top .section1::after,
+.top .section2::after,
+.top .section3::after {
+    width: 50%;
+    height: 100%;
+}
+
+
+.h2-bg {
+    height: 120px;
+    padding: 0 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.policy .h2-bg {
+    width: 50%;
+    height: 50px;
+}
+.policy .h2-bg span {
+    font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
+}
+
+.h2-bg p::before {
+    content: "";
     width: 100%;
+    height: 7%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top: 1px solid var(--border);
+    background-color: rgba(217, 217, 217, 0.15);
+    background-image: repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
+    animation: moveBackground 0.85s linear infinite;
+}
+
+.section4 .top-s {
+    justify-content: center;
+}
+
+section .top-s .text {
+    width: 500px;
+    margin: 17vmin 0 2%;
+}
+
+#tab-2 .top-s .text,
+#tab-3 .top-s .text {
+    margin-bottom: 0;
+}
+
+/*===================== .service =====================*/
+
+.se-list {
+    width: 650px;
+    position: absolute;
+    right: 0;
+    bottom: 5%;
+}
+
+.top .se {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    margin-top: 2.5rem;
+}
+
+.top .se h3 {
+    width: 300px;
+    position: absolute;
+    bottom: 20%;
+    margin-top: 4rem;
+    padding: 0 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.top .se-list h3,
+.top .se-list p {
+    right: 0;
+}
+
+.top .se-02 h3 {
+    width: 400px;
+}
+
+.top .se-03 h3 {
+    width: 500px;
+}
+
+.top .se p {
+    position: absolute;
+    bottom: 20%;
+    padding-right: 0.2rem;
+}
+
+/*video size*/
+.top .se .video-1,
+.top .se .video-2,
+.top .se .video-3 {
+    height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid var(--border);
+    border-right: 0;
+}
+
+.se .video-1::before,
+.se .video-2::before,
+.se .video-3::before {
+    content: "";
+    width: 35px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    border-right: 1px solid var(--border);
+}
+
+.se .video-1 {
+    width: 300px;
+}
+
+.se .video-2 {
+    width: 400px;
+}
+
+.se .video-3 {
+    width: 500px;
+}
+
+/*===================== .works =====================*/
+
+.work {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.design,
+.art {
+    position: absolute;
+    border: 1px solid var(--border);
+}
+
+.design {
+    right: 23vmin;
+    width: 380px;
+    height: 400px;
+}
+
+.design h3 {
+    padding-left: 0.5rem;
+}
+
+.design video {
+    width: 350px;
+    height: 350px;
+    margin-left: 2%;
+    background: var(--bg-color);
+}
+
+.art {
+    right: -8vmin;
+    width: 300px;
+    height: 260px;
+    border-left: 0;
+}
+
+.art video {
+    width: 280px;
+    height: 280px;
+    background: var(--bg-color);
+}
+
+/*===================== section in-box =====================*/
+
+section #top-img {
+    width: 80%;
     top: -10%;
     right: 0;
 }
@@ -231,105 +448,58 @@ section img {
     position: absolute;
 }
 
-.section1 img,
-.section2 img,
-.section3 img,
-.section4 img {
+.tabs img {
+    width: 70%;
+    top: -15%;
+    right: -5%;
+}
+
+.top .section1 img,
+.top .section2 img,
+.top .section3 img,
+.top .section4 img {
     width: 35%;
+    background: var(--hover-color);
 }
 
-.section1 img {
-    width: 45%;
-    bottom: -5%;
-    left: 0;
-    /*transform:rotate(-10deg);*/
+.top .section1 img {
+    height: 400px;
+    top: 25%;
+    right: -5%;
+    /*clip-path: circle(40% at left);*/
 }
 
-.section2 img {
+.top .section1 img:last-child {
+    width: 30%;
+    height: 350px;
+    top: 45%;
+    right: 15%;
+}
+
+.top .section3 img {
     width: 25%;
-    bottom: 3%;
-    right: 3%;
-}
-
-.section3 img {
-    width: 25%;
     left: 0;
     bottom: 3%;
 }
 
-.section4 img {
+.top .section4 img {
     width: 45%;
     bottom: -5%;
     right: 0;
-    transform:rotate(180deg);
-}
-/*===================== .img*/
-.section1 .img,
-.section2 .img,
-.section3 .img,
-.section4 .img {
-    width: clamp(300px, 100%, 250px);
-    height: 300px;
-    /*border: 3px solid var(--base-color);*/
-    position: absolute;
-    z-index: 1;
-    background-size: cover;
-    mix-blend-mode: color-burn;
+    transform: rotate(180deg);
 }
 
-.section1 .img,
-.section3 .img {
-    content: "";
-    top: 5%;
-    left: 0%;
-    background: url('https://mizukioyama.github.io/pd/hp-img/tower.png') no-repeat center center;
+/*===================== bg-aitem =====================*/
+.bg-aitem {
+    width: 300px;
+    height: 100px;
+    position: relative;
+    background: var(--bg-color);
 }
 
-.section3 .img {
-    background: url('https://mizukioyama.github.io/pd/hp-img/skill01.png') no-repeat center center;
-}
-
-.section2 .img,
-.section4 .img {
-    content: "";
-    width: 80%;
-    height: 230px;
-    right: 0%;
-    top: 0%;
-    background: url('https://mizukioyama.github.io/pd/hp-img/overall.png') no-repeat center center;
-}
-
-.section4 .img {
-/*    width: clamp(600px, 100%, 400px);
-    height: 450px;*/
-    background: url('https://mizukioyama.github.io/pd/hp-img/ai-service01.png') no-repeat center center;
-}
-
-
-/*===================== Top =====================*/
-.top .section1 .box,
-.top .section3 .box {
-    justify-content: end;
-}
-
-.top .section1 .top-s h2,
-.top .section2 .top-s h2,
-.top .section3 .top-s h2 {
-    position: absolute;
-    right: 0;
-}
-.top .section1 .top-s,
-.top .section2 .top-s,
-.top .section3 .top-s {
-    margin: 30% auto 0;
-    /*flex-direction: row-reverse;*/
-}
-.top .section1 .top-s,
-.top .section3 .top-s {
-    
-}
-.top .section2 .top-s {
-    
+.top section .top-s .text:nth-child(3) {
+    width: 350px;
+    margin: 2% 0 0;
 }
 
 .top #tab-4 .top-s .text {
@@ -337,123 +507,277 @@ section img {
     margin: 0 auto;
 }
 
-/*===================== Top / About*/
-.top .section4 .top-s,
-.about .section4 .top-s {
-    width: 90%;
-    height: 600px;
-    padding: 0em 0.5em;
-    align-items: center;
-    background: rgba(245, 252, 246, 0.7);
-}
 
-
-/*===================== Top / Contact*/
-
-.top .section4 h3 {
-    font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
-    font-weight: 400;
-    line-height: 4.5rem;
-}
-
-.top .section4 .top-s::before,
-.contact .section4 .top-s::before {
-    content: "";
-    width: 50%;
-    height: 0;
-    border-style: solid;
-    border-width: 55px 75px 0 75px;
-    border-color: var(--main-color) transparent transparent transparent;
-    position: absolute;
-    top: -3%;
-    z-index: -1;
-    opacity: 0.4;
-    /*background: repeating-linear-gradient(-215deg, rgba(0, 58, 66, 0.8), rgba(0, 58, 66, 0.55) 70px, rgba(0, 58, 66, 0.8) 0, rgba(0, 58, 66, 0.55) 70px);*/
-}
 /*===================== Top =====================*/
 
 /*===================== About =====================*/
-.about #top-img {
-    width: 75%;
-    top: 10%;
-    right: -5%;
+.about section .top-s {
+    flex-direction: row;
+    justify-content: center;
 }
 
-.about #tab-1 .top-s,
-.about #tab-2 .top-s,
-.about #tab-3 .top-s,
-.about #tab-4 .top-s,
-.about #tab-5 .top-s {
+.about #tab-1 .top-s .text {
+    width: 500px;
+    margin: 17vmin auto 2%;
+}
+
+.about .bg-aitem {
+    width: 500px;
+    height: 55px;
+    position: relative;
     margin: 0 auto;
-    transform: translate(0%, 0%);
 }
 
-.about #tab-1 .top-s p,
-.about #tab-2 .top-s p,
-.about #tab-3 .top-s p,
-.about #tab-4 .top-s p,
-.about #tab-5 .top-s p {
-    width: 83%;
+.thoughts {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
 }
 
-.about .section4 h3 {
-    font-size: clamp(4rem, calc(4rem + 0.5vw), 6rem);
-    font-weight: 400;
-    line-height: 4.5rem;
+.thoughts p {
+    width: 245px;
+    margin: 2% 0 0;
 }
 
-.about #tab-4 .top-s .text {
-    text-align: center;
-    margin: 3% auto 0;
+/*========== .works */
+
+.about .work {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/*===================== About img */
-.about .section1 img,
-.about .section2 img,
-.about .section3 img,
-.about .section4 img {
-    width: 35%;
+.about h3 {
+    font-size: clamp(14rem, calc(14rem + 0.1vw), 16rem);
+    color: var(--bg-color);
+    position: relative;
+    padding-left: 0;
+    z-index: 1;
 }
 
-.about .section1 img {
-    width: 30%;
-    bottom: 3%;
-    left: 3%;
-    /*transform:rotate(-10deg);*/
+.about .design,
+.about .art {
+    width: 380px;
+    height: 380px;
+    position: relative;
+    border: 1px solid var(--border);
 }
 
-.about .section2 img {
-    width: 25%;
-    bottom: 3%;
-    right: 3%;
+.about .design {
+    left: -2.5%;
 }
 
-.about .section3 img {
-    width: 25%;
-    right: 0;
-    bottom: 3%;
+.about .art {
+    right: -2.5%;
 }
+
+.about .design video,
+.about .art video {
+    position: absolute;
+    top: 2.5%;
+    left: 2.5%;
+    width: 92.5%;
+    height: 92.5%;
+    margin: 0;
+    background: var(--hover-color);
+    border: 5px solid var(--bg-color);
+}
+
+/*========== .works */
+
+.profile {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.oyama,
+.like {
+    width: 50%;
+    margin: 0 0.5%;
+}
+
+.profile ol {
+    height: 100%;
+    padding-left: 1rem;
+    margin: 0 auto 5%;
+}
+
+.profile ol p {
+    position: relative;
+}
+
+.profile ol div {
+    padding-left: 10px;
+
+}
+
+.profile li {
+    width: 100%;
+    margin-bottom: -2%;
+}
+
+.profile li br {
+    display: block;
+    content: "";
+    margin: -3px 0;
+}
+
+.profile li::before {
+    content: "・";
+    display: block;
+    position: relative;
+    left: -13px;
+    bottom: -18px;
+}
+
+.profile li span {
+    font-size: clamp(0.8rem, calc(0.8rem + 0.1vw), 1rem);
+}
+
+.profile .like video {
+    width: 450px;
+    margin-bottom: 5%;
+}
+
+.profile video {
+    background: var(--hover-color);
+}
+
+/*========== .color */
+
+.about .section4 .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20vmin;
+    padding: 1rem;
+    background-color: var(--border);
+}
+
+.about .section4 .bg-aitem {
+    font-size: clamp(1.2rem, calc(1.2rem + 0.1vw), 1.6rem);
+    width: 95px;
+    height: 170px;
+    margin: 0 1%;
+    padding: 1rem;
+    border: 1px solid var(--hover-color);
+}
+
+.about .section4 .bg-aitem:nth-child(1) {
+    background: var(--text-color);
+}
+
+.about .section4 .bg-aitem:nth-child(2) {
+    color: var(--border);
+    background: var(--hover-color);
+}
+
+.about .section4 .bg-aitem:nth-child(3) {
+    color: var(--text-color);
+}
+
+.about .section4 .bg-aitem:nth-child(4) {
+    color: var(--bg-color);
+    background: var(--accent-color);
+}
+
+.about .section4 .bg-aitem:nth-child(5) {
+    color: var(--text-color);
+    background: none;
+}
+
+
 /*===================== About =====================*/
 
 /*===================== Service =====================*/
-.service section .top-s {
-    height: 600px;
-    margin: 0;
-    padding: 2em 0;
+
+.service .section1 video {
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    background: var(--text-color);
+    z-index: -1;
+    mix-blend-mode: difference;
+}
+
+.service .top-s,
+.policy .top-s,
+.contact .top-s {
     align-items: center;
-    background: rgba(245, 252, 246, 0.7);
+    justify-content: center;
+}
+
+.policy .top-s .text,
+.contact .top-s .text {
+    margin: 0;
+}
+
+/*========== .service img */
+.service .section3 img {
+    width: 55%;
+}
+
+.flow-ol {
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+    font-weight: 600;
 }
 
 .flow {
-    margin-bottom: 3%;
+    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
+    font-weight: 500;
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
 }
 
-.service .section4 .option,
-.service .section5 .option {
-    width: 100%;
+.option {
+    width: calc(800px - 100px);
+    height: 350px;
+    padding: 1rem 0.5rem;
+    border: 1px solid var(--border);
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+}
+
+.option h3 {
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+    height: 35px;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--border);
+}
+
+.option ol {
+    width: 100%;
+    margin: 0 0.3rem;
+}
+
+.option ol div {
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+    font-weight: 500;
+    height: 290px;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    border: 1px solid var(--border);
+}
+
+.option ol li {
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
+    width: fit-content;
 }
 
 /*===================== Service =====================*/
