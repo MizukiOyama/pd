@@ -434,7 +434,7 @@ section {
     top: 0;
     left: 0;
     mix-blend-mode: plus-lighter;
-    padding: 0.15rem 4rem;
+    padding: 0.15rem 0 0 4rem;
     border: 1px solid var(--border);
     border-top: 0;
     border-left: 0;
