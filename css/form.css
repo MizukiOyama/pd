@@ -250,9 +250,11 @@ section .top-s .note p {
     }
 
     .contact-form .submit-btn {
-        font-size: clamp(1rem, calc(1rem + 0.5vw), 1.2rem);
-        width: 65pt;
+        font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
+        width: 75pt;
         height: 30pt;
+        color: var(--text-color);
+        background-color: rgba(217, 217, 217, 0.5);
     }
 
     .contact-form .submit-btn:active {
@@ -260,10 +262,11 @@ section .top-s .note p {
         background: var(--main-color);
     }
     .note {
-        width: 80%;
+        width: 72%;
         line-height: 1rem;
         left: 0.5rem;
         bottom: 1rem;
+        z-index: -1;
     }
     section .top-s .note p {
         width: 80%;
