@@ -11,12 +11,12 @@
     mix-blend-mode: difference;
 }
 
-/* カーソルのスタイル */
+/* カーソルのスタイル #894646*/
 #cursor {
     width: 1px;
     height: 26px;
     transform: translate(300%, -15%) rotate(-40deg);
-    border: 1px solid #894646;
+    border: 1px solid #fff;
     box-shadow: 0 0 3px rgba(255, 255, 255, 0.25); /* 光沢のある効果 */
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
     z-index: 10000;
@@ -25,7 +25,7 @@
 #stalker {
     width: 30px;
     height: 30px;
-    border: 1px solid var(--accent-color);
+    border: 1px solid #fff;
     transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
     box-shadow: 0 0 4px rgba(255, 255, 255, 0.35);
     z-index: 9999;
@@ -42,5 +42,6 @@
     width: 60px !important;
     height: 60px !important;
     border: 1px solid #894646;
+    background: var(--border);
     box-shadow: 0 0 10px rgba(217, 217, 217, 0.6);
 }
