@@ -504,7 +504,7 @@ section .top-s::before {
     left: 0;
     border-top: 1px solid var(--border);
     border-right: 1px solid var(--border);
-    background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
+    /*background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);*/
     animation: moveBackground 0.55s linear infinite;
 }
 .tabs .top-s::before {
