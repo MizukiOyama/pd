@@ -202,11 +202,14 @@ h2 {
     /*font-size: 62.5%;=16px 6rem=62px*/
     font-family: sans-serif;
     font-weight: 500;
-    font-size: clamp(7.4rem, calc(7.4rem + 0.1vw), 8rem);
+    font-size: clamp(8rem, calc(8rem + 0.1vw), 8.4rem);
     width: fit-content;
-    line-height: 6rem;
+    line-height: 7rem;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--bg-color);
+}
+.policy h2 {
+    line-height: 8rem;
 }
 
 h3 {
@@ -543,6 +546,9 @@ section .top-s::before {
 .policy .h2-bg {
     width: 50%;
     height: 150px;
+}
+.policy .h2-bg span {
+    font-size: clamp(6rem, calc(6rem + 0.1vw), 6.4rem);
 }
 
 .h2-bg p::before {
