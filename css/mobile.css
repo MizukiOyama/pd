@@ -71,8 +71,8 @@ h1 {
 
 h2 {
     /*font-size: 62.5%;=16px 6rem=62px*/
-    font-size: clamp(8rem, calc(8rem + 0.1vw), 8.4rem);
-    line-height: 7rem;
+    font-size: clamp(6rem, calc(6rem + 0.1vw), 6.4rem);
+    line-height: 6rem;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--bg-color);
 }
@@ -270,7 +270,7 @@ section .top-s::before {
 
 
 .h2-bg {
-    height: 120px;
+    height: 100px;
     padding: 0 2rem;
     position: absolute;
     top: 0;
