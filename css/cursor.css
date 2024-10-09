@@ -17,7 +17,7 @@
     height: 26px;
     transform: translate(300%, -15%) rotate(-40deg);
     border: 1px solid #894646;
-    box-shadow: 0 0 4px rgba(255, 255, 255, 0.5); /* 光沢のある効果 */
+    box-shadow: 0 0 3px rgba(255, 255, 255, 0.25); /* 光沢のある効果 */
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
     z-index: 10000;
 }
@@ -25,22 +25,22 @@
 #stalker {
     width: 30px;
     height: 30px;
-    border: 1px solid var(--border);
+    border: 1px solid var(--accent-color);
     transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out, height 0.3s ease-in-out;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 4px rgba(255, 255, 255, 0.35);
     z-index: 9999;
 }
 
 /* ホバー時のスタイル */
 .cursor--hover {
     width: 1px !important;
-    height: 30px !important;
+    height: 40px !important;
     border: 1px solid var(--border);
 }
 
 .stalker--hover {
-    width: 40px !important;
-    height: 40px !important;
+    width: 60px !important;
+    height: 60px !important;
     border: 1px solid #894646;
     box-shadow: 0 0 10px rgba(217, 217, 217, 0.6);
 }
