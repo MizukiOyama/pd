@@ -977,17 +977,6 @@ section img {
 
 /*===================== Service =====================*/
 
-.service .section1 video {
-    width: 70%;
-    height: 80%;
-    position: absolute;
-    top: 10%;
-    right: 0%;
-    background: var(--text-color);
-    z-index: -1;
-    mix-blend-mode: difference;
-}
-
 .service .top-s,
 .policy .top-s,
 .contact .top-s {
@@ -998,6 +987,21 @@ section img {
 .policy .top-s .text,
 .contact .top-s .text {
     margin: 0;
+}
+
+.service .section2 h2 {
+    line-height: 9rem;
+}
+
+.service .section1 video {
+    width: 70%;
+    height: 80%;
+    position: absolute;
+    top: 10%;
+    right: 0%;
+    background: var(--text-color);
+    z-index: -1;
+    mix-blend-mode: difference;
 }
 
 /*========== .service img */
