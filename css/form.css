@@ -191,17 +191,21 @@ section .top-s .note p {
 
 
 @media screen and (max-width: 599px) {
+    .form-row {
+        display: block;
+    }
+    
     .col {
         padding: 0 14.5vmin 0 9.5vmin;
     }
     .col.x-50 {
         padding: 0 1.5rem 0;
-        margin-top: 1.5rem;
+        margin: 0.5rem auto 1rem;
     }
     
     .col.x-100 {
-        padding-right: 1.5rem;
-        margin-top: 1.5rem;
+        padding: 0;
+        margin-top: 2rem;
     }
     
     input:-internal-autofill-selected,
@@ -215,7 +219,7 @@ section .top-s .note p {
     }
 
     .content-wrapper {
-        width: 90%;
+        width: 100%;
         padding: 0.5rem 1rem;
         margin: 0 auto;
         position: relative;
@@ -227,29 +231,28 @@ section .top-s .note p {
         font-family: Lusitana, serif;
         font-weight: 400;
         display: block;
-        width: 140px;
-        height: 35px;
-        padding-left: 2rem;
+        width: 100%;
+        height: 45px;
+        padding-left: 0;
         border-width: 0;
         background-color: rgba(217, 217, 217, 0.7);
     }
     
     .contact-form #message {
-        width: 100%;
-        height: 253.45px;
+        height: 85px;
         margin: 0 auto;
     }
 
     .contact-form .label {
-        font-size: clamp(1rem, calc(1rem + 0.1vw), 1.2rem);
-        color: rgba(0, 58, 66, 0.35);
-        left: 25%;
-        line-height: 1.2rem;
+        font-size: clamp(2rem, calc(2rem + 0.1vw), 2.8rem);
+        color: var(--bg-color);
+        left: 2%;
+        line-height: 2rem;
         transition: transform 0.2s ease-in-out;
     }
 
     .contact-form .label-test {
-        left: 13%;
+        left: 2%;
     }
 
     .contact-form .submit-btn {
@@ -264,7 +267,7 @@ section .top-s .note p {
     }
 
     .note p {
-        width: 80%;
+        width: fit-content;
 
     }
 
