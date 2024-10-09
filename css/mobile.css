@@ -40,6 +40,7 @@ body::after {
 h1 {
     /*font-size: 62.5%;=16px 12rem=120px*/
     font-size: clamp(10rem, calc(10rem + 0.1vw), 14rem);
+    width: 100%;
     line-height: 24rem;
     letter-spacing: 5.4rem;
 }
@@ -152,8 +153,8 @@ main .button {
     justify-content: center;
     line-height: 1;
     text-decoration: none;
-    width: 200px;
-    height: 40px;
+    width: fit-content;
+    height: auto;
     position: relative;
     transition: 0.3s;
     border: 1px solid var(--border);
@@ -196,7 +197,6 @@ main .button::before, main .button::after {
 
 /*===================== img =====================*/
 img {
-    max-width: 100%;
     width: 65%;
     shape-margin: 0.75rem;
     mix-blend-mode: luminosity;
@@ -205,13 +205,14 @@ img {
 
 /*===================== Section =====================*/
 section {
-    width: 89%;
+    width: 100%;
 }
 
 /*===================== tabs h1 top =====================*/
 .tabs .top-h1 {
     top: 0;
     left: 0;
+    width: 100%;
     mix-blend-mode: plus-lighter;
     padding: 0.15rem 4rem;
     border: 1px solid var(--border);
@@ -289,14 +290,6 @@ section .top-s::before {
     position: absolute;
     left: 0;
     bottom: 0;
-    border-top: 1px solid var(--border);
-    background-color: rgba(217, 217, 217, 0.15);
-    background-image: repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
-    animation: moveBackground 0.85s linear infinite;
-}
-
-.section4 .top-s {
-    justify-content: center;
 }
 
 section .top-s .text {
