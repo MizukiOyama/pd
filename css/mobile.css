@@ -409,22 +409,22 @@ section .top-s .text {
 }
 
 .design video {
-    width: 350px;
-    height: 350px;
+    width: 80%;
+    height: 80%;
     margin-left: 2%;
     background: var(--bg-color);
 }
 
 .art {
     right: -8vmin;
-    width: 300px;
-    height: 260px;
+    width: 70%;
+    height: 60%;
     border-left: 0;
 }
 
 .art video {
-    width: 280px;
-    height: 280px;
+    width: 50%;
+    height: 50%;
     background: var(--bg-color);
 }
 
@@ -484,22 +484,16 @@ section img {
 
 /*===================== bg-aitem =====================*/
 .bg-aitem {
-    width: 300px;
-    height: 100px;
+    width: 90%;
+    height: 10%;
     position: relative;
     background: var(--bg-color);
 }
 
 .top section .top-s .text:nth-child(3) {
-    width: 350px;
+    width: 90%;
     margin: 2% 0 0;
 }
-
-.top #tab-4 .top-s .text {
-    text-align: center;
-    margin: 0 auto;
-}
-
 
 /*===================== Top =====================*/
 
@@ -510,13 +504,13 @@ section img {
 }
 
 .about #tab-1 .top-s .text {
-    width: 500px;
+    width: 90%;
     margin: 17vmin auto 2%;
 }
 
 .about .bg-aitem {
-    width: 500px;
-    height: 55px;
+    width: 90%;
+    height: 10%;
     position: relative;
     margin: 0 auto;
 }
@@ -547,7 +541,7 @@ section img {
 }
 
 .about h3 {
-    font-size: clamp(14rem, calc(14rem + 0.1vw), 16rem);
+    font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
     color: var(--bg-color);
     position: relative;
     padding-left: 0;
