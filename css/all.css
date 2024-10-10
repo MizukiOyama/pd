@@ -788,9 +788,13 @@ section img {
     justify-content: center;
 }
 
-.about #tab-1 .top-s .text {
+.about .top-s .text {
     width: 650px;
     margin-top: 5vmin;
+}
+
+.about #tab-4 .top-s .text {
+    margin: 0;
 }
 
 .about .bg-aitem {
@@ -874,7 +878,7 @@ section img {
 .profile ol {
     height: 100%;
     padding-left: 1rem;
-    margin: 0 auto 5%;
+    margin: 0 auto 2vmin;
 }
 
 .profile ol p {
