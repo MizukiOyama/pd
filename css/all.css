@@ -577,8 +577,7 @@ section .top-s::before {
 }
 
 section .top-s .text {
-    width: 500px;
-    margin: 15vmin 0 0;
+    width: 650px;
 }
 
 #tab-2 .top-s .text,
@@ -927,19 +926,21 @@ section img {
 /*========== .color */
 
 .about .section4 .color {
+    width: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 3vmin;
+    gap: 1vmin;
     padding: 1rem;
     background-color: var(--border);
 }
 
 .about .section4 .bg-aitem {
     font-size: clamp(1.2rem, calc(1.2rem + 0.1vw), 1.6rem);
-    width: 95px;
-    height: 170px;
-    margin: 0 1%;
+    width: 120px;
+    height: 185px;
+    margin: 0;
     padding: 1rem;
     border: 1px solid var(--hover-color);
 }
