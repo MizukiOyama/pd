@@ -800,7 +800,6 @@ section img {
     width: 650px;
     height: 55px;
     position: relative;
-    margin: 0 auto;
 }
 
 .thoughts {
@@ -814,7 +813,6 @@ section img {
 
 .thoughts p {
     width: 325px;
-    margin: 2% 0 0;
 }
 
 /*========== .works */
