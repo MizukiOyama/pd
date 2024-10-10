@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var windowHeight = window.innerHeight;
 
             // 要素が画面の指定位置に到達したらクラスを追加
-            var triggerPosition = windowHeight * 0.5; // 画面の50%位置に到達時に発火
+            var triggerPosition = windowHeight * 0.35; // 画面の50%位置に到達時に発火
             
             if (elementTop < triggerPosition) {
                 element.classList.add('visible');
