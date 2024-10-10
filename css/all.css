@@ -155,7 +155,7 @@ body::after {
 
 h1 {
     /*font-size: 62.5%;=16px 12rem=120px*/
-    font-size: clamp(20rem, calc(20rem + 0.1vw), 24rem);
+    font-size: clamp(20rem, calc(20rem + 0.4vw), 24rem);
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -203,7 +203,7 @@ h2 {
     /*font-size: 62.5%;=16px 6rem=62px*/
     font-family: sans-serif;
     font-weight: 500;
-    font-size: clamp(8rem, calc(8rem + 0.1vw), 8.4rem);
+    font-size: clamp(8rem, calc(8rem + 0.4vw), 8.4rem);
     width: fit-content;
     line-height: 7rem;
     -webkit-text-stroke-width: 1px;
@@ -220,9 +220,9 @@ h3 {
 
 p {
     /*font-size: 62.5%;=16px 1.2rem=12px*/
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
+    font-size: clamp(1.2rem, calc(1.2rem + 0.4vw), 1.6rem);
     width: fit-content;
-    letter-spacing: -0.075rem;
+    letter-spacing: 0.01rem;
 }
 
 /*== fade ==*/
@@ -576,13 +576,9 @@ section .top-s::before {
     justify-content: center;
 }
 
-section .top-s .text {
-    width: 650px;
-}
-
-#tab-2 .top-s .text,
-#tab-3 .top-s .text {
-    margin-bottom: 0;
+.top section .top-s .text {
+    width: 500px;
+    margin-top: 15vmin;
 }
 
 /*===================== .service =====================*/
