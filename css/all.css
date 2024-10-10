@@ -788,12 +788,16 @@ section img {
     justify-content: center;
 }
 
-.about .top-s .text {
+.about .top-s .text,
+.policy .top-s .text,
+.contact .top-s .text {
     width: 650px;
     margin-top: 5vmin;
 }
 
-.about #tab-4 .top-s .text {
+.about #tab-4 .top-s .text,
+.policy .top-s .text,
+.contact .top-s .text {
     margin: 0;
 }
 
