@@ -775,7 +775,7 @@ section img {
     background: var(--bg-color);
 }
 
-.top section .top-s .text:nth-child(2) {
+.top section .top-s .text:nth-child(4) {
     margin: 0;
 }
 
@@ -930,8 +930,7 @@ section img {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    bottom: 20vmin;
+    margin-top: 3vmin;
     padding: 1rem;
     background-color: var(--border);
 }
