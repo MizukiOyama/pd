@@ -270,7 +270,7 @@ main::before {
 main a {
     border: 1px solid;
     padding: 1rem;
-    margin-top: 1rem;
+    margin-top: 2vmin;
     letter-spacing: 0.15rem;
 }
 
@@ -323,7 +323,7 @@ main .button {
     justify-content: center;
     line-height: 1;
     text-decoration: none;
-    width: 200px;
+    width: 150px;
     height: 40px;
     position: relative;
     transition: 0.3s;
@@ -577,7 +577,7 @@ section .top-s::before {
 
 section .top-s .text {
     width: 500px;
-    margin: 17vmin 0 2%;
+    margin: 15vmin 0 1vmin;
 }
 
 #tab-2 .top-s .text,
@@ -767,15 +767,14 @@ section img {
 
 /*===================== bg-aitem =====================*/
 .bg-aitem {
-    width: 300px;
+    width: 500px;
     height: 100px;
     position: relative;
     background: var(--bg-color);
 }
 
 .top section .top-s .text:nth-child(3) {
-    width: 350px;
-    margin: 2% 0 0;
+    margin: 1vmin 0 0;
 }
 
 .top #tab-4 .top-s .text {
