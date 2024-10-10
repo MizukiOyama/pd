@@ -71,7 +71,8 @@ img {
 }
 
 body {
-    font-family: zen-maru-gothic, sans-serif;
+    /*font-family: zen-maru-gothic, sans-serif;*/
+    font-family: sans-serif;
     font-weight: 500;
     font-style: normal;
     color: var(--bg-color);
@@ -788,12 +789,13 @@ section img {
 
 /*===================== About =====================*/
 .about section .top-s {
-    flex-direction: row;
+    align-items: center;
     justify-content: center;
 }
 
 .about #tab-1 .top-s .text {
     width: 650px;
+    margin-top: 5vmin;
 }
 
 .about .bg-aitem {
@@ -803,11 +805,8 @@ section img {
 }
 
 .thoughts {
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 2%;
 }
 
@@ -865,17 +864,16 @@ section img {
 /*========== .works */
 
 .profile {
-    width: 80%;
+    width: 800px;
     height: 100%;
     display: flex;
     align-items: center;
-    margin: 0 auto;
+    gap: 2vmin;
 }
 
 .oyama,
 .like {
     width: 50%;
-    margin: 0 0.5%;
 }
 
 .profile ol {
@@ -886,6 +884,7 @@ section img {
 
 .profile ol p {
     position: relative;
+    letter-spacing: 0.25rem;
 }
 
 .profile ol div {
