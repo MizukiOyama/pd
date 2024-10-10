@@ -577,7 +577,7 @@ section .top-s::before {
 
 section .top-s .text {
     width: 500px;
-    margin: 15vmin 0 1vmin;
+    margin: 15vmin 0 0;
 }
 
 #tab-2 .top-s .text,
@@ -768,13 +768,14 @@ section img {
 /*===================== bg-aitem =====================*/
 .bg-aitem {
     width: 500px;
-    height: 100px;
+    height: 55px;
+    margin: 2vmin 0;
     position: relative;
     background: var(--bg-color);
 }
 
 .top section .top-s .text:nth-child(3) {
-    margin: 1vmin 0 0;
+    margin: 0;
 }
 
 .top #tab-4 .top-s .text {
@@ -792,12 +793,11 @@ section img {
 }
 
 .about #tab-1 .top-s .text {
-    width: 500px;
-    margin: 17vmin auto 2%;
+    width: 650px;
 }
 
 .about .bg-aitem {
-    width: 500px;
+    width: 650px;
     height: 55px;
     position: relative;
     margin: 0 auto;
@@ -813,7 +813,7 @@ section img {
 }
 
 .thoughts p {
-    width: 245px;
+    width: 325px;
     margin: 2% 0 0;
 }
 
