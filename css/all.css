@@ -470,7 +470,7 @@ section {
     z-index: 1;
 }
 
-.tabs .caption::after {
+.tabs .caption::before {
     content: "";
     height: 100%;
     position: absolute;
