@@ -472,6 +472,14 @@ section {
     z-index: 1;
 }
 
+.tabs .caption::after {
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-right: 1px solid var(--border);
+}
+
 .tabs .top-h1 .caption {
     font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
     position: relative;
@@ -808,13 +816,14 @@ section img {
 }
 
 .thoughts {
+    width: 650px;
     display: flex;
     justify-content: center;
-    gap: 2%;
+    gap: 2vmin;
 }
 
 .thoughts p {
-    width: 325px;
+    width: 315px;
 }
 
 /*========== .works */
