@@ -69,7 +69,7 @@ nav {
 /* .toggle_btn styles */
 .toggle_btn {
     position: fixed;
-    bottom: 30vmin;
+    bottom: 20vmin;
     right: 0;
     width: 10%;
     cursor: pointer;
@@ -81,16 +81,14 @@ nav {
 }
 
 #menu-img {
-    width: 100%;
+    width: 50%;
     mix-blend-mode: difference;
     position: absolute;
-    top: 15px;
-    right: 15%;
     cursor: grab;
 }
 
 .menu-img {
-    animation: rotate-r 25s infinite linear;
+    animation: rotate-r 45s infinite linear;
 }
 
 @keyframes rotate-r {
@@ -104,7 +102,7 @@ nav {
 }
 
 .menu-img2 {
-    animation: rotate-l 20s infinite linear;
+    animation: rotate-l 30s infinite linear;
 }
 
 @keyframes rotate-l {

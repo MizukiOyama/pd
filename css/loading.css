@@ -19,7 +19,8 @@
 }
 
 .typing {
-    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 2rem);
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
+    text-align: center;
     color: var(--text-color);
     letter-spacing: 0.5rem;
     opacity: 0;
