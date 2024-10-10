@@ -1,7 +1,7 @@
 class ShuffleText {
     constructor(element) {
         this.element = element;
-        this.chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        this.chars = '想いとこだわりを引き出す。自分の人生を豊かにするのは、自分自身のこだわり。';
         this.originalText = element.innerHTML;
     }
 
@@ -24,7 +24,7 @@ class ShuffleText {
         // シャッフルを開始
         const shuffleInterval = setInterval(() => {
             this.shuffle();
-        }, 30);
+        }, 50);
 
         // 1秒後にシャッフルを停止して元のテキストを表示
         setTimeout(() => {
@@ -46,8 +46,8 @@ jQuery(document).ready(function($) {
         // ローディングとコンテンツのフェードを同時に行う
         setTimeout(function() {
             // 同時にアニメーションを開始
-            $('#loading-bg').fadeOut(1500); // 1.5秒かけてフェードアウト
-            $('#content').css('visibility', 'visible').animate({ opacity: 1 }, 1500); // 同時に1.5秒かけてフェードイン
-        }, 2500); // 3.5秒後にフェード開始
+            $('#loading-bg').fadeOut(1000); // 1.5秒かけてフェードアウト
+            $('#content').css('visibility', 'visible').animate({ opacity: 1 }, 1000); // 同時に1.5秒かけてフェードイン
+        }, 2000); // 3.5秒後にフェード開始
     });
 });
