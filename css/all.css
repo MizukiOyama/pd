@@ -7,13 +7,13 @@
     font-size: 62.5%;
     --root-font-size: 16;
     /*text border main*/
-    --text-color: #2e2e2e;
+    --text: #2e2e2e;
     /*sub black rgba(75, 75, 75)*/
-    --hover-color: #4b4b4b;
+    --hover: #4b4b4b;
     /*bg base (217, 217, 217)*/
-    --bg-color: #c7c7c7;
+    --bg: #c7c7c7;
     /*link accent (160, 113, 113)*/
-    --accent-color: #A07171;
+    --accent: #A07171;
     /*border rgba(217, 217, 217, 0.5)*/
     --border: rgba(217, 217, 217, 0.5);
 }
@@ -75,8 +75,8 @@ body {
     font-family: sans-serif;
     font-weight: 500;
     font-style: normal;
-    color: var(--bg-color);
-    background-color: var(--text-color);
+    color: var(--bg);
+    background-color: var(--text);
     position: relative;
     width: 100%;
     height: auto;
@@ -91,7 +91,7 @@ body::before {
     left: 7%;
     width: 8%;
     height: 100%;
-    border-top: 5px solid var(--bg-color);
+    border-top: 5px solid var(--bg);
     border-right: 1px solid var(--border);
     z-index: 0;
     background-size: auto auto;
@@ -159,14 +159,14 @@ h1 {
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
-    color: var(--bg-color);
+    color: var(--bg);
     width: fit-content;
     line-height: 24rem;
     letter-spacing: 5.4rem;
 }
 
 .noise {
-    background: linear-gradient(to bottom right, var(--bg-color), var(--text-color)) fixed;
+    background: linear-gradient(to bottom right, var(--bg), var(--text)) fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: darkgray;
     --lines: 0.0003px;
@@ -196,7 +196,7 @@ h4 {
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
-    color: var(--bg-color);
+    color: var(--bg);
 }
 
 h2 {
@@ -207,7 +207,7 @@ h2 {
     width: fit-content;
     line-height: 7rem;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--bg-color);
+    -webkit-text-stroke-color: var(--bg);
 }
 .policy h2 {
     line-height: 8rem;
@@ -279,7 +279,7 @@ a {
     font-family: futura-pt, sans-serif;
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2.4rem);
     font-weight: 400;
-    color: var(--accent-color);
+    color: var(--accent);
     width: fit-content;
     height: fit-content;
     padding: 0.25rem 0.5rem;
@@ -306,7 +306,7 @@ footer a::after {
     bottom: 5px;
     position: absolute;
     left: 0;
-    background-color: var(--bg-color);
+    background-color: var(--bg);
     transform: scale(0, 1);
     transform-origin: right top;
     transition: transform 0.3s ease;
@@ -385,8 +385,8 @@ main .button::before, main .button::after {
     height: 100%;
     background: linear-gradient(90deg,
             transparent,
-            var(--bg-color) 0%,
-            var(--text-color) 100%,
+            var(--bg) 0%,
+            var(--text) 100%,
             transparent);
     animation: scroll-left 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
     background-size: 200% 100%;
@@ -425,7 +425,6 @@ img {
 section {
     width: 89%;
     margin: 0 auto;
-    /*background: var(--bg-color);*/
     border-right: 1px solid var(--border);
 }
 
@@ -468,7 +467,6 @@ section {
     padding: 1.5rem 1rem 1.5rem 4rem;
     border: 1px solid var(--border);
     border-left: 0;
-    /*background: var(--bg-color);*/
     z-index: 1;
 }
 
@@ -699,7 +697,7 @@ section .top-s::before {
     width: 350px;
     height: 350px;
     margin-left: 2%;
-    background: var(--bg-color);
+    background: var(--border);
 }
 
 .art {
@@ -712,7 +710,7 @@ section .top-s::before {
 .art video {
     width: 280px;
     height: 280px;
-    background: var(--bg-color);
+    background: var(--border);
 }
 
 /*===================== section in-box =====================*/
@@ -739,7 +737,7 @@ section img {
 .top .section3 img,
 .top .section4 img {
     width: 35%;
-    background: var(--hover-color);
+    background: var(--hover);
 }
 
 .top .section1 img {
@@ -775,7 +773,7 @@ section img {
     height: 55px;
     margin: 2vmin 0;
     position: relative;
-    background: var(--bg-color);
+    background: var(--bg);
 }
 
 .top section .top-s .text:nth-child(4) {
@@ -839,7 +837,7 @@ section img {
 
 .about h3 {
     font-size: clamp(14rem, calc(14rem + 0.1vw), 16rem);
-    color: var(--bg-color);
+    color: var(--bg);
     position: relative;
     padding-left: 0;
     z-index: 1;
@@ -869,8 +867,8 @@ section img {
     width: 92.5%;
     height: 92.5%;
     margin: 0;
-    background: var(--hover-color);
-    border: 5px solid var(--bg-color);
+    background: var(--hover);
+    border: 5px solid var(--bg);
 }
 
 /*========== .works */
@@ -933,7 +931,7 @@ section img {
 }
 
 .profile video {
-    background: var(--hover-color);
+    background: var(--hover);
 }
 
 /*========== .color */
@@ -955,29 +953,29 @@ section img {
     height: 185px;
     margin: 0;
     padding: 1rem;
-    border: 1px solid var(--hover-color);
+    border: 1px solid var(--hover);
 }
 
 .about .section4 .bg-aitem:nth-child(1) {
-    background: var(--text-color);
+    background: var(--text);
 }
 
 .about .section4 .bg-aitem:nth-child(2) {
     color: var(--border);
-    background: var(--hover-color);
+    background: var(--hover);
 }
 
 .about .section4 .bg-aitem:nth-child(3) {
-    color: var(--text-color);
+    color: var(--text);
 }
 
 .about .section4 .bg-aitem:nth-child(4) {
-    color: var(--bg-color);
-    background: var(--accent-color);
+    color: var(--bg);
+    background: var(--accent);
 }
 
 .about .section4 .bg-aitem:nth-child(5) {
-    color: var(--text-color);
+    color: var(--text);
     background: none;
 }
 
@@ -1008,7 +1006,7 @@ section img {
     position: absolute;
     top: 10%;
     right: 0%;
-    background: var(--text-color);
+    background: var(--text);
     z-index: -1;
     mix-blend-mode: difference;
 }

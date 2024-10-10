@@ -8,7 +8,7 @@ nav {
     right: -100%;
     bottom: 0;
     width: 40%;
-    background: var(--bg-color);
+    background: var(--bg);
     mix-blend-mode: screen;
     overflow-x: hidden;
     overflow-y: auto;
@@ -33,7 +33,7 @@ nav {
 .inner ul li {
     position: relative;
     width: fit-content;
-    border-bottom: 1px solid var(--hover-color);
+    border-bottom: 1px solid var(--hover);
 }
 
 .inner ul li:nth-child(5) {
@@ -44,7 +44,7 @@ nav {
     display: block;
     position: relative;
     font-size: clamp(2.8rem, calc(2.8rem + 0.1vw), 3rem);
-    color: var(--text-color);
+    color: var(--text);
     height: 100%;
     margin-top: 1.5rem;
     padding: .35em .65em 0 .2em;
@@ -57,8 +57,8 @@ nav {
 }
 
 #navArea .inner li a:hover {
-    color: var(--hover-color);
-    text-shadow: 0 1px 3px var(--accent-color);
+    color: var(--hover);
+    text-shadow: 0 1px 3px var(--accent);
     opacity: 0.5;
 }
 
@@ -267,7 +267,7 @@ nav {
 .open #mask li {
     width: 90%;
     font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
-    color: var(--bg-color);
+    color: var(--bg);
     margin: 0.5rem auto 1.8rem;
     padding: 0 0.25em 0.15rem;
     border-bottom: 1px solid;
@@ -326,7 +326,7 @@ nav {
     .pc_menu a {
         font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3rem);
         font-weight: 400;
-        color: var(--text-color);
+        color: var(--text);
         width: 100px;
         height: fit-content;
         text-decoration: none;
@@ -336,7 +336,7 @@ nav {
         transform: rotate(90deg);
         transition: color 0.3s ease;
         -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: var(--bg-color);
+        -webkit-text-stroke-color: var(--bg);
     }
 
     .manu_p a {
@@ -344,8 +344,8 @@ nav {
     }
 
     .pc_menu a:hover {
-        color: var(--hover-color);
-        -webkit-text-stroke-color: var(--accent-color);
+        color: var(--hover);
+        -webkit-text-stroke-color: var(--accent);
     }
 
 
@@ -395,13 +395,13 @@ nav {
 
     .toggle-label i {
         font-size: clamp(2.4rem, calc(2.4rem + 0.1vw), 3rem);
-        color: var(--accent-color);
+        color: var(--accent);
         transition: all 0.3s ease;
     }
 
     /* ON状態のスタイル */
     .toggle-checkbox:checked+.toggle-label {
-        background-color: var(--text-color);
+        background-color: var(--text);
     }
 
     .toggle-checkbox:checked+.toggle-label i {

@@ -46,7 +46,6 @@ h1 {
 }
 
 /*.noise {
-    background: linear-gradient(to bottom right, var(--bg-color), var(--text-color)) fixed;
     -webkit-background-clip: text;
     -webkit-text-fill-color: darkgray;
     --lines: 0.0003px;
@@ -74,7 +73,6 @@ h2 {
     font-size: clamp(6rem, calc(6rem + 0.1vw), 6.4rem);
     line-height: 6rem;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--bg-color);
 }
 .policy h2 {
     line-height: 8rem;
@@ -135,7 +133,6 @@ footer a::after {
     bottom: 5px;
     position: absolute;
     left: 0;
-    background-color: var(--bg-color);
     transform: scale(0, 1);
     transform-origin: right top;
     transition: transform 0.3s ease;
@@ -414,7 +411,6 @@ section .top-s .text {
     width: 80%;
     height: 80%;
     margin-left: 2%;
-    background: var(--bg-color);
 }
 
 .art {
@@ -427,7 +423,6 @@ section .top-s .text {
 .art video {
     width: 50%;
     height: 50%;
-    background: var(--bg-color);
 }
 
 /*===================== section in-box =====================*/
@@ -454,7 +449,6 @@ section img {
 .top .section3 img,
 .top .section4 img {
     width: 35%;
-    background: var(--hover-color);
 }
 
 .top .section1 img {
@@ -489,7 +483,6 @@ section img {
     width: 90%;
     height: 10%;
     position: relative;
-    background: var(--bg-color);
 }
 
 .top section .top-s .text:nth-child(3) {
@@ -544,7 +537,6 @@ section img {
 
 .about h3 {
     font-size: clamp(2rem, calc(2rem + 0.1vw), 2.4rem);
-    color: var(--bg-color);
     position: relative;
     padding-left: 0;
     z-index: 1;
@@ -574,8 +566,8 @@ section img {
     width: 92.5%;
     height: 92.5%;
     margin: 0;
-    background: var(--hover-color);
-    border: 5px solid var(--bg-color);
+    background: var(--hover);
+    border: 5px solid var(--bg);
 }
 
 /*========== .works */
@@ -637,10 +629,6 @@ section img {
     margin-bottom: 5%;
 }
 
-.profile video {
-    background: var(--hover-color);
-}
-
 /*========== .color */
 
 .about .section4 .color {
@@ -659,32 +647,7 @@ section img {
     height: 170px;
     margin: 0 1%;
     padding: 1rem;
-    border: 1px solid var(--hover-color);
 }
-
-.about .section4 .bg-aitem:nth-child(1) {
-    background: var(--text-color);
-}
-
-.about .section4 .bg-aitem:nth-child(2) {
-    color: var(--border);
-    background: var(--hover-color);
-}
-
-.about .section4 .bg-aitem:nth-child(3) {
-    color: var(--text-color);
-}
-
-.about .section4 .bg-aitem:nth-child(4) {
-    color: var(--bg-color);
-    background: var(--accent-color);
-}
-
-.about .section4 .bg-aitem:nth-child(5) {
-    color: var(--text-color);
-    background: none;
-}
-
 
 /*===================== About =====================*/
 
@@ -696,7 +659,6 @@ section img {
     position: absolute;
     top: 10%;
     right: 0%;
-    background: var(--text-color);
     z-index: -1;
     mix-blend-mode: difference;
 }
