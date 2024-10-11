@@ -322,9 +322,9 @@ section .top-s::before {
 }
 
 .top .se h3 {
-    width: 300px;
+    width: 55%;
     position: absolute;
-    bottom: 20%;
+    bottom: 50%;
     margin-top: 4rem;
     padding: 0 1rem;
     border-bottom: 1px solid var(--border);
@@ -353,6 +353,7 @@ section .top-s::before {
 .top .se .video-1,
 .top .se .video-2,
 .top .se .video-3 {
+    width: 55%;
     height: 100px;
     position: absolute;
     top: 0;
