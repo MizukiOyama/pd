@@ -39,7 +39,7 @@ body::after {
 
 h1 {
     /*font-size: 62.5%;=16px 12rem=120px*/
-    font-size: clamp(10rem, calc(10rem + 0.1vw), 14rem);
+    font-size: clamp(8rem, calc(8rem + 0.5vw), 10rem);
     width: 100%;
     line-height: 10rem;
     letter-spacing: 0.85rem;
@@ -425,7 +425,7 @@ section img {
 }
 
 .tabs img {
-    width: 70%;
+    width: 80%;
     top: -15%;
     right: -5%;
 }
