@@ -112,7 +112,11 @@ main a {
 
 .top .section2 a,
 .top .section3 a {
+    left: -25vmin;
     margin-bottom: 20vmin;
+}
+.top .section1 a {
+    left: -25vmin;
 }
 
 a {
