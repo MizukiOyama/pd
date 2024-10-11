@@ -106,8 +106,13 @@ main::before {
 
 main a {
     padding: 1rem;
-    margin-top: 12vmin;
+    margin-top: 5vmin;
     letter-spacing: 0.15rem;
+}
+
+.top .section2 a,
+.top .section3 a {
+    margin-bottom: 20vmin;
 }
 
 a {
@@ -245,7 +250,7 @@ section {
 
 /*===================== section =====================*/
 section .top-s {
-    height: 600px;
+    height: 650px;
     padding: 0 5rem;
     justify-content: center;
     align-items: center;
@@ -261,8 +266,7 @@ section .top-s::before {
 .top .section1::after,
 .top .section2::after,
 .top .section3::after {
-    width: 50%;
-    height: 100%;
+    display: none;
 }
 
 
@@ -291,7 +295,7 @@ section .top-s::before {
     bottom: 0;
 }
 
-section .top-s .text {
+.top section .top-s .text {
     width: 90%;
     margin: 0;
 }
@@ -383,9 +387,10 @@ section .top-s .text {
 /*===================== .works =====================*/
 
 .work {
-    position: relative;
     width: 100%;
-    height: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: -20vmin;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -398,31 +403,26 @@ section .top-s .text {
 }
 
 .design {
-    right: 23vmin;
-    width: 380px;
-    height: 400px;
-}
-
-.design h3 {
-    padding-left: 0.5rem;
+    right: 0;
+    left: 0;
+    width: 60%;
+    height: 60%;
 }
 
 .design video {
-    width: 80%;
-    height: 80%;
-    margin-left: 2%;
+    width: 85%;
+    height: 85%;
 }
 
 .art {
-    right: -8vmin;
-    width: 70%;
-    height: 60%;
-    border-left: 0;
+    right: 0;
+    width: 50%;
+    height: 55%;
 }
 
 .art video {
-    width: 50%;
-    height: 50%;
+    width: 85%;
+    height: 85%;
 }
 
 /*===================== section in-box =====================*/
@@ -481,7 +481,7 @@ section img {
 /*===================== bg-aitem =====================*/
 .bg-aitem {
     width: 90%;
-    height: 10%;
+    height: 5%;
     position: relative;
 }
 
