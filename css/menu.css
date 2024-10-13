@@ -401,7 +401,7 @@ nav {
     }
 
     .toggle-checkbox:checked+.toggle-label i {
-        -webkit-text-fill-color: var(--border);
+        -webkit-text-fill-color: var(--accent);
         transform: rotate(-135deg);
     }
 
