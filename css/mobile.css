@@ -262,8 +262,8 @@ section .top-s {
 
 section .top-s::before {
     content: "";
-    width: 120px;
-    height: 80px;
+    width: 85px;
+    height: 60px;
 }
 
 .top .tabs::after,
@@ -300,7 +300,7 @@ section .top-s::before {
 }
 
 .top section .top-s .text {
-    width: 90%;
+    width: 100%;
     margin: 0;
 }
 
@@ -321,14 +321,15 @@ section .top-s::before {
 .top .se {
     position: relative;
     width: 100%;
-    height: 75x;
+    height: 75px;
     margin-top: -10px;
+    z-index: -1;
 }
 
 .top .se h3 {
     width: 55%;
     position: absolute;
-    bottom: 50%;
+    bottom: 40%;
     margin-top: 4rem;
     padding: 0 1rem;
     border-bottom: 1px solid var(--border);
@@ -466,7 +467,7 @@ section img {
 
 /*===================== bg-aitem =====================*/
 .bg-aitem {
-    width: 90%;
+    width: 100%;
     height: 5%;
     position: relative;
 }
@@ -480,34 +481,16 @@ section img {
 
 /*===================== About =====================*/
 .about section .top-s {
-    flex-direction: row;
     justify-content: center;
 }
 
 .about #tab-1 .top-s .text {
-    width: 90%;
-    margin: 17vmin auto 2%;
-}
-
-.about .bg-aitem {
-    width: 90%;
-    height: 10%;
-    position: relative;
-    margin: 0 auto;
+    width: 100%;
 }
 
 .thoughts {
     width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2%;
-}
-
-.thoughts p {
-    width: 245px;
-    margin: 2% 0 0;
+    gap: 3vmin;
 }
 
 /*========== .works */
