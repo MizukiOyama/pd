@@ -395,10 +395,10 @@ nav {
         transition: all 0.3s ease;
     }
 
-    /* ON状態のスタイル */
+    /* ON状態のスタイル
     .toggle-checkbox:checked+.toggle-label {
         background-color: var(--text);
-    }
+    }*/
 
     .toggle-checkbox:checked+.toggle-label i {
         -webkit-text-fill-color: var(--accent);
