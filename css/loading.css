@@ -35,3 +35,9 @@
     letter-spacing: 1rem;
     letter-spacing: 0.005;
 }
+
+@media screen and (max-width: 599px) {
+    .typing {
+        font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
+    }
+}

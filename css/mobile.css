@@ -475,6 +475,10 @@ section img {
 
 /*===================== Top =====================*/
 
+
+.about .top-s .text, .policy .top-s .text, .contact .top-s .text {
+    width: 100%;
+}
 /*===================== About =====================*/
 
 .about #tab-1 .top-s .text {
