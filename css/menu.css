@@ -294,13 +294,10 @@ nav {
         left: 1.5%;
         border: 1px solid var(--border);
         border-left: 10px solid var(--border);
-        background-image:
+        /*background-image:
             linear-gradient(100deg, transparent 1%, rgba(217, 217, 217, 0.15) 60%),
-            /* Vertical line */
             linear-gradient(120deg, transparent 1%, rgba(46, 46, 46, 0.15) 60%);
-        /* Horizontal line */
-        background-size: 5px 2px, 2px 5px;
-        /* Horizontal line spans full width, vertical line spans full height */
+        background-size: 5px 2px, 2px 5px;*/
         z-index: 100;
         animation: fadeIn_bg 3s ease forwards;
         transition: background-color 0.45s ease;
@@ -395,7 +392,6 @@ nav {
 
     .toggle-label i {
         font-size: clamp(2.4rem, calc(2.4rem + 0.1vw), 3rem);
-        color: var(--accent);
         transition: all 0.3s ease;
     }
 
@@ -405,7 +401,7 @@ nav {
     }
 
     .toggle-checkbox:checked+.toggle-label i {
-        color: var(--border);
+        -webkit-text-fill-color: var(--border);
         transform: rotate(-135deg);
     }
 
