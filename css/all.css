@@ -1023,6 +1023,10 @@ section img {
     letter-spacing: 0.2rem;
 }
 
+.flow span {
+    margin: 0 2rem;
+}
+
 .option {
     width: calc(800px - 100px);
     height: 350px;
