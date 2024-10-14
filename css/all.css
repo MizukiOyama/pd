@@ -1018,9 +1018,9 @@ section img {
 
 .flow {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
-    margin: 2rem auto 4rem;
-    padding-left: 1.5rem;
-    letter-spacing: 0.25rem;
+    margin: 2rem auto 5rem;
+    padding-left: 5.4rem;
+    letter-spacing: 0.2rem;
 }
 
 .option {
