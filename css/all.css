@@ -1023,6 +1023,10 @@ section img {
     letter-spacing: 0.2rem;
 }
 
+.flow:last-child {
+    margin-bottom: 0;
+}
+
 .flow span {
     margin: 0 2rem;
 }
