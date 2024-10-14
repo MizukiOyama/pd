@@ -433,7 +433,6 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    mix-blend-mode: plus-lighter;
     padding: 0.15rem 0 0 4rem;
     border: 1px solid var(--border);
     border-top: 0;
@@ -1013,15 +1012,15 @@ section img {
 }
 
 .flow-ol {
-    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
-    font-weight: 600;
+    font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3.4rem);
+    letter-spacing: 0.5rem;
 }
 
-.flow {
-    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
-    font-weight: 500;
-    margin-bottom: 2rem;
+li .flow {
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+    margin: 2rem auto 4rem;
     padding-left: 1.5rem;
+    letter-spacing: 0.25rem;
 }
 
 .option {
