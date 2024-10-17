@@ -45,28 +45,14 @@ h1 {
     letter-spacing: 0.85rem;
 }
 
-/*.noise {
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: darkgray;
-    --lines: 0.0003px;
-    mask: repeating-radial-gradient(circle at center,
-            #000,
-            var(--lines),
-            #000,
-            0,
-            #0000,
-            calc(var(--lines) * 2),
-            #0000 0);
-}
-
-
-@media (prefers-color-scheme: light) {
+/* Mobile adjustments */
+@media screen and (max-width: 768px) {
     .noise {
-        background: linear-gradient(to bottom, black, gray) fixed;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: darkgray;
+        --lines: 0.0005px; /* Adjust for mobile pixel density */
+        mask-size: 150% auto; /* Ensure the mask scales properly on mobile */
+        font-size: calc(1rem + 1vw); /* Responsive font size */
     }
-}*/
+}
 
 h2 {
     /*font-size: 62.5%;=16px 6rem=62px*/
