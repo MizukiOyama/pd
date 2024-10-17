@@ -294,9 +294,9 @@ a {
     text-decoration: none;
 }
 
-.top-s a {
+/*.top-s a {
     border: 1px solid var(--border);
-}
+}*/
 
 a:hover {
     color: rgba(217, 217, 217, 0.5);
@@ -330,9 +330,9 @@ main .button {
     text-decoration: none;
     width: 150px;
     height: 40px;
+    margin-left: 0.5vmin;
     position: relative;
     transition: 0.3s;
-    border: 1px solid var(--border);
   }
 
 main .button::before, main .button::after {

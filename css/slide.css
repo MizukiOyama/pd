@@ -3,7 +3,7 @@
     width: 35%;
     position: absolute;
     left: 10rem;
-    bottom: 29%;
+    bottom: 25vmin;
     overflow: hidden;
     z-index: 10;
   }
