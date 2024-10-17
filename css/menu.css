@@ -69,7 +69,7 @@ nav {
 /* .toggle_btn styles */
 .toggle_btn {
     position: fixed;
-    bottom: 25vmin;
+    bottom: 30vmin;
     right: 0;
     width: 15%;
     cursor: pointer;
