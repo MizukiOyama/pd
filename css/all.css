@@ -892,16 +892,18 @@ section img {
 .profile ol p {
     position: relative;
     letter-spacing: 0.25rem;
+    margin-bottom: -1rem;
 }
 
 .profile ol div {
+    margin-top: 3rem;
     padding-left: 10px;
-
 }
 
 .profile li {
     font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
     width: 100%;
+    line-height: 20px;
     margin-bottom: -2%;
 }
 
