@@ -901,6 +901,7 @@ section img {
 }
 
 .profile li {
+    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
     width: 100%;
     margin-bottom: -2%;
 }
@@ -916,7 +917,7 @@ section img {
     display: block;
     position: relative;
     left: -13px;
-    bottom: -18px;
+    bottom: -25px;
 }
 
 .profile li span {
