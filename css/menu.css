@@ -69,9 +69,9 @@ nav {
 /* .toggle_btn styles */
 .toggle_btn {
     position: fixed;
-    bottom: 20vmin;
+    bottom: 25vmin;
     right: 0;
-    width: 10%;
+    width: 15%;
     cursor: pointer;
     z-index: 9997;
 }
@@ -81,7 +81,7 @@ nav {
 }
 
 #menu-img {
-    width: 50%;
+    width: 75%;
     mix-blend-mode: difference;
     position: absolute;
     cursor: grab;
