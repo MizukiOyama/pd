@@ -178,14 +178,17 @@ h1 {
             #0000,
             calc(var(--lines) * 2),
             #0000 0);
+    /* フォールバック：マスクがサポートされない場合の背景色 */
+    background-color: lightgray;
+    color: var(--text); /* フォールバック用のテキスト色 */
 }
-
 
 @media (prefers-color-scheme: light) {
     .noise {
         background: linear-gradient(to bottom, black, gray) fixed;
         -webkit-background-clip: text;
         -webkit-text-fill-color: darkgray;
+        color: var(--bg);
     }
 }
 

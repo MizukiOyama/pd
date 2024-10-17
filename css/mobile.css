@@ -45,14 +45,12 @@ h1 {
     letter-spacing: 0.85rem;
 }
 
-/* Mobile adjustments */
-@media screen and (max-width: 768px) {
+/* Mobile対応 */
     .noise {
-        --lines: 0.0005px; /* Adjust for mobile pixel density */
-        mask-size: 150% auto; /* Ensure the mask scales properly on mobile */
-        font-size: calc(1rem + 1vw); /* Responsive font size */
+        --lines: 1px; /* モバイルでは少し大きく設定 */
+        mask-size: 150% auto; /* マスクサイズを調整 */
+        font-size: calc(1rem + 0.5vw); /* 動的フォントサイズの調整 */
     }
-}
 
 h2 {
     /*font-size: 62.5%;=16px 6rem=62px*/
