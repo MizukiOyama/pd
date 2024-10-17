@@ -206,7 +206,7 @@ h2 {
     /*font-size: 62.5%;=16px 6rem=62px*/
     font-family: sans-serif;
     font-weight: 500;
-    font-size: clamp(8rem, calc(8rem + 0.4vw), 8.4rem);
+    font-size: clamp(8rem, calc(8rem + 0.5vw), 8rem);
     width: fit-content;
     line-height: 7rem;
     -webkit-text-stroke-width: 1px;
@@ -226,6 +226,7 @@ p {
     font-size: clamp(1.2rem, calc(1.2rem + 0.4vw), 1.6rem);
     width: fit-content;
     letter-spacing: 0.01rem;
+    line-height: 3rem;
 }
 
 /*== fade ==*/
@@ -874,7 +875,7 @@ section img {
 .profile {
     width: 800px;
     display: flex;
-    align-items: end;
+    align-items: flex-start;
     gap: 2vmin;
 }
 
@@ -918,7 +919,7 @@ section img {
     display: block;
     position: relative;
     left: -13px;
-    bottom: -25px;
+    bottom: -20px;
 }
 
 .profile li span {
@@ -926,8 +927,8 @@ section img {
 }
 
 .profile .like video {
-    width: 450px;
-    margin-bottom: 5%;
+    width: 100%;
+    margin-bottom: 3%;
 }
 
 .profile video {
