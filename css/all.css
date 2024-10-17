@@ -873,9 +873,8 @@ section img {
 
 .profile {
     width: 800px;
-    height: 100%;
     display: flex;
-    align-items: center;
+    align-items: end;
     gap: 2vmin;
 }
 
