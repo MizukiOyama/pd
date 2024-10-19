@@ -13,34 +13,34 @@
 /* モーダルのコンテンツ */
 .op-modal-content {
     background-color: white;
-    margin: 15% auto;
+    margin: 5% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
     max-width: 500px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    max-height: 80%; /* モーダルが画面を超えないように */
+    overflow-y: auto; /* 縦スクロールを有効に */
 }
 
+/* コンテンツのスタイル */
 .op-modal-text {
-    width: 100%;
     padding: 2rem;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 /* 閉じるボタン */
-.op-close,
-.op-close-btn {
+.op-close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .op-close:hover,
-.op-close:focus,
-.op-close-btn:hover,
-.op-close-btn:focus {
+.op-close:focus {
     color: #000;
-    text-decoration: none;
-    cursor: pointer;
 }
