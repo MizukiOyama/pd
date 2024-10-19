@@ -1057,6 +1057,11 @@ section img {
     border: 1px solid var(--border);
 }
 
+.option h4 {
+    border-bottom: 1px solid var(--border);
+    padding-left: 0.5rem;
+}
+
 .option h4:nth-child(n + 2) {
     margin-top: 4rem;
 }

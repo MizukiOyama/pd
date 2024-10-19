@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/tab.css">
   <link rel="stylesheet" href="css/service-list.css">
+  <link rel="stylesheet" href="css/se-modal">
   <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/loading.css">
   <!-- a -->
@@ -377,12 +378,12 @@
             <h3>Web制作</h3>
             <div>
             <h4>HP</h4>
-              <li>コーディング：30万～</li>
-              <li>ノーコード：20万～</li>
-              <li>コーディング「テンプレート」：25万～</li>
-              <li>ノーコード「テンプレート」：15万～</li>
+              <li>コーディング：20万～35万</li>
+              <li>ノーコード：20万～30万</li>
+              <li>コーディング「テンプレート」：20万～30万</li>
+              <li>ノーコード「テンプレート」：10万～25万</li>
             <h4>LP</h4>
-              <li>コーディング：25万～</li>
+              <li>コーディング：20万～</li>
               <li>ノーコード：20万～</li>
               <li>コーディング「テンプレート」：20万～</li>
               <li>ノーコード「テンプレート」：15万～</li>
@@ -422,7 +423,7 @@
           <ol>
             <h3>定期契約</h3>
             <div>
-              <h4>月々</h4>
+            <h4>月々</h4>
               <li>サイト管理：1万～</li>
               <li>基本的なメンテナンス・保守プラン：1万～<br>
                 軽度なメンテナンス（セキュリティ更新、バグ修正、バックアップ作業など）と、簡単なコンテンツ更新が含まれます。</li>
@@ -430,10 +431,25 @@
                 コンテンツの定期更新（例:ブログ記事やニュースの更新、画像の差し替え）に加え、基本的なメンテナンスが含まれます。</li>
               <li>SEO対策 / 運用支援プラン：5万～<br>
                   SEO対策や運用のサポートが含まれるパッケージ。定期的なキーワード改善やメタデータの最適化、速度改善などを行います。</li>
-              <h4></h4>
+            <h4>年間</h4>
+            <li></li>
+            <li></li>
             </div>
           </ol>
         </div>
+
+        <!-- Service ボタン -->
+<button id="openModalBtn">Service</button>
+
+<!-- モーダル -->
+<div id="serviceModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Our Services</h2>
+        <p>ここにServiceの詳細情報を記載します。</p>
+    </div>
+</div>
+
       </div>
     </section>
 
@@ -452,7 +468,32 @@
   </main>
 
   <div id="footer-container"></div>
+<script>
+  // DOM要素の取得
+document.addEventListener("DOMContentLoaded", function() {
+    var modal = document.getElementById("serviceModal");
+    var openBtn = document.getElementById("openModalBtn");
+    var closeBtn = document.querySelector(".close");
 
+    // ボタンクリックでモーダルを表示
+    openBtn.addEventListener("click", function() {
+        modal.style.display = "block";
+    });
+
+    // 閉じるボタンクリックでモーダルを非表示
+    closeBtn.addEventListener("click", function() {
+        modal.style.display = "none";
+    });
+
+    // モーダルの外側をクリックした場合も非表示に
+    window.addEventListener("click", function(event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+});
+
+</script>
 </body>
 
 </html>
