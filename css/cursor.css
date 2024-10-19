@@ -44,12 +44,12 @@
     border: 1px solid #894646;
     background: var(--border);
     box-shadow: 0 0 10px rgba(217, 217, 217, 0.6);
+    padding-top: 25px;
 }
 .stalker--hover::after {
     content: "Click";
     font-size: 2rem;
     font-weight: 500;
     color: var(--text);
-    text-align: center;
-    padding-top: 25px;
+    margin: 0 auto;
 }
