@@ -47,6 +47,9 @@
 }
 .stalker--hover::after {
     content: "Click";
-    font-size: 1.4rem;
+    font-size: 2rem;
+    font-weight: 500;
     color: var(--text);
+    text-align: center;
+    padding-top: 25px;
 }
