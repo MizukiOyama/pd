@@ -438,13 +438,13 @@
           </ol>
         </div>
 
-        <!-- Service ボタン -->
+<!-- Service ボタン -->
 <button id="openModalBtn">Service</button>
 
 <!-- モーダル -->
-<div id="serviceModal" class="modal">
-    <div class="modal-content">
-        <span class="close">&times;</span>
+<div id="serviceModal" class="op-modal">
+    <div class="op-modal-content">
+        <span class="op-close">&times;</span>
         <h2>Our Services</h2>
         <p>ここにServiceの詳細情報を記載します。</p>
     </div>
@@ -453,19 +453,15 @@
       </div>
     </section>
 
-    <div class="modal" id="modal">
-      <div class="modal-content">
-        <span class="close-btn" onclick="closeModal()">&times;</span>
-        <div class="modal-left" id="modal-left-content">
-          <!-- 左側のコンテンツ -->
-        </div>
-
-        <div class="modal-right" id="modal-right-content">
-          <!-- 右側のコンテンツ -->
-        </div>
+  </main>
+  <div class="op-modal" id="op-modal">
+    <div class="op-modal-content">
+      <span class="op-close-btn" onclick="closeModal()">&times;</span>
+      <div class="op-modal-text">
+        <!-- 左側のコンテンツ -->
       </div>
     </div>
-  </main>
+  </div>
 
   <div id="footer-container"></div>
 <script>
@@ -473,7 +469,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     var modal = document.getElementById("serviceModal");
     var openBtn = document.getElementById("openModalBtn");
-    var closeBtn = document.querySelector(".close");
+    var closeBtn = document.querySelector(".op-close");
 
     // ボタンクリックでモーダルを表示
     openBtn.addEventListener("click", function() {

@@ -1,5 +1,5 @@
 /* モーダルのスタイル */
-.modal {
+.op-modal {
     display: none; /* 初期状態では非表示 */
     position: fixed;
     z-index: 1000;
@@ -11,7 +11,7 @@
 }
 
 /* モーダルのコンテンツ */
-.modal-content {
+.op-modal-content {
     background-color: white;
     margin: 15% auto;
     padding: 20px;
@@ -22,16 +22,21 @@
     border-radius: 10px;
 }
 
+.op-modal-text {
+    width: 100%;
+    padding: 2rem;
+}
+
 /* 閉じるボタン */
-.close {
+.op-close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.op-close:hover,
+.op-close:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
