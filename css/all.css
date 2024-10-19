@@ -631,7 +631,7 @@ section .top-s::before {
 .top .se p {
     position: absolute;
     bottom: 20%;
-    padding-right: 0.2rem;
+    padding-right: 0.7rem;
 }
 
 /*video size*/
