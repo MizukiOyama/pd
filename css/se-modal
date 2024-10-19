@@ -22,17 +22,24 @@
     border-radius: 10px;
 }
 
+.op-modal-text {
+    width: 100%;
+    padding: 2rem;
+}
+
 /* 閉じるボタン */
-.op-close {
+.op-close,
+.op-close-btn {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-    cursor: pointer;
 }
 
 .op-close:hover,
-.op-close:focus {
+.op-close:focus,
+.op-close-btn:hover,
+.op-close-btn:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;

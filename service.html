@@ -450,6 +450,16 @@
     </div>
 </div>
 
+<!-- 別のモーダル -->
+<div id="op-modal" class="op-modal">
+    <div class="op-modal-content">
+        <span class="op-close-btn" onclick="closeModal()">&times;</span>
+        <div class="op-modal-text">
+            <!-- 左側のコンテンツ -->
+        </div>
+    </div>
+</div>
+
 
       </div>
     </section>
@@ -458,29 +468,41 @@
 
   <div id="footer-container"></div>
 <script>
+// DOM要素の取得
 document.addEventListener("DOMContentLoaded", function() {
-    // モーダル関連の要素を取得
-    var modal = document.getElementById("serviceModal");
+    var serviceModal = document.getElementById("serviceModal");
+    var secondModal = document.getElementById("op-modal");
     var openBtn = document.getElementById("openModalBtn");
-    var closeBtn = document.querySelector(".op-close");
+    var closeBtns = document.querySelectorAll(".op-close, .op-close-btn");
 
     // ボタンクリックでモーダルを表示
     openBtn.addEventListener("click", function() {
-        modal.style.display = "block";
+        serviceModal.style.display = "block";
     });
 
     // 閉じるボタンクリックでモーダルを非表示
-    closeBtn.addEventListener("click", function() {
-        modal.style.display = "none";
+    closeBtns.forEach(function(btn) {
+        btn.addEventListener("click", function() {
+            serviceModal.style.display = "none";
+            secondModal.style.display = "none";
+        });
     });
 
     // モーダルの外側をクリックした場合も非表示に
     window.addEventListener("click", function(event) {
-        if (event.target == modal) {
-            modal.style.display = "none";
+        if (event.target === serviceModal || event.target === secondModal) {
+            serviceModal.style.display = "none";
+            secondModal.style.display = "none";
         }
     });
 });
+
+// 別モーダルの表示を閉じる関数
+function closeModal() {
+    var modal = document.getElementById("op-modal");
+    modal.style.display = "none";
+}
+
 </script>
 </body>
 
