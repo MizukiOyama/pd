@@ -20,11 +20,7 @@
     max-width: 500px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     border-radius: 10px;
-}
-
-.op-modal-text {
-    width: 100%;
-    padding: 2rem;
+    position: relative;
 }
 
 /* 閉じるボタン */
@@ -33,11 +29,11 @@
     float: right;
     font-size: 28px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .op-close:hover,
 .op-close:focus {
     color: #000;
     text-decoration: none;
-    cursor: pointer;
 }
