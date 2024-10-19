@@ -1038,8 +1038,8 @@ section img {
 }
 
 .option {
-    width: calc(800px - 50px);
-    height: 360px;
+    width: calc(840px - 50px);
+    height: 400px;
     padding: 1rem 0.5rem 0;
     border: 1px solid var(--border);
     display: flex;
@@ -1066,10 +1066,11 @@ section img {
 .option ol div {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     font-weight: 500;
-    height: 290px;
+    height: 330px;
     margin-top: 0.5rem;
     padding: 1rem;
     border: 1px solid var(--border);
+    overflow-x: scroll;
 }
 
 .option ol li {
