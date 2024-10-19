@@ -44,8 +44,9 @@
     border: 1px solid #894646;
     background: var(--border);
     box-shadow: 0 0 10px rgba(217, 217, 217, 0.6);
-    padding-top: 15px;
-    padding-left: 7.5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .stalker--hover::after {
     content: "Click";
