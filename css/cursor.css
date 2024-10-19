@@ -39,6 +39,7 @@
 }
 
 .stalker--hover {
+    content: "Click";
     width: 60px !important;
     height: 60px !important;
     border: 1px solid #894646;
