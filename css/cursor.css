@@ -50,6 +50,7 @@
     content: "Click";
     font-size: 2rem;
     font-weight: 500;
+    width: 60px !important;
     color: var(--text);
-    margin: 0 auto;
+    text-align: center;
 }
