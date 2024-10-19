@@ -20,7 +20,7 @@
         }
         .accordion-header {
             width: 100%;
-            color: var(--bg-color);
+            color: var(--bg);
             font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
             border-bottom: 1px solid var(--border);
             transition: color 100ms;
@@ -28,16 +28,16 @@
         .accordion-header span {
             font-family: sans-serif;
             font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
-            color: var(--accent-color);
-            border-right: 1px solid var(--bg-color);
+            color: var(--accent);
+            border-right: 1px solid var(--bg);
             padding: 0 1rem;
             margin-right: 1rem;
         }
         .accordion-header.active {
-            color: var(--accent-color);
+            color: var(--accent);
         }
         .accordion-header span .active {
-            color: var(--bg-color);
+            color: var(--bg);
         }
     /*in-text*/ 
         .accordion-text {
@@ -65,7 +65,7 @@
             padding-right: 0.5rem;
         }
         .accordion-gold .accordion-header {
-            color: var(--bg-color);
+            color: var(--bg);
         }
         .accordion-no-bar {
             border-bottom: 0;
