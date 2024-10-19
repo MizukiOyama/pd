@@ -441,7 +441,7 @@
 <!-- Service ボタン -->
 <button id="openModalBtn">Service</button>
 
-<!-- モーダル -->
+<!-- 1つ目のモーダル -->
 <div id="serviceModal" class="op-modal">
     <div class="op-modal-content">
         <span class="op-close">&times;</span>
@@ -450,45 +450,54 @@
     </div>
 </div>
 
+<!-- 2つ目のモーダル -->
+<div class="op-modal" id="op-modal">
+    <div class="op-modal-content">
+        <span class="op-close-btn op-close">&times;</span>
+        <div class="op-modal-text">
+            <!-- 左側のコンテンツ -->
+        </div>
+    </div>
+</div>
+
       </div>
     </section>
 
   </main>
-  <div class="op-modal" id="op-modal">
-    <div class="op-modal-content">
-      <span class="op-close-btn" onclick="closeModal()">&times;</span>
-      <div class="op-modal-text">
-        <!-- 左側のコンテンツ -->
-      </div>
-    </div>
-  </div>
 
   <div id="footer-container"></div>
 <script>
-  // DOM要素の取得
+// DOM要素の取得
 document.addEventListener("DOMContentLoaded", function() {
-    var modal = document.getElementById("serviceModal");
+    var serviceModal = document.getElementById("serviceModal");
+    var opModal = document.getElementById("op-modal");
     var openBtn = document.getElementById("openModalBtn");
-    var closeBtn = document.querySelector(".op-close");
+    var closeBtns = document.querySelectorAll(".op-close");
 
-    // ボタンクリックでモーダルを表示
+    // ボタンクリックで1つ目のモーダルを表示
     openBtn.addEventListener("click", function() {
-        modal.style.display = "block";
+        serviceModal.style.display = "block";
     });
 
-    // 閉じるボタンクリックでモーダルを非表示
-    closeBtn.addEventListener("click", function() {
-        modal.style.display = "none";
+    // すべての閉じるボタンにクリックイベントを追加
+    closeBtns.forEach(function(closeBtn) {
+        closeBtn.addEventListener("click", function() {
+            // 閉じるボタンが属するモーダルを閉じる
+            var modal = closeBtn.closest('.op-modal');
+            modal.style.display = "none";
+        });
     });
 
     // モーダルの外側をクリックした場合も非表示に
     window.addEventListener("click", function(event) {
-        if (event.target === modal) {
-            modal.style.display = "none";
+        if (event.target === serviceModal) {
+            serviceModal.style.display = "none";
+        }
+        if (event.target === opModal) {
+            opModal.style.display = "none";
         }
     });
 });
-
 </script>
 </body>
 
