@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/tab.css">
   <link rel="stylesheet" href="css/service-list.css">
-  <link rel="stylesheet" href="css/se-modal.css">
+  <link rel="stylesheet" href="css/accordion.css">
   <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/loading.css">
   <!-- a -->
@@ -40,6 +40,7 @@
   <script src="js/cursor.js"></script>
   <script src="js/service-list.js"></script>
   <script src="js/tab.js"></script>
+  <script src="js/accordion.js"></script>
   <script src="js/card.js"></script>
   <script src="js/loading.js"></script>
 
@@ -438,25 +439,24 @@
           </ol>
         </div>
 
-<!-- Service ボタン -->
-<div onclick="cardClicked(12)">
-<button id="openModalBtn">Service Contents</button>
-</div>
-
-<!-- モーダル -->
-<div id="serviceModal" class="op-modal">
-    <div class="op-modal-content">
-        <span class="op-close">&times;</span>
-        <h2>Our Services</h2>
-        <div class="op-modal-text">
-            <p>ここにServiceの詳細情報を記載します。サービス内容が長い場合、この部分はスクロールできます。</p>
-            <p>さらに詳細な情報をここに追加することも可能です。スクロールして表示できるようにしています。</p>
-            <p>たとえば、ここにお客様へのサポート内容や、提供するサービスの説明を追加することができます。</p>
-            <p>さらに、各サービスごとの具体的な説明や料金プランなども含めることができます。</p>
-            <!-- 長いコンテンツをここに追加 -->
+        <!-- アコーディオン -->
+        <div class="accordion-wrap fade_bottom">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <span>Q</span>制作について
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </h3>
+          </div>
+          <div class="accordion-text">
+            <p>
+              A, 想いやこだわりあるモノをデザインで表現したいと思いで、Web制作事業を始めて約1年約が立ちました。
+              想いをデザインするために、写真撮影やイラストの制作、ライティングなども行います。
+              なので、想いやこだわりなどの情報共有をお願いしております。
+              「事業への想い。立ち上げのキッカケ。将来のビジョン。」などを知ることで、より良いものを制作できるのでご協力お願いいたします。
+              制作の流れはServiceページに記載があるので、そちらをご覧ください。
+            </p>
+          </div>
         </div>
-    </div>
-</div>
 
       </div>
     </section>
