@@ -48,7 +48,9 @@
 .modal-left-content h4 {
    font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3rem);
    margin-bottom: 1rem;
-
+}
+.modal-left-content p {
+   font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2.4rem);
 }
 
 .card:hover {
