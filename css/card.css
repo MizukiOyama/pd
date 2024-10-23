@@ -46,6 +46,14 @@
    box-shadow: 0 2px 3px rgba(46, 46, 46, 0.4);
 }
 
+.modal-left-content {
+   padding: 1rem 0 1rem 2rem;
+}
+
+.modal-left-content h4 {
+   font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
+}
+
 .card:hover {
    background-color: rgba(146, 146, 146, 0.4);
    backdrop-filter: blur(20px);
