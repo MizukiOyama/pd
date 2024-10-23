@@ -1,7 +1,6 @@
 const cardModalContents = [
     {
-        left: "Web Design",
-        right: "<p>HP、LPの制作を行います。</p><br><p>責任を持って最後まで提供するものにこだわり制作いたします。※制作を検討中の方でも問合せを受け付けているので、お気軽にお問い合わせください。</p>"
+        left: "<h4>Web Design</h4><p>HP、LPの制作を行います。</p><br><p>責任を持って最後まで提供するものにこだわり制作いたします。※制作を検討中の方でも問合せを受け付けているので、お気軽にお問い合わせください。</p>"
     },
     {
         left: "Art Order",
@@ -121,8 +120,9 @@ const cardModalContents = [
     modal.style.position = "fixed";
     modal.style.top = "50%";
     modal.style.left = "50%";
+    modal.style.width = "80vmin";
     modal.style.transform = "translate(-50%, -50%)";
-    modal.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+    modal.style.backgroundColor = "rgba(160, 113, 113, 0.5)";
     modal.style.zIndex = "1000";
     modal.style.padding = "20px";
     modal.style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0.2)";
