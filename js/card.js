@@ -105,14 +105,14 @@ const cardModalContents = [
     modal.style.position = "fixed";
     modal.style.top = "50%";
     modal.style.left = "50%";
-    modal.style.width = "80vmin";
-    modal.style.height = "50%";
+    modal.style.width = "85vmin";
+    modal.style.height = "55%";
     modal.style.transform = "translate(-50%, -50%)";
-    modal.style.backgroundColor = "rgba(46, 46, 46, 0.75)";
+    modal.style.backgroundColor = "rgba(46, 46, 46, 0.5)";
     modal.style.zIndex = "1000";
-    modal.style.padding = "40px";
+    modal.style.padding = "30px";
     modal.style.boxShadow = "rgba(0, 0, 0, 0.6) 0px 2px 3px";
-    modal.style.borderRadius = "50px";
+    modal.style.borderRadius = "10px";
   }
   
   function closeModal() {

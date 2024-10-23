@@ -108,8 +108,8 @@
 /* ボタンのスタイルをカスタマイズ */
 .modal button {
    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
-   background: var(--border);
    cursor: pointer;
+   transition: all 0.5s ease;
 }
 
 .modal button:hover {

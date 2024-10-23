@@ -1091,6 +1091,7 @@ section img {
 }
 
 .service .section5 .co-li {
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
     margin-top: 3rem;
     line-height: 1rem;
 }
