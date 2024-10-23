@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/tab.css">
   <link rel="stylesheet" href="css/service-list.css">
-  <link rel="stylesheet" href="css/se-modal">
+  <link rel="stylesheet" href="css/se-modal.css">
   <link rel="stylesheet" href="css/card.css">
   <link rel="stylesheet" href="css/loading.css">
   <!-- a -->
@@ -472,21 +472,23 @@ document.addEventListener("DOMContentLoaded", function() {
     // ボタンクリックでモーダルを表示
     openBtn.addEventListener("click", function() {
         modal.style.display = "block";
+        document.body.style.overflow = 'hidden'; // モーダル表示時にページスクロールを無効化
     });
 
     // 閉じるボタンクリックでモーダルを非表示
     closeBtn.addEventListener("click", function() {
         modal.style.display = "none";
+        document.body.style.overflow = 'auto'; // モーダルを閉じたらスクロールを再有効化
     });
 
     // モーダルの外側をクリックした場合も非表示に
     window.addEventListener("click", function(event) {
         if (event.target === modal) {
             modal.style.display = "none";
+            document.body.style.overflow = 'auto'; // モーダルを閉じたらスクロールを再有効化
         }
     });
 });
-
 </script>
 </body>
 
