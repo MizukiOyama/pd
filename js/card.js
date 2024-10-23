@@ -1,24 +1,38 @@
-// potion modal DOM要素の取得
 document.addEventListener("DOMContentLoaded", function() {
-    var modal = document.getElementById("serviceModal");
-    var openBtn = document.getElementById("openModalBtn");
-    var closeBtn = document.querySelector(".op-close");
+    // モーダルを管理するための関数を作成
+    function setupModal(modalId, openButtonId, closeButtonClass) {
+        const modal = document.getElementById(modalId);
+        const openBtn = document.getElementById(openButtonId);
+        const closeBtn = modal.querySelector(closeButtonClass);
 
-    // ボタンクリックでモーダルを表示
-    openBtn.addEventListener("click", function() {
-        modal.style.display = "block";
-        document.body.style.overflow = 'hidden'; // モーダル表示時にページスクロールを無効化
-    });
+        // ボタンクリックでモーダルを表示
+        openBtn.addEventListener("click", function() {
+            modal.style.display = "block";
+            document.body.style.overflow = 'hidden'; // モーダル表示中はページのスクロールを無効化
+        });
 
-    // 閉じるボタンクリックでモーダルを非表示
-    closeBtn.addEventListener("click", function() {
-        modal.style.display = "none";
-        document.body.style.overflow = 'auto'; // モーダルを閉じたらスクロールを再有効化
-    });
+        // 閉じるボタンクリックでモーダルを非表示
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
+            document.body.style.overflow = 'auto'; // モーダルを閉じたらスクロールを再有効化
+        });
+
+        // モーダル外をクリックした場合も非表示に
+        window.addEventListener("click", function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+                document.body.style.overflow = 'auto'; // モーダルを閉じたらスクロールを再有効化
+            }
+        });
+    }
+
+    // Serviceモーダルのセットアップ
+    setupModal("serviceModal", "openServiceModalBtn", ".op-close");
+
 });
 
 
-//main service
+
 const cardModalContents = [
     {
         left: "Web Design",
