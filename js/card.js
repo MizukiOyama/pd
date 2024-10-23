@@ -95,13 +95,8 @@ const cardModalContents = [
     const modalLeftContent = document.createElement("div");
     modalLeftContent.innerHTML = cardModalContents[cardIndex - 1].left;
     modalLeftContent.classList.add("modal-left-content");
-  
-    const modalRightContent = document.createElement("div");
-    modalRightContent.innerHTML = cardModalContents[cardIndex - 1].right;
-    modalRightContent.classList.add("modal-right-content");
-  
+
     modalContent.appendChild(modalLeftContent);
-    modalContent.appendChild(modalRightContent);
     modal.appendChild(modalContent);
   
     // 閉じるボタンを作成
