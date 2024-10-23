@@ -45,75 +45,112 @@ const cardModalContents = [
     }
 ];
 
-let clickedCard; // グローバル変数
-
-function cardClicked(cardIndex) {
+  
+  let clickedCard; // グローバル変数
+  
+  function cardClicked(cardIndex) {
     const cards = document.querySelectorAll(".card");
     clickedCard = cards[cardIndex - 1];
     clickedCard.classList.add("card-clicked");
     moveCardToCenter(clickedCard, cardIndex);
-}
-
-function moveCardToCenter(card, cardIndex) {
+  }
+  
+  function moveCardToCenter(card, cardIndex) {
     const cardRect = card.getBoundingClientRect();
     const windowWidth = window.innerWidth;
     const cardWidth = cardRect.width;
     const centerX = (windowWidth / 2) - (cardWidth / 2);
-
+  
     // カードを画面中央に移動
     card.style.transform = `translateX(${centerX - cardRect.left}px) scale(1.2)`;
-
+  
     // カードの移動アニメーションが終了した後にモーダルを開く
     card.addEventListener("transitionend", function () {
-        openModal(cardIndex);
+      openModal(cardIndex);
     }, { once: true });
-
+  
     // クリックされたカード以外のカードを下にスライドアウトさせる
     const otherCards = document.querySelectorAll(".card:not(.card-clicked)");
     otherCards.forEach((otherCard) => {
-        otherCard.style.transform = "translateY(50%)";
-        otherCard.style.opacity = "0.5"; // 透明度を下げる
+      otherCard.style.transform = "translateY(50%)";
+      otherCard.style.opacity = "0.5";
     });
-}
-
-function openModal(cardIndex) {
-    const modal = document.getElementById("modal");
-    modal.classList.remove('close');
-    modal.classList.add('open');
-
-    modal.style.display = "flex";
-
-    // カードごとのモーダルウィンドウのコンテンツを更新
-    const modalLeftContent = document.getElementById("modal-left-content");
-    const modalRightContent = document.getElementById("modal-right-content");
+  }
+  
+  function openModal(cardIndex) {
+    // 既にモーダルがある場合は削除する
+    const existingModal = document.getElementById("dynamic-modal");
+    if (existingModal) {
+      existingModal.remove();
+    }
+  
+    // モーダルウィンドウを作成
+    const modal = document.createElement("div");
+    modal.id = "dynamic-modal";
+    modal.classList.add("modal");
+  
+    // モーダルコンテンツを作成
+    const modalContent = document.createElement("div");
+    modalContent.classList.add("modal-content");
+  
+    const modalLeftContent = document.createElement("div");
     modalLeftContent.innerHTML = cardModalContents[cardIndex - 1].left;
+    modalLeftContent.classList.add("modal-left-content");
+  
+    const modalRightContent = document.createElement("div");
     modalRightContent.innerHTML = cardModalContents[cardIndex - 1].right;
-}
-
-function closeModal() {
-    const modal = document.getElementById("modal");
-    modal.classList.remove('open');
-    modal.classList.add('close');
-
-    // アニメーション終了後に非表示にする
-    setTimeout(() => {
-        modal.style.display = "none";
-    }, 500);
-
+    modalRightContent.classList.add("modal-right-content");
+  
+    modalContent.appendChild(modalLeftContent);
+    modalContent.appendChild(modalRightContent);
+    modal.appendChild(modalContent);
+  
+    // 閉じるボタンを作成
+    const closeButton = document.createElement("button");
+    closeButton.innerHTML = "Close";
+    closeButton.onclick = closeModal;
+    modalContent.appendChild(closeButton);
+  
+    // モーダルウィンドウをbodyに追加
+    document.body.appendChild(modal);
+  
+    // モーダル表示
+    modal.style.display = "flex";
+  
+    // CSSを追加
+    modal.style.position = "fixed";
+    modal.style.top = "50%";
+    modal.style.left = "50%";
+    modal.style.transform = "translate(-50%, -50%)";
+    modal.style.backgroundColor = "rgba(255, 255, 255, 0.9)";
+    modal.style.zIndex = "1000";
+    modal.style.padding = "20px";
+    modal.style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0.2)";
+    modal.style.borderRadius = "10px";
+  }
+  
+  function closeModal() {
+    const modal = document.getElementById("dynamic-modal");
+    if (modal) {
+      modal.remove();
+    }
+  
     // カードを元の位置に戻す
     const cards = document.querySelectorAll(".card");
     cards.forEach((card) => {
-        card.style.transform = "none";
-        card.classList.remove("card-clicked");
+      card.style.transform = "none";
+      card.classList.remove("card-clicked");
+      card.style.opacity = "1";
     });
-}
-
-// モーダルウィンドウ外のクリックでモーダルを閉じる
-window.addEventListener("click", function (event) {
-    const modal = document.getElementById("modal");
-
+  }
+  
+  // モーダルウィンドウ外のクリックでモーダルを閉じる
+  window.addEventListener("click", function (event) {
+    const modal = document.getElementById("dynamic-modal");
+  
     // クリックした場所がモーダルの中か外かをチェック
-    if (modal.style.display === "flex" && !modal.contains(event.target)) {
-        closeModal();
+    if (modal && !modal.contains(event.target)) {
+      closeModal();
     }
-});
+  });
+  
