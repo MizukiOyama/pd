@@ -24,18 +24,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let clickedCard;
 
-    const cards = document.querySelectorAll(".card");
-    
-    if (cards.length > 0) {
-        cards.forEach((card, index) => {
-            card.addEventListener("click", function() {
-                cardClicked(index + 1);  // index starts from 0, but your array index starts from 1
-            });
-        });
-    }
-
     function cardClicked(cardIndex) {
-        clickedCard = cards[cardIndex - 1];
+        const card = document.querySelector(`.card.c-${cardIndex}`);
+        if (!card) return;  // null チェック
+        
+        clickedCard = card;
         clickedCard.classList.add("card-clicked");
         moveCardToCenter(clickedCard, cardIndex);
     }
