@@ -101,17 +101,18 @@ const cardModalContents = [
     // モーダル表示
     modal.style.display = "flex";
   
-    // CSSを追加
+    // CSSを追加 .modal
     modal.style.position = "fixed";
     modal.style.top = "50%";
     modal.style.left = "50%";
     modal.style.width = "80vmin";
+    modal.style.height = "50%";
     modal.style.transform = "translate(-50%, -50%)";
-    modal.style.backgroundColor = "rgba(160, 113, 113, 0.5)";
+    modal.style.backgroundColor = "rgba(46, 46, 46, 0.75)";
     modal.style.zIndex = "1000";
-    modal.style.padding = "20px";
-    modal.style.boxShadow = "0px 4px 16px rgba(0, 0, 0, 0.2)";
-    modal.style.borderRadius = "10px";
+    modal.style.padding = "40px";
+    modal.style.boxShadow = "rgba(0, 0, 0, 0.6) 0px 2px 3px";
+    modal.style.borderRadius = "50px";
   }
   
   function closeModal() {

@@ -1,21 +1,5 @@
-.service .section5 .co-li {
-   margin-top: 3rem;
-   line-height: 1rem;
-}
-
 .modal {
-   display: none;
-   position: fixed;
-   top: 25%;
-   left: 25%;
-   width: 50%;
-   height: 50%;
-   z-index: 100;
-   /* Ensure it's above the shutter */
-   justify-content: center;
-   align-items: center;
-   transform: translateX(100%);
-   /* Start off-screen */
+   backdrop-filter: blur(10px);
    transition: all 1s ease;
 }
 
@@ -122,21 +106,15 @@
 }
 
 /* ボタンのスタイルをカスタマイズ */
-.close-btn {
-   content: '';
-   position: absolute;
-   color: var(--text);
-   top: 10%;
-   right: 10%;
-   padding: 0.5rem 1rem;
-   background: var(--bg);
+.modal button {
+   font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.6rem);
+   background: var(--border);
    cursor: pointer;
-   border-radius: 5px;
 }
 
-.close-btn:hover {
+.modal button:hover {
    color: var(--bg);
-   background: var(--bg);
+   background: var(--text);
 }
 
 /* 新しいスタイル 
