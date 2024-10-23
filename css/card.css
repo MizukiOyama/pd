@@ -36,7 +36,6 @@
    overflow: auto;
    display: flex;
    justify-content: space-between;
-   color: var(--bg);
    transition: all 0.3s ease;
    animation: modalFadeIn 0.35s ease forwards;
    background-color: rgba(106, 106, 106, 0.5);
@@ -47,11 +46,20 @@
 }
 
 .modal-left-content {
-   padding: 1rem 0 1rem 2rem;
+   width: 60vmin;
+   height: fit-content;
+   margin: 0 auto;
+   padding: 2rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
 .modal-left-content h4 {
-   font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
+   font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3rem);
+   margin-bottom: 1rem;
+
 }
 
 .card:hover {
