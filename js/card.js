@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     const cardModalContents = [
         {
             left: "Web Design",
@@ -46,80 +45,87 @@ document.addEventListener("DOMContentLoaded", function () {
             right: "<p>表記のないものを依頼したい場合は、Contactページからお問合せください。</p>"
         }
     ];
-    
-        let clickedCard; // グローバル変数
-    
-        function cardClicked(cardIndex) {
-            const cards = document.querySelectorAll(".card");
-            clickedCard = cards[cardIndex - 1];  // 0-based index
+
+    let clickedCard; // グローバル変数
+
+    function cardClicked(cardIndex) {
+        const card = document.querySelector(`.c-${cardIndex}`);
+        if (card) {
+            clickedCard = card;
             clickedCard.classList.add("card-clicked");
-    
             moveCardToCenter(clickedCard, cardIndex);
+        } else {
+            console.error(`Card with index ${cardIndex} not found.`);
         }
+    }
     
-        function moveCardToCenter(card, cardIndex) {
-            const cardRect = card.getBoundingClientRect();
-            const windowWidth = window.innerWidth;
-            const cardWidth = cardRect.width;
-            const centerX = (windowWidth / 2) - (cardWidth / 2);
+    function moveCardToCenter(card, cardIndex) {
+        const cardRect = card.getBoundingClientRect();
+        const windowWidth = window.innerWidth;
+        const cardWidth = cardRect.width;
+        const centerX = (windowWidth / 2) - (cardWidth / 2);
     
-            // カードを中央に移動させる
-            card.style.transition = "transform 0.5s ease";  // アニメーション追加
-            card.style.transform = `translateX(${centerX - cardRect.left}px) scale(1.2)`;
+        // カードを画面中央に移動
+        card.style.transform = `translateX(${centerX - cardRect.left}px) scale(1.2)`;
     
-            // モーダルを表示する処理を直接呼び出し（アニメーション後に表示）
-            setTimeout(() => {
-                openModal(cardIndex);
-            }, 500);  // 0.5秒のアニメーション時間と合わせる
+        // カードの移動アニメーションが終了した後にモーダルを開く
+        card.addEventListener("transitionend", function () {
+            openModal(cardIndex);
+        }, { once: true });
     
-            // 他のカードを下にスライドアウト
-            const otherCards = document.querySelectorAll(".card:not(.card-clicked)");
-            otherCards.forEach((otherCard) => {
-                otherCard.style.transform = "translateY(50%)";
-                otherCard.style.opacity = "0.5";
-            });
-        }
+        // クリックされたカード以外のカードを下にスライドアウトさせる
+        const otherCards = document.querySelectorAll(".card:not(.card-clicked)");
+        otherCards.forEach((otherCard) => {
+            otherCard.style.transform = "translateY(50%)";
+            otherCard.style.opacity = "0.5";  // カードが薄くなる
+        });
+    }
     
-        function openModal(cardIndex) {
-            const modal = document.getElementById("modal");
+    function openModal(cardIndex) {
+        const modal = document.getElementById("modal");
+        if (modal) {
             modal.classList.remove('close');
             modal.classList.add('open');
             modal.style.display = "flex";
     
-            // モーダルの内容をカードごとに更新
+            // カードごとのモーダルウィンドウのコンテンツを更新
             const modalLeftContent = document.getElementById("modal-left-content");
             const modalRightContent = document.getElementById("modal-right-content");
-    
-            // コンテンツを設定
-            modalLeftContent.innerHTML = cardModalContents[cardIndex - 1].left;
-            modalRightContent.innerHTML = cardModalContents[cardIndex - 1].right;
+            if (modalLeftContent && modalRightContent) {
+                modalLeftContent.innerHTML = cardModalContents[cardIndex - 1].left;
+                modalRightContent.innerHTML = cardModalContents[cardIndex - 1].right;
+            }
         }
+    }
     
-        function closeModal() {
-            const modal = document.getElementById("modal");
+    function closeModal() {
+        const modal = document.getElementById("modal");
+        if (modal) {
             modal.classList.remove('open');
             modal.classList.add('close');
     
+            // アニメーション終了後に非表示にする
             setTimeout(() => {
                 modal.style.display = "none";
-            }, 500);  // 閉じるアニメーションのタイミング
+            }, 500);
     
             // カードを元の位置に戻す
             const cards = document.querySelectorAll(".card");
             cards.forEach((card) => {
                 card.style.transform = "none";
+                card.style.opacity = "1";  // カードを元の不透明度に戻す
                 card.classList.remove("card-clicked");
             });
         }
+    }
     
-        // モーダル外クリックでモーダルを閉じる
-        window.addEventListener("click", function (event) {
-            const modal = document.getElementById("modal");
-            if (modal.style.display === "flex" && !modal.contains(event.target)) {
-                closeModal();
-            }
-        });
+    // モーダルウィンドウ外のクリックでモーダルを閉じる
+    window.addEventListener("click", function (event) {
+        const modal = document.getElementById("modal");
     
-        // カードクリックのイベントをHTMLにバインド済み（カード自体がクリックで反応するように）
+        // クリックした場所がモーダルの中か外かをチェック
+        if (modal && modal.style.display === "flex" && !modal.contains(event.target)) {
+            closeModal();
+        }
     });
-    
+});
