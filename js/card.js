@@ -25,12 +25,15 @@ document.addEventListener("DOMContentLoaded", function() {
     let clickedCard;
 
     function cardClicked(cardIndex) {
-        const card = document.querySelector(`.card.c-${cardIndex}`);
-        if (!card) return;  // null チェック
-        
-        clickedCard = card;
-        clickedCard.classList.add("card-clicked");
-        moveCardToCenter(clickedCard, cardIndex);
+        // カードのインデックスから要素を取得
+        const card = document.querySelector(`.c-${cardIndex}`);
+        if (card) {
+            clickedCard = card;
+            clickedCard.classList.add("card-clicked");
+            moveCardToCenter(clickedCard, cardIndex);
+        } else {
+            console.error(`Card with index ${cardIndex} not found.`);
+        }
     }
 
     function moveCardToCenter(card, cardIndex) {
