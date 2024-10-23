@@ -1,44 +1,40 @@
-// Service モーダルのDOM要素取得と動作
 document.addEventListener("DOMContentLoaded", function() {
-    var serviceModal = document.getElementById("serviceModal");
-    var serviceOpenBtn = document.getElementById("openModalBtn");
-    var serviceCloseBtn = document.querySelector(".op-close");
+    // potion modal
+    var modal = document.getElementById("serviceModal");
+    var openBtn = document.getElementById("openModalBtn");
+    var closeBtn = document.querySelector(".op-close");
 
-    // Serviceボタンクリックでモーダルを表示
-    serviceOpenBtn.addEventListener("click", function() {
-        serviceModal.style.display = "block";
-        document.body.style.overflow = 'hidden'; // ページスクロールを無効化
-    });
+    // null チェック
+    if (modal && openBtn && closeBtn) {
+        openBtn.addEventListener("click", function() {
+            modal.style.display = "block";
+            document.body.style.overflow = 'hidden';
+        });
 
-    // Serviceモーダルの閉じるボタンで非表示
-    serviceCloseBtn.addEventListener("click", function() {
-        serviceModal.style.display = "none";
-        document.body.style.overflow = 'auto'; // スクロール再有効化
-    });
-
-    // Serviceモーダル外をクリックした場合に非表示
-    window.addEventListener("click", function(event) {
-        if (event.target === serviceModal) {
-            serviceModal.style.display = "none";
+        closeBtn.addEventListener("click", function() {
+            modal.style.display = "none";
             document.body.style.overflow = 'auto';
-        }
-    });
-});
+        });
+    }
 
-// Card モーダルのDOM要素取得と動作
-document.addEventListener("DOMContentLoaded", function() {
+    // main service
     const cardModalContents = [
-        {
-            left: "Web Design",
-            right: "<p>HP、LPの制作を行います。</p><br><p>責任を持って...</p>"
-        },
-        // 他のコンテンツをここに追加...
+        // modal content...
     ];
 
     let clickedCard;
 
+    const cards = document.querySelectorAll(".card");
+    
+    if (cards.length > 0) {
+        cards.forEach((card, index) => {
+            card.addEventListener("click", function() {
+                cardClicked(index + 1);  // index starts from 0, but your array index starts from 1
+            });
+        });
+    }
+
     function cardClicked(cardIndex) {
-        const cards = document.querySelectorAll(".card");
         clickedCard = cards[cardIndex - 1];
         clickedCard.classList.add("card-clicked");
         moveCardToCenter(clickedCard, cardIndex);
@@ -53,7 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
         card.style.transform = `translateX(${centerX - cardRect.left}px) scale(1.2)`;
 
         card.addEventListener("transitionend", function () {
-            openCardModal(cardIndex);
+            openModal(cardIndex);
         }, { once: true });
 
         const otherCards = document.querySelectorAll(".card:not(.card-clicked)");
@@ -63,39 +59,45 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    function openCardModal(cardIndex) {
-        const cardModal = document.getElementById("modal");
-        cardModal.classList.remove('close');
-        cardModal.classList.add('open');
+    function openModal(cardIndex) {
+        const modal = document.getElementById("modal");
+        if (modal) {
+            modal.classList.remove('close');
+            modal.classList.add('open');
+            modal.style.display = "flex";
 
-        cardModal.style.display = "flex";
+            const modalLeftContent = document.getElementById("modal-left-content");
+            const modalRightContent = document.getElementById("modal-right-content");
 
-        const modalLeftContent = document.getElementById("modal-left-content");
-        const modalRightContent = document.getElementById("modal-right-content");
-        modalLeftContent.innerHTML = cardModalContents[cardIndex - 1].left;
-        modalRightContent.innerHTML = cardModalContents[cardIndex - 1].right;
+            if (modalLeftContent && modalRightContent) {
+                modalLeftContent.innerHTML = cardModalContents[cardIndex - 1].left;
+                modalRightContent.innerHTML = cardModalContents[cardIndex - 1].right;
+            }
+        }
     }
 
-    function closeCardModal() {
-        const cardModal = document.getElementById("modal");
-        cardModal.classList.remove('open');
-        cardModal.classList.add('close');
+    function closeModal() {
+        const modal = document.getElementById("modal");
+        if (modal) {
+            modal.classList.remove('open');
+            modal.classList.add('close');
 
-        setTimeout(() => {
-            cardModal.style.display = "none";
-        }, 500);
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 500);
 
-        const cards = document.querySelectorAll(".card");
-        cards.forEach((card) => {
-            card.style.transform = "none";
-            card.classList.remove("card-clicked");
-        });
+            const cards = document.querySelectorAll(".card");
+            cards.forEach((card) => {
+                card.style.transform = "none";
+                card.classList.remove("card-clicked");
+            });
+        }
     }
 
     window.addEventListener("click", function (event) {
-        const cardModal = document.getElementById("modal");
-        if (cardModal.style.display === "flex" && !cardModal.contains(event.target)) {
-            closeCardModal();
+        const modal = document.getElementById("modal");
+        if (modal && modal.style.display === "flex" && !modal.contains(event.target)) {
+            closeModal();
         }
     });
 });

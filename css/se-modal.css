@@ -1,4 +1,10 @@
 /* モーダルのスタイル */
+#openModalBtn {
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
+    margin-top: 15px;
+    padding: 1rem 2rem;
+}
+
 .op-modal {
     display: none; /* 初期状態では非表示 */
     position: fixed;

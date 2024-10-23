@@ -1058,6 +1058,7 @@ section img {
 }
 
 .option h4 {
+    line-height: 3rem;
     border-bottom: 1px solid var(--border);
     padding-left: 0.5rem;
 }
@@ -1077,7 +1078,7 @@ section img {
     font-weight: 500;
     height: 330px;
     margin-top: 0.5rem;
-    padding: 1rem;
+    padding: 3rem 1rem;
     border: 1px solid var(--border);
     overflow-x: scroll;
 }
