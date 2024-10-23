@@ -1,4 +1,3 @@
-//main service
 const cardModalContents = [
     {
         left: "Web Design",
@@ -62,7 +61,7 @@ function moveCardToCenter(card, cardIndex) {
     const centerX = (windowWidth / 2) - (cardWidth / 2);
 
     // カードを画面中央に移動
-    card.style.transform = translateX(${centerX - cardRect.left}px) scale(1.2);
+    card.style.transform = `translateX(${centerX - cardRect.left}px) scale(1.2)`;
 
     // カードの移動アニメーションが終了した後にモーダルを開く
     card.addEventListener("transitionend", function () {
@@ -73,7 +72,7 @@ function moveCardToCenter(card, cardIndex) {
     const otherCards = document.querySelectorAll(".card:not(.card-clicked)");
     otherCards.forEach((otherCard) => {
         otherCard.style.transform = "translateY(50%)";
-        otherCard.style.opacity = "1";
+        otherCard.style.opacity = "0.5"; // 透明度を下げる
     });
 }
 
