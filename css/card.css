@@ -1,3 +1,8 @@
+.service .section5 .co-li {
+   margin-top: 3rem;
+   line-height: 1rem;
+}
+
 .modal {
    display: none;
    position: fixed;
@@ -47,7 +52,7 @@
 
 .modal-left-content {
    width: 60vmin;
-   height: fit-content;
+   height: 90%;
    margin: 0 auto;
    padding: 2rem;
    display: flex;
