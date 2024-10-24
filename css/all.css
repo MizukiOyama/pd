@@ -518,12 +518,12 @@ section .top-s {
 section .top-s::before,
 section .top-s::after {
     content: "";
-    width: 160px;
-    height: 160px;
+    width: 170px;
+    height: 170px;
     position: absolute;
     bottom: 0;
     left: 0;
-    border-top-right-radius: 160px;
+    border-top-right-radius: 170px;
     border-top: 1px solid var(--border);
     border-right: 1px solid var(--border);
 }
@@ -532,7 +532,8 @@ section .top-s::after {
     height: 180px;
     border-top-right-radius: 180px;
 }
-.tabs .top-s::before {
+.tabs .top-s::before,
+.tabs .top-s::after {
     display: none;
 }
 
