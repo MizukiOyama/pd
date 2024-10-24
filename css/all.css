@@ -1101,3 +1101,24 @@ section img {
     margin-top: 0;
 }
 /*===================== Service =====================*/
+
+/*===================== Contents =====================*/
+
+.main-se {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+.m-se {
+    width: 50%;
+}
+.m-se li {
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
+}
+.m-se li p {
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
+}
+
+/*===================== Contents =====================*/
