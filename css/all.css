@@ -1117,7 +1117,7 @@ section img {
 }
 .contents .m-se {
     width: 50%;
-    padding: 1rem;
+    padding: 0 1rem;
     border: 1px solid var(--border);
 }
 .contents .m-se ol h3 {
