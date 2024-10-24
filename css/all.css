@@ -515,18 +515,22 @@ section .top-s {
     z-index: 1;
 }
 
-section .top-s::before {
+section .top-s::before,
+section .top-s::after {
     content: "";
-    width: 120px;
-    height: 80px;
+    width: 160px;
+    height: 160px;
     position: absolute;
     bottom: 0;
     left: 0;
-    /*border-top-right-radius*/
+    border-top-right-radius: 160px;
     border-top: 1px solid var(--border);
     border-right: 1px solid var(--border);
-    /*background-image: repeating-linear-gradient(0deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);
-    animation: moveBackground 0.55s linear infinite;*/
+}
+section .top-s::after {
+    width: 180px;
+    height: 180px;
+    border-top-right-radius: 180px;
 }
 .tabs .top-s::before {
     display: none;
