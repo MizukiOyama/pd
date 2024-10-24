@@ -1080,7 +1080,7 @@ section img {
     margin-top: 0.5rem;
     padding: 3rem 1rem;
     border: 1px solid var(--border);
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 
 .option ol li {
@@ -1113,7 +1113,7 @@ section img {
     gap: 25px;
     margin: 12vmin auto 0;
     padding: 3rem;
-    overflow-x: scroll;
+    overflow-x: auto;
 }
 .contents .m-se {
     width: 50%;

@@ -43,13 +43,11 @@
         .accordion-text {
             width: 80%;
             height: 150px;
-            margin: 5% auto 0;
+            margin: 3% auto 0;
             display: none;
             overflow-y: auto;
         }
         .accordion-text p {
-            font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
-            line-height: 2.8rem;
             letter-spacing: 0.1rem;
         }
     /*i*/
