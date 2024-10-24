@@ -1105,20 +1105,33 @@ section img {
 /*===================== Contents =====================*/
 
 .contents .main-se {
-    width: 80%;
+    width: 85vmin;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 10px;
+    gap: 25px;
+    margin: 12vmin auto 0;
+    padding: 3rem;
+    overflow-x: scroll;
 }
 .contents .m-se {
     width: 50%;
+    border: 1px solid var(--border);
+}
+.contents .m-se ol h3 {
+    margin-top: 3rem;
 }
 .contents .m-se li {
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--border);
 }
 .contents .m-se li p {
     font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
+    padding-top: 1rem;
+    border-top: 1px solid var(--border);
 }
 
 /*===================== Contents =====================*/
