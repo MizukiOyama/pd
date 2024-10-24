@@ -240,7 +240,7 @@
    z-index: 0;
    width: 0px;
    height: 10%;
-   background: linear-gradient(90deg, var(--text) 0%, var(--bg)50%, var(--text)100%);
+   background: linear-gradient(90deg, var(--text) 0%, var(--text)50%, var(--accent)100%);
    transition: 0.6s ease-out;
 }
 
