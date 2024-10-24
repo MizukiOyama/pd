@@ -1124,7 +1124,7 @@ section img {
     line-height: 5rem;
     margin-top: 3rem;
 }
-.contents .m-se ol h3:only-child {
+.contents .m-se ol h3:nth-of-type(1) {
     margin-top: 0;
 }
 .contents .m-se li {
