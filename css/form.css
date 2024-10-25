@@ -72,7 +72,7 @@ input:-webkit-autofill:focus {
 }
 
 .contact-form .label {
-    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2.2rem);
+    font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 3rem);
     font-weight: 300;
     color: rgba(217, 217, 217, 0.35);
     position: absolute;
