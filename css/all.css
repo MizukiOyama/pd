@@ -741,8 +741,8 @@ section .top-s::after {
 .art {
     width: 260px;
     height: 280px;
-    border-left: 0;
     right: 0;
+    bottom: 0;
 }
 
 .art video {
