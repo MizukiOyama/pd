@@ -625,6 +625,9 @@ section .top-s::after {
 .top .section1 .top-s .text {
     margin-top: 15vmin;
 }
+.top .section3 .top-s .text {
+    margin-top: 2vmin;
+}
 
 /*===================== .service =====================*/
 
