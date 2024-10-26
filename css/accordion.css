@@ -3,7 +3,6 @@
     .accordion-wrap {
         width: calc(70% - 50px);
         padding: 1rem;
-        margin-bottom: 0.5%;
         border: 1px solid var(--border);
         background-color: rgba(217, 217, 217, 0.1);
         backdrop-filter: blur(1px);

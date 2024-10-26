@@ -62,7 +62,7 @@
         color: var(--bg-color);
         position: absolute;
         left: 21%;
-        bottom: 2%;
+        bottom: 6%;
     }
 
     @media only screen and (max-width:600px) {
