@@ -91,6 +91,7 @@ body::before {
     width: 5.5%;
     height: 100%;
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
+    z-index: 10;
     /*background-size: auto auto;
     background-image:
         linear-gradient(90deg, transparent 1%, rgba(146, 146, 146, 0.25) 2%),
@@ -124,7 +125,7 @@ body::before {
     top: 0;
     left: 5.5%;
     width: 92%;
-    height: 10px;
+    height: 20px;
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
     border-bottom: 1px solid var(--border);
     z-index: 10;
@@ -133,7 +134,7 @@ body::before {
 .guide-top::before {
     content: "";
     position: fixed;
-    top: 10px;
+    top: 20px;
     right: 0;
     width: 2.5%;
     height: 100%;
@@ -288,13 +289,13 @@ main {
     border-bottom: 1px solid var(--border);
 }
 
-main::before {
+/*main::before {
     content: "";
     width: 89%;
     margin: 0 auto;
     border-top: 1px solid var(--border);
     display: block;
-}
+}*/
 
 main a {
     border: 1px solid;
