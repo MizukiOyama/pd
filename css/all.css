@@ -583,6 +583,7 @@ section .top-s::after {
     font-family: sans-serif;
     width: 50%;
     height: 200px;
+    border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     padding: 0 2rem;
     position: absolute;
@@ -592,6 +593,10 @@ section .top-s::after {
     justify-content: center;
     flex-direction: column;
     gap: 25px;
+}
+
+.top .h2-bg {
+    border-right: 0;
 }
 
 .policy .h2-bg {
