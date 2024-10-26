@@ -490,6 +490,7 @@ section {
 }
 
 .tabs .caption {
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     position: absolute;
     bottom: 0;
     left: 0;
@@ -499,16 +500,16 @@ section {
     z-index: 1;
 }
 
-.tabs .caption::before {
+/*.tabs .caption::before {
     content: "";
     height: 100%;
     position: absolute;
     top: 0;
     border-right: 1px solid var(--border);
-}
+}*/
 
 .tabs .top-h1 .caption {
-    font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
+    font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3rem);
     position: relative;
     width: 100%;
     padding: 1rem 0;
