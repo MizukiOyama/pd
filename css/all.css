@@ -533,12 +533,12 @@ section .top-s {
     padding: 0 10rem;
     text-align: justify;
     display: flex;
+    position: relative;
     /* 縦に並べる */
     flex-direction: column;
     /*縦方向の中央寄せ*/
     justify-content: center;
     gap: 20px;
-    position: relative;
     z-index: 1;
 }
 
@@ -705,12 +705,13 @@ section .top-s::after {
 /*===================== .works =====================*/
 
 .work {
-    position: relative;
+    position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    z-index: -1;
 }
 
 .design,
@@ -720,7 +721,8 @@ section .top-s::after {
 }
 
 .design {
-    right: 23vmin;
+    right: 30vmin;
+    bottom: 0;
     width: 380px;
     height: 400px;
 }
@@ -737,15 +739,16 @@ section .top-s::after {
 }
 
 .art {
-    right: -8vmin;
-    width: 300px;
-    height: 260px;
+    width: 260px;
+    height: 280px;
     border-left: 0;
+    right: 0;
 }
 
 .art video {
-    width: 280px;
-    height: 280px;
+    width: 230px;
+    height: 230px;
+    margin-left: 2%;
     background: var(--border);
 }
 
