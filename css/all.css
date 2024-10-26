@@ -125,23 +125,32 @@ body::after {
     /*animation: bg-img-move 5s linear infinite, bg-img-rotate 10s linear infinite;*/
 }
 
-.guide-top,
-.guide-left {
+.guide-top {
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 89%;
     height: 20px;
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
+    border-bottom: 1px solid var(--border);
 }
 
 .guide-top::before {
     content: "";
-    bottom: 0;
+    top: 20px;
+    right: 0;
+    width: 20px;
+    height: 100%;
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
+    border-bottom: 1px solid var(--border);
 }
 
-.guide-left {
+.guide-top::after {
     content: "";
-    right: 0;
+    bottom: 0;
+    width: 89%;
+    height: 20px;
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
+    border-top: 1px solid var(--border);
 }
 
 /*@keyframes bg-img-move {
