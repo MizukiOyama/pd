@@ -579,8 +579,8 @@ section .top-s::after {
 
 .h2-bg {
     font-family: sans-serif;
-    width: fit-content;
-    height: 120px;
+    width: 50%;
+    height: 200px;
     border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     padding: 0 2rem;
