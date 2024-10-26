@@ -316,6 +316,7 @@ a {
     position: relative;
     display: inline-block;
     text-decoration: none;
+    z-index: 100;
 }
 
 /*.top-s a {
@@ -555,9 +556,9 @@ section .top-s::after {
     border-right: 1px solid var(--border);
 }
 section .top-s::after {
-    width: 180px;
-    height: 180px;
-    border-top-right-radius: 180px;
+    width: 120px;
+    height: 120px;
+    border-top-right-radius: 120px;
 }
 .tabs .top-s::before,
 .tabs .top-s::after {
@@ -582,7 +583,6 @@ section .top-s::after {
     font-family: sans-serif;
     width: 50%;
     height: 200px;
-    border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     padding: 0 2rem;
     position: absolute;
