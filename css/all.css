@@ -714,6 +714,11 @@ section .top-s::after {
     z-index: -1;
 }
 
+.design h3,
+.art h3 {
+    padding-left: 0.5rem;
+}
+
 .design,
 .art {
     position: absolute;
@@ -721,14 +726,10 @@ section .top-s::after {
 }
 
 .design {
-    right: 30vmin;
-    bottom: 0;
+    right: 15vmin;
+    bottom: 10vmin;
     width: 380px;
     height: 400px;
-}
-
-.design h3 {
-    padding-left: 0.5rem;
 }
 
 .design video {
@@ -741,13 +742,13 @@ section .top-s::after {
 .art {
     width: 260px;
     height: 280px;
-    right: 0;
+    right: 35px;
     bottom: 0;
 }
 
 .art video {
-    width: 230px;
-    height: 230px;
+    width: 235px;
+    height: 235px;
     margin-left: 2%;
     background: var(--border);
 }
