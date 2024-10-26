@@ -76,7 +76,7 @@ body {
     font-weight: 300;
     font-style: normal;
     color: var(--bg);
-    background-color: var(--text);
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
     position: relative;
     width: 100%;
     height: auto;
@@ -120,8 +120,7 @@ body::after {
     height: 100%;
     position: fixed;
     top: 0;
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
-    opacity: 0.1;
+    right: 0;
     z-index: -1;
     /*animation: bg-img-move 5s linear infinite, bg-img-rotate 10s linear infinite;*/
 }
