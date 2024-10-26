@@ -822,9 +822,8 @@ section img {
 .bg-aitem {
     width: 500px;
     height: 55px;
-    margin: 2vmin 0;
     position: relative;
-    background: var(--bg);
+    background: var(--border);
 }
 
 .top section .top-s .text:nth-child(4) {
