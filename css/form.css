@@ -34,6 +34,7 @@ input:-webkit-autofill:focus {
     margin: 0 auto;
     position: relative;
     border: 1px solid var(--border);
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
 }
 
 .get-in-touch {
