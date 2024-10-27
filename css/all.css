@@ -1046,8 +1046,12 @@ section img {
     margin: 0;
 }
 
+.service .section1 .h2-bg {
+    gap: 7px;
+}
+
 .service .section1 h2 {
-    line-height: 9rem;
+    line-height: 17rem;
 }
 
 .service .section1 video {
@@ -1069,6 +1073,7 @@ section img {
 .flow-ol {
     font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3.4rem);
     letter-spacing: 0.5rem;
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
 }
 
 .flow {
