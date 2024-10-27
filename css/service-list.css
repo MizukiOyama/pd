@@ -6,6 +6,7 @@
 .service #wrap {
     width: calc(800px - 50px);
     height: fit-content;
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
 }
 .se-tab-w {
     width: 100%;
