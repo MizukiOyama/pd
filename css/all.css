@@ -597,14 +597,10 @@ section .top-s::after {
 
 .top .section1 .h2-bg,
 .top .section2 .h2-bg,
-.top .section3 .h2-bg, {
+.top .section3 .h2-bg {
     border-right: 0;
 }
 
-.policy .h2-bg {
-    width: 50%;
-    height: 150px;
-}
 .policy .h2-bg span {
     font-size: clamp(6rem, calc(6rem + 0.1vw), 6.4rem);
 }
