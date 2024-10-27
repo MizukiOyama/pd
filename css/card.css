@@ -148,6 +148,11 @@
    z-index: 1;
 }
 
+
+.card-list {
+   width: fit-content;
+   display: flex;
+}
 .c-c-1 {
    right: 10rem;
 }
