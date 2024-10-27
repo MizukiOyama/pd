@@ -147,7 +147,7 @@ body::before {
     position: fixed;
     left: 5.5%;
     bottom: 0;
-    width: 89%;
+    width: 92%;
     height: 20px;
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
     border-top: 1px solid var(--border);
