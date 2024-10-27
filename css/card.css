@@ -171,6 +171,7 @@
 .c-c-3 {
    width: 80%;
    bottom: 15vmin;
+   flex-direction: column;
 }
 
 .c-c-2 .card,
@@ -186,15 +187,15 @@
 
 .c-c-2 .c-1,
 .c-c-3 .c-1 {
-   margin-top: -10%;
+   top: -10vmin;
 }
 .c-c-2 .c-2,
 .c-c-3 .c-2 {
-   margin-top: -5%;
+   top: -5vmin;
 }
 .c-c-2 .c-4,
 .c-c-3 .c-4 {
-   margin-top: 5%;
+   top: 5vmin;
 }
 
 .card {

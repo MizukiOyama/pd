@@ -3,7 +3,7 @@
 .section2 .top-s .text {
     margin-bottom: 5px;
 }
-#wrap {
+.service #wrap {
     width: calc(800px - 50px);
     height: fit-content;
 }
