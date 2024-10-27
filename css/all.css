@@ -859,6 +859,10 @@ section img {
     margin: 0;
 }
 
+.about #tab-4 .top-s .text {
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
+}
+
 .about .bg-aitem {
     width: 650px;
     height: 55px;
