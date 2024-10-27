@@ -1088,11 +1088,10 @@ section img {
 
 .option {
     width: calc(840px - 50px);
-    height: 400px;
+    height: 460px;
     padding: 1rem 0.5rem 0;
     border: 1px solid var(--border);
     display: flex;
-    justify-content: center;
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
 }
 

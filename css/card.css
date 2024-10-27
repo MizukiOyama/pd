@@ -172,7 +172,7 @@
    width: fit-content;
    right: 10rem;
    bottom: 15vmin;
-   flex-direction: column;
+   flex-direction: row-reverse;
 }
 .c-c-3 {
    right: 1rem;
