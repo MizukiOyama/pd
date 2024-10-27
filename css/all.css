@@ -1047,7 +1047,7 @@ section img {
 }
 
 .service .section1 .h2-bg {
-    gap: 7px;
+    gap: 6px;
 }
 
 .service .section1 h2 {
@@ -1071,13 +1071,13 @@ section img {
 }
 
 .flow-ol {
-    font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3.4rem);
+    font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 3rem);
     letter-spacing: 0.5rem;
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
 }
 
 .flow {
-    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     margin: 2rem auto 5rem;
     padding-left: 5.4rem;
     letter-spacing: 0.2rem;
