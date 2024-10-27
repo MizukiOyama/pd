@@ -148,11 +148,6 @@
    z-index: 1;
 }
 
-
-.card-list {
-   width: fit-content;
-   display: flex;
-}
 .c-c-1 {
    right: 10rem;
 }
@@ -174,9 +169,14 @@
 
 .c-c-2,
 .c-c-3 {
-   width: 80%;
+   width: fit-content;
+   right: 10rem;
    bottom: 15vmin;
    flex-direction: column;
+}
+.c-c-3 {
+   right: 1rem;
+   bottom: 0;
 }
 
 .c-c-2 .card,
@@ -184,10 +184,6 @@
    width: 280px;
    height: 200px;
    margin: 0 -5%;
-}
-
-.c-c-3 {
-   bottom: 0;
 }
 
 .c-c-2 .c-1,
