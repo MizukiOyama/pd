@@ -528,7 +528,7 @@ section {
 
 /*===================== section =====================*/
 section .top-s {
-    height: 650px;
+    height: 700px;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     padding: 0 10rem;
@@ -1091,6 +1091,7 @@ section img {
     border: 1px solid var(--border);
     display: flex;
     justify-content: center;
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
 }
 
 .option h3 {
@@ -1141,7 +1142,6 @@ section img {
     display: flex;
     align-items: center;
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
-    margin-top: 3rem;
 }
 
 .service .section5 .co-li a {
