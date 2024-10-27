@@ -585,14 +585,14 @@ section .top-s::after {
     height: 200px;
     border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
-    padding-left: 3rem;
+    padding: 2rem 0 0 3rem;
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 25px;
+    gap: 10px;
 }
 
 .top .section1 .h2-bg,
@@ -991,7 +991,6 @@ section img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 3vmin;
     gap: 1vmin;
     padding: 1rem;
     background-color: var(--border);
@@ -1047,11 +1046,7 @@ section img {
 }
 
 .service .section1 .h2-bg {
-    gap: 6px;
-}
-
-.service .section1 h2 {
-    line-height: 17rem;
+    gap: 5px;
 }
 
 .service .section1 video {
