@@ -143,26 +143,27 @@
    width: 100%;
    position: absolute;
    display: flex;
-   /*align-items: center;
-   justify-content: center;*/
+   /*align-items: center;*/
+   justify-content: end;
    z-index: 1;
 }
 
 .c-c-1 {
-   right: -2vmin;
+   right: 10rem;
 }
 
 .c-c-1 .c-1 {
    left: 10%;
-   margin-top: -5%;
+   top: 0;
 }
 
 .c-c-1 .c-2 {
+   top: 5vmin;
    left: 5%;
 }
 
 .c-c-1 .c-3 {
-   margin-top: 5%;
+   top: 10vmin;
 }
 /*================*/
 
