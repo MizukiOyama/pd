@@ -595,7 +595,9 @@ section .top-s::after {
     gap: 25px;
 }
 
-.top .h2-bg {
+.top .section1 .h2-bg,
+.top .section2 .h2-bg,
+.top .section3 .h2-bg, {
     border-right: 0;
 }
 
