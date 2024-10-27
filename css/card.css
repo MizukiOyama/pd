@@ -143,13 +143,13 @@
    width: 100%;
    position: absolute;
    display: flex;
-   align-items: center;
-   justify-content: center;
+   /*align-items: center;
+   justify-content: center;*/
    z-index: 1;
 }
 
 .c-c-1 {
-   right: 1rem;
+   right: -2vmin;
 }
 
 .c-c-1 .c-1 {
@@ -169,7 +169,7 @@
 .c-c-2,
 .c-c-3 {
    width: 80%;
-   margin-top: -7%;
+   bottom: 15vmin;
 }
 
 .c-c-2 .card,
@@ -180,7 +180,7 @@
 }
 
 .c-c-3 {
-   margin-top: 18%;
+   bottom: 0;
 }
 
 .c-c-2 .c-1,

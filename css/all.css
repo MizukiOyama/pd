@@ -585,7 +585,7 @@ section .top-s::after {
     height: 200px;
     border-right: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
-    padding: 0 2rem;
+    padding-left: 3rem;
     position: absolute;
     top: 0;
     left: 0;
@@ -1044,7 +1044,7 @@ section img {
     margin: 0;
 }
 
-.service .section2 h2 {
+.service .section1 h2 {
     line-height: 9rem;
 }
 
