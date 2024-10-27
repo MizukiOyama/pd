@@ -316,7 +316,7 @@ section .top-s::before {
     width: 120%;
     position: absolute;
     right: 0;
-    bottom: 10%;
+    bottom: 25vmin;
 }
 
 .top .se {
