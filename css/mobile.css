@@ -47,7 +47,7 @@ h1 {
     font-size: clamp(8rem, calc(8rem + 0.5vw), 10rem);
     width: 100%;
     line-height: 10rem;
-    letter-spacing: 0.85rem;
+    letter-spacing: 0.005rem;
 }
 
 /* Mobile対応 */
@@ -204,8 +204,9 @@ section {
 .tabs .top-h1 {
     top: 5%;
     width: 100%;
+    border-top: 1px solid var(--border);
     mix-blend-mode: plus-lighter;
-    padding: 0.15rem 0 0 1rem;
+    padding: 0.15rem 0 0 2rem;
 }
 
 .tabs video {
@@ -218,7 +219,7 @@ section {
 
 .tabs .caption {
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
-    padding: 1.5rem 1rem 1.5rem 1rem;
+    padding: 1.5rem 1rem 1.5rem 2rem;
     border: 1px solid var(--border);
     border-left: 0;
 }
