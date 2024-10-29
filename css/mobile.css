@@ -42,7 +42,6 @@ body::before {
     height: 10px;
 }
 
-
 h1 {
     /*font-size: 62.5%;=16px 12rem=120px*/
     font-size: clamp(8rem, calc(8rem + 0.5vw), 10rem);
@@ -53,8 +52,7 @@ h1 {
 
 /* Mobile対応 */
     .noise {
-        --lines: 0.001px; /* モバイルでは少し大きく設定 */
-        mask-size: 150% auto; /* マスクサイズを調整 */
+        display: none;
     }
 
 h2 {
@@ -63,6 +61,7 @@ h2 {
     line-height: 6rem;
     -webkit-text-stroke-width: 1px;
 }
+
 .policy h2 {
     line-height: 8rem;
 }
@@ -78,8 +77,7 @@ p {
     letter-spacing: -0.075rem;
 }
 
-ol,
-ul {
+ol, ul {
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
 }
 
@@ -204,15 +202,10 @@ section {
 
 /*===================== tabs h1 top =====================*/
 .tabs .top-h1 {
-    top: 0;
-    left: 0;
+    top: 5%;
     width: 100%;
     mix-blend-mode: plus-lighter;
     padding: 0.15rem 0 0 1rem;
-    border: 1px solid var(--border);
-    border-top: 0;
-    border-left: 0;
-    z-index: 1;
 }
 
 .tabs video {
@@ -225,9 +218,6 @@ section {
 
 .tabs .caption {
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
-    position: absolute;
-    bottom: 0;
-    left: 0;
     padding: 1.5rem 1rem 1.5rem 1rem;
     border: 1px solid var(--border);
     border-left: 0;
@@ -236,7 +226,6 @@ section {
 .tabs .top-h1 .caption {
     font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
     padding: 0.5rem 0;
-    border-top: 1px solid var(--border);
 }
 
 /*===================== h1 top =====================*/
