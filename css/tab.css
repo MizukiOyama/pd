@@ -100,7 +100,7 @@
     }*/
     
     .tabs-container {
-        display: flex;
+        display: none;
         flex-direction: row;
         position: absolute;
         bottom: 0;
