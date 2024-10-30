@@ -846,7 +846,6 @@ section img {
 .policy .top-s .text,
 .contact .top-s .text {
     width: 650px;
-    margin-top: 10vmin;
 }
 
 .about #tab-4 .top-s .text,
@@ -856,7 +855,7 @@ section img {
 }
 
 .about #tab-4 .top-s .text {
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
+    margin-top: 6vmin;
 }
 
 .about .bg-aitem {
