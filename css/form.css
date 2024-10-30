@@ -116,23 +116,20 @@ input:-webkit-autofill:focus {
     padding-right: 1.5rem;
 }
 
-.note {
+.align-center p {
+    font-size: clamp(1rem, calc(1rem + 0.1vw), 1.2rem);
+    color: var(--bg);
     position: absolute;
     left: 1.5rem;
     bottom: 3rem;
     z-index: 1;
 }
 
-.note a {
+.align-center p a {
     font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
     letter-spacing: 0.065rem;
     padding: 0.5rem 1rem;
     border: 0;
-}
-
-section .top-s .note p {
-    font-size: clamp(1rem, calc(1rem + 0.1vw), 1.2rem);
-    color: var(--bg);
 }
 
 
@@ -260,17 +257,14 @@ section .top-s .note p {
         color: var(--text);
         background: var(--accent);
     }
-    .note {
+    .contact-form p {
         width: 50%;
         line-height: 1rem;
         left: 0.5rem;
         bottom: 0.5rem;
         z-index: 1;
     }
-    .note p {
-        line-height: 2rem;
-    }
-    .note a {
+    .contact-form p a {
         font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
         margin-top: 0;
         padding: 0.5rem;
