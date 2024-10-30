@@ -179,11 +179,11 @@ main .button::before, main .button::after {
 /*===================== リンク =====================*/
 
 .hr {
-    height: 0.5px;
+    height: 10px;
 }
 .hr::after {
-    height: 140px;
-    top: -70px;
+    height: 110px;
+    top: -50px;
 }
 
 
@@ -377,10 +377,11 @@ section .top-s::after {
 }
 
 .design {
-    right: 0;
-    left: 0;
+    bottom: 30%;
+    left: 5%;
     width: 60%;
     height: 60%;
+    border-left: 0;
 }
 
 .design video {
@@ -389,8 +390,9 @@ section .top-s::after {
 }
 
 .art {
+    bottom: 10%;
     right: 0;
-    width: 40%;
+    width: 50%;
     height: 55%;
 }
 
