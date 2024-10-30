@@ -846,7 +846,7 @@ section img {
 .policy .top-s .text,
 .contact .top-s .text {
     width: 650px;
-    margin-top: 23vmin;
+    margin-top: 10vmin;
 }
 
 .about #tab-4 .top-s .text,
@@ -975,12 +975,10 @@ section img {
     font-size: clamp(0.8rem, calc(0.8rem + 0.1vw), 1rem);
 }
 
-.profile .like video {
+.profile .like .bg-aitem {
     width: 100%;
+    height: 100px;
     margin-bottom: 3%;
-}
-
-.profile video {
     background: var(--hover);
 }
 
