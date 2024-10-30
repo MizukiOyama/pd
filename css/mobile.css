@@ -295,6 +295,7 @@ section .top-s .text {
 }
 
 .top section .top-s .text {
+    width: 100%;
     height: 220px;
 }
 
