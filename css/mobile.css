@@ -27,7 +27,7 @@ body::before {
 .guide-top {
     left: 0;
     width: 100%;
-    height: 15px;
+    height: 20px;
 }
 
 .guide-top::before {
@@ -39,7 +39,7 @@ body::before {
 .guide-top::after {
     left: 0;
     width: 100%;
-    height: 15px;
+    height: 20px;
 }
 
 h1 {
@@ -206,7 +206,7 @@ section {
     width: 100%;
     border-top: 1px solid var(--border);
     mix-blend-mode: plus-lighter;
-    padding: 0.15rem 0 0 2rem;
+    padding: 0.15rem 0 0 3rem;
 }
 
 .tabs video {
@@ -248,7 +248,9 @@ section .top-s::before {
 .top .tabs::after,
 .top .section1::after,
 .top .section2::after,
-.top .section3::after {
+.top .section3::after,
+section .top-s::before,
+section .top-s::after {
     display: none;
 }
 

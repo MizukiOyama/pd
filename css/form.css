@@ -215,7 +215,7 @@ section .top-s .note p {
     }
 
     .content-wrapper {
-        width: 100%;
+        width: 95%;
         padding: 0.5rem 1rem;
         margin: 0 auto;
         position: relative;
@@ -261,7 +261,7 @@ section .top-s .note p {
         background: var(--accent);
     }
     .note {
-        width: 59%;
+        width: 50%;
         line-height: 1rem;
         left: 0.5rem;
         bottom: 0;
