@@ -264,7 +264,7 @@ section .top-s .note p {
         width: 50%;
         line-height: 1rem;
         left: 0.5rem;
-        bottom: 0;
+        bottom: 0.5rem;
         z-index: 1;
     }
     .note p {
