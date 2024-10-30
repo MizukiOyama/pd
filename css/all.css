@@ -623,11 +623,13 @@ section .top-s::after {
 
 .top section .top-s .text {
     width: 500px;
+    height: 150px;
 }
 
-.top .section1 .top-s .text {
-    margin-top: 15vmin;
+.section3 .button {
+    margin-top: 3rem;
 }
+
 .top .section3 .top-s .text {
     margin-top: 2vmin;
 }
