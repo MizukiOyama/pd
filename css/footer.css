@@ -70,7 +70,15 @@
             height: 420px;
             padding-left: 17vmin;
         }
+        footer::before {
+            width: 5%;
+        }
 
+        footer .noise {
+            display: block;
+            display: flex;
+            flex-direction: column;
+        }
         footer a {
             font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
         }
@@ -87,6 +95,6 @@
         .foot {
             font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.4rem);
             padding: 0.25em 1em;
-            bottom: 4%;
+            bottom: 5%;
         }
     }

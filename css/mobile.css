@@ -218,14 +218,15 @@ section {
 }
 
 .tabs .caption {
-    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
     padding: 1.5rem 1rem 1.5rem 2rem;
     border: 1px solid var(--border);
     border-left: 0;
 }
 
+/*h1 bottom*/
 .tabs .top-h1 .caption {
-    font-size: clamp(1.8rem, calc(1.8rem + 0.1vw), 2rem);
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
     padding: 0.5rem 0;
 }
 
