@@ -895,11 +895,11 @@ section img {
 }
 
 .about .design {
-    left: -2.5%;
+    left: 0;
 }
 
 .about .art {
-    right: -2.5%;
+    right: 0;
 }
 
 .about .design video,

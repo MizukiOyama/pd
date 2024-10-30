@@ -288,10 +288,14 @@ section .top-s::after {
     bottom: 0;
 }
 
-.top section .top-s .text {
+section .top-s .text {
     width: 100%;
     padding: 0 1rem;
     margin: 0;
+}
+
+.top section .top-s .text {
+    height: 220px;
 }
 
 #tab-2 .top-s .text,
