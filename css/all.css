@@ -76,7 +76,7 @@ body {
     font-weight: 300;
     font-style: normal;
     color: var(--bg);
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize01.png");
     position: relative;
     width: 100%;
     height: auto;
@@ -90,7 +90,7 @@ body::before {
     top: 0;
     width: 5.5%;
     height: 100%;
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize01.png");
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
     z-index: 10;
     /*background-size: auto auto;
     background-image:
