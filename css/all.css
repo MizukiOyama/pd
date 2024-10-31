@@ -76,7 +76,7 @@ body {
     font-weight: 300;
     font-style: normal;
     color: var(--bg);
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize02.png");
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
     position: relative;
     width: 100%;
     height: auto;
@@ -1163,6 +1163,7 @@ section img {
 }
 
 .contents .m-se ol {
+    margin-top: 5rem;
     padding: 0 1rem;
     border: 1px solid var(--border);
 }
