@@ -124,12 +124,13 @@ body::before {
     position: fixed;
     top: 0;
     left: 5.5%;
-    width: 92%;
+    width: 90%; /* 左側からの5.5%に合わせるための調整 */
     height: 20px;
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
+    background-size: cover; /* 背景画像が要素にフィット */
     border-bottom: 1px solid var(--border);
     border-left: 1px solid var(--border);
-    clip-path: polygon(0 0, 100% 0, 100% 30%, 100% 100%, 90% 100%, 90% 10%, 0 10%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 95% 100%, 95% 50%, 0 50%); /* 形状の微調整 */
     z-index: 10;
 }
 /*
