@@ -473,9 +473,9 @@ section img {
     width: 100%;
 }
 /*===================== About =====================*/
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 355px) {
     .about #tab-1 .top-s .text {
-        margin-top: 40px;
+        margin-top: 50px;
     }
 }
 
@@ -511,16 +511,16 @@ section img {
 }
 
 .profile ol div {
-    padding-left: 10px;
+    padding-left: 0;
 
 }
 
 .profile li {
+    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
     margin-bottom: -5%;
 }
 
 .profile li br {
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
     display: block;
     content: "";
     margin: -5px 0;
