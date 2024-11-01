@@ -644,22 +644,15 @@ section .top-s::after {
     right: 0;
     bottom: 0;
 }
-.se-list {
-    position: relative;
-}
-
-.se {
-    position: relative;
-}
 
 .se::after {
     content: "";
     position: absolute;
     pointer-events: none;
-    top: -5%;
-    left: 5%;
-    width: 200px;
-    height: 150px;
+    top: 5%;
+    right: -10%;
+    width: 100%;
+    height: 300px;
     opacity: 0;
     transition: opacity 0.15s ease;
     background-size: contain;
