@@ -146,6 +146,7 @@ body::after {
 
 .guide-top::after {
     top: 0;
+    border: 0;
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
 }
 
