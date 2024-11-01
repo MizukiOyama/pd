@@ -284,6 +284,64 @@ li {
     list-style: none;
 }
 
+.page_list a {
+    font-family: 'Noto Sans JP', serif;
+    display: inline-block;
+    position: relative;
+    font-size: clamp(1.2rem, calc(1.2rem + 1vw), 1.4rem);
+    font-weight: bold;
+    color: var(--def);
+    margin: 0 auto;
+    padding: 1%;
+    letter-spacing: .25rem;
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+.se:focus a:after {
+    opacity: 1;
+}
+.se a:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    pointer-events: none;
+    top: -5%;
+    left: 5%;
+    right: 0;
+    width: 200px;
+    height: 150px;
+    opacity: 0;
+    transition: opacity .15s ease;
+}
+/*hover img */
+.se-01:focus a:after {
+    background: url('https://mizukioyama.github.io/pd/hp-img/2341suisai.png');
+}
+.se-02:focus a:after {
+    background: url('https://mizukioyama.github.io/pd/hp-img/ai-suisai.png');
+}
+.se-03:focus a:after {
+    background: url('https://mizukioyama.github.io/pd/hp-img/kouryoku-suisai.png');
+}
+
+.se-01:focus a:after,
+.se-02:focus a:after,
+.se-03:focus a:after {
+    content: attr(data-alt);
+    font-size: 0;
+    opacity: 0.7;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+}
+
 /*===================== リンク =====================*/
 main {
     border-bottom: 1px solid var(--border);
