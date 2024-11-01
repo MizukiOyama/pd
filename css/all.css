@@ -245,7 +245,7 @@ h3 {
 
 p {
     /*font-size: 62.5%;=16px 1.2rem=12px*/
-    font-size: clamp(1.2rem, calc(1.2rem + 0.4vw), 1.6rem);
+    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
     width: fit-content;
     letter-spacing: 0.01rem;
     line-height: 3rem;
