@@ -10,10 +10,11 @@
 }
 .se-tab-w {
     width: 100%;
+    height: 100px;
     display: flex;
     align-items: end;
     justify-content: space-between;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid var(--border);
 }
 
 .list-tab {
@@ -41,6 +42,7 @@ border-bottom: 1px solid;
 }
 .selected {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
+    font-weight: 600;
     width: calc(42% - 10px);
     height: 9.25vmin;
     color: var(--bg-color);
@@ -120,12 +122,11 @@ section #container .se-box {
 }
 
 #wrap .container h3 {
-    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
-    font-weight: 600;
+    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
+    font-weight: 500;
     color: var(--link-color);
     margin-top: 6rem;
     padding-left: 0.85rem;
-    border-left: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
 }
 
