@@ -106,7 +106,6 @@ border-bottom: 1px solid;
 section #container .se-box {
     margin-top: 2rem;
     margin-bottom: 5rem;
-    position: relative;
     display: flex;
     /*align-items: normal;*/
     cursor: pointer;
