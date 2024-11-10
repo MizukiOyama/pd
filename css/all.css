@@ -1,3 +1,103 @@
+/*リセット*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1.5;
+    font-family: sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+    content: '';
+}
+
+address {
+    font-style: normal;
+}
+
+/* コンテナの幅を親要素にフィットさせるための設定 */
+html {
+    box-sizing: border-box;
+    font-size: 100%;
+    overflow-y: scroll;
+}
+/*リセット*/
+
+
 /*h1*/
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 /*h2 ~ h4*/
@@ -22,24 +122,6 @@
     background-color: rgba(160, 113, 113, 0.5);
 }
 
-body,
-header,
-footer,
-h1,
-h2,
-h3,
-h4,
-p,
-ul,
-ol,
-li,
-a,
-div,
-span,
-img {
-    margin: 0;
-    padding: 0;
-}
 
 /*===================== Scrollbar =====================*/
 ::-webkit-scrollbar {
