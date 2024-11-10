@@ -215,11 +215,12 @@ body::after {
     top: 19px;
     right: 0;
     width: 2.5%;
-    height: 100%;
+    height: 95.7555%;
     border-left: 1px solid var(--border);
 }
 
 .guide-top::after {
+    height: 100%;
     top: 0;
     border: 0;
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
