@@ -212,7 +212,7 @@ body::after {
 .guide-top::after {
     content: "";
     position: fixed;
-    top: 20px;
+    top: 19px;
     right: 0;
     width: 2.5%;
     height: 100%;
@@ -220,8 +220,6 @@ body::after {
 }
 
 .guide-top::after {
-    top: 0;
-    border: 0;
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
 }
 
