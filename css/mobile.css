@@ -72,7 +72,7 @@ h3 {
 
 p {
     /*font-size: 62.5%;=16px 1.2rem=12px*/
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
+    font-size: clamp(1rem, 0.314rem + 3.43vw, 1.6rem);
     letter-spacing: -0.075rem;
 }
 
