@@ -529,7 +529,7 @@ section .top-s {
     height: 700px;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
-    padding: 0 10rem;
+    padding: 0 3vw;
     text-align: justify;
     display: flex;
     position: relative;
@@ -796,7 +796,8 @@ section img {
 .top .section2 img,
 .top .section3 img,
 .top .section4 img {
-    width: 35%;
+    width: 400px;
+    min-width: 250px;
     background: var(--hover);
 }
 
