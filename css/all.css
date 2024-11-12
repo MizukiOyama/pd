@@ -154,6 +154,8 @@ body {
     background: var(--text);
     background-image: url("https://mizukioyama.github.io/pd/hp-img/pd-bg-img02.png");
     background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: cover;
     position: relative;
     width: 100%;
     height: auto;
