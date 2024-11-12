@@ -151,7 +151,7 @@ body {
     font-weight: 300;
     font-style: normal;
     color: var(--bg);
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/pd-bg-img.png");
+    background: var(--text);
     position: relative;
     width: 100%;
     height: auto;
@@ -532,6 +532,9 @@ section {
     width: 89%;
     margin: 0 auto;
     border-right: 1px solid var(--border);
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/pd-bg-img.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 /*===================== tabs h1 top =====================*/
