@@ -464,20 +464,23 @@ main .button::before, main .button::after {
     width: 100%;
     height: 0.5px;
     margin: 0;
-    background: var(--border);
+    top: -50px;
     position: relative;
-}
-.hr::after {
-    content: "";
-    width: 100%;
-    height: 140px;
     display: block;
-    position: absolute;
-    top: -70px;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
 }
-
+/*.hr::after {
+    content: "";
+    width: 100%;
+    height: 100px;
+    display: block;
+    position: absolute;
+    top: -50px;
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+}
+*/
 /*.hr::before {
     content: "";
     display: block;
