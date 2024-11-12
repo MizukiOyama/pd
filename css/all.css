@@ -152,9 +152,8 @@ body {
     font-style: normal;
     color: var(--bg);
     background: var(--text);
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/pd-bg-img.png");
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    background-image: url("https://mizukioyama.github.io/pd/hp-img/pd-bg-img02.png");
+    background-repeat: repeat-y;
     position: relative;
     width: 100%;
     height: auto;
