@@ -8,12 +8,8 @@
    <link rel="stylesheet" href="css/blog.css">
    <link rel="stylesheet" href="css/all.css">
    <style>
-      body {
-         font-family: Arial, sans-serif;
-      }
-
-      h1 {
-         padding-top: 15vmin;
+      body::before {
+         display: none;
       }
 
       .article {
@@ -55,9 +51,8 @@
       }
       .categories h2 {
          font-size: 2rem;
-         position: absolute;
-         top: -10%;
-         left: -10%;
+         position: relative;
+         left: -1%;
       }
       .categories a {
          text-align: left;
