@@ -37,9 +37,14 @@
          mix-blend-mode: difference;
          z-index: 100;
       }
-
+      .navbar {
+        width: fit-content;
+      }
+      
       .navbar ul {
          display: flex;
+         justify-content: flex-end;
+         align-items: center;
          gap: 15px;
       }
 
