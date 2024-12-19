@@ -324,7 +324,7 @@ nav {
         font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3rem);
         font-weight: 400;
         color: var(--text);
-        width: 100px;
+        width: 114px;
         height: fit-content;
         text-decoration: none;
         padding: 0.5rem 0;
@@ -404,8 +404,9 @@ nav {
         -webkit-text-fill-color: var(--accent);
         transform: rotate(-135deg);
     }
-
+    
     .fa-power-off:before {
+        font-family: FontAwesome;
         content: "\f011";
     }
 
