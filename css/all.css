@@ -509,9 +509,6 @@ section .top-s::after {
     border-right: 0;
 }
 
-.policy .h2-bg span {
-    font-size: clamp(6rem, calc(6rem + 0.1vw), 6.4rem);
-}
 
 .h2-bg p::before {
     content: "";
@@ -521,8 +518,6 @@ section .top-s::after {
     left: 0;
     bottom: 45px;
     border-top: 1px solid var(--border);
-    /*background-color: rgba(217, 217, 217, 0.15);
-    background-image: repeating-linear-gradient(90deg, transparent, transparent 1px, rgba(46, 46, 46, 1) 1px, rgba(46, 46, 46, 1) 2px);*/
 }
 
 .section4 .top-s {
