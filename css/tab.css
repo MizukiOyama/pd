@@ -5,13 +5,11 @@
     justify-content: center;
     height: 100vh;
     position: relative;
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/pd-bg-img02.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .tabs {
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/pd-bg-img.png");
     background-size: contain;
     background-repeat: no-repeat;
 }

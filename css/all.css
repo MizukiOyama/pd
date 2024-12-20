@@ -225,7 +225,7 @@ h2 {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 6rem);
     width: fit-content;
     line-height: 15rem;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 0.1px;
     -webkit-text-stroke-color: var(--bg);
 }
 .policy h2 {
