@@ -71,6 +71,7 @@
 
       .sidebar a {
          color: var(--border);
+         border: none;
       }
 
       .sidebar a:hover {

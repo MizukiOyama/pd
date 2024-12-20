@@ -163,93 +163,6 @@ body {
     overflow-x: hidden;
 }
 
-/*body::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 5.5%;
-    height: 100%;
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
-    z-index: 10;
-background-size: auto auto;
-    background-image:
-        linear-gradient(90deg, transparent 1%, rgba(146, 146, 146, 0.25) 2%),
-        linear-gradient(0deg, transparent 1%, rgba(146, 146, 146, 0.25) 2%);
-background-size: 50px 5px, 5px 50px;
-    background-position: center;
-}
-
-/*@keyframes moveBackground {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: 10% 10%;
-    }
-}*/
-
-body::after {
-    content: "";
-    position: fixed;
-    left: 5.5%;
-    bottom: 0;
-    width: 92%;
-    height: 20px;
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
-    border-top: 1px solid var(--border);
-    z-index: 10;
-}
-
-.guide-top {
-    position: fixed;
-    top: 0;
-    left: 5.5%;
-    width: 92%;
-    height: 20px;
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
-    border-bottom: 1px solid var(--border);
-    z-index: 10;
-}
-
-.guide-top::before,
-.guide-top::after {
-    content: "";
-    position: fixed;
-    top: 19px;
-    right: 0;
-    width: 2.5%;
-    height: 95.7555%;
-    border-left: 1px solid var(--border);
-}
-
-.guide-top::after {
-    height: 100%;
-    top: 0;
-    border: 0;
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
-    z-index: -1;
-}
-
-/*@keyframes bg-img-move {
-    0% {
-        background-position: 0% 0%;
-    }
-
-    100% {
-        background-position: 100% 100%;
-    }
-}
-
-@keyframes bg-img-rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}*/
 
 * {
     box-sizing: border-box;
@@ -264,7 +177,7 @@ h1 {
     font-weight: 500;
     color: var(--bg);
     width: fit-content;
-    line-height: 30rem;
+    line-height:12rem;
     letter-spacing: 3rem;
 }
 
@@ -346,11 +259,6 @@ p {
     transform: translateY(0);
 }
 
-/*.tate {
-    writing-mode: vertical-rl;
-    line-height: 2.5rem;
-}*/
-
 ol,
 ul {
     font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
@@ -362,10 +270,10 @@ li {
     list-style: none;
 }
 
-/*===================== リンク =====================*/
+/*===================== リンク =====================
 main {
     border-bottom: 1px solid var(--border);
-}
+}*/
 
 /*main::before {
     content: "";
@@ -374,7 +282,7 @@ main {
     border-top: 1px solid var(--border);
     display: block;
 }*/
-
+/*
 main a {
     border: 1px solid;
     padding: 1rem;
@@ -395,10 +303,6 @@ a {
     display: inline-block;
     text-decoration: none;
     z-index: 100;
-}
-
-/*.top-s a {
-    border: 1px solid var(--border);
 }*/
 
 a:hover {
@@ -425,7 +329,7 @@ footer a:hover::after {
     transform: scale(1, 1);
 }
 
-main .button {
+/*main .button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -461,56 +365,9 @@ main .button::before, main .button::after {
   main .button:hover::before, main .button:hover::after {
     top: 0;
     left: 0;
-  }
+  }*/
 /*===================== リンク =====================*/
 
-.hr {
-    width: 100%;
-    height: 100px;
-    position: relative;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-}
-/*.hr::after {
-    content: "";
-    width: 100%;
-    height: 100px;
-    display: block;
-    position: absolute;
-    top: -50px;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
-}
-*/
-/*.hr::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg,
-            transparent,
-            var(--bg) 0%,
-            var(--text) 100%,
-            transparent);
-    animation: scroll-left 2s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
-    background-size: 200% 100%;
-    transition: all 20s;
-    animation-delay: 2s;
-    animation-duration: 3.5s;
-}
-
-@keyframes scroll-left {
-    0% {
-        transform: translateX(-100%);
-    }
-
-    100% {
-        transform: translateX(100%);
-    }
-}*/
 
 /*===================== img =====================*/
 img {
@@ -527,12 +384,8 @@ img {
     z-index: -1;
 }
 
+/*===================== Section =====================*/
 
-/*===================== Section =====================
-section {
-    width: 100%;
-}
-*/
 /*===================== tabs h1 top =====================*/
 .tabs .top-h1 {
     position: absolute;
@@ -556,14 +409,6 @@ section {
     border-right: 1px solid var(--border);
 }
 
-.tabs video {
-    width: 80%;
-    position: absolute;
-    top: 10%;
-    right: 0.5%;
-    z-index: 0;
-}
-
 .tabs .caption {
     font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
     position: absolute;
@@ -575,14 +420,6 @@ section {
     border-bottom: 0;
     z-index: 1;
 }
-
-/*.tabs .caption::before {
-    content: "";
-    height: 100%;
-    position: absolute;
-    top: 0;
-    border-right: 1px solid var(--border);
-}*/
 
 .tabs .top-h1 .caption {
     font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
@@ -624,12 +461,12 @@ section .top-s {
 section .top-s::before,
 section .top-s::after {
     content: "";
-    width: 170px;
-    height: 170px;
+    width: 100px;
+    height: 100px;
     position: absolute;
     bottom: 0;
     left: 0;
-    border-top-right-radius: 170px;
+    border-top-right-radius: 100px;
     border-right: 1px solid var(--border);
     border-top: 1px solid var(--border);
     border-right: 1px solid var(--border);
@@ -714,146 +551,6 @@ section .top-s::after {
     margin-top: 2vmin;
 }
 
-/*===================== .service =====================*/
-
-.se-list {
-    width: 50%;
-    height: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-}
-
-.se::after {
-    content: "";
-    position: absolute;
-    pointer-events: none;
-    top: 5%;
-    right: -10%;
-    width: 100%;
-    height: 300px;
-    opacity: 0;
-    transition: opacity 0.15s ease;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center top;
-}
-
-/* Hover or Focus Animation */
-.se:hover::after,
-.se:focus::after {
-    opacity: 1;
-}
-
-.se-01:hover::after,
-.se-01:focus::after {
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/2341suisai.png');
-}
-
-.se-02:hover::after,
-.se-02:focus::after {
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/ai-suisai.png');
-}
-
-.se-03:hover::after,
-.se-03:focus::after {
-    background-image: url('https://mizukioyama.github.io/pd/hp-img/kouryoku-suisai.png');
-}
-
-.top .se {
-    position: relative;
-    height: 30%;
-    margin-top: 2.5rem;
-}
-
-.top .se h3 {
-    font-size: clamp(6rem, calc(6rem + 0.5vw), 8rem);
-    width: 100%;
-    position: absolute;
-    right: 0;
-    bottom: 30%;
-    padding: 0 1rem;
-    border-bottom: 1px solid var(--border);
-}
-
-.top .se p {
-    position: absolute;
-    right: 5%;
-    bottom: 15%;
-}
-
-/*video size*/
-.top .se .video-1,
-.top .se .video-2,
-.top .se .video-3 {
-    width: 100%;
-    height: 90%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    border: 1px solid var(--border);
-    border-left: 0;
-    border-right: 0;
-}
-
-.se .video-1::before,
-.se .video-2::before,
-.se .video-3::before {
-    content: "";
-    width: 35px;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    border-right: 1px solid var(--border);
-}
-
-/*===================== .works =====================*/
-
-.work {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-}
-
-.design h3,
-.art h3 {
-    padding-left: 0.5rem;
-}
-
-.design,
-.art {
-    position: absolute;
-    border: 1px solid var(--border);
-}
-
-.design {
-    right: 15vmin;
-    bottom: 10vmin;
-    width: 380px;
-    height: 400px;
-}
-
-.design video {
-    width: 350px;
-    height: 350px;
-    margin-left: 2%;
-    background: var(--border);
-}
-
-.art {
-    width: 260px;
-    height: 280px;
-    right: 10vmin;
-    bottom: 1vmin;
-}
-
-.art video {
-    width: 235px;
-    height: 235px;
-    margin-left: 2%;
-    background: var(--border);
-}
 
 /*===================== section in-box =====================*/
 
@@ -929,357 +626,3 @@ section img {
 
 
 /*===================== Top =====================*/
-
-/*===================== About =====================*/
-.about section .top-s {
-    align-items: center;
-    justify-content: center;
-}
-
-.about .top-s .text,
-.policy .top-s .text,
-.contact .top-s .text {
-    width: 650px;
-}
-
-.about #tab-4 .top-s .text,
-.policy .top-s .text,
-.contact .top-s .text {
-    margin: 0;
-}
-
-.about #tab-4 .top-s .text {
-    margin-top: 6vmin;
-}
-
-.about .bg-aitem {
-    width: 650px;
-    height: 55px;
-    position: relative;
-}
-
-.thoughts {
-    width: 650px;
-    display: flex;
-    justify-content: center;
-    gap: 2vmin;
-}
-
-.profile {
-    width: 800px;
-    display: flex;
-    align-items: flex-start;
-    gap: 2vmin;
-}
-
-.oyama,
-.like {
-    width: 50%;
-}
-
-.profile ol {
-    height: 100%;
-    padding-left: 1rem;
-    margin: 0 auto 2vmin;
-}
-
-.profile ol p {
-    position: relative;
-    letter-spacing: 0.25rem;
-    margin-bottom: -1rem;
-}
-
-.profile ol div {
-    margin-top: 3rem;
-    padding-left: 10px;
-}
-
-.profile li {
-    font-size: clamp(1.6rem, calc(1.6rem + 0.5vw), 1.8rem);
-    width: 100%;
-    line-height: 20px;
-    margin-bottom: -2%;
-}
-
-.profile li br {
-    display: block;
-    content: "";
-    margin: -3px 0;
-}
-
-.profile li::before {
-    content: "・";
-    display: block;
-    position: relative;
-    left: -13px;
-    bottom: -20px;
-}
-
-.profile li span {
-    font-size: clamp(0.8rem, calc(0.8rem + 0.1vw), 1rem);
-}
-
-.profile .like .bg-aitem {
-    width: 100%;
-    height: 100px;
-    margin-bottom: 3%;
-    background: var(--hover);
-}
-
-/*========== .works */
-
-.about h3 {
-    font-size: clamp(14rem, calc(14rem + 0.1vw), 16rem);
-    color: var(--bg);
-    position: relative;
-    padding-left: 0;
-    z-index: 1;
-}
-
-.about .work {
-    width: fit-content;
-    height: 75%;
-}
-
-.about .design,
-.about .art {
-    width: 380px;
-    height: 380px;
-    bottom: 0;
-    border: 1px solid var(--border);
-}
-
-.about .design {
-    left: 0;
-}
-
-.about .art {
-    right: 0;
-}
-
-.about .design video,
-.about .art video {
-    position: absolute;
-    top: 2.5%;
-    left: 2.5%;
-    width: 92.5%;
-    height: 92.5%;
-    margin: 0;
-    background: var(--hover);
-    border: 5px solid var(--bg);
-}
-
-/*========== .works */
-
-/*========== .color */
-
-.about .section4 .color {
-    width: 650px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1vmin;
-    padding: 1rem;
-    background-color: var(--border);
-}
-
-.about .section4 .bg-aitem {
-    font-size: clamp(1.2rem, calc(1.2rem + 0.1vw), 1.6rem);
-    width: 120px;
-    height: 185px;
-    margin: 0;
-    padding: 1rem;
-    border: 1px solid var(--hover);
-}
-
-.about .section4 .bg-aitem:nth-child(1) {
-    background: var(--text);
-}
-
-.about .section4 .bg-aitem:nth-child(2) {
-    color: var(--border);
-    background: var(--hover);
-}
-
-.about .section4 .bg-aitem:nth-child(3) {
-    color: var(--text);
-}
-
-.about .section4 .bg-aitem:nth-child(4) {
-    color: var(--bg);
-    background: var(--accent);
-}
-
-.about .section4 .bg-aitem:nth-child(5) {
-    color: var(--text);
-    background: none;
-}
-
-
-/*===================== About =====================*/
-
-/*===================== Service =====================*/
-
-.service .top-s,
-.policy .top-s,
-.contact .top-s {
-    align-items: center;
-    justify-content: center;
-}
-
-.policy .top-s .text,
-.contact .top-s .text {
-    margin: 0;
-}
-
-.service .section1 .h2-bg {
-    gap: 5px;
-}
-
-.service .section1 video {
-    width: 70%;
-    height: 80%;
-    position: absolute;
-    top: 10%;
-    right: 0%;
-    background: var(--text);
-    z-index: -1;
-    mix-blend-mode: difference;
-}
-
-/*========== .service img */
-.service .section3 img {
-    width: 55%;
-}
-
-.flow-ol {
-    font-size: clamp(2.4rem, calc(2.4rem + 0.5vw), 3rem);
-    letter-spacing: 0.5rem;
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
-}
-
-.flow {
-    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
-    margin: 2rem auto 5rem;
-    padding-left: 5.4rem;
-    letter-spacing: 0.2rem;
-}
-
-.flow:last-child {
-    margin-bottom: 0;
-}
-
-.flow span {
-    margin: 0 2rem;
-}
-
-.option {
-    width: calc(870px - 50px);
-    height: 400px;
-    padding: 1rem 0.5rem 0;
-    border: 1px solid var(--border);
-    display: flex;
-    background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
-}
-
-.option h3 {
-    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
-    height: 45px;
-    padding: 1rem 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    border: 1px solid var(--border);
-}
-
-.option h4 {
-    line-height: 3rem;
-    border-bottom: 1px solid var(--border);
-    padding-left: 0.5rem;
-}
-
-.option h4:nth-child(n + 2) {
-    margin-top: 4rem;
-}
-
-.option ol {
-    width: 100%;
-    height: fit-content;
-    margin: 0 0.4rem;
-}
-
-.option ol div {
-    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
-    font-weight: 500;
-    height: 330px;
-    margin-top: 0.5rem;
-    padding: 3rem 1rem;
-    border: 1px solid var(--border);
-    overflow-x: auto;
-}
-
-.option ol li {
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
-    width: fit-content;
-    margin-top: 0.5rem;
-    letter-spacing: 0.015rem;
-}
-
-.service .section5 .co-li {
-    display: flex;
-    align-items: center;
-    font-size: clamp(1.4rem, calc(1.4rem + 0.5vw), 1.8rem);
-}
-
-.service .section5 .co-li a {
-    margin-top: 0;
-}
-/*===================== Service =====================*/
-
-/*===================== Contents =====================*/
-
-.contents .main-se {
-    width: 85vmin;
-    height: 500px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 25px;
-    margin: 12vmin auto 0;
-    padding: 3rem;
-    overflow-x: auto;
-}
-.contents .m-se {
-    width: 50%;
-    padding: 0 0.5rem;
-}
-
-.contents .m-se ol {
-    margin-top: 5rem;
-    padding: 0 1rem;
-    border: 1px solid var(--border);
-}
-
-.contents .m-se ol h3 {
-    line-height: 5rem;
-    margin-top: 5rem;
-}
-.contents .m-se ol h3:nth-of-type(1) {
-    margin-top: 0;
-}
-.contents .m-se li {
-    font-size: clamp(1.8rem, calc(1.8rem + 0.5vw), 2rem);
-    font-weight: 600;
-    padding: 2rem;
-    margin-bottom: 1rem;
-    border: 1px solid var(--border);
-}
-.contents .m-se li p {
-    font-size: clamp(1.2rem, calc(1.2rem + 0.5vw), 1.6rem);
-    font-weight: 400;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border);
-}
-
-/*===================== Contents =====================*/
