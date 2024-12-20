@@ -129,6 +129,11 @@
          margin: 0 auto;
       }
 
+      article {
+         width: 30%;
+         height: auto;
+      }
+
       /* 記事カード */
       .article-card {
          display: flex;
