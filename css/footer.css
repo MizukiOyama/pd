@@ -8,7 +8,8 @@
         /*border-top: 5px solid var(--bg-color);
         border-right: 5px solid var(--bg-color);*/
         z-index: 9;
-        backdrop-filter: blur(3px);
+        background-image: url("https://mizukioyama.github.io/pd/hp-img/pd-bg-img02.png");
+        background-size: cover;
     }
     footer .noise {
         display: block;
