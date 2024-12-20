@@ -551,11 +551,6 @@ section #top-img {
     right: 0;
 }
 
-/*===================== img*/
-section img {
-    position: absolute;
-}
-
 .tabs img {
     width: 70%;
     top: -15%;

@@ -149,7 +149,6 @@
       .articles h2,
       .articles h3 {
          font-weight: 800;
-         color: var(--text);
          padding: 0;
          border: 0;
          mix-blend-mode: normal;
@@ -176,16 +175,7 @@
          padding: 0;
       }
 
-      /* フッター */
-      footer {
-         width: 100%;
-         text-align: center;
-         padding: 10px;
-         background: var(--border);
-         color: var(--bg);
-         margin-top: 20px;
-      }
-
+      /* ページネーション */
       .pagination {
          display: flex;
          justify-content: center;
