@@ -531,8 +531,6 @@ img {
 /*===================== Section =====================*/
 section {
     width: 100%;
-    margin: 0 auto;
-    border-right: 1px solid var(--border);
 }
 
 /*===================== tabs h1 top =====================*/
@@ -632,8 +630,10 @@ section .top-s::after {
     bottom: 0;
     left: 0;
     border-top-right-radius: 170px;
+    border-right: 1px solid var(--border);
     border-top: 1px solid var(--border);
     border-right: 1px solid var(--border);
+    border: 1px solid var(--border);
 }
 section .top-s::after {
     width: 120px;
