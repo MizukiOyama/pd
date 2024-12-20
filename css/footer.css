@@ -8,6 +8,7 @@
         /*border-top: 5px solid var(--bg-color);
         border-right: 5px solid var(--bg-color);*/
         z-index: 9;
+        backdrop-filter: blur(3px);
     }
     footer .noise {
         display: block;
