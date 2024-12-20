@@ -54,7 +54,7 @@
       }
 
       .sidebar {
-         width: 400px;
+         width: 200px;
          flex: 1;
          position: relative;
          background: var(--border);
@@ -130,7 +130,7 @@
       }
 
       article {
-         width: 30%;
+         width: 75%;
          height: auto;
       }
 
