@@ -437,8 +437,7 @@ img {
 section .top-s {
     height: auto;
     min-height: 600px;
-    border-top: 1px solid var(--border);
-    border-bottom: 1px solid var(--border);
+    border: 0.5px solid var(--border);
     padding: 0 5vw;
     text-align: justify;
     display: flex;
