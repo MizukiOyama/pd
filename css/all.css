@@ -163,7 +163,7 @@ body {
     overflow-x: hidden;
 }
 
-body::before {
+/*body::before {
     content: "";
     position: absolute;
     top: 0;
@@ -171,11 +171,11 @@ body::before {
     height: 100%;
     background-image: url("https://mizukioyama.github.io/pd/hp-img/noize.png");
     z-index: 10;
-    /*background-size: auto auto;
+background-size: auto auto;
     background-image:
         linear-gradient(90deg, transparent 1%, rgba(146, 146, 146, 0.25) 2%),
         linear-gradient(0deg, transparent 1%, rgba(146, 146, 146, 0.25) 2%);
-    background-size: 50px 5px, 5px 50px;*/
+background-size: 50px 5px, 5px 50px;
     background-position: center;
 }
 
@@ -258,7 +258,7 @@ body::after {
 
 h1 {
     /*font-size: 62.5%;=16px 12rem=120px*/
-    font-size: clamp(30rem, calc(30rem + 0.5vw), 34rem);
+    font-size: clamp(8rem, calc(8rem + 0.5vw), 10rem);
     font-family: "Jost", sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
@@ -309,7 +309,7 @@ h2 {
     /*font-size: 62.5%;=16px 6rem=62px*/
     font-family: sans-serif;
     font-weight: 500;
-    font-size: clamp(15rem, calc(15rem + 0.5vw), 20rem);
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 6rem);
     width: fit-content;
     line-height: 15rem;
     -webkit-text-stroke-width: 1px;
@@ -530,7 +530,7 @@ img {
 
 /*===================== Section =====================*/
 section {
-    width: 89%;
+    width: 100%;
     margin: 0 auto;
     border-right: 1px solid var(--border);
 }
@@ -587,7 +587,7 @@ section {
 }*/
 
 .tabs .top-h1 .caption {
-    font-size: clamp(2.8rem, calc(2.8rem + 0.5vw), 3rem);
+    font-size: clamp(2rem, calc(2rem + 0.5vw), 2.4rem);
     position: relative;
     width: 100%;
     padding: 1rem 0;
@@ -607,7 +607,8 @@ section {
 
 /*===================== section =====================*/
 section .top-s {
-    height: 700px;
+    height: auto;
+    min-height: 800px;
     border-top: 1px solid var(--border);
     border-bottom: 1px solid var(--border);
     padding: 0 3vw;
