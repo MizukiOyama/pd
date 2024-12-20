@@ -55,15 +55,9 @@
       }
 
       .sidebar {
-         width: 200px;
          flex: 1;
          position: relative;
-         background: var(--border);
-         background: rgba(200, 200, 200, 0.25);
-         backdrop-filter: blur(2px);
          padding: 3vmin;
-         border: 1px solid var(--bg);
-         border-radius: 5px;
       }
 
       .sidebar h2 {
@@ -81,9 +75,8 @@
 
       /*said*/
       .categories {
-         margin-top: 0vmin;
          position: fixed;
-         top: 5vmin;
+         top: 15vmin;
       }
 
       .toc h2 {
