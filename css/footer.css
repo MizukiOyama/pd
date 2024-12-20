@@ -10,6 +10,7 @@
         z-index: 9;
         background-image: url("https://mizukioyama.github.io/pd/hp-img/pd-bg-img02.png");
         background-size: cover;
+        border-top: 1px solid var(--border);
     }
     footer .noise {
         display: block;
