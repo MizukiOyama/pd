@@ -53,7 +53,7 @@
            articleCard.classList.add("article-card");
            articleCard.innerHTML = `
      <img src="${article.thumbnail}" alt="${article.title}">
-     <h3><a href="#">${article.title}</a></h3>
+     <h2><a href="#">${article.title}</a></h2>
      <p>${article.description}</p>
   `;
            articleContainer.appendChild(articleCard);
