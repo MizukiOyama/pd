@@ -1,6 +1,7 @@
     /*PC*/
     footer {
         position: relative;
+        width: 100vw;
         height: 530px;
         padding-left: 20%;
         bottom: 0;
