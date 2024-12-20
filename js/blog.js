@@ -1,7 +1,7 @@
       // 自動目次生成
       document.addEventListener("DOMContentLoaded", () => {
         const tocList = document.getElementById("toc-list");
-        const headings = document.querySelectorAll("article h2,article h3");
+        const headings = document.querySelectorAll("article h2");
 
         headings.forEach((heading, index) => {
            const listItem = document.createElement("li");
@@ -53,7 +53,7 @@
            articleCard.classList.add("article-card");
            articleCard.innerHTML = `
      <img src="${article.thumbnail}" alt="${article.title}">
-     <h2><a href="#">${article.title}</a></h2>
+     <h3><a href="#">${article.title}</a></h3>
      <p>${article.description}</p>
   `;
            articleContainer.appendChild(articleCard);
